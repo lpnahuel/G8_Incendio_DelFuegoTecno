@@ -11,6 +11,9 @@ Bienvenidos al proyecto **Incendiado**, el mismo forma parte de la curricula del
 - Salvador Laje
 
 #### **Qué es Del Fuego Tecno?**
+
+![Logo del fuego tecno](https://github.com/lpnahuel/Wireframes_Del_Fuego_tecno/blob/main/logodft.jpeg)
+
 **Del Fuego Tecno** es una empresa tecnologica cuyo objetivo es acercar al cliente la posibilidad de comprar software o hardware desde la comodidad de su casa. Nuestro objetivo es que el cliente no deba buscar en ningun otro lado lo que necesita para mejorar su conectividad con el mundo digital. 
 ¿Quiere mejorar su setup?, ¿quiere regalarle una consola de juegos a sus hijos o por qué no comprarla para usted mismo?, ¿quiere cambiar su smartphone o conseguir accesorios para el mismo?. Todas las respuestas a sus necesidades puede encontrarlas en nuestro sitio, con un listado variado de productos que satisfacen sus necesidades tecnologicas.
 
@@ -77,3 +80,9 @@ Pagina simple de registro al sitio web.
 Pagina simple de login al sitio web.
 
 ![Wireframe de pagina de Login](https://github.com/lpnahuel/Wireframes_Del_Fuego_tecno/blob/main/Login.jpg)
+
+#### **Previews**
+
+##### **Preview Home**
+
+![Preview del Home](https://github.com/lpnahuel/Wireframes_Del_Fuego_tecno/blob/main/previewhome.jpeg)
