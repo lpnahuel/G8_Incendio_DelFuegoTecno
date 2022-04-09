@@ -1,0 +1,403 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', 'sans-serif';
+    margin: 0px;
+}
+
+/* -------- HEADER -------- */
+
+
+nav.nav-header{
+    align-items: flex-end;
+    background-color: #000;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 32vh;
+    position: fixed;
+    width: 100vw;
+}
+
+
+div.contenedor-header{
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto auto 2vh auto;
+    height: 90%;
+    justify-content: space-around;
+    width: 75%;
+}
+    
+
+
+/* -------- LOGO -------- */
+
+.header-logo{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3%;
+}
+
+.logo-header {
+    max-width: 100%;
+    width: 144px;
+}
+
+/* -------- BOTONES PRINCIPALES -------- */
+
+.main-buttons {
+    align-content: space-around;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.header-buttons {
+    align-items: flex-start;
+    background: none;
+    border: none;
+    cursor: default;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 24px 48px -16vh 24px;
+    text-rendering: auto;
+    text-align: center;
+    
+}
+
+.header-buttons > a{
+    color:#07F7FE;
+    text-decoration: none;
+}
+
+/* -------- BOTONES SECUNDARIOS Y BÚSQUEDA -------- */
+
+.cont-elem-header{
+    align-content: space-around;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+}
+
+
+.area-bar{
+    display: flex;
+}
+
+/* -------- BARRA DE BÚSQUEDA -------- */
+
+.search{
+    border: none;
+    border-radius: 12px;
+    width: 344px;
+    height: 32px;
+}
+
+input[type="text" i] {
+    font-size: 16px;
+    padding: 1px 16px;
+}
+
+.mag-glass {
+    align-items: flex-start;
+    background: none;
+    border: none;
+    cursor: default;
+    color: #22205f;
+    display: inline-flex;
+    font-size: 18px;
+    margin: -32px;
+    text-align: center;
+}
+
+/* -------- BOTONES SECUNDARIOS -------- */
+
+
+.sec-buttons {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.log-shop {
+    align-items: flex-end;
+    background: none;
+    border: none;
+    cursor: default;
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    margin-right: 80px;
+    text-rendering: auto;
+    
+}
+
+.log-shop > a{
+    color:#989898;
+    text-decoration: none;
+}
+
+.log-shop > a > i{
+    color:#3cb9fc;
+    margin-right: 8px;
+    text-decoration: none;
+}
+
+/* -------- GUARDA DE COLORES -------- */
+
+div.guarda{
+    background-image: linear-gradient(to right, #3cb9fc, #b537f2, #ee2b79, #f4d30f, #08fbd2, #07f7fe);
+    display: flex;
+    flex-wrap: wrap;
+    height: 7%;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+
+/* -------- MAIN -------- */
+
+/* main{
+    background-image: linear-gradient(to bottom, #000 , #666);
+}
+
+.carrusel-main{
+    width: 1376px;
+} */
+
+
+
+/* -------- FOOTER  -------- */
+
+nav.nav-footer{
+    align-items: flex-end;
+    background-color: #000;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 64vh;
+    width: 100vw;
+}
+
+div.contenedor-footer{
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    height: 90%;
+    justify-content: space-around;
+    margin: auto auto 2vh auto;
+    width: 75%;
+}
+
+/* -------- LOGO -------- */
+
+.footer-logo{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logo-footer {
+    max-width: 100%;
+    width: 112px;
+}
+
+/* -------- TITULARES -------- */
+
+article.columnas{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.h3-footer{
+    color: #e1e1e1;
+    display: flex;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 0px;
+}
+
+.cont-elem-footer{
+    display: flex;
+    width: 40%;
+
+}
+
+/* -------- LINKS   -------- */
+
+section > ul > li{
+    list-style: none;
+}
+
+ul{
+    margin-top: -8px;
+    padding:0%;
+}
+
+ul a{
+    color: #ABABAB;
+    font-size: 12px;
+    font-weight: 300;
+    text-decoration: none;
+
+}
+
+.contacto{
+    color: #ABABAB;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 20px;
+    list-style: none;
+
+}
+
+/* -------- REDES Y NEWSLETTER   -------- */
+
+
+.columna-footer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.links-redes{
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+    justify-content: space-around;
+}
+
+.net-buttons{
+    align-content: center;
+    align-items: center;
+    cursor: default;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.btn-redes{
+    background: none;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 8px 0 0;
+    max-width: 100%;
+
+}
+
+.redes-sociales{
+    width: 40px;
+}
+
+.newsletter{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+.barra-newsletter{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.nl-mail{
+    display: flex;
+    border: none;
+    border-radius: 12px;
+    width: 344px;
+    height: 32px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.send {
+    align-content: center;
+    background: #666;
+    border: none;
+    border-top-right-radius: 13px;
+    border-bottom-right-radius: 12px;
+    color: #fff;
+    cursor: default;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 18px;
+    margin-left: -63px;
+}
+
+
+
+/* ---------TRATÉ DE HACER LOS BOTONES CON CSS PERO PUES NO ---------- */
+
+
+
+/* .bt-ig{
+    text-decoration: none;
+    text-shadow: none;
+    display: flex;
+    cursor: default;
+    padding: 10px 8px;
+    border: none;
+    border-radius: 50%;
+    font-size: 32px;
+    background-color: #B537F2;
+}
+.bt-fb{
+    text-decoration: none;
+    text-shadow: none;
+    display: flex;
+    cursor: default;
+    padding: 10px 8px;
+    border: none;
+    border-radius: 50%;
+    font-size: 32px;
+    background-color: #3CB9FC;
+}
+.bt-yt{
+    text-decoration: none;
+    text-shadow: none;
+    display: flex;
+    cursor: default;
+    padding: 10px 8px;
+    border: none;
+    border-radius: 50%;
+    font-size: 32px;
+    background-color: #ee2b79;
+}
+.bt-tw{
+    text-decoration: none;
+    text-shadow: none;
+    display: flex;
+    cursor: default;
+    padding: 10px 8px;
+    border: none;
+    border-radius: 50%;
+    font-size: 32px;
+    background-color: #08fbd2;
+}
+
+i.fab{
+    color: #fff;
+    margin: auto;
+    text-decoration: none;
+
+} */
