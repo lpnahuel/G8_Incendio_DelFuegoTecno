@@ -171,7 +171,13 @@ div.guarda{
 .carrusel-main{
     width: 1376px;
 } */
-
+.login{
+    background-color: #000;
+    color: white;
+    margin:auto;
+    border: solid 30px black;
+    
+}
 
 
 /* -------- FOOTER  -------- */
