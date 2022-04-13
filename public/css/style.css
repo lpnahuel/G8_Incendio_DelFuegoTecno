@@ -9,7 +9,9 @@ body{
 
 /* -------- HEADER -------- */
 
-
+header{
+    margin-bottom: 10px;
+}
 nav.nav-header{
     align-items: flex-end;
     background-color: #000;
@@ -172,7 +174,29 @@ div.guarda{
     width: 1376px;
 } */
 
+/* -------- MAIN CARRITO -------- */
 
+main.carrito{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* --- rightArticle --- */
+
+.rightArticle-div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.rightArticle-div-total{
+    display: flex;
+    justify-content: space-between;
+}
+
+.rightArticle-div-finalizar{
+    display: flex;
+    justify-content: center;    
+}
 
 /* -------- FOOTER  -------- */
 
