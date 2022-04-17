@@ -80,36 +80,35 @@
         </nav>       
 
     </header>
+        
 
-    <form class="formulario-registro">
-        <h1 class="titulo-registro">Registrate</h1>
-        <div class="contenedor">
-
-        <div class="input-contenedor">
-            <i class="fa-solid fa-user"></i>
-            <input type="text" placeholder="Nombre">
-        </div>
-        <div class="input-contenedor">
-            <i class="fa-solid fa-file-user"></i>
-            <input type="text" placeholder="Apellido">
-        </div>
-        <div class="input-contenedor">
-            <i class="fa-solid fa-at"></i>
-            <input type="email" placeholder="Correo Electronico">
-        </div>
-        <div class="input-contenedor">
-            <i class="fa-solid fa-key"></i>
-            <input type="password" placeholder="Contraseña">
-        </div>
-        <input type="submit" value="Registrate" class="button">
-        <p>¿Ya tienes una cuenta?<a  href="/views/login.html">Iniciar Sesión</a></p>
-
-        </div>
-    </form>
-
-    <main>
+    <main class="main-registro">
         <!-- <img class="carrusel-main" src="/img/destacado-alienware-streamsetup.jpg" alt="Carrusel imagen 1"> -->
+        <form action="/registro" class="form-registro">
+            <div class="registro-contenedor">
+                <label for="name"><i class='fas fa-user-alt'></i> Nombre:</label>
+                <input type="text" id="name" name="name" placeholder="Juan">
+            </div>
 
+            <div class="registro-contenedor">
+                <label for="surname"><i class='fas fa-id-card'></i> Apellido:</label>
+                <input type="text" id="surname" name="surname" placeholder="Perez">
+            </div>
+
+            <div class="registro-contenedor">
+                <label for="email"><i class="fa fa-envelope"></i> Correo Electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="juan.perez@email.com">
+            </div>
+
+            <div class="registro-contenedor">
+                <label for="password"><i class='fas fa-key'></i> Contraseña:</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <br>
+            <button type="submit">REGISTRARSE</button>
+            <p>¿Ya tienes una cuenta?<a  href="/login">Iniciar Sesión</a></p>
+
+        </form>
     </main>
 
     <footer>
