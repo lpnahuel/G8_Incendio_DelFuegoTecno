@@ -6,8 +6,9 @@
     /*Colors*/
     --negro: #000;
     --gris-osc: #666;
-    --gris-medio: #989898;
-    --gris-claro: #ebebeb;
+    --gris: #989898;
+    --gris-medio: #ababab;
+    --gris-claro: #e1e1e1;
     --blanco: #fff;
     --turq: #01A9B4;
     --celeste-logo: #3CB9FC;
@@ -26,8 +27,10 @@
 }
 
 body{
+    background-color: #000;
     font-family: 'Roboto', 'sans-serif';
     margin: 0px;
+    padding: 0px;
 }
 
 
@@ -66,6 +69,10 @@ body{
         right: 1%;
         top: 4px;
     } */
+
+    footer{
+        display: none;
+    }
 }
 
 @media (min-width:720px) and (max-width:959px){
@@ -100,7 +107,15 @@ body{
         left: 1%;
         top: 4px;
     } */
+
+    .contenedor-footer{
+        margin: 5px auto 5px auto;
+        width: 100%;
+    }
     
+    .footer_elem{
+        display: none;
+    }
     
 }
 
@@ -138,6 +153,24 @@ body{
     .mag-glass {
         right: 20%;
     }
+
+    footer{
+        height: 350px;
+    }
+
+    .contenedor-footer{
+        margin: 15px auto 5px auto;
+        width: 85%;
+    }
+
+    .footer_elem{
+        align-items: flex-start;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 35%;
+    }
     
 }
 
@@ -163,6 +196,24 @@ body{
     .mag-glass {
         right: 25%;
     }
+
+    footer{
+        height: 250px;
+    }
+
+    .contenedor-footer{
+        margin: 15px auto 5px auto;
+        width: 75%;
+    }
+
+    .footer_elem{
+        align-items: flex-start;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 35%;
+    }
 }
 
 
@@ -171,10 +222,12 @@ body{
 /* -------- HEADER -------- */
 
 header{
-    width: 100%;
     background-color: #000;
     height: 112px;
-    position: fixed;
+    margin: 0px;
+    /* position: fixed; */
+    width: 100%;
+
 }
 
 .contenedor-header{
@@ -325,7 +378,7 @@ div.guarda{
 
 .main-home{
     background-image: linear-gradient(to bottom, #000, #666);
-    width: 100vw;
+    width: 100%;
 }
 
 /* -------- Carrusel -------- */
@@ -537,103 +590,78 @@ main.carrito{
 
 /* -------- FOOTER  -------- */
 
-nav.nav-footer{
-    align-items: flex-end;
+footer{
+    width: 100%;
     background-color: #000;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    height: 64vh;
-    width: 100vw;
+
 }
 
-div.contenedor-footer{
-    align-content: center;
+.contenedor-footer{
+    align-items: flex-start;
     display: flex;
     flex-wrap: wrap;
-    height: 90%;
     justify-content: space-around;
-    margin: auto auto 2vh auto;
-    width: 75%;
 }
+
+
 
 /* -------- LOGO -------- */
 
-.footer-logo{
-    align-self: flex-start;
-    display: flex;
-    flex-wrap: wrap;
+.footer__logo{
+    width: 124px;
 }
 
-.logo-footer {
-    max-width: 100%;
-    width: 112px;
+.logo__ft-img{
+    width:100%;
 }
 
 /* -------- TITULARES -------- */
 
-article.columnas{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    width: 100%;
-}
+
 
 .h3-footer{
-    color: #e1e1e1;
-    display: flex;
+    color: var(--gris-claro);
     font-size: 18px;
     font-weight: 700;
-    margin-bottom: 0px;
 }
 
-.cont-elem-footer{
-    display: flex;
-    width: 40%;
-
-}
 
 /* -------- LINKS   -------- */
 
-section > ul > li{
-    list-style: none;
+.elem__links{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
-ul{
+.elem__links > ul > li{
+    color: var(--gris-medio);
+    font-size: 12px;
+    font-weight: 300;
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.elem__links > ul{
     padding:0%;
 }
 
-ul a{
-    color: #ABABAB;
+.elem__links > ul > li > a{
+    color: var(--gris-medio);
     font-size: 12px;
     font-weight: 300;
     text-decoration: none;
 
 }
 
-.contacto{
-    color: #ABABAB;
-    font-size: 12px;
-    font-weight: 300;
-    line-height: 20px;
-    list-style: none;
 
-}
 
 /* -------- REDES Y NEWSLETTER   -------- */
 
 
-.columna-footer{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-}
-
-
 /* --------- Links redes --------- */
-.links-redes{
+
+.links__redes{
     display: flex;
     flex-direction: column; 
     flex-wrap: wrap;
@@ -641,134 +669,88 @@ ul a{
 
 }
 
-.links-redes_buttons-rs{
+.buttons__rs{
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    padding: 0;
 }
 
-
-div.buttons-rs_categories{
-    display: flex;
-    flex-direction: column;
+.buttons__rs > li{
     align-items: center;
-    margin-right: 10%;
-
-}
-
-.categories-redes-ig{
-    align-items: center;
-    background: #b537f2;
+    list-style: none;
+    text-decoration: none;
     border: none;
     border-radius: 50%;
     cursor: default;
-    display: flex;
+    padding: 10px;
+}
+
+.buttons__rs > li > a{
+    align-self: center;
+
+}
+
+.buttons__rs > li > a > i{
+    color: var(--blanco);
     font-size: 24px;
-    height: 40px;
-    justify-content: space-around;
-    width: 40px;
-
-}
-.categories-redes-fb{
-    align-items: center;
-    background: #3CB9FC;
-    border: none;
-    border-radius: 50%;
-    cursor: default;
-    display: flex;
-    font-size: 24px;
-    height: 40px;
-    justify-content: space-around;
-    width: 40px;
-
-}
-.categories-redes-yt{
-    align-items: center;
-    background: #EE2B79;
-    border: none;
-    border-radius: 50%;
-    cursor: default;
-    display: flex;
-    font-size: 24px;
-    height: 40px;
-    justify-content: space-around;
-    width: 40px;
-
-}
-.categories-redes-tw{
-    align-items: center;
-    background: #08FBD2;
-    border: none;
-    border-radius: 50%;
-    cursor: default;
-    display: flex;
-    font-size: 24px;
-    height: 40px;
-    justify-content: space-around;
-    width: 40px;
-
-}
-
-.categories-redes-ig > a > i{
-    color:#ffffff;
+    text-align: center;
     text-decoration: none;
+    
 }
-.categories-redes-fb > a > i{
-    color:#ffffff;
-    text-decoration: none;
+
+
+.rs__ig{
+    background-color: var(--violet);
+
 }
-.categories-redes-yt > a > i{
-    color:#ffffff;
-    text-decoration: none;
+.rs__fb{
+    background-color: var(--celeste-logo);
+ 
 }
-.categories-redes-tw > a > i{
-    color:#ffffff;
-    text-decoration: none;
+.rs__yt{
+
+    background-color: var(--magenta);
 }
+
+.rs__tw{
+    background-color: var(--aqua);
+}
+
+
+
 
 /* --------- Newsletter --------- */
-.newsletter{
+.links__newsletter{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
 
 }
 
-.barra-newsletter{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: 5%;
+.newsletter__bar{
+    margin-top: 15px;
+    width: 100%;
 }
 
-.newsletter-mail{
-    display: flex;
+.newsletter__mail{
     border: none;
-    border-radius: 12px;
-    width: 288px;
-    height: 32px;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    padding-left: 4%;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    width: 256px;
+    height: 28px;
+    padding-left: 4px;
 }
 
 
-.footer-send {
-    align-content: center;
-    background: #666;
-    border: none;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    color: #fff;
-    cursor: default;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    font-size: 14px;
-    margin-left: -52px;
+.bar__send {
+    background-color: var(--gris-osc);
+    color: var(--gris-claro);
+    border: 1px solid var(--gris-osc);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    height: 28px;
 }
 
 
