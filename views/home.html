@@ -21,77 +21,69 @@
 
     <header>
                 
-        <nav class="header-nav">
-            
-            <div class="contenedor-header">
+        <section class="contenedor-header">                   
                 
-                <!-- LOGO -->
-                <section class="header-logo">
-                    <a href="/">
-                        <img class = "logo-header" src="img/dft-logo.png" alt="Logo del fuego techno">
-                    </a>
-                </section>
+            <!-- LOGO -->
+            <a class="header__logo" href="/">
+                <img class="logo__img" src="img/dft-logo.png" alt="Logo del fuego techno">
+            </a>
+               
                 
-                <!-- BOTONES PRINCIPALES -->
-                <section class="main-buttons">
-                    <button  class="header-buttons">
-                        <a href="#">Productos</a>
-                    </button>
-                    <button class="header-buttons">
-                        <a href="#">Ofertas</a>
-                    </button>
-                    <button class="header-buttons">
-                        <a href="#">Nosotros</a>
-                    </button>
-                    <button class="header-buttons">
-                        <a href="#">Contacto</a>
-                    </button>
-                </section>
-                
-                <!-- SECUNDARIOS Y BÚSQUEDA -->
-                
-                <section class="cont-elem-header">
+            <!-- BOTONES PRINCIPALES -->
+            <nav class="header__menu">    
+                <ul class="menu__lista">
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Ofertas</a></li>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        
+            <!-- SECCIÓN SECUNDARIOS Y BÚSQUEDA -->
+            <section class="header__elem">
                     
-                    <!-- BARRA DE BÚSQUEDA -->
-                    <section class="area-bar">
-                        <form>
-                            <input placeholder="Buscar productos..." type="header-barra" class="area-bar__search">
-                            <button class="mag-glass">
+                    
+                <!-- BOTONES LOGIN Y CARRITO -->
+                <section class="elem__sec-buttons">
+                    <button type="button" class="log-shop"><a href="/login"><i class="far fa-user-circle"></i>LOGIN</a></button>
+                    <button type="button" class="log-shop"><a href="/carrito"><i class="fas fa-shopping-cart"></i>CARRITO</a></button>
+                </section>
+                    
+                <!-- BARRA DE BÚSQUEDA -->
+                <section class="elem__area-bar">
+                    <form action="" method="">
+                        <input type="text" class="area-bar__search" placeholder="Buscar productos..." >
+                        <button class="mag-glass" type="submit">
                                 <i class="fas fa-search"></i>
-                            </button>
-                        </form>
-                    </section>
-                    
-                    <!-- BOTONES LOGIN Y CARRITO -->
-                    <section class="sec-buttons">
-                        <button class="log-shop"><a href="/login.html"><i class="far fa-user-circle"></i>LOGIN</a></button>
-                        <button class="log-shop"><a href="/carrito.html"><i class="fas fa-shopping-cart"></i>CARRITO</a></button>
-                    </section>
-                    
+                        </button>
+                    </form>
                 </section>
 
-                                
-            </div>
+                <!-- <section class="elem__burger">
+                    <nav class="burger__menu">
+                        <i class="fas fa-bars"></i>
+                    </nav>
+                </section> -->
 
+            </section>
+            
             <!-- GUARDA DE COLORES -->
             <div class="guarda">             
             </div>
-            
-        </nav>       
 
     </header>
-
+    
     <main class="main-home">
         <!-- CARRUSEL PRINCIPAL -->
         <div class="carrusel-principal">
             <img class="carrusel-principal_imagenes" src="/img/destacado-alienware-streamsetup.jpg" alt="Carrusel imagen 1">
         </div>
-
+    
         <!-- BOTONES NAVEGACIÓN MAIN HOME -->
         <nav class="nav-home">
-
+    
             <section class="nav-home_buttons">
-
+    
                 <div class="buttons_categories-home">
                     <button class="buttons-round">
                         <a href="#"><i class="fas fa-laptop"></i></a>
@@ -134,12 +126,12 @@
                 </div>
             
             </section>
-
+    
         </nav>
-
+    
         <section class="prod-destacados">
             <h2 class="prod-destacados_titulos-home">Destacados</h2>
-
+    
             <nav class="prod-destacados_carrusel-prod">
                 <article class="cont-dest">
                     <article class="cont-dest_img">
@@ -152,7 +144,7 @@
                         <h4 class="precio_total">$580.000</h4>
                     </article>
                 </article>
-
+    
                 <article class="cont-dest">
                     <article class="cont-dest_img">
                         <img src="/img/placa-video-radeon-rx_41411_1.jpeg" class="img_productos-dest" alt="Acer Nitro i5">
@@ -164,7 +156,7 @@
                         <h4 class="precio_total">$289.900</h4>
                     </article>
                 </article>
-
+    
                 <article class="cont-dest">
                     <article class="cont-dest_img">
                         <img src="/img/kolink-inspire-k20-001.jpg" class="img_productos-dest" alt="Acer Nitro i5">
@@ -176,7 +168,7 @@
                         <h4 class="precio_total">$6.700</h4>
                     </article>
                 </article>
-
+    
                 <article class="cont-dest">
                     <article class="cont-dest_img">
                         <img src="/img/steelseries-rival650-001.jpg" class="img_productos-dest" alt="Acer Nitro i5">
@@ -188,7 +180,7 @@
                         <h4 class="precio_total">$37.570</h4>
                     </article>
                 </article>
-
+    
                 <article class="cont-dest">
                     <article class="cont-dest_img">
                         <img src="/img/razer-blackwidow-mini-v3-001.jpg" class="img_productos-dest" alt="Acer Nitro i5">
@@ -202,13 +194,13 @@
                 </article>
             </nav>
         </section>
-
-
+    
+    
     </main>
-
+    
     <footer>
         <nav class="nav-footer">
-
+    
            <div class="contenedor-footer">
                
                 <!-- LOGO FOOTER -->
@@ -217,8 +209,8 @@
                         <img class = "logo-footer" src="img/dft-logo.png" alt="Logo del fuego techno">
                     </a>
                 </div>
-
-
+    
+    
                 <!-- SUBTÍTULOS Y CONTENIDO FOOTER -->
                 
                 <section class= "cont-elem-footer">
@@ -252,14 +244,14 @@
                     </article>
                     
                 </section>
-
+    
                 <section class="columna-footer">
-
+    
                     <!-- REDES SOCIALES -->
                     <article class="links-redes">
                         <h3 class="h3-footer">Redes Sociales</h3>
                         <section class="links-redes_buttons-rs">
-
+    
                             <div class="buttons-rs_categories">
                                 <button class="categories-redes-ig">
                                     <a href="#"><i class="	fab fa-instagram"></i></a>
@@ -280,7 +272,7 @@
                                     <a href="#"><i class="fab fa-twitter"></i></a>
                                 </button>
                             </div>
-
+    
                         </section>
                     </article>
                     
@@ -294,14 +286,15 @@
                             </button>
                         </form>
                     </article>
-
+    
                 </section>
-
+    
            </div>
             
         </nav>
-
-    </footer>
     
+    </footer>
+
+            
 </body>
 </html>
