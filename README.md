@@ -12,7 +12,7 @@ Bienvenidos al proyecto **Incendiado**, el mismo forma parte de la curricula del
 
 #### **Qué es Del Fuego Tecno?**
 
-![Logo del fuego tecno] <img src="G8_Incendio_DelFuegoTecno\public\imgREADME\dft-logo.png" alt="Logo DFT"/>()
+![Logo del fuego tecno] <img class="logo__img" src="img/dft-logo.png" alt="Logo del fuego techno">
 
 **Del Fuego Tecno** es una empresa tecnologica cuyo objetivo es acercar al cliente la posibilidad de comprar software o hardware desde la comodidad de su casa. Nuestro objetivo es que el cliente no deba buscar en ningun otro lado lo que necesita para mejorar su conectividad con el mundo digital. 
 ¿Quiere mejorar su setup?, ¿quiere regalarle una consola de juegos a sus hijos o por qué no comprarla para usted mismo?, ¿quiere cambiar su smartphone o conseguir accesorios para el mismo?. Todas las respuestas a sus necesidades puede encontrarlas en nuestro sitio, con un listado variado de productos que satisfacen sus necesidades tecnologicas.
