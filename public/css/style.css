@@ -621,6 +621,7 @@ h3.descripcion__nombre-prod{
 /* -------- MAIN CARRITO -------- */
 
 main.carrito{
+    background-image: linear-gradient(to bottom, #000, #666);
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -644,6 +645,7 @@ main.carrito{
 
 /* ---------------- REGISTRO -------------*/
 .main-registro{
+    background-image: linear-gradient(to bottom, #000, #666);
     color: white;
 }
 .form-registro{
@@ -651,13 +653,14 @@ main.carrito{
     text-align: center;
     width: 100%;
     margin: auto;  
-    background-color: #000; 
 }
 
 /*------------ LOGIN--------------------*/
 
+
+
 .login{
-    background-color: #000;
+    background-image: linear-gradient(to bottom, #000, #666);
     color: white;
     margin:auto;
     border: solid 30px black;

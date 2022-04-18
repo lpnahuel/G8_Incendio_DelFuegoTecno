@@ -21,63 +21,55 @@
 
     <header>
                 
-        <nav class="header-nav">
-            
-            <div class="contenedor-header">
+        <section class="contenedor-header">                   
                 
-                <!-- LOGO -->
-                <section class="header-logo">
-                    <a href="/">
-                        <img class = "logo-header" src="img/dft-logo.png" alt="Logo del fuego techno">
-                    </a>
-                </section>
+            <!-- LOGO -->
+            <a class="header__logo" href="/">
+                <img class="logo__img" src="img/dft-logo.png" alt="Logo del fuego techno">
+            </a>
+               
                 
-                <!-- BOTONES PRINCIPALES -->
-                <section class="main-buttons">
-                    <button type="button" class="header-buttons">
-                        <a href="#">Productos</a>
-                    </button>
-                    <button type="button" class="header-buttons">
-                        <a href="#">Ofertas</a>
-                    </button>
-                    <button type="button" class="header-buttons">
-                        <a href="#">Nosotros</a>
-                    </button>
-                    <button type="button" class="header-buttons">
-                        <a href="#">Contacto</a>
-                    </button>
-                </section>
-                
-                <!-- SECUNDARIOS Y BÚSQUEDA -->
-                
-                <section class="cont-elem-header">
+            <!-- BOTONES PRINCIPALES -->
+            <nav class="header__menu">    
+                <ul class="menu__lista">
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Ofertas</a></li>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        
+            <!-- SECCIÓN SECUNDARIOS Y BÚSQUEDA -->
+            <section class="header__elem">
                     
-                    <!-- BARRA DE BÚSQUEDA -->
-                    <section class="area-bar">
-                        <form>
-                            <input placeholder="Buscar productos..." type="text" class="search">
-                            <button type="button" class="mag-glass">
+                    
+                <!-- BOTONES LOGIN Y CARRITO -->
+                <section class="elem__sec-buttons">
+                    <button type="button" class="log-shop"><a href="/login"><i class="far fa-user-circle"></i>LOGIN</a></button>
+                    <button type="button" class="log-shop"><a href="/carrito"><i class="fas fa-shopping-cart"></i>CARRITO</a></button>
+                </section>
+                    
+                <!-- BARRA DE BÚSQUEDA -->
+                <section class="elem__area-bar">
+                    <form action="" method="">
+                        <input type="text" class="area-bar__search" placeholder="Buscar productos..." >
+                        <button class="mag-glass" type="submit">
                                 <i class="fas fa-search"></i>
-                            </button>
-                        </form>
-                    </section>
-                    
-                    <!-- BOTONES LOGIN Y CARRITO -->
-                    <section class="sec-buttons">
-                        <button type="button" class="log-shop"><a href="/login.html"><i class="far fa-user-circle"></i>LOGIN</a></button>
-                        <button type="button" class="log-shop"><a href="/carrito.html"><i class="fas fa-shopping-cart"></i>CARRITO</a></button>
-                    </section>
-                    
+                        </button>
+                    </form>
                 </section>
 
-                                
-            </div>
+                <!-- <section class="elem__burger">
+                    <nav class="burger__menu">
+                        <i class="fas fa-bars"></i>
+                    </nav>
+                </section> -->
 
+            </section>
+            
             <!-- GUARDA DE COLORES -->
             <div class="guarda">             
             </div>
-            
-        </nav>       
 
     </header>
         
@@ -111,91 +103,85 @@
         </form>
     </main>
 
+    
     <footer>
-        <nav class="nav-footer">
-
-           <div class="contenedor-footer">
+         
+        <section class="contenedor-footer">
                
-                <!-- LOGO FOOTER -->
-                <div class="footer-logo">
-                    <a href="/">
-                        <img class = "logo-footer" src="img/dft-logo.png" alt="Logo del fuego techno">
-                    </a>
-                </div>
-
-
-                <!-- SUBTÍTULOS Y CONTENIDO FOOTER -->
+            <!-- LOGO FOOTER -->
+            
+            <a class="footer__logo" href="/">
+                <img class = "logo__ft-img" src="img/dft-logo.png" alt="Logo del fuego techno">
+            </a>
+            
+    
+    
+            <!-- SUBTÍTULOS Y CONTENIDO FOOTER -->
                 
-                <section class= "cont-elem-footer">
+            <section class="footer_elem">
                     
-                    <!-- CATEGORIAS -->
-                    <article class="columnas">
-                        <h3 class="h3-footer">Categorías</h3>
-                        <ul>
-                            <li><a href="#">Accesorios</a></li>
-                            <li><a href="#">Componentes</a></li>
-                            <li><a href="#">Contacto</a></li>
-                            <li><a href="#">FaQ</a></li>
-                            <li><a href="#">Nosotros</a></li>
-                            <li><a href="#">Notebooks</a></li>
-                            <li><a href="#">Ofertas</a></li>
-                            <li><a href="#">PC Armadas</a></li>
-                            <li><a href="#">Periféricos</a></li>
-                            <li><a href="#">Sillas Gamer</a></li>
-                        </ul>
-                    </article>
+                <!-- CATEGORIAS -->
+                <nav class="elem__links">
+                    <h3 class="h3-footer">Categorías</h3>
+                    <ul>
+                        <li><a href="#">Accesorios</a></li>
+                        <li><a href="#">Componentes</a></li>
+                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#">FaQ</a></li>
+                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="#">Notebooks</a></li>
+                        <li><a href="#">Ofertas</a></li>
+                        <li><a href="#">PC Armadas</a></li>
+                        <li><a href="#">Periféricos</a></li>
+                        <li><a href="#">Sillas Gamer</a></li>
+                    </ul>
+                </nav>
                     
                     <!-- CONTACTO -->
-                    <article class="columnas">
+                    <nav class="elem__links">
                         <h3 class="h3-footer">Contacto</h3>
                         <ul>
-                            <li class="contacto">Av. Saraza 21845 - CABA</li>
-                            <li class="contacto">Horario de atención de 10hs a 20hs</li>
-                            <li class="contacto">Teléfono: 4455-6677</li>
-                            <li class="contacto">WhatsApp: +54 9 1122334455</li>
+                            <li>Av. Saraza 21845 - CABA</li>
+                            <li>Horario de atención de 10hs a 20hs</li>
+                            <li>Teléfono: 4455-6677</li>
+                            <li>WhatsApp: +54 9 1122334455</li>
                         </ul>
-                    </article>
+                    </nav>
                     
                 </section>
+    
+            <section class="elem__links">
 
-                <section class="columna-footer">
+                <!-- REDES SOCIALES -->
+                <section class="links__redes">
+                    <h3 class="h3-footer">Redes Sociales</h3>
 
-                    <!-- REDES SOCIALES -->
-                    <article class="links-redes">
-                        <h3 class="h3-footer">Redes Sociales</h3>
-                        <section class="net-buttons">
-                            <button type="button" class="btn-redes">
-                                <a href="#"><img src="/img/instagram.png" alt="Instagram" class="redes-sociales"> </a>
-                            </button>
-                            <button type="button" class="btn-redes">
-                                <a href="#"><img src="/img/facebook.png" alt="Fabebook" class="redes-sociales"> </a>
-                            </button>
-                            <button type="button" class="btn-redes">
-                                <a href="#"><img src="/img/youtube.png" alt="Youtube" class="redes-sociales"> </a>
-                            </button>
-                            <button type="button" class="btn-redes">
-                                <a href="#"><img src="/img/twitter.png" alt="Twitter" class="redes-sociales"> </a>
-                            </button>
-                        </section>
-                    </article>
-                    
-                    <!-- NEWSLETTER -->
-                    <article class="newsletter">
-                        <h3 class="h3-footer">Newsletter</h3>
-                        <form class="barra-newsletter">
-                            <input placeholder="ejemplo@mail.com" type="text" class="nl-mail">
-                            <button type="button" class="send">
-                                Enviar
-                            </button>
-                        </form>
-                    </article>
-
+                    <nav class="redes__buttons">
+                        <ul class="buttons__rs">
+                            <li class="rs__ig"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li class="rs__fb"><a href="#"><i class="fab fa-facebook"></i></a></li>
+                            <li class="rs__yt"><a href="#"><i class="fab fa-youtube"></i></a></li>
+                            <li class="rs__tw"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        </ul>    
+                    </nav>
                 </section>
+                    
+                <!-- NEWSLETTER -->
+                <article class="links__newsletter">
 
-           </div>
+                    <h3 class="h3-footer">Newsletter</h3>
+                    <form class="newsletter__bar">
+                        <input class="newsletter__mail" type="email" placeholder="ejemplo@mail.com" >
+                        <button class="bar__send" type="submit">
+                            Enviar
+                        </button>
+                    </form>
+                </article>
+    
+            </section>
+    
+        </section>
             
-        </nav>
-
     </footer>
     
 </body>
