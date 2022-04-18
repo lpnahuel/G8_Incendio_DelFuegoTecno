@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/style.css">  <!-- hoja de estilos -->
 
 
@@ -13,13 +13,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"> <!-- fonts -->
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"rel="stylesheet"/> <!-- iconos -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!-- iconos -->
 
-    <title>DelFuegoTechno - Inicio</title>
+    <title>DelFuegoTechno - Detalle de producto</title>
 
 </head>
 <body>
     
     <header>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!-- iconos -->
                 
         <section class="contenedor-header">                   
                 
@@ -73,9 +75,86 @@
 
     </header>
 
-    <main>
-        <!-- <img class="carrusel-main" src="/img/destacado-alienware-streamsetup.jpg" alt="Carrusel imagen 1"> -->
+    <main class="detalleDeProducto">
 
+         <!-- Contenedor de imagen del producto -->
+
+         <div class="cont-det-producto">
+
+            <div class="cont-img-prod">
+                <img class="img-prod__img-ppal" src="\img\steelseries-rival650-001.jpg" alt="Imagen mouse">
+            </div>
+
+        
+        
+       
+        <li>
+        <!-- contenedor de Descripcion del producto -->
+        <article class="rightArticle">
+
+            <h2 class="descripcion__nombre-prod">Mouse SteelSeries Rival 650 Wireless</h2>
+
+            <hr class="solid">
+
+            <div class="rightArticle-div-total">
+
+                <h4 class="descripcion__precio">$25000</h4>
+
+            </div>
+            <div class="rightArticle-div-total">
+                <button class="cont-dest__fav" type="submit"><i class="fas fa-heart"></i></button>  
+                <button class="cont-dest__carrito" type="submit"><i class="fa-shopping-cart"></i></button>
+                <button class="cont-dest__fav" type="submit"><i class="fad fa-share"></i></button> 
+            <div class="rightArticle-div-total">
+                <button class="rightArticle-button">Comprar</button>
+            </div>
+
+            </div>
+            <div class="rightArticle-div">
+
+                <h3>Descripción</h3>
+
+                <p>Mouse SteelSeries Rival 650 Wireless Rendimiento sin retrasos de Quantum Wireless. 
+                    Duración de la batería de más de 24 horas con carga rápida. Sensor óptico exclusivo TrueMove3 + 12.000 CPI, 
+                    350 IPS. La distancia de despegue más baja y precisa del mundo. 256 configuraciones de ajuste de peso del centro de gravedad. 
+                    Interruptores mecánicos de disparador dividido de 60 millones de clics. Agarres laterales de silicona para mayor agarre y 
+                    durabilidad. Iluminación RGB de 8 zonas con notificaciones Discord. Guarde la configuración del sensor, las macros y los
+                    efectos de iluminación a bordo. Personalización total con SteelSeries Engine</p>
+                    
+            </div>
+
+            <div class="rightArticle-div">
+
+                <h3>Características técnicas</h3>
+                <p>Sensor óptico exclusivo TrueMove3 + 12.000 CPI, 350 IPS
+                    Características	Interruptores mecánicos de disparador dividido de 60 millones de clics
+                    Agarres laterales de silicona para mayor agarre y durabilidad. 
+                    Iluminación RGB de 8 zonas con notificaciones Discord 
+                    Personalización total con SteelSeries. Duración de la batería de más de 24 horas con carga rápida</p>
+        
+
+
+            </div>
+            </div>
+
+            
+
+          <!-- Contenedor de imagenes abajo producto -->  
+          <div class="leftArticle-div-total">
+            <img class="carrusel-main" src="\img\steelseries-rival650-002.jpg" alt="Carrusel imagen 2">
+            <img class="carrusel-main" src="\img\steelseries-rival650-003.jpg" alt="Carrusel imagen 3">
+            <img class="carrusel-main" src="\img\steelseries-rival650-004.jpg" alt="Carrusel imagen 4">
+            </div>
+          
+            <hr class="solid">
+
+          
+            <!-- ACÁ VA EL CARRUSEL CON COSO DE INTERESAR -->
+           
+
+
+        </article>
+       </li>
     </main>
 
     <footer>
@@ -160,3 +239,29 @@
     
 </body>
 </html>
+
+
+.block,
+li {
+  padding: .5em;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+<ul>
+    <li>cuadro der</li>
+    <li>cuadro izq</li>
+  </ul>
+
+  .detalleDeProducto{
+    background-image: linear-gradient(to bottom, #000, #666);
+    color: white;
+    margin:auto;
+    border: solid 30px black;
+    text-align: center;
+    justify-content: space-around;
+    
+}

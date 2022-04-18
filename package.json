@@ -4,7 +4,8 @@
   "description": "Bienvenidos al proyecto **Incendiado**, el mismo forma parte de la curricula del curso de programacion de **Node full stack de Digital House**. La idea del proyecto es utilizar las herramientas y las habilidades aprendidas durante el curso para la realizacion de un sitio web de E-commerce. El objetivo de este proyecto es crear un sitio web intuitivo, agradable y con un alto nivel de facilidad de navegacion para que el potencial cliente pueda buscar y encontrar el producto que necesita.",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "dev": "nodemon app.js"
   },
   "repository": {
     "type": "git",
