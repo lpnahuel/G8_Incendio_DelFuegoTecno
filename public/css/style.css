@@ -365,8 +365,42 @@ header{
 
 /* -------- GUARDA DE COLORES -------- */
 
+@keyframes guarda-move{
+    0% {
+
+        background-image: linear-gradient(to right, var(--aqua), var(--cyan), var(--celeste-logo), var(--violet), var(--magenta), var(--yellow));
+    }
+
+    20% {
+
+        background-image: linear-gradient(to right, var(--yellow), var(--aqua), var(--cyan), var(--celeste-logo), var(--violet), var(--magenta));
+    }
+    
+    40% {
+       
+        background-image: linear-gradient(to right, var(--magenta), var(--yellow), var(--aqua), var(--cyan), var(--celeste-logo), var(--violet));
+    }
+
+    60% {
+
+        background-image: linear-gradient(to right, var(--violet), var(--magenta), var(--yellow), var(--aqua), var(--cyan), var(--celeste-logo));
+    }
+
+    80% {
+
+        background-image: linear-gradient(to right, var(--celeste-logo), var(--violet), var(--magenta), var(--yellow), var(--aqua), var(--cyan));
+    }
+
+    100% {
+
+        background-image: linear-gradient(to right, var(--cyan), var(--celeste-logo), var(--violet), var(--magenta), var(--yellow), var(--aqua));
+    }
+    
+}
+
 div.guarda{
-    background-image: linear-gradient(to right, #3cb9fc, #b537f2, #ee2b79, #f4d30f, #08fbd2, #07f7fe);
+    animation: guarda-move 750ms linear infinite;
+    animation-iteration-count: alternate;
     height: 8px;
     position: absolute;
     top: 104px;
@@ -375,6 +409,7 @@ div.guarda{
 
 
 /* -------- MAIN HOME -------- */
+
 
 .main-home{
     background-image: linear-gradient(to bottom, #000, #666);
@@ -385,42 +420,40 @@ div.guarda{
 
 div.carrusel-principal{
     display: flex;
+    margin: 0 auto 0 auto;
+    width: 75%;
 }
 
-.carrusel-principal_imagenes{
-    display: flex;
-    flex-wrap: wrap;
-    margin: auto;
-    width: 75%;
+.carrusel-principal__imagenes{
+
+    width: 100%;
 }
 
 
 
 /* -------- Botones redondos -------- */
 
-.nav-home_buttons {
+.main-home__nav-cont {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 10% auto auto auto;
-    justify-content: center;
+    margin: 64px auto 0 auto;
+    justify-content: space-around;
     width: 75%;
 
 }
 
-div.buttons_categories-home{
+div.nav-cont__buttons{
     align-items: center;
     display: flex;
     flex-direction: column;
     margin-left: 3%;
 }
 
-.buttons-link {
-    align-items: center;
+.buttons__links {
     background: none;
     border: none;
     cursor: default;
-    display: flex;
     font-family: "Roboto Condensed";
     font-size: 18px;
     margin-top: 10%;
@@ -428,107 +461,160 @@ div.buttons_categories-home{
     
 }
 
-.buttons-link > a{
+.buttons__links > a{
     color:#989898;
     text-decoration: none;
 }
 
-.buttons-round{
-    align-items: center;
+.buttons__round{
     background: #01A9B4;
     border: none;
     border-radius: 50%;
     cursor: default;
-    display: flex;
-    font-size: 34px;
-    height: 65px;
-    justify-content: space-around;
-    width: 65px;
+    font-size: 32px;
+    padding: 15px;
 
 }
 
-.buttons-round > a > i{
+.buttons__round > a > i{
     color:#ffffff;
     text-decoration: none;
+    max-height: 30px;
 }
 
 
 /*--------- Carrusel destacados ---------- */
 
-section.prod-destacados{
+section.main-home__cont-prod{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin: 10% auto auto auto;
+    margin: 64px auto 64px auto;
     justify-content: flex-start;
     width: 75%;
 
 }
 
 
-h2.prod-destacados_titulos-home{
+h2.cont-prod__categorias{
     font-size: 24px;
     font-weight: 500;
-    color: #E1E1E1;
+    color: var(--gris-claro);
 }
 
-nav.prod-destacados_carrusel-prod{
+.cont-prod__articulos{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-article.cont-dest{
+.cont-dest{
+    align-content: flex-start;
     background-color: #fff;
-    box-shadow : 4px 4px 6px rgb(0 0 0);
+    box-shadow: 4px 4px 6px rgb(0 0 0);
     display: flex;
     flex-direction: column;
-    width: 256px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    width: 18%;
+}
+
+.cont-dest > a{
+    color: var(--negro);
+    text-decoration: none;
 }
 
 .cont-dest_img{
-    display: flex;
-    justify-content: space-around;
+    height: 248px;
+    width: 248px;
+}
+
+.img__producto{
+    width: 240px;
     height: 240px;
+    object-fit: contain;
+    padding: 5px;
 }
 
-.img_productos-dest{
-    display: flex;
-    justify-content: center;
-    max-height: 224px;
-    max-width: 90%;
-    padding: 5%;
+.cont-dest__descripcion{
+    height: 124px;
+    padding: 5px;
 }
 
-.cont-dest_descripcion{
-    display: flex;
-    justify-content: flex-start;
-    width: 90%;
-    height: 80px;
-}
-
-h3.descripcion_nombre-prod{
+h3.descripcion__nombre-prod{
     font-size: 16px;
     font-weight: 400;
-    display: flex;
-    justify-content: flex-start;
-    padding-left: 5%;
-}
-.cont-dest_precio{
-    display: flex;
-    justify-content: flex-start;
-    width: 90%;
+    height: 40%;
+    padding: 5px;
 }
 
-h4.precio_total{
+
+.descripcion__precio{
     font-size: 16px;
     font-weight: 300;
-    display: flex;
-    justify-content: flex-start;
-    margin-top: 0%;
-    padding-left: 5%;
+    margin: 0;
+    padding: 5px;
 }
 
+.cont-dest__carrito{
+    background-color: var(--blanco);
+    border: none;
+    bottom: 2%;
+    color: var(--celeste-logo);
+    position: absolute;
+    right: 2%;
+}
+
+.cont-dest__fav{
+    background-color: var(--blanco);
+    border: none;
+    color: var(--gris-osc);
+    font-size: 18px;
+    position: absolute;
+    right: 2%;
+    top: 2%;
+
+}
+
+/* -------- Banner marcas ---------- */
+
+.main-home__banner-marcas{
+    display: flex;
+    flex-direction: column;
+}
+
+.banner-marcas__titulo{
+    align-self: center;
+    font-family: 'Roboto Condensed';
+    font-size: 20px;
+    color: var(--gris-medio);
+}
+
+.banner-marcas__logos{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--gris-medio);
+    height: 136px;
+    justify-content: space-around;
+}
+
+.logos__link{
+    background-color: var(--blanco);
+    height: 96px;
+    width: 160px;
+}
+
+.link__img{
+    height: 80px;
+    object-fit: contain;
+    padding: 5px;
+    width: 144px;
+    position: relative;
+    top: 5px;
+    left: 4px;
+}
 
 
 
