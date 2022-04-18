@@ -678,6 +678,51 @@ main.detalleDeProducto{
     width: 90%;
 }
 
+.cont_des_prod{
+    display: flex;
+    flex-direction: column;
+    margin-left: 800 px;
+    margin-top: 200 px;
+    width: 56%;
+}
+.desc_prod{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 800 px;
+}
+
+.Iconos_prod{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 800 px;
+    width: 20%;
+}
+
+.Comprar_prod{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 800 px;
+    width: 20%;
+}
+
+.desc_prod_tex{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 800 px;
+    width: 56%;
+}
+.carac_tec{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 800 px;
+    width: 56%;
+}
+
 /* Info producto */
 
 
