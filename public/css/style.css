@@ -664,6 +664,7 @@ div.home-dest-central{
 main.detalleDeProducto{
     background-image: linear-gradient(to bottom, #666, #ababab);
     padding-top: 10%;
+    margin-bottom: 0%;
     width: 100%;
 }
 
