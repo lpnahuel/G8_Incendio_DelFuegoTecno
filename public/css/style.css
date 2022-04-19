@@ -508,8 +508,9 @@ section.main-home__cont-prod{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin: 64px auto 64px auto;
+    margin: 64px auto auto auto;
     justify-content: flex-start;
+    padding-bottom: 40px;
     width: 75%;
 
 }
@@ -524,6 +525,7 @@ h2.cont-prod__categorias{
 .cont-prod__articulos{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
 }
@@ -583,10 +585,16 @@ h3.descripcion__nombre-prod{
     background-color: var(--blanco);
     border: none;
     bottom: 2%;
-    color: var(--celeste-logo);
+    cursor: pointer;
     position: absolute;
-    right: 2%;
+    right: 3%;
+    text-decoration: none;
 }
+.cont-dest__carrito > i{
+    color: var(--celeste-logo);
+}
+
+
 
 .cont-dest__fav{
     background-color: var(--blanco);
@@ -632,19 +640,20 @@ div.home-dest-central{
     background-color: var(--gris-medio);
     height: 136px;
     justify-content: space-around;
+    width: 100%;
 }
 
 .logos__link{
     background-color: var(--blanco);
-    height: 96px;
-    width: 160px;
+    height: 65%;
+    width: 8%;
 }
 
 .link__img{
-    height: 80px;
+    height: 90%;
     object-fit: contain;
     padding: 5px;
-    width: 144px;
+    width: 90%;
     position: relative;
     top: 5px;
     left: 4px;
