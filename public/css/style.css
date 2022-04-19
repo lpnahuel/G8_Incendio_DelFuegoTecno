@@ -810,7 +810,6 @@ main.carrito{
     display: flex;
     flex-direction: column;
     margin-top: 10px;
-    margin-bottom: 10px;
     padding-top: 50px;
 
 }
@@ -859,6 +858,11 @@ main.carrito{
     flex-direction: row;
     width: 100%;
     margin-bottom: 20px;
+    padding: 20px;
+}
+
+.caja-producto:hover{
+    box-shadow: 4px 4px 6px var(--negro);
 }
 
 .caja-producto-izquierda{
@@ -1025,12 +1029,17 @@ main.carrito{
     flex-direction: row;
 }
 
+.bottom-section-top{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
 .bottom-section-bottom > article{
     margin-right: 30px;
 }
 
 .bottom-section-title{
-    color: #e1e1e1;
+    color: #e1e1e1;    
 }
 /* ---------------- REGISTRO -------------*/
 .main-registro{
