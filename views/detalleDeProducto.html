@@ -114,9 +114,9 @@
 
                         <!-- Barra icnonos -->
                         <div class="iconos_prod">
-                             <button type="submit"><i class="fas fa-heart"></i></button>  
-                             <button type="submit"><i class="fa-shopping-cart"></i></button>
-                             <button type="submit"><i class="fad fa-share"></i></button> 
+                            <button type="button"><i class="far fa-heart"></i></button>  
+                            <button type="button"><i class="fa" src="\img\share-button.png.png"></i></button> 
+                            <button type="button" class="log-shop"><a href="/carrito"><i class="fas fa-shopping-cart"></i></a></button>
                         </div>
                         
                         <!-- Boton compra -->
@@ -146,102 +146,154 @@
                     </nav>
                     </section>
                 </div>
-                    
+            </div>--> 
 
         
                   
-                    <!-- ACÁ VA EL CARRUSEL CON COSO DE INTERESAR -->
-                    <!--  <div><h4>Te puede interesar:</h4>
-        
-        
-            
-                   </div>-->
-        
-       
-  
-    </main>
+                   <!-- CARRUSEL DESTACADOS 2 -->
 
-    <footer>
-         
-        <section class="contenedor-footer">
-               
-            <!-- LOGO FOOTER -->
-            
-            <a class="footer__logo" href="/">
-                <img class = "logo__ft-img" src="img/dft-logo.png" alt="Logo del fuego techno">
-            </a>
-            
-    
-    
-            <!-- SUBTÍTULOS Y CONTENIDO FOOTER -->
-                
-            <section class="footer_elem">
-                    
-                <!-- CATEGORIAS -->
-                <nav class="elem__links">
-                    <h3 class="h3-footer">Categorías</h3>
-                    <ul>
-                        <li><a href="#">Accesorios</a></li>
-                        <li><a href="#">Componentes</a></li>
-                        <li><a href="#">Contacto</a></li>
-                        <li><a href="#">FaQ</a></li>
-                        <li><a href="#">Nosotros</a></li>
-                        <li><a href="#">Notebooks</a></li>
-                        <li><a href="#">Ofertas</a></li>
-                        <li><a href="#">PC Armadas</a></li>
-                        <li><a href="#">Periféricos</a></li>
-                        <li><a href="#">Sillas Gamer</a></li>
-                    </ul>
-                </nav>
-                    
-                    <!-- CONTACTO -->
-                    <nav class="elem__links">
-                        <h3 class="h3-footer">Contacto</h3>
-                        <ul>
-                            <li>Av. Saraza 21845 - CABA</li>
-                            <li>Horario de atención de 10hs a 20hs</li>
-                            <li>Teléfono: 4455-6677</li>
-                            <li>WhatsApp: +54 9 1122334455</li>
-                        </ul>
-                    </nav>
-                    
-                </section>
-    
-            <section class="elem__links">
+        <section class="main-home__cont-prod">
 
-                <!-- REDES SOCIALES -->
-                <section class="links__redes">
-                    <h3 class="h3-footer">Redes Sociales</h3>
+            <h2 class="cont-prod__categorias">Te puede interesar:</h2>
 
-                    <nav class="redes__buttons">
-                        <ul class="buttons__rs">
-                            <li class="rs__ig"><a href="#"><i class="fab fa-instagram"></i></a></li>
-                            <li class="rs__fb"><a href="#"><i class="fab fa-facebook"></i></a></li>
-                            <li class="rs__yt"><a href="#"><i class="fab fa-youtube"></i></a></li>
-                            <li class="rs__tw"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                        </ul>    
-                    </nav>
-                </section>
-                    
-                <!-- NEWSLETTER -->
-                <article class="links__newsletter">
+            <nav class="cont-prod__articulos">
 
-                    <h3 class="h3-footer">Newsletter</h3>
-                    <form class="newsletter__bar">
-                        <input class="newsletter__mail" type="email" placeholder="ejemplo@mail.com" >
-                        <button class="bar__send" type="submit">
-                            Enviar
-                        </button>
-                    </form>
+                <article class="cont-dest">
+                    <a href="#">
+                        <article class="cont-dest__img">
+                            <img src="/img/asus-zephyrus-duo_15-GX550LXS-001.jpg" class="img__producto" alt="Asus Rog Zephyrus Duo">
+                        </article>
+                        <article class="cont-dest__descripcion">
+                            <h3 class="descripcion__nombre-prod">Asus Rog Zephyrus Duo Ryzen 9 16Gb 1Tb Rtx 3060</h3>
+                            <h4 class="descripcion__precio">$580.000</h4>
+                        </article>
+                        <button class="cont-dest__carrito" type="submit"><i class="material-icons">add_shopping_cart</i></button>
+                        <button class="cont-dest__fav" type="submit"><i class="fas fa-heart"></i></button>                    
+                    </a>
                 </article>
-    
-            </section>
-    
-        </section>
+                
+                <article class="cont-dest">
+                    <a href="#">
+                        <article class="cont-dest__img">
+                            <img src="/img/hp-omen-1020-001.jpg" class="img__producto" alt="HP omen 1020">
+                        </article>
+                        <article class="cont-dest__descripcion">
+                            <h3 class="descripcion__nombre-prod">Notebook Gamer HP OMEN 15-DC1020NR/h3>
+                            <h4 class="descripcion__precio">$335.000</h4>
+                        </article>
+                        <button class="cont-dest__carrito" type="submit"><i class="material-icons">add_shopping_cart</i></button>
+                        <button class="cont-dest__fav" type="submit"><i class="far fa-heart"></i></button>                  
+                    </a>
+                </article>
+
+                <article class="cont-dest">
+                    <a href="#">
+                        <article class="cont-dest__img">
+                            <img src="/img/acer-nitro-i5-001.jpg" class="img__producto" alt="Acer Nitro i5">
+                        </article>
+                        <article class="cont-dest__descripcion">
+                            <h3 class="descripcion__nombre-prod">Notebook Gamer Acer Nitro I5 10Ma 8Gb Ssd256 Gtx1650</h3>
+                            <h4 class="descripcion__precio">$144.000</h4>
+                        </article>
+                        <button class="cont-dest__carrito" type="submit"><i class="material-icons">add_shopping_cart</i></button>
+                        <button class="cont-dest__fav" type="submit"><i class="far fa-heart"></i></button>                     
+                    </a>                
+                </article>
+                
+                <article class="cont-dest">
+                    <a href="#">
+                        <article class="cont-dest__img">
+                            <img src="/img/alienware17r5-001.jpg" class="img__producto" alt="Alienware 17 R5 17.3' ">
+                        </article>
+                        <article class="cont-dest__descripcion">
+                            <h3 class="descripcion__nombre-prod">Notebook Gamer Dell Alienware 17 R5 17.3'</h3>
+                            <h4 class="descripcion__precio">$508.890</h4>
+                        </article>
+                        <button class="cont-dest__carrito" type="submit"><i class="material-icons">add_shopping_cart</i></button>
+                        <button class="cont-dest__fav" type="submit"><i class="far fa-heart"></i></button>               
+                    </a>                
+                </article>
+            </main>
+
+                <footer>
+         
+                    <section class="contenedor-footer">
+                           
+                        <!-- LOGO FOOTER -->
+                        
+                        <a class="footer__logo" href="/">
+                            <img class = "logo__ft-img" src="img/dft-logo.png" alt="Logo del fuego techno">
+                        </a>
+                        
+                
+                
+                        <!-- SUBTÍTULOS Y CONTENIDO FOOTER -->
+                            
+                        <section class="footer_elem">
+                                
+                            <!-- CATEGORIAS -->
+                            <nav class="elem__links">
+                                <h3 class="h3-footer">Categorías</h3>
+                                <ul>
+                                    <li><a href="#">Accesorios</a></li>
+                                    <li><a href="#">Componentes</a></li>
+                                    <li><a href="#">Contacto</a></li>
+                                    <li><a href="#">FaQ</a></li>
+                                    <li><a href="#">Nosotros</a></li>
+                                    <li><a href="#">Notebooks</a></li>
+                                    <li><a href="#">Ofertas</a></li>
+                                    <li><a href="#">PC Armadas</a></li>
+                                    <li><a href="#">Periféricos</a></li>
+                                    <li><a href="#">Sillas Gamer</a></li>
+                                </ul>
+                            </nav>
+                                
+                                <!-- CONTACTO -->
+                                <nav class="elem__links">
+                                    <h3 class="h3-footer">Contacto</h3>
+                                    <ul>
+                                        <li>Av. Saraza 21845 - CABA</li>
+                                        <li>Horario de atención de 10hs a 20hs</li>
+                                        <li>Teléfono: 4455-6677</li>
+                                        <li>WhatsApp: +54 9 1122334455</li>
+                                    </ul>
+                                </nav>
+                                
+                            </section>
+                
+                        <section class="elem__links">
             
-    </footer>
-    
-</body>
-</html>
-
-
+                            <!-- REDES SOCIALES -->
+                            <section class="links__redes">
+                                <h3 class="h3-footer">Redes Sociales</h3>
+            
+                                <nav class="redes__buttons">
+                                    <ul class="buttons__rs">
+                                        <li class="rs__ig"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                        <li class="rs__fb"><a href="#"><i class="fab fa-facebook"></i></a></li>
+                                        <li class="rs__yt"><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                        <li class="rs__tw"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    </ul>    
+                                </nav>
+                            </section>
+                                
+                            <!-- NEWSLETTER -->
+                            <article class="links__newsletter">
+            
+                                <h3 class="h3-footer">Newsletter</h3>
+                                <form class="newsletter__bar">
+                                    <input class="newsletter__mail" type="email" placeholder="ejemplo@mail.com" >
+                                    <button class="bar__send" type="submit">
+                                        Enviar
+                                    </button>
+                                </form>
+                            </article>
+                
+                        </section>
+                
+                    </section>
+                        
+                </footer>
+            
+            </body>
+            </html>

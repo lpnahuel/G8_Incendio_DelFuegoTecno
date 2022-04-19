@@ -8,6 +8,7 @@ Bienvenidos al proyecto **Incendiado**, el mismo forma parte de la curricula del
 - Paula Yafar
 - Nicole Feldman
 - Pablo Nahuel Larrea
+![Foto Pablo](https://github.com/lpnahuel/G8_Incendio_DelFuegoTecno/blob/main/public/imgREADME/pablo.jpeg)
 - Salvador Laje
 
 #### **Qué es Del Fuego Tecno?**
