@@ -807,12 +807,8 @@ main.detalleDeProducto{
 
 main.carrito{
     background-image: linear-gradient(to bottom, var(--gris-osc), var(--gris-medio));
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
-    margin-bottom: 10px;
     padding-top: 50px;
-
+    width: 100%
 }
 
 .carrito-title{
