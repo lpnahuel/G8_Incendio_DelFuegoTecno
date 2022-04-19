@@ -742,7 +742,7 @@ main.detalleDeProducto{
 .titulo_prod{
     font-size: 25px;
     font-weight: 500;
-    color: var(--celeste-logo);
+    color: var(--turq);
     width: 100%;
    
 }
@@ -750,7 +750,7 @@ main.detalleDeProducto{
 .subtitulo_prod{
     font-size: 20px;
     font-weight: 500;
-    color: var(--celeste-logo);
+    color: var(--turq);
 }
 
 .desc_prod{
@@ -780,6 +780,8 @@ main.detalleDeProducto{
 }
 .iconos_prod{
     cursor: pointer;
+    background-color: white;
+    color: var(--turq);
     display: flex;
     flex-direction: row;
     height: 25px;
