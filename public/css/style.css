@@ -818,6 +818,7 @@ main.carrito{
 .carrito-title{
     color: #01A9B4;
     font-family: "Roboto";
+    font-size: 24px;
 }
 
 .hiddenSpan{
@@ -868,7 +869,7 @@ main.carrito{
 
 .caja-producto-izquierda{
     width: 30%;
-    border: solid #ababab;
+    border: solid 1px #ababab;
 }
 .img-producto{
     width: 100%;
