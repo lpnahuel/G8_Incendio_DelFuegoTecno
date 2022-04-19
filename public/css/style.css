@@ -700,7 +700,8 @@ main.detalleDeProducto{
     font-size: 25px;
     font-weight: 500;
     color: var(--celeste-logo);
-    width:100%;
+    width: 100%;
+   
 }
 
 .subtitulo_prod{
@@ -738,13 +739,17 @@ main.detalleDeProducto{
 .desc_prod_tex{
     display: flex;
     flex-direction: column;
+    margin-top: 0px;
     width: 100%;
+    
 }
 .carac_tec{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    margin-top: 0px;
     width: 100%;
+ 
 }
 
 /* Info producto */
