@@ -1028,6 +1028,7 @@ main.carrito{
 .bottom-section-bottom{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 }
 
 .bottom-section-top{
@@ -1035,9 +1036,9 @@ main.carrito{
     margin-bottom: 20px;
 }
 
-.bottom-section-bottom > article{
+/* .bottom-section-bottom > article{
     margin-right: 30px;
-}
+} */
 
 .bottom-section-title{
     color: #e1e1e1;    
