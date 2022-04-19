@@ -72,6 +72,10 @@ body{
     footer{
         display: none;
     }
+
+    .main-home__banner-marcas{
+        display: none;
+    }
 }
 
 @media (min-width:720px) and (max-width:959px){
@@ -88,7 +92,7 @@ body{
     
     .header__logo{
         position: relative;
- 
+        
     }
     
     .header__elem{
@@ -102,12 +106,12 @@ body{
     .mag-glass {
         right: 7%;
     }
-
+    
     /* .burger__menu > i{
         left: 1%;
         top: 4px;
     } */
-
+    
     .contenedor-footer{
         margin: 5px auto 5px auto;
         width: 100%;
@@ -116,6 +120,11 @@ body{
     .footer_elem{
         display: none;
     }
+    
+    .main-home__banner-marcas{
+        display: none;
+    }
+
     
 }
 
@@ -172,6 +181,10 @@ body{
         justify-content: space-around;
         width: 35%;
     }
+
+    .main-home__banner-marcas{
+        display: flex;
+    }
     
 }
 
@@ -216,6 +229,10 @@ body{
         justify-content: space-around;
         width: 35%;
     }
+
+    .main-home__banner-marcas{
+        display: flex;
+    }
 }
 
 
@@ -227,8 +244,9 @@ header{
     background-color: #000;
     height: 112px;
     margin: 0px;
-    /* position: fixed; */
+    position: fixed;
     width: 100%;
+    z-index: 10;
 
 }
 
@@ -367,42 +385,24 @@ header{
 
 /* -------- GUARDA DE COLORES -------- */
 
-@keyframes guarda-move{
+@keyframes moving-gradient{
+
     0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 
-        background-image: linear-gradient(to right, var(--aqua), var(--cyan), var(--celeste-logo), var(--violet), var(--magenta), var(--yellow));
-    }
-
-    20% {
-
-        background-image: linear-gradient(to right, var(--yellow), var(--aqua), var(--cyan), var(--celeste-logo), var(--violet), var(--magenta));
-    }
-    
-    40% {
-       
-        background-image: linear-gradient(to right, var(--magenta), var(--yellow), var(--aqua), var(--cyan), var(--celeste-logo), var(--violet));
-    }
-
-    60% {
-
-        background-image: linear-gradient(to right, var(--violet), var(--magenta), var(--yellow), var(--aqua), var(--cyan), var(--celeste-logo));
-    }
-
-    80% {
-
-        background-image: linear-gradient(to right, var(--celeste-logo), var(--violet), var(--magenta), var(--yellow), var(--aqua), var(--cyan));
-    }
-
-    100% {
-
-        background-image: linear-gradient(to right, var(--cyan), var(--celeste-logo), var(--violet), var(--magenta), var(--yellow), var(--aqua));
-    }
-    
 }
 
 div.guarda{
-    animation: guarda-move 1000ms linear infinite;
-    animation-iteration-count: alternate;
+    background: linear-gradient(to right, var(--celeste-logo), var(--violet), var(--magenta), var(--yellow), var(--aqua), var(--cyan));
+    background-size: 400% 400%;
+    animation: moving-gradient 5s linear infinite;
     height: 8px;
     position: absolute;
     top: 104px;
@@ -415,41 +415,57 @@ div.guarda{
 
 .main-home{
     background-image: linear-gradient(to bottom, #000, #666);
+    padding-top: 6%;
     width: 100%;
 }
 
-/* -------- Carrusel -------- */
+/* -------- Carrusel imagenes grandes -------- */
 
-div.carrusel-principal{
+div.ss-home-ppal{
     display: flex;
     margin: 0 auto 0 auto;
-    width: 75%;
-}
-
-.carrusel-principal__imagenes{
-
     width: 100%;
 }
 
+.ss-home-ppal__img{
 
+    width: 100%;
+}
 
 /* -------- Botones redondos -------- */
 
-.main-home__nav-cont {
+.main-home__sect-cont {
+    align-items: center;
+    background-color: var(--gris-claro);
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-    margin: 64px auto 0 auto;
-    justify-content: space-around;
-    width: 75%;
+    justify-content: space-evenly;
+    height: 300px;
+    margin-top: 3%;
+    width: 100%;
 
+}
+
+.sect-cont__titulo{
+    font-family: 'Roboto Condensed';
+    font-size: 24px;
+    color: var(--turq);
+    margin: 0;
+}
+
+.nav-cont{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 75%;
 }
 
 div.nav-cont__buttons{
     align-items: center;
     display: flex;
     flex-direction: column;
-    margin-left: 3%;
 }
 
 .buttons__links {
@@ -458,18 +474,17 @@ div.nav-cont__buttons{
     cursor: default;
     font-family: "Roboto Condensed";
     font-size: 18px;
-    margin-top: 10%;
+    padding-top: 15%;
     text-rendering: auto;
     
 }
 
 .buttons__links > a{
-    color:#989898;
+    color:var(--gris);
     text-decoration: none;
 }
 
 .buttons__round{
-    background: #01A9B4;
     border: none;
     border-radius: 50%;
     cursor: default;
@@ -479,13 +494,15 @@ div.nav-cont__buttons{
 }
 
 .buttons__round > a > i{
-    color:#ffffff;
+    color:var(--turq);
     text-decoration: none;
     max-height: 30px;
 }
 
 
 /*--------- Carrusel destacados ---------- */
+
+
 
 section.main-home__cont-prod{
     display: flex;
@@ -508,18 +525,19 @@ h2.cont-prod__categorias{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 100%;
 }
 
 .cont-dest{
-    align-content: flex-start;
     background-color: #fff;
-    box-shadow: 4px 4px 6px rgb(0 0 0);
+    box-shadow: 4px 4px 6px var(--negro);
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+    height: 380px;
     position: relative;
-    width: 18%;
+    width: 260px;
 }
 
 .cont-dest > a{
@@ -527,21 +545,23 @@ h2.cont-prod__categorias{
     text-decoration: none;
 }
 
-.cont-dest_img{
+.cont-dest__img {
     height: 248px;
-    width: 248px;
+    width: 100%;
 }
 
 .img__producto{
-    width: 240px;
-    height: 240px;
+    width: 100%;
+    height: 100%;
     object-fit: contain;
-    padding: 5px;
+    padding: 16px;
 }
 
 .cont-dest__descripcion{
+    border-top: 1px solid var(--celeste-logo);
     height: 124px;
     padding: 5px;
+
 }
 
 h3.descripcion__nombre-prod{
@@ -579,10 +599,22 @@ h3.descripcion__nombre-prod{
 
 }
 
+/* -------- Imagen central destacada -------- */
+
+div.home-dest-central{
+    display: flex;
+    margin: 0 auto 0 auto;
+    width: 75%;
+}
+
+.home-dest-central__img{
+
+    width: 100%;
+}
+
 /* -------- Banner marcas ---------- */
 
 .main-home__banner-marcas{
-    display: flex;
     flex-direction: column;
 }
 
@@ -590,7 +622,7 @@ h3.descripcion__nombre-prod{
     align-self: center;
     font-family: 'Roboto Condensed';
     font-size: 20px;
-    color: var(--gris-medio);
+    color: var(--turq);
 }
 
 .banner-marcas__logos{
@@ -621,8 +653,9 @@ h3.descripcion__nombre-prod{
 /*----------- MAIN PRODUCTO ----------*/
 
 main.detalleDeProducto{
-    background-image: linear-gradient(to bottom, var(--gris-osc), var(--gris-claro));
-    margin-bottom: 10px;
+    background-image: linear-gradient(to bottom, #666, #ababab);
+    padding-top: 10%;
+    width: 100%;
 }
 
 
@@ -756,7 +789,7 @@ main.detalleDeProducto{
 /* -------- MAIN CARRITO -------- */
 
 main.carrito{
-    background-image: linear-gradient(to bottom, #000, #666);
+    background-image: linear-gradient(to bottom, var(--gris-osc), var(--gris-medio));
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -780,7 +813,7 @@ main.carrito{
 
 /* ---------------- REGISTRO -------------*/
 .main-registro{
-    background-image: linear-gradient(to bottom, #000, #666);
+    background-image: linear-gradient(to bottom, var(--gris-osc), var(--gris-medio));
     color: white;
 }
 .form-registro{
@@ -795,7 +828,7 @@ main.carrito{
 
 
 .login{
-    background-image: linear-gradient(to bottom, #000, #666);
+    background-image: linear-gradient(to bottom, var(--gris-osc), var(--gris-medio));
     color: white;
     margin:auto;
     border: solid 30px black;
@@ -816,7 +849,9 @@ main.carrito{
 
 footer{
     width: 100%;
-    background-color: #000;
+    height: auto;
+    background-color: var(--negro);
+    padding-top: 15px;
 
 }
 
@@ -825,6 +860,7 @@ footer{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin: 0px auto 0px auto;
 }
 
 
