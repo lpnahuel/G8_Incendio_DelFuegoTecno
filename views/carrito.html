@@ -15,6 +15,7 @@
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"rel="stylesheet"/> <!-- iconos -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!-- iconos -->
+    <script src="https://kit.fontawesome.com/fe4ebeaca1.js" crossorigin="anonymous"></script>
 
     <title>DelFuegoTechno - Carrito</title>
 
@@ -77,11 +78,79 @@
 
     <main class="carrito">
         <!-- carrito -->
-        <h2 class="carrito-title"><i class="fa-solid fa-cart-shopping"> Mi Carrito</i></h2>
         <!-- Seccion superior del carrito -->
+        <span class="hiddenSpan">hidden</span>
         <section class="top-section">
             <!-- Contenedor de productos para la compra -->
             <article class="leftArticle">
+
+                
+                <div class="leftArticle-breadCrum">                    
+                    <a class="breadCrum" href="">Home</a><span>/</span><a class="breadCrum" href="">Carrito</a><span>/</span>                    
+                </div>
+
+                <h2 class="carrito-title"><i class="fa-solid fa-cart-shopping"> Mi Carrito</i></h2>
+
+                <div class="caja">
+                    <div class="caja-producto">
+                        <div class="caja-producto-izquierda">
+                            <img class="img-producto" src="/img/kolink-inspire-k20-004.jpg" alt="Foto de kolink inspire k20">
+                        </div>
+
+                        <div class="caja-producto-derecha">
+                            <div class="caja-producto-derecha-top">
+                                <div class="caja-descripcion-producto">
+                                    <a class="linkToProduct" href="">Gabinete Kolink Inspire K20</a>
+                                </div>
+                                <div class="caja-trashCan">
+                                    <i class="fa-solid fa-trash-can"></i>
+                                </div>                              
+                            </div>
+                            <div class="caja-producto-derecha-bottom">
+                                <div class="counter">
+                                    <i class="fa-solid fa-circle-plus"></i>
+                                    <input id="count" class="count-form" name="count" type="number" value="1">
+                                    <i class="fa-solid fa-circle-minus"></i>
+                                </div>
+                                <div class="caja-price">$6500</div>                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="caja-producto">
+                        <div class="caja-producto-izquierda">
+                            <img class="img-producto" src="/img/msi-i7-rtx2070-001.jpg" alt="Foto de kolink inspire k20">
+                        </div>
+
+                        <div class="caja-producto-derecha">
+                            <div class="caja-producto-derecha-top">
+                                <div class="caja-descripcion-producto">
+                                    <a class="linkToProduct" href="">Notebook Gamer Msi i7 Rtx2070 16gb</a>
+                                </div>
+                                <div class="caja-trashCan">
+                                    <i class="fa-solid fa-trash-can"></i>
+                                </div>                              
+                            </div>
+                            <div class="caja-producto-derecha-bottom">
+                                <div class="counter">
+                                    <i class="fa-solid fa-circle-plus"></i>
+                                    <input id="count" class="count-form" name="count" type="number" value="1">
+                                    <i class="fa-solid fa-circle-minus"></i>
+                                </div>
+                                <div class="caja-price">$329.990</div>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="leftArticle-btns">
+
+                    <button class="leftArticle-btn">Vaciar Carrito</button>
+
+                    <a class="seguirComprando" href="">Seguir Comprando</a>
+
+                </div>
+
 
             </article>
 
@@ -94,15 +163,15 @@
 
                 <div class="rightArticle-div">
 
-                    <p>Subtotal</p>
+                    <p>Subtotal:</p>
 
-                    <p>$12500</p>
+                    <p>$336.490</p>
 
                 </div>
 
                 <div class="rightArticle-div">
 
-                    <p>Costo del envio</p>
+                    <p>Costo del envio:</p>
 
                     <p>$400</p>
 
@@ -112,9 +181,9 @@
 
                 <div class="rightArticle-div-total">
 
-                    <p>Total</p>
+                    <p class="totalP">Total:</p>
 
-                    <p>$25400</p>
+                    <p class="totalPrice">$336.890</p>
 
                 </div>
 
@@ -131,26 +200,64 @@
 
         <!-- Seccion inferior del carrito -->
         <section class="bottom-section">
-
-            <article>
-
-            </article>
-
-            <article>
-
-            </article>
-
-            <article>
-
-            </article>
-            
-            <article>
-
-            </article>
-
-            <article>
+            <div class="bottom-section-top"><h3 class="bottom-section-title">Otros usuarios tambien compraron</h3></div>
+            <div class="bottom-section-bottom">
+                <article class="cont-dest">
+                    <a href="#">
+                        <article class="cont-dest__img">
+                            <img src="/img/asus-zephyrus-duo_15-GX550LXS-001.jpg" class="img__producto" alt="Asus Rog Zephyrus Duo">
+                        </article>
+                        <article class="cont-dest__descripcion">
+                            <h3 class="descripcion__nombre-prod">Asus Rog Zephyrus Duo Ryzen 9 16Gb 1Tb Rtx 3060</h3>
+                            <h4 class="descripcion__precio">$580.000</h4>
+                        </article>
+                        <button class="cont-dest__carrito" type="submit"><i class="material-icons">add_shopping_cart</i></button>
+                        <button class="cont-dest__fav" type="submit"><i class="fas fa-heart"></i></button>                    
+                    </a>
+                </article>
                 
-            </article>
+                <article class="cont-dest">
+                    <a href="#">
+                        <article class="cont-dest__img">
+                            <img src="/img/hp-omen-1020-001.jpg" class="img__producto" alt="HP omen 1020">
+                        </article>
+                        <article class="cont-dest__descripcion">
+                            <h3 class="descripcion__nombre-prod">Notebook Gamer HP OMEN 15-DC1020NR/h3>
+                            <h4 class="descripcion__precio">$335.000</h4>
+                        </article>
+                        <button class="cont-dest__carrito" type="submit"><i class="material-icons">add_shopping_cart</i></button>
+                        <button class="cont-dest__fav" type="submit"><i class="far fa-heart"></i></button>                  
+                    </a>
+                </article>
+
+                <article class="cont-dest">
+                    <a href="#">
+                        <article class="cont-dest__img">
+                            <img src="/img/acer-nitro-i5-001.jpg" class="img__producto" alt="Acer Nitro i5">
+                        </article>
+                        <article class="cont-dest__descripcion">
+                            <h3 class="descripcion__nombre-prod">Notebook Gamer Acer Nitro I5 10Ma 8Gb Ssd256 Gtx1650</h3>
+                            <h4 class="descripcion__precio">$144.000</h4>
+                        </article>
+                        <button class="cont-dest__carrito" type="submit"><i class="material-icons">add_shopping_cart</i></button>
+                        <button class="cont-dest__fav" type="submit"><i class="far fa-heart"></i></button>                     
+                    </a>                
+                </article>
+                
+                <article class="cont-dest">
+                    <a href="#">
+                        <article class="cont-dest__img">
+                            <img src="/img/alienware17r5-001.jpg" class="img__producto" alt="Alienware 17 R5 17.3' ">
+                        </article>
+                        <article class="cont-dest__descripcion">
+                            <h3 class="descripcion__nombre-prod">Notebook Gamer Dell Alienware 17 R5 17.3'</h3>
+                            <h4 class="descripcion__precio">$508.890</h4>
+                        </article>
+                        <button class="cont-dest__carrito" type="submit"><i class="material-icons">add_shopping_cart</i></button>
+                        <button class="cont-dest__fav" type="submit"><i class="far fa-heart"></i></button>               
+                    </a>                
+                </article>
+            </div>
 
         </section>
 
