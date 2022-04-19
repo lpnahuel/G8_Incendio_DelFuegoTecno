@@ -725,13 +725,16 @@ main.detalleDeProducto{
     flex-direction: column;
     margin-top: 15px;
     width: 100%;
+    left: 0px;
+    position:relative;
 }
 
 .titulo_prod{
     font-size: 25px;
     font-weight: 500;
     color: var(--celeste-logo);
-    width:100%;
+    width: 100%;
+   
 }
 
 .subtitulo_prod{
@@ -748,33 +751,38 @@ main.detalleDeProducto{
 }
 .precio_prod{
     display: flex;
+    margin-top: 15px;
 }
 .Comprar_prod{
     cursor: pointer;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
 }
 
 .iconos_prod{
     cursor: pointer;
     display: flex;
     flex-direction: row;
-    height: 20px;
+    height: 25px;
+    margin: 0 auto;
+    position:absolute;
     width: 15px;
-    margin-left: 0%;
 }
 
 .desc_prod_tex{
     display: flex;
     flex-direction: column;
+    margin-top: 0px;
     width: 100%;
+    
 }
 .carac_tec{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    margin-top: 0px;
     width: 100%;
+ 
 }
 
 /* Info producto */
