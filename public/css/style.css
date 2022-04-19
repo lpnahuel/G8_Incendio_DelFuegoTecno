@@ -693,6 +693,7 @@ main.detalleDeProducto{
     margin-top: 15px;
     width: 100%;
     left: 0px;
+    position:relative;
 }
 
 .titulo_prod{
@@ -716,6 +717,7 @@ main.detalleDeProducto{
 }
 .precio_prod{
     display: flex;
+    margin-top: 15px;
 }
 .Comprar_prod{
     cursor: pointer;
@@ -729,6 +731,7 @@ main.detalleDeProducto{
     flex-direction: row;
     height: 25px;
     margin: 0 auto;
+    position:absolute;
     width: 15px;
 }
 
