@@ -781,12 +781,13 @@ main.detalleDeProducto{
     padding-right: 5%;
 }
 .Comprar_prod{
-    color: var(--gris-claro);
     background-color:#3cb9fc;
+    border: none;
+    color: var(--gris-claro);
+    cursor: pointer;
     height: 30px;
     width: 100%;
-    border: none;
-    cursor: pointer;
+ 
 }
 
 .Comprar_prod:hover{
