@@ -768,31 +768,50 @@ main.detalleDeProducto{
     display: flex;
     margin-top: 15px;
 }
-.Comprar_prod{
-    cursor: pointer;
+
+.comprar_caja{
     display: flex;
     flex-direction: column;
-    color: #fff;
-    background-color:#3cb9fc;
-    height: 50px;
-    width: 20%;
-    border: none;
+    padding-right: 5%;
 }
-
+.Comprar_prod{
+    color: var(--gris-claro);
+    background-color:#3cb9fc;
+    height: 30px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+}
 
 .Comprar_prod:hover{
-    background-color: #0f6e93;
+    background-color: #01A9B4;
 }
+
 .iconos_prod{
-    cursor: pointer;
-    background-color: white;
-    color: var(--turq);
     display: flex;
     flex-direction: row;
     height: 25px;
-    margin: 0 auto;
-    position:absolute;
-    width: 15px;
+    margin: 4 auto;
+    position:absolute;    
+}
+
+.heart_b{
+    background-color: var(--gris-claro);
+    border: none;
+    color:#3cb9fc;
+    cursor: pointer;
+    font-size: 24px;
+    text-rendering: auto;
+    text-decoration: none;
+}
+.shop_c{
+    background-color: var(--gris-claro);
+    border: none;
+    color:#3cb9fc;
+    cursor: pointer;
+    font-size: 24px;
+    text-rendering: auto;
+    text-decoration: none;
 }
 
 .desc_prod_tex{
