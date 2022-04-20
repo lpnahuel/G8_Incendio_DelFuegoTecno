@@ -1167,22 +1167,101 @@ main.carrito{
 
 
 
-.login{
-    background-image: linear-gradient(to bottom, var(--gris-osc), var(--gris-medio));
+.main-login{
+    background-image: linear-gradient(to bottom, var(--negro), var(--gris-osc));
+    padding-top: 50px;
+    width: 100%
+}
+
+.cont-form-login{
+    margin: 0 auto 0 auto;
+    padding-bottom: 6%;
+    padding-top: 6%;
+    width: 75%;
+}
+
+.login__form{
+    align-content: center;
+    align-items: center;
+    background-color: var(--gris-claro);
+    box-shadow: 2px 2px 6px var(--negro);
+    flex-direction: column;
+    flex-wrap: wrap;
+    display: flex;
+    height: 496px;
+    justify-content: center;
+    margin: 0 auto 0 auto;
+    min-width: 300px;
+    width: 50%;
+}
+
+.titulo-login{
+    align-self: flex-start;
+    color: var(--turq);
+}
+
+.form-lg{
+    border-top: solid 2px var(--turq);
+    border-bottom: solid 2px var(--turq);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+    min-width: 215px;
+    padding: 28px 0 28px 0;
+    width: 40%;
+}
+
+.form-lg__campos{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 10px 0 10px 0;
+}
+
+.lg__mail, .lg__pass{
+    border: 1px solid var(--gris-osc);
+    border-radius: 8px;
+    font-size: 15px;
+    height: 40px;
+    margin-top: 8px;
+    padding-left: 15px;
+    width: 100%;
+}
+
+.lg__descrip{
+    color: var(--gris-osc);
+    margin: 0;
+}
+
+.form-lg__btn{
+    background-color: var(--turq);
+    border: none;
     color: white;
-    margin:auto;
-    border: solid 30px black;
-    text-align: center;
-    justify-content: space-around;
-    
-}
-.contenedor-login{
-    margin: 10px;
-
+    cursor: pointer;
+    font-weight: 500;
+    width: 30%;
+    height: 52px;
 }
 
+.form-lg__btn:hover{
+    background-color: var(--celeste-logo);
 
+}
 
+.lg-msg{
+    color: var(--gris-osc);
+    font-size: 12px;
+}
+
+.lg-msg > a{
+    color: var(--turq);
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.lg-msg > a:hover{
+    text-decoration: underline;
+}
 
 
 /* -------- FOOTER  -------- */

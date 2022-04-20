@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"> <!-- fonts -->
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"rel="stylesheet"/> <!-- iconos -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!-- iconos -->
 
     <title>DelFuegoTechno - Inicio</title>
 
@@ -76,23 +77,43 @@
 
 
 
-    <main class="login">
-        <!-- <img class="carrusel-main" src="/img/destacado-alienware-streamsetup.jpg" alt="Carrusel imagen 1"> -->
-       <form action="/login">
-           <div class="contenedor-login">
-               <label for="email"><i class="fa fa-envelope"></i> Correo Electrónico:</label>
-               <input type="email" name="email" id="email">
-           </div>
+    <main class="main-login">
 
-           <div class="contenedor-login">
-               <label for="password"><i class='fas fa-key'></i> Contraseña:</label>
-               <input type="password" name="password" id="password">
-           </div>
-           <br>
-           <button type="submit" value="INGRESAR"></button>
-           <p>¿No tienes cuenta? <a href="/registro">Registrate</a></p>
+        <section class="cont-form-login">
 
-       </form>
+            
+            <form class="login__form" action="/login">
+                
+                <h2 class="titulo-login">Login</h2>
+                
+                    <article class="form-lg">
+
+                        <div class="form-lg__campos">
+                            <labelfor="email">
+                                <p class="lg__descrip">Correo Electrónico</p>
+                                  <!-- <i class="fa fa-envelope"></i> -->
+                                  <input class="lg__mail" type="email" name="email" id="email" placeholder="usuario@mail.com">
+                            </labelfor=>
+                        </div>
+                        
+                        <div class="form-lg__campos">
+                            <labelfor="password"><!--<i class='fas fa-key'></i>-->
+                                <p class="lg__descrip">Contraseña</p>  
+                                <input class="lg__pass" type="password" name="password" id="password" placeholder="******">
+                            </labelfor=>
+                        </div>
+                        
+                    </article>
+                        
+                    <button class="form-lg__btn" type="submit" value="">Ingresar</button>
+                    
+                    <p class="lg-msg">¿No tenés cuenta?  <a href="/registro">Registrate</a></p>
+                    
+                </form>
+                
+        </section>
+
+
     </main>
 
     <footer>
