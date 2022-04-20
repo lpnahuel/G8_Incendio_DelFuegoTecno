@@ -745,26 +745,32 @@ main.detalleDeProducto{
 }
 
 .titulo_prod{
-    font-size: 25px;
+    font-family: "Roboto";
+    font-size: 26px;
     font-weight: 500;
     color: var(--turq);
+    margin-top: 8%;
     width: 100%;
    
 }
 
 .subtitulo_prod{
+    font-family: "Roboto";
     font-size: 20px;
     font-weight: 500;
     color: var(--turq);
 }
 
 .desc_prod{
+    font-family: "Roboto";
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     
 }
 .precio_prod{
+    font-family: "Roboto";
+    font-size: 20px;
     display: flex;
     margin-top: 15px;
 }
@@ -804,7 +810,7 @@ main.detalleDeProducto{
     text-rendering: auto;
     text-decoration: none;
 }
-.shop_c{
+.shop_b{
     background-color: var(--gris-claro);
     border: none;
     color:#3cb9fc;
@@ -813,19 +819,29 @@ main.detalleDeProducto{
     text-rendering: auto;
     text-decoration: none;
 }
-
+.share_b{
+    background-color: var(--gris-claro);
+    border: none;
+    color:#3cb9fc;
+    cursor: pointer;
+    font-size: 24px;
+    text-rendering: auto;
+    text-decoration: none;
+}
 .desc_prod_tex{
+    font-family: "Roboto";
     display: flex;
     flex-direction: column;
-    margin-top: 0px;
+    margin-top: 0%;
     width: 100%;
     
 }
 .carac_tec{
+    font-family: "Roboto";
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin-top: 0px;
+    margin-top: 0%;
     width: 100%;
  
 }
