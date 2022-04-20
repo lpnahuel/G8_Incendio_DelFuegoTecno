@@ -4,6 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="DFT "Del fuego tecno" content="Del Fuego Tecno es una empresa 
+    tecnologica cuyo objetivo es acercar al cliente la posibilidad de comprar 
+    software o hardware desde la comodidad de su casa. Nuestro objetivo es que 
+    el cliente no deba buscar en ningún otro lado lo que necesita para mejorar 
+    su conectividad con el mundo digital. ¿Quiere mejorar su setup?, ¿quiere 
+    regalarle una consola de juegos a sus hijos o por qué no comprarla para usted 
+    mismo?, ¿quiere cambiar su smartphone o conseguir accesorios para el mismo?. 
+    Todas las respuestas a sus necesidades puede encontrarlas en nuestro sitio, 
+    con un listado variado de productos que satisfacen sus necesidades 
+    tecnológicas. ">
     
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/style.css">  <!-- hoja de estilos -->
@@ -22,8 +32,7 @@
 <body>
     
     <header>
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!-- iconos -->
-                
+                        
         <section class="contenedor-header">                   
                 
             <!-- LOGO -->
@@ -78,12 +87,15 @@
 
     <main class="detalleDeProducto">
 
-         <!-- Contenedor de imagen del producto -->
-
-         <div class="cont-det-producto">
-             <section class="cont-img-prod">
-                <h5 class="migas">migas de pan</h5>
-
+        
+        <section class="cont-det-producto">            
+            
+            <!-- Contenedor de imagen del producto -->
+            <section class="cont-img-prod">
+                
+                <div class="migas">
+                <a class="migas" href="">Home</a><span>/</span><a class="migas" href="">detalleDeProducto</a><span>/</span> 
+                </div> 
                 <div class="prod__img">
                     <img class="img__ppal" src="\img\steelseries-rival650-001.jpg" alt="Imagen mouse">
                 </div>
@@ -100,123 +112,135 @@
                     <img class="img__fotito" src="\img\steelseries-rival650-004.jpg" alt="Imagen alternativa 3">
                 </div>
                 </nav>
-         
-                <!-- contenedor de Descripcion del producto -->
-                <div class="cont_des_prod">
-                    <section class="cont-img-prod">
-                       <h1 class="titulo_prod">Mouse SteelSeries Rival 650 Wireless</h1>
-                
-                       <!-- precio -->
-                    <nav class="desc_prod">
-                            <div class="precio_prod">
-                                <h4>$25000</h4>
-                                 </div>
+            </section>
 
-                        <!-- Barra icnonos -->
-                        <div class="iconos_prod">
-                            <button type="button"><i class="far fa-heart"></i></button>  
-                            <button type="button"><i class="fa" src="\img\share-button.png.png"></i></button> 
-                            <button type="button" class="log-shop"><a href="/carrito"><i class="fas fa-shopping-cart"></i></a></button>
-                        </div>
-                        
-                        <!-- Boton compra -->
-                        <div class="Comprar_prod">
-                            <!-- falta el <a href="/carrito"></a> -->
-                            <button class="rightArticle-button">Comprar</button>
-                        </div>
-                        
-                        <!-- Descripcion producto -->
-                        <div class="desc_prod_tex">
-                            <h3 class="subtitulo_prod">Descripción</h3>
-                            <h5>Mouse SteelSeries Rival 650 Wireless Rendimiento sin retrasos de Quantum Wireless. 
-                                Duración de la batería de más de 24 horas con carga rápida. Sensor óptico exclusivo TrueMove3 + 12.000 CPI, 
-                                350 IPS. La distancia de despegue más baja y precisa del mundo. 256 configuraciones de ajuste de peso del centro de gravedad. 
-                                Interruptores mecánicos de disparador dividido de 60 millones de clics. Agarres laterales de silicona para mayor agarre y 
-                                durabilidad. Iluminación RGB de 8 zonas con notificaciones Discord. Guarde la configuración del sensor, las macros y los
-                                efectos de iluminación a bordo. Personalización total con SteelSeries Engine</h5>
-                        </div>
+
+            <!-- contenedor de Descripcion del producto -->
+            <section class="cont_des_prod">
+                <h1 class="titulo_prod">Mouse SteelSeries Rival 650 Wireless</h1>
                 
-                        <div class="carac_tec">
-                             <h3 class="subtitulo_prod">Características técnicas</h3>
-                             <h5>Sensor óptico exclusivo TrueMove3 + 12.000 CPI, 350 IPS
-                                Características	Interruptores mecánicos de disparador dividido de 60 millones de clics
-                                Agarres laterales de silicona para mayor agarre y durabilidad. 
-                                Iluminación RGB de 8 zonas con notificaciones Discord 
-                                Personalización total con SteelSeries. Duración de la batería de más de 24 horas con carga rápida</h5>
-                        </div>        
-                    </nav>
-                    </section>
-                </div>
-            </div>--> 
+                <!-- precio -->
+                <nav class="desc_prod">
+                        <div class="precio_prod">
+                            <p>$25000</p>
+                        </div>
+
+                    <!-- Barra icnonos -->
+                    <div class="iconos_prod">
+                        <button type="button" class="heart_b"><i class="far fa-heart"></i></button>  
+                        <button type="button" class="share_b"><i class="fa fa-share-alt"></i></button> 
+                        <button type="button" class="log-shop"><a href="/carrito"><i class="fas fa-shopping-cart"style="font-size:24px"></i></a></button>
+                    </div>
+                        
+                    <!-- Boton compra -->
+                    <div class="comprar_caja">
+                        <button type="button" class="Comprar_prod"><a href="/carrito"></a>Comprar</button>
+                    </div>
+                        
+                    <!-- Descripcion producto -->
+                    <div class="desc_prod_tex">
+                        <h3 class="subtitulo_prod">Descripción</h3>
+                        <p>Mouse SteelSeries Rival 650 Wireless Rendimiento sin retrasos de Quantum Wireless. 
+                            Duración de la batería de más de 24 horas con carga rápida. Sensor óptico exclusivo TrueMove3 + 12.000 CPI, 
+                            350 IPS. La distancia de despegue más baja y precisa del mundo. 256 configuraciones de ajuste de peso del centro de gravedad. 
+                            Interruptores mecánicos de disparador dividido de 60 millones de clics. Agarres laterales de silicona para mayor agarre y 
+                            durabilidad. Iluminación RGB de 8 zonas con notificaciones Discord. Guarde la configuración del sensor, las macros y los
+                            efectos de iluminación a bordo. Personalización total con SteelSeries Engine</p>
+                    </div>
+                
+                    <div class="carac_tec">
+                        <h3 class="subtitulo_prod">Características técnicas</h3>
+                        <p>Sensor óptico exclusivo TrueMove3 + 12.000 CPI, 350 IPS
+                            Características	Interruptores mecánicos de disparador dividido de 60 millones de clics
+                            Agarres laterales de silicona para mayor agarre y durabilidad. 
+                            Iluminación RGB de 8 zonas con notificaciones Discord 
+                            Personalización total con SteelSeries. Duración de la batería de más de 24 horas con carga rápida</p>
+                    </div>        
+                </nav>
+            </section>
+
+
+
+
+
+
+
+                
+        </section>
+        
 
         
                   
                    <!-- CARRUSEL DESTACADOS 2 -->
 
-        <section class="main-home__cont-prod">
+                   <section class="main-home__cont-prod">
 
-            <h2 class="cont-prod__categorias">Te puede interesar:</h2>
+                    <h2 class="cont-prod__categorias">Te puede interesar:</h2>
+        
+                    <nav class="cont-prod__articulos">
+        
+                        <article class="cont-dest">
+                            <a href="/detalleDeProducto">
+                                <article class="cont-dest__img">
+                                    <img src="/img/asus-zephyrus-duo_15-GX550LXS-001.jpg" class="img__producto" alt="Asus Rog Zephyrus Duo">
+                                </article>
+                                <article class="cont-dest__descripcion">
+                                    <h3 class="descripcion__nombre-prod">Asus Rog Zephyrus Duo Ryzen 9 16Gb 1Tb Rtx 3060</h3>
+                                    <h4 class="descripcion__precio">$580.000</h4>
+                                </article>
+                                <a href="/carrito" class="cont-dest__carrito"><i class="material-icons">add_shopping_cart</i></a>
+                                <button class="cont-dest__fav" type="submit"><i class="fas fa-heart"></i></button>                    
+                            </a>
+                        </article>
+                        
+                        <article class="cont-dest">
+                            <a href="/detalleDeProducto">
+                                <article class="cont-dest__img">
+                                    <img src="/img/hp-omen-1020-001.jpg" class="img__producto" alt="HP omen 1020">
+                                </article>
+                                <article class="cont-dest__descripcion">
+                                    <h3 class="descripcion__nombre-prod">Notebook Gamer HP OMEN 15-DC1020NR/h3>
+                                    <h4 class="descripcion__precio">$335.000</h4>
+                                </article>
+                                <a href="/carrito" class="cont-dest__carrito"><i class="material-icons">add_shopping_cart</i></a>
+                                <button class="cont-dest__fav" type="submit"><i class="far fa-heart"></i></button>                  
+                            </a>
+                        </article>
+        
+                        <article class="cont-dest">
+                            <a href="/detalleDeProducto">
+                                <article class="cont-dest__img">
+                                    <img src="/img/acer-nitro-i5-001.jpg" class="img__producto" alt="Acer Nitro i5">
+                                </article>
+                                <article class="cont-dest__descripcion">
+                                    <h3 class="descripcion__nombre-prod">Notebook Gamer Acer Nitro I5 10Ma 8Gb Ssd256 Gtx1650</h3>
+                                    <h4 class="descripcion__precio">$144.000</h4>
+                                </article>
+                                <a href="/carrito" class="cont-dest__carrito"><i class="material-icons">add_shopping_cart</i></a>
+                                <button class="cont-dest__fav" type="submit"><i class="far fa-heart"></i></button>                     
+                            </a>                
+                        </article>
+                        
+                        <article class="cont-dest">
+                            <a href="/detalleDeProducto">
+                                <article class="cont-dest__img">
+                                    <img src="/img/alienware17r5-001.jpg" class="img__producto" alt="Alienware 17 R5 17.3' ">
+                                </article>
+                                <article class="cont-dest__descripcion">
+                                    <h3 class="descripcion__nombre-prod">Notebook Gamer Dell Alienware 17 R5 17.3'</h3>
+                                    <h4 class="descripcion__precio">$508.890</h4>
+                                </article>
+                                <a href="/carrito" class="cont-dest__carrito"><i class="material-icons">add_shopping_cart</i></a>
+                                <button class="cont-dest__fav" type="submit"><i class="far fa-heart"></i></button>               
+                            </a>                
+                        </article>
+                    </nav>
+                </section>
 
-            <nav class="cont-prod__articulos">
 
-                <article class="cont-dest">
-                    <a href="#">
-                        <article class="cont-dest__img">
-                            <img src="/img/asus-zephyrus-duo_15-GX550LXS-001.jpg" class="img__producto" alt="Asus Rog Zephyrus Duo">
-                        </article>
-                        <article class="cont-dest__descripcion">
-                            <h3 class="descripcion__nombre-prod">Asus Rog Zephyrus Duo Ryzen 9 16Gb 1Tb Rtx 3060</h3>
-                            <h4 class="descripcion__precio">$580.000</h4>
-                        </article>
-                        <button class="cont-dest__carrito" type="submit"><i class="material-icons">add_shopping_cart</i></button>
-                        <button class="cont-dest__fav" type="submit"><i class="fas fa-heart"></i></button>                    
-                    </a>
-                </article>
-                
-                <article class="cont-dest">
-                    <a href="#">
-                        <article class="cont-dest__img">
-                            <img src="/img/hp-omen-1020-001.jpg" class="img__producto" alt="HP omen 1020">
-                        </article>
-                        <article class="cont-dest__descripcion">
-                            <h3 class="descripcion__nombre-prod">Notebook Gamer HP OMEN 15-DC1020NR/h3>
-                            <h4 class="descripcion__precio">$335.000</h4>
-                        </article>
-                        <button class="cont-dest__carrito" type="submit"><i class="material-icons">add_shopping_cart</i></button>
-                        <button class="cont-dest__fav" type="submit"><i class="far fa-heart"></i></button>                  
-                    </a>
-                </article>
-
-                <article class="cont-dest">
-                    <a href="#">
-                        <article class="cont-dest__img">
-                            <img src="/img/acer-nitro-i5-001.jpg" class="img__producto" alt="Acer Nitro i5">
-                        </article>
-                        <article class="cont-dest__descripcion">
-                            <h3 class="descripcion__nombre-prod">Notebook Gamer Acer Nitro I5 10Ma 8Gb Ssd256 Gtx1650</h3>
-                            <h4 class="descripcion__precio">$144.000</h4>
-                        </article>
-                        <button class="cont-dest__carrito" type="submit"><i class="material-icons">add_shopping_cart</i></button>
-                        <button class="cont-dest__fav" type="submit"><i class="far fa-heart"></i></button>                     
-                    </a>                
-                </article>
-                
-                <article class="cont-dest">
-                    <a href="#">
-                        <article class="cont-dest__img">
-                            <img src="/img/alienware17r5-001.jpg" class="img__producto" alt="Alienware 17 R5 17.3' ">
-                        </article>
-                        <article class="cont-dest__descripcion">
-                            <h3 class="descripcion__nombre-prod">Notebook Gamer Dell Alienware 17 R5 17.3'</h3>
-                            <h4 class="descripcion__precio">$508.890</h4>
-                        </article>
-                        <button class="cont-dest__carrito" type="submit"><i class="material-icons">add_shopping_cart</i></button>
-                        <button class="cont-dest__fav" type="submit"><i class="far fa-heart"></i></button>               
-                    </a>                
-                </article>
             </main>
 
-                <footer>
+            <footer>
          
                     <section class="contenedor-footer">
                            
@@ -294,7 +318,7 @@
                 
                     </section>
                         
-                </footer>
+            </footer>
             
-            </body>
-            </html>
+    </body>
+</html>

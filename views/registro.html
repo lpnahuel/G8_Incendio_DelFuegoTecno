@@ -14,8 +14,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"> <!-- fonts -->
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"rel="stylesheet"/> <!-- iconos -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!-- iconos -->
 
-    <title>DelFuegoTechno - Inicio</title>
+    <title>DFT - Registro de usuarios</title>
 
 </head>
 <body>
@@ -76,39 +77,100 @@
         
 
     <main class="main-registro">
-        <!-- <img class="carrusel-main" src="/img/destacado-alienware-streamsetup.jpg" alt="Carrusel imagen 1"> -->
-        <form action="/registro" class="form-registro">
-            <div class="registro-contenedor">
-                <label for="name"><i class='fas fa-user-alt'></i> Nombre:</label>
-                <input type="text" id="name" name="name" placeholder="Juan">
-            </div>
 
-            <div class="registro-contenedor">
-                <label for="surname"><i class='fas fa-id-card'></i> Apellido:</label>
-                <input type="text" id="surname" name="surname" placeholder="Perez">
-            </div>
+        <section class="cont-form-rg">
 
-            <div class="registro-contenedor">
-                <label for="email"><i class="fa fa-envelope"></i> Correo Electrónico:</label>
-                <input type="email" id="email" name="email" placeholder="juan.perez@email.com">
-            </div>
+            <form class="form-registro" action="/registro" method="post">
+            
+                <h2 class="titulo-login">Registro de usuarios</h2>
 
-            <div class="registro-contenedor">
-                <label for="password"><i class='fas fa-key'></i> Contraseña:</label>
-                <input type="password" id="password" name="password">
-            </div>
-            <br>
-            <button type="submit">REGISTRARSE</button>
-            <p>¿Ya tienes una cuenta?<a  href="/login">Iniciar Sesión</a></p>
+                <article class="cont-rg">
 
-        </form>
+                    
+                    <div class="registro__cont">
+
+                        <label for="name">
+                            <p class="lg__descrip">Nombre</p>                        
+                            <input class="rg__campos" type="text" id="name" name="name" placeholder="Juan">
+                        </label>
+                    
+                        <label for="surname">
+                            <p class="lg__descrip">Apellido</p>
+                            <input class="rg__campos" type="text" id="surname" name="surname" placeholder="Perez">
+                        </label>
+
+                        <label for="date">
+                            <p class="lg__descrip">Fecha de nacimiento</p>
+                            <input class="rg__nac" type="date" id="date" name="date">
+                        </label>
+                        
+                        <label for="avatar">
+                            <p class="lg__descrip">Foto de perfil</p>
+                            <input class="rg__avatar" type="file" name="avatar" id="avatar" accept=".jpg, .png">
+                        </label>
+                        
+
+                    </div>
+                    
+                    <h3 class="rg__subtitulo">Dirección</h3>
+                    <div class="registro__cont">
+                        <label for="calle">
+                            <p class="lg__descrip">Calle y altura</p>
+                            <input class="rg__campos" type="text" id="calle" name="email" placeholder="Av. Colón 123">
+                        </label>
+                    </div>
+                    <div class="registro__cont">
+                        <label for="cp">
+                            <p class="lg__descrip">Codigo postal</p>
+                            <input class="rg__campos" type="number" id="cp" name="email" placeholder="1234">
+                        </label>
+                    </div>
+                    <div class="registro__cont">
+                        <label for="localidad">
+                            <p class="lg__descrip">Localidad</p>
+                            <input class="rg__campos" type="text" id="localidad" name="email" placeholder="CABA">
+                        </label>
+                    </div>
+                    
+
+
+                    <h3 class="rg__subtitulo">Datos de la cuenta</h3>
+                    <div class="registro__cont">
+                        <label for="email">
+                            <p class="lg__descrip">E-mail</p>
+                            <input class="rg__campos" type="email" id="email" name="email" placeholder="juan.perez@email.com">
+                        </label>
+                    </div>
+                    
+                    <div class="registro__cont">
+                        <label for="password">
+                            <p class="lg__descrip">Contraseña</p>
+                            <input class="rg__campos" type="password" id="password" name="password" placeholder="******">
+                        </label>
+
+                    <div class="registro__cont">
+                        <label for="password">
+                            <p class="lg__descrip">Confirmar contraseña</p>
+                            <input class="rg__campos" type="password" id="password" name="password" placeholder="******">
+                        </label>
+                    </div>
+                    
+                </article>
+
+                <button class="form-lg__btn" type="submit">REGISTRARSE</button>
+                <p class="lg-msg">¿Ya tenés una cuenta?  <a href="/login">Iniciá Sesión</a></p>
+                
+            </form>
+
+        </section>
+
     </main>
-
+    
     
     <footer>
-         
+        
         <section class="contenedor-footer">
-               
+            
             <!-- LOGO FOOTER -->
             
             <a class="footer__logo" href="/">
