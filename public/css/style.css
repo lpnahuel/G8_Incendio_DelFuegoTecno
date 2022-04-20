@@ -193,6 +193,10 @@ body{
     .main-home__banner-marcas{
         display: flex;
     }
+
+    .main-home__sect-cont{
+        display: flex;
+    }
     
 }
 
@@ -239,6 +243,10 @@ body{
     }
 
     .main-home__banner-marcas{
+        display: flex;
+    }
+
+    .main-home__sect-cont{
         display: flex;
     }
 }
