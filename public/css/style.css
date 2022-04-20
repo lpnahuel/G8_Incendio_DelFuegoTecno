@@ -742,7 +742,7 @@ main.detalleDeProducto{
 }
 
 .migas{
-    font-size: 8px;
+    font-size: 8%;
     font-weight: 500;
     color: var(--gris);
 }
@@ -796,68 +796,104 @@ main.detalleDeProducto{
 }
 
 .titulo_prod{
-    font-size: 25px;
+    font-family: "Roboto";
+    font-size: 26px;
     font-weight: 500;
     color: var(--turq);
+    margin-top: 8%;
     width: 100%;
    
 }
 
 .subtitulo_prod{
+    font-family: "Roboto";
     font-size: 20px;
     font-weight: 500;
     color: var(--turq);
 }
 
 .desc_prod{
+    font-family: "Roboto";
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     
 }
 .precio_prod{
+    font-family: "Roboto";
+    font-size: 20px;
     display: flex;
     margin-top: 15px;
 }
-.Comprar_prod{
-    cursor: pointer;
+
+.comprar_caja{
     display: flex;
     flex-direction: column;
-    color: #fff;
-    background-color:#3cb9fc;
-    height: 50px;
-    width: 20%;
-    border: none;
+    padding-right: 5%;
 }
-
+.Comprar_prod{
+    background-color:#3cb9fc;
+    border: none;
+    color: var(--gris-claro);
+    cursor: pointer;
+    height: 30px;
+    width: 100%;
+ 
+}
 
 .Comprar_prod:hover{
-    background-color: #0f6e93;
+    background-color: #01A9B4;
 }
+
 .iconos_prod{
-    cursor: pointer;
-    background-color: white;
-    color: var(--turq);
     display: flex;
     flex-direction: row;
     height: 25px;
-    margin: 0 auto;
-    position:absolute;
-    width: 15px;
+    margin: 4 auto;
+    position:absolute;    
 }
 
+.heart_b{
+    background-color: var(--gris-claro);
+    border: none;
+    color:#3cb9fc;
+    cursor: pointer;
+    font-size: 24px;
+    text-rendering: auto;
+    text-decoration: none;
+}
+.shop_b{
+    background-color: var(--gris-claro);
+    border: none;
+    color:#3cb9fc;
+    cursor: pointer;
+    font-size: 24px;
+    text-rendering: auto;
+    text-decoration: none;
+}
+.share_b{
+    background-color: var(--gris-claro);
+    border: none;
+    color:#3cb9fc;
+    cursor: pointer;
+    font-size: 24px;
+    text-rendering: auto;
+    text-decoration: none;
+}
 .desc_prod_tex{
+    font-family: "Roboto";
     display: flex;
     flex-direction: column;
-    margin-top: 0px;
+    margin-top: 0%;
     width: 100%;
     
 }
 .carac_tec{
+    font-family: "Roboto";
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin-top: 0px;
+    margin-top: 0%;
     width: 100%;
  
 }
