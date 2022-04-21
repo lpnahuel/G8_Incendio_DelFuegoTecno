@@ -14,7 +14,7 @@ Bienvenidos al proyecto **Incendiado**, el mismo forma parte de la currícula de
 
 - **Nicole Feldman**
 
-Foto Nicky
+![Foto Paula](https://github.com/lpnahuel/G8_Incendio_DelFuegoTecno/blob/main/public/imgREADME/nicky.png)
 > Descripción
 </br>
 
@@ -29,13 +29,14 @@ Foto Nicky
  Foto Salva
  > Descripción 
 </br>
-### **Qué es Del Fuego Tecno?**
+
+## **Qué es Del Fuego Tecno?**
 
 ![Logo del fuego tecno](https://github.com/lpnahuel/G8_Incendio_DelFuegoTecno/blob/main/public/imgREADME/dft-logo.png)
 
 **Del Fuego Tecno** es una empresa de venta de insumos tecnológicos. El objetivo es que el cliente no deba buscar en ningún otro lado lo que necesita para mejorar su conectividad con el mundo digital, encontrando todo en un sólo sitio, con precios competitivos en el mercado actual, con un listado variado de productos que satisfacen sus necesidades tecnologicas, pudiendo acceder a los mismos desde la comodidad de su casa.
 
-## **Población Objetivo**
+### **Población Objetivo**
 
 - Adultos jóvenes
 - Gamers
@@ -43,7 +44,7 @@ Foto Nicky
 - Diseñadores gráficos y multimediales
 - Aficionados de la tecnología
 
-## **Referencias**
+### **Referencias**
 
 - [CompraGamer](https://compragamer.com/)
 - [Mexx](https://www.mexx.com.ar/)
@@ -51,46 +52,46 @@ Foto Nicky
 - [Gezatek](https://www.gezatek.com.ar/)
 - [FullH4rd](https://www.fullh4rd.com.ar/)
 
-#### **Trello del proyecto**
+### **Trello del proyecto**
 
 Colocamos el link de trello del sitio web para permitir el seguimiento de las etapas de desarrollo.
 
 - [Tablero en Trello](https://trello.com/b/EYw4wZrb/proyecto-integrador-incendiado)
 
-##### **Wireframes**
+## **Wireframes**
 
-#### **Wireframe Home**
+### **Wireframe Home**
 
 El home principalmente mostramos productos destacados, productos que pueden ser de interes para el usuario, marcas sponsor, una barra de busqueda y botones de acceso al resto del sitio donde el usuario pueda ver mas en detalle los distintos tipos de productos publicados.
 
 ![Wireframe del Home](https://github.com/lpnahuel/G8_Incendio_DelFuegoTecno/blob/main/public/imgREADME/landing.png)
 
-#### **Wireframe Detalle Del Producto**
+### **Wireframe Detalle Del Producto**
 
 En el detalle del producto buscamos que el usuario pueda ver la descripción del mismo, el precio, la posibilidad de compartirlo o guardarlo en favoritos, agregar el producto al carrito de compras y tambien mostrar distintos productos relacionados.
 
 ![Wireframe de detalle del producto](https://github.com/lpnahuel/G8_Incendio_DelFuegoTecno/blob/main/public/imgREADME/detalle-producto.png)
 
-#### **Wireframe de Carrito**
+### **Wireframe de Carrito**
 
 El carrito permite ver los productos seleccionados, modificar las cantidades deseadas, ver el costo de envio y el precio final.
 
 ![Wireframe de carrito](https://github.com/lpnahuel/G8_Incendio_DelFuegoTecno/blob/main/public/imgREADME/carrito.png)
 
-#### **Wireframe de Registro**
+### **Wireframe de Registro**
 
 Página simple de registro al sitio web.
 
 ![Wireframe de pagina de registro](https://github.com/lpnahuel/G8_Incendio_DelFuegoTecno/blob/main/public/imgREADME/registro.png)
 
-#### **Wireframe de Login**
+### **Wireframe de Login**
 
 Página simple de login al sitio web.
 
 ![Wireframe de pagina de Login](https://github.com/lpnahuel/G8_Incendio_DelFuegoTecno/blob/main/public/imgREADME/login.png)
 
-##### **Previews**
+## **Previews**
 
-#### **Preview Home**
+### **Preview Home**
 
 ![Preview del Home](https://github.com/lpnahuel/Wireframes_Del_Fuego_tecno/blob/main/previewhome.jpeg)
