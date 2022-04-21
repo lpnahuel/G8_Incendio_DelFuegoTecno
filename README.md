@@ -27,7 +27,7 @@ Bienvenidos al proyecto **Incendiado**, el mismo forma parte de la currícula de
 - **Salvador Laje**
 
  Foto Salva
- > Descripción 
+ > Estudiante de ingeniería industrial y en este momento descubriendo el mundo del desarrollo web. Me gusta escuchar música, pasar el rato con mis amigos y hacer deporte. 
 </br>
 
 ## **Qué es Del Fuego Tecno?**
