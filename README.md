@@ -14,8 +14,8 @@ Bienvenidos al proyecto **Incendiado**, el mismo forma parte de la currícula de
 
 - **Nicole Feldman**
 
-![Foto Paula](https://github.com/lpnahuel/G8_Incendio_DelFuegoTecno/blob/main/public/imgREADME/nicky.png)
-> Descripción
+![Foto Nicole](https://github.com/lpnahuel/G8_Incendio_DelFuegoTecno/blob/main/public/imgREADME/nicky.png)
+> Eterna estudiante, en este momento de la licenciatura de Marketing y cursos de Marketing digital y programación WEB. Me gusta leer, ver series y pasar el tiempo con amigos y familia.
 </br>
 
 - **Pablo Nahuel Larrea**
