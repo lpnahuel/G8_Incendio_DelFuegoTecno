@@ -7,6 +7,7 @@ Bienvenidos al proyecto **Incendiado**, el mismo forma parte de la currícula de
 
 ### **Integrantes:**
 - **Paula Yafar**
+
 ![Foto Paula](https://github.com/lpnahuel/G8_Incendio_DelFuegoTecno/blob/main/public/imgREADME/pali.png)
 > Diseñadora gráfica, psicóloga, y ahora explorando el mundo de la programación web. Me gustan los animales, los videojuegos y el cine de terror.
 </br>
