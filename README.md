@@ -7,19 +7,27 @@ Bienvenidos al proyecto **Incendiado**, el mismo forma parte de la currícula de
 
 ### **Integrantes:**
 - **Paula Yafar**
-
-| ![Foto Paula](https://github.com/lpnahuel/G8_Incendio_DelFuegoTecno/blob/main/public/imgREADME/pali.png)  :|: > Diseñadora gráfica, psicóloga, y ahora explorando el mundo de la programación web. Me gustan los animales, los videojuegos y el cine de terror.|
-
+![Foto Paula](https://github.com/lpnahuel/G8_Incendio_DelFuegoTecno/blob/main/public/imgREADME/pali.png)
+> Diseñadora gráfica, psicóloga, y ahora explorando el mundo de la programación web. Me gustan los animales, los videojuegos y el cine de terror.
+</br>
 
 - **Nicole Feldman**
-| Foto Nicky :|: > Descripción|
+
+Foto Nicky
+> Descripción
+</br>
 
 - **Pablo Nahuel Larrea**
-| ![Foto Pablo](https://github.com/lpnahuel/G8_Incendio_DelFuegoTecno/blob/main/public/imgREADME/pablo-larrea.png)  :|: > Descripción |
+
+![Foto Pablo](https://github.com/lpnahuel/G8_Incendio_DelFuegoTecno/blob/main/public/imgREADME/pablo-larrea.png)
+> Descripción
+</br>
 
 - **Salvador Laje**
-| Foto Salva  :|: > Descripción |
 
+ Foto Salva
+ > Descripción 
+</br>
 ### **Qué es Del Fuego Tecno?**
 
 ![Logo del fuego tecno](https://github.com/lpnahuel/G8_Incendio_DelFuegoTecno/blob/main/public/imgREADME/dft-logo.png)
@@ -46,7 +54,7 @@ Bienvenidos al proyecto **Incendiado**, el mismo forma parte de la currícula de
 
 Colocamos el link de trello del sitio web para permitir el seguimiento de las etapas de desarrollo.
 
-[Link de trello: ]https://trello.com/b/EYw4wZrb/proyecto-integrador-incendiado
+- [Tablero en Trello](https://trello.com/b/EYw4wZrb/proyecto-integrador-incendiado)
 
 ##### **Wireframes**
 
