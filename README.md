@@ -26,7 +26,7 @@ Bienvenidos al proyecto **Incendiado**, el mismo forma parte de la currícula de
 
 - **Salvador Laje**
 
- Foto Salva
+![Foto Pablo](https://github.com/lpnahuel/G8_Incendio_DelFuegoTecno/blob/main/public/imgREADME/salva.png)
  > Estudiante de ingeniería industrial y en este momento descubriendo el mundo del desarrollo web. Me gusta escuchar música, pasar el rato con mis amigos y hacer deporte. 
 </br>
 
