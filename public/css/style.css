@@ -1061,7 +1061,6 @@ main.carrito{
     background-color: var(--gris-claro);
     color: #666;
     cursor: pointer;
-    margin-left: 10px;
 }
 
 .leftArticle-btn:hover{
@@ -1239,9 +1238,28 @@ main.carrito{
         font-weight: bold;
         color: #666;
     }
+
+    .leftArticle-btn{
+        border: none;
+        background-color: var(--gris-claro);
+        color: #666;
+        cursor: pointer;
+        margin-left: 10px;
+    }
+
+    .leftArticle-btns{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
 }
 
+@media (min-width:960px){
 
+    .top-section{
+        width: 70%;
+    }
+}
 
 
 
