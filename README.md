@@ -21,7 +21,7 @@ Bienvenidos al proyecto **Incendiado**, el mismo forma parte de la currícula de
 - **Pablo Nahuel Larrea**
 
 ![Foto Pablo](https://github.com/lpnahuel/G8_Incendio_DelFuegoTecno/blob/main/public/imgREADME/pablo-larrea.png)
-> Descripción
+> Médico, inquieto por naturaleza, actualmente estudiando desarrollo WEB y sus posibles aplicaciones en el campo de la salud. Me gusta disfrutar de buena musica acompañada de un rico cafe, leer y viajar cada vez que tengo un momento de escaparme, los videojuegos y pasar tiempo con mi familia y amigos.
 </br>
 
 - **Salvador Laje**
