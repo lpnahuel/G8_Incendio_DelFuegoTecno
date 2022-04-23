@@ -92,6 +92,22 @@ Página simple de login al sitio web.
 
 ## **Previews**
 
-### **Preview Home**
+### **Index**
 
-![Preview del Home](https://github.com/lpnahuel/Wireframes_Del_Fuego_tecno/blob/main/previewhome.jpeg)
+![Preview del Home](https://github.com/lpnahuel/Wireframes_Del_Fuego_tecno/blob/main/index-mockup.png)
+
+### **Carrito**
+
+![Preview del Home](https://github.com/lpnahuel/Wireframes_Del_Fuego_tecno/blob/main/productCart-mockup.png)
+
+### **Producto**
+
+![Preview del Home](https://github.com/lpnahuel/Wireframes_Del_Fuego_tecno/blob/main/productDetail-mockup.png)
+
+### **Login**
+
+![Preview del Home](https://github.com/lpnahuel/Wireframes_Del_Fuego_tecno/blob/main/login-mockup.png)
+
+### **Register**
+
+![Preview del Home](https://github.com/lpnahuel/Wireframes_Del_Fuego_tecno/blob/main/register-mockup.png)

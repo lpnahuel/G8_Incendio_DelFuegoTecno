@@ -36,11 +36,11 @@ app.post('/registro', (req, res)=> {
     res.sendFile(path.join(__dirname, '/views/register.html'))
 });
 
-app.get('/productos', (req, res)=> {
+app.get('/producto', (req, res)=> {
     res.sendFile(path.join(__dirname, '/views/productDetail.html'))
 });
 
-app.post('/productos', (req, res)=> {
+app.post('/producto', (req, res)=> {
     res.sendFile(path.join(__dirname, '/views/productDetail.html'))
 });
 
