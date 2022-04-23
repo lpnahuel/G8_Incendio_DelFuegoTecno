@@ -3,7 +3,7 @@ const app = express();
 const path = require("path");
 const port = 3030;
 
-app.listen(port, () => {
+app.listen(process.env.PORT || port, () => {
     console.log("Sv iniciado correctamente")
 });
 
@@ -22,6 +22,13 @@ app.get('/login', (req, res)=> {
 });
 
 app.get('/registro', (req, res)=> {
+    res.sendFile(path.join(__dirname, '/views/registro.html'))
+});
+app.post('/login', (req, res)=> {
+    res.sendFile(path.join(__dirname, '/views/login.html'))
+});
+
+app.post('/registro', (req, res)=> {
     res.sendFile(path.join(__dirname, '/views/registro.html'))
 });
 
