@@ -93,9 +93,9 @@
             <!-- Contenedor de imagen del producto -->
             <section class="cont-img-prod">
                 
-                <div class="migas">
-                <a class="migas" href="">Home</a><span>/</span><a class="migas" href="">detalleDeProducto</a><span>/</span> 
-                </div> 
+                <div class="leftArticle-breadCrum">                    
+                    <a class="breadCrum" href="/">Home</a><span>/</span><a class="breadCrum" href="">Periféricos</a><span>/</span><a class="breadCrum" href="">Mouse</a><span>/</span>                       
+                </div>
                 <div class="prod__img">
                     <img class="img__ppal" src="\img\steelseries-rival650-001.jpg" alt="Imagen mouse">
                 </div>
@@ -121,22 +121,25 @@
                 
                 <!-- precio -->
                 <nav class="desc_prod">
-                        <div class="precio_prod">
-                            <p>$25000</p>
+                    
+                        <!-- Barra icnonos -->
+                        <div class="iconos_prod">
+                            <button type="button" class="heart_b"><i class="far fa-heart"></i></button>  
+                            <button type="button" class="share_b"><i class="fa fa-share-alt"></i></button> 
+                            <button type="button" class="shop_b"><a href="/carrito"><i class="fas fa-shopping-cart"></i></a></button>
                         </div>
-
-                    <!-- Barra icnonos -->
-                    <div class="iconos_prod">
-                        <button type="button" class="heart_b"><i class="far fa-heart"></i></button>  
-                        <button type="button" class="share_b"><i class="fa fa-share-alt"></i></button> 
-                        <button type="button" class="log-shop"><a href="/carrito"><i class="fas fa-shopping-cart"style="font-size:24px"></i></a></button>
-                    </div>
                         
-                    <!-- Boton compra -->
-                    <div class="comprar_caja">
+                        <!-- Boton compra -->
+        
                         <button type="button" class="Comprar_prod"><a href="/carrito"></a>Comprar</button>
-                    </div>
-                        
+      
+                                            
+                </nav>
+
+                <div class="precio_prod">
+                    <p>$25000</p>
+                </div>
+
                     <!-- Descripcion producto -->
                     <div class="desc_prod_tex">
                         <h3 class="subtitulo_prod">Descripción</h3>
@@ -148,7 +151,7 @@
                             efectos de iluminación a bordo. Personalización total con SteelSeries Engine</p>
                     </div>
                 
-                    <div class="carac_tec">
+                    <div class="desc_prod_tex">
                         <h3 class="subtitulo_prod">Características técnicas</h3>
                         <p>Sensor óptico exclusivo TrueMove3 + 12.000 CPI, 350 IPS
                             Características	Interruptores mecánicos de disparador dividido de 60 millones de clics
@@ -156,7 +159,7 @@
                             Iluminación RGB de 8 zonas con notificaciones Discord 
                             Personalización total con SteelSeries. Duración de la batería de más de 24 horas con carga rápida</p>
                     </div>        
-                </nav>
+
             </section>
 
 

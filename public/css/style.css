@@ -759,11 +759,13 @@ main.detalleDeProducto{
 
 .cont-det-producto{
     background-color: var(--gris-claro);
+    box-shadow: 4px 4px 6px var(--negro);
     display: flex;
     margin: 24px auto 0px auto;
     height: 790px;
-    width: 80%;
+    width: 70%;
     flex-wrap: wrap;
+    padding: 30px 0;
     justify-content: space-evenly;
 }
 
@@ -776,12 +778,6 @@ main.detalleDeProducto{
 
 }
 
-.migas{
-    font-size: 8%;
-    font-weight: 500;
-    color: var(--gris);
-}
-
 .prod__img{
     background-color: var(--blanco);
     border: 1px var(--gris-medio) solid;
@@ -790,11 +786,12 @@ main.detalleDeProducto{
 }
 
 .img__ppal{
-    margin: auto;
-    width: 90%;
-    height: 90%;
-    object-fit: contain;
     cursor: pointer;
+    height: 100%;
+    margin: auto;
+    padding: 16px;
+    object-fit: contain;
+    width: 100%;
 }
 
 .prod__alt{
@@ -816,8 +813,9 @@ main.detalleDeProducto{
 
 .img__fotito{
     object-fit: contain;
-    width: 90%;
-    height: 90%;
+    width: 100%;
+    height: 100%;
+    padding: 8px;
     cursor: pointer;
 }
 
@@ -826,25 +824,25 @@ main.detalleDeProducto{
     flex-direction: column;
     margin-top: 15px;
     width: 40%;
-    left: 0px;
-    position:relative;
+
 }
 
 .titulo_prod{
+    border-bottom: 1px solid var(--gris);
     font-family: "Roboto";
     font-size: 26px;
     font-weight: 500;
     color: var(--turq);
-    margin-top: 8%;
+    padding-bottom: 15px;
     width: 100%;
    
 }
 
 .subtitulo_prod{
+    color: var(--turq);
     font-family: "Roboto";
     font-size: 20px;
     font-weight: 500;
-    color: var(--turq);
 }
 
 .desc_prod{
@@ -852,69 +850,94 @@ main.detalleDeProducto{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    height: 8%;
+    padding-top: 15px;
     
 }
 .precio_prod{
+    color: var(--gris-osc);
     font-family: "Roboto";
-    font-size: 20px;
-    display: flex;
-    margin-top: 15px;
+    font-size: 22px;
+    font-weight: 600;
+    padding: 15px 0 15px 0;
 }
 
-.comprar_caja{
-    display: flex;
-    flex-direction: column;
-    padding-right: 5%;
+.precio_prod > p{
+    margin: 0;
 }
+
+
 .Comprar_prod{
-    background-color:#3cb9fc;
+    background-color: var(--turq);
     border: none;
-    color: var(--gris-claro);
+    color: var(--blanco);
     cursor: pointer;
-    height: 30px;
-    width: 100%;
+    font-weight: 500;
+    height: 50px;
+    width: 35%;
  
 }
 
 .Comprar_prod:hover{
-    background-color: #01A9B4;
+    background-color: var(--celeste-logo);
+    transition: all 250ms ease;
 }
 
-.iconos_prod{
-    display: flex;
-    flex-direction: row;
-    height: 25px;
-    margin: 4 auto;
-    position:absolute;    
-}
+/* .iconos_prod{
+
+} */
 
 .heart_b{
     background-color: var(--gris-claro);
     border: none;
-    color:#3cb9fc;
+    color: var(--magenta);
     cursor: pointer;
-    font-size: 24px;
+    font-size: 20px;
     text-rendering: auto;
     text-decoration: none;
+    padding: 0 25px 0 0;
+
 }
+
 .shop_b{
     background-color: var(--gris-claro);
     border: none;
-    color:#3cb9fc;
     cursor: pointer;
-    font-size: 24px;
     text-rendering: auto;
-    text-decoration: none;
+    padding: 0 25px 0 0;
 }
+
+.shop_b > a{
+    color: var(--gris-osc);
+    text-decoration: none;
+
+}
+
+.shop_b > a:hover{
+    color: var(--celeste-logo);
+
+}
+
+.shop_b > a > i{
+    font-size: 20px;
+}
+
 .share_b{
     background-color: var(--gris-claro);
     border: none;
-    color:#3cb9fc;
+    color:var(--gris-osc);
     cursor: pointer;
-    font-size: 24px;
+    font-size: 20px;
     text-rendering: auto;
     text-decoration: none;
+    padding: 0 25px 0 0;
 }
+
+.share_b:hover{
+    color:var(--celeste-logo);
+ 
+}
+
 .desc_prod_tex{
     font-family: "Roboto";
     display: flex;
@@ -923,16 +946,12 @@ main.detalleDeProducto{
     width: 100%;
     
 }
-.carac_tec{
-    font-family: "Roboto";
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin-top: 0%;
-    width: 100%;
- 
-}
 
+.desc_prod_tex > p{
+    color: var(--gris-osc);
+    text-align: justify;
+    
+}
 /* Info producto */
 
 
@@ -1109,17 +1128,19 @@ main.carrito{
     background-color: var(--gris-claro);
     color: #666;
     cursor: pointer;
+    padding: 2px;
 }
 
 .leftArticle-btn:hover{
     border: solid 1px #989898;
     text-decoration: underline;
-    transition: all 250ms;
+    transition: all 350ms ease;
 }
 
 .seguirComprando{
     text-decoration: none;
     color: #01A9B4;
+    padding: 2px;
 }
 
 .seguirComprando:hover{
@@ -1653,6 +1674,7 @@ footer{
 }
 
 .newsletter__mail{
+    font-size: 14px;
     border: none;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
