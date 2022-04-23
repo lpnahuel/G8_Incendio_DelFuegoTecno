@@ -80,12 +80,20 @@ body{
 
     .rightArticle{
         border-top: 1px solid var(--gris);
-        margin-top: 36px;
-        width: 236px;
+        margin-top: 48px;
+        width: 282px;
     }
 
     .rightArticle-button{
         margin-top: 25px;
+    }
+
+    .cont-form-login{
+        width: 100%;
+    }
+
+    .cont-form-rg{
+        width: 100%;
     }
 }
 
@@ -148,6 +156,14 @@ body{
 
     .rightArticle-button{
         margin-top: 18px;
+    }
+
+    .cont-form-login{
+        width: 100%;
+    }
+
+    .cont-form-rg{
+        width: 100%;
     }
 
     
@@ -221,6 +237,14 @@ body{
     .rightArticle-button{
         margin-top: 22px;
     }
+
+    .cont-form-login{
+        width: 90%;
+    }
+
+    .cont-form-rg{
+        width: 90%;
+    }
     
 }
 
@@ -272,11 +296,19 @@ body{
 
     .rightArticle{
         padding: 0 18px 0 24px;
-        width: 312px;
+        width: 340px;
     }
 
     .rightArticle-button{
         margin-top: 24px;
+    }
+
+    .cont-form-login{
+        width: 75%;
+    }
+
+    .cont-form-rg{
+        width: 75%;
     }
 }
 
@@ -478,7 +510,8 @@ div.guarda{
 
 .main-home{
     background-image: linear-gradient(to bottom, #000, #666);
-    padding-top: 6%;
+    padding-top: 112px;
+    min-height: 960px;
     width: 100%;
 }
 
@@ -693,7 +726,7 @@ h3.descripcion__nombre-prod{
 div.home-dest-central{
     display: flex;
     margin: 0 auto 0 auto;
-    width: 75%;
+    width: 100%;
 }
 
 .home-dest-central__img{
@@ -749,8 +782,9 @@ div.home-dest-central{
 
 main.detalleDeProducto{
     background-image: linear-gradient(to bottom, var(--negro), var(--gris-osc));
-    padding-top: 10%;
+    padding: 168px 0 50px 0;
     margin-bottom: 0%;
+    min-height: 960px;
     width: 100%;
 }
 
@@ -966,6 +1000,7 @@ main.detalleDeProducto{
 main.carrito{
     background-image: linear-gradient(to bottom, var(--negro), var(--gris-osc));
     padding-top: 50px;
+    min-height: 960px;
     width: 100%
 }
 
@@ -1037,14 +1072,14 @@ main.carrito{
 }
 
 .caja-producto:hover{
-    box-shadow: 4px 4px 6px var(--gris-osc);
+    box-shadow: 4px 4px 6px var(--gris-medio);
     transition: all 250ms ease;
 }
 
 .caja-producto-izquierda{
     background-color: var(--blanco);
     width: 80%;
-    border: solid 1px #ababab;
+    border: solid 1px var(--gris-claro);
     margin-left: auto;
     margin-right: auto;
 }
@@ -1272,7 +1307,7 @@ main.carrito{
     .caja-producto-izquierda{
         background-color: var(--blanco);
         width: 30%;
-        border: solid 1px #ababab;
+        border: solid 1px var(--gris-claro);
     }
 
     .caja-producto-derecha{
@@ -1338,7 +1373,8 @@ main.carrito{
 
 .main-registro{
     background-image: linear-gradient(to bottom, var(--negro), var(--gris-osc));
-    padding-top: 50px;
+    padding: 168px 0 50px 0;
+    min-height: 960px;
     width: 100%
 }
 
@@ -1346,9 +1382,6 @@ main.carrito{
 
 .cont-form-rg{
     margin: 0 auto 0 auto;
-    padding-bottom: 6%;
-    padding-top: 6%;
-    width: 75%;
 }
 
 .form-registro{
@@ -1422,15 +1455,13 @@ main.carrito{
 
 .main-login{
     background-image: linear-gradient(to bottom, var(--negro), var(--gris-osc));
-    padding-top: 50px;
+    padding: 168px 0 50px 0;
+    min-height: 960px;
     width: 100%
 }
 
 .cont-form-login{
     margin: 0 auto 0 auto;
-    padding-bottom: 6%;
-    padding-top: 6%;
-    width: 75%;
 }
 
 .login__form{
@@ -1492,7 +1523,7 @@ main.carrito{
     color: white;
     cursor: pointer;
     font-weight: 500;
-    width: 30%;
+    width: 180px;
     height: 52px;
 }
 

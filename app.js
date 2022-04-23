@@ -14,7 +14,11 @@ app.get('/', (req, res)=> {
 });
 
 app.get('/carrito', (req, res)=> {
-    res.sendFile(path.join(__dirname, '/views/carrito.html'))
+    res.sendFile(path.join(__dirname, '/views/productCart.html'))
+});
+
+app.post('/carrito', (req, res)=> {
+    res.sendFile(path.join(__dirname, '/views/productCart.html'))
 });
 
 app.get('/login', (req, res)=> {
@@ -22,20 +26,21 @@ app.get('/login', (req, res)=> {
 });
 
 app.get('/registro', (req, res)=> {
-    res.sendFile(path.join(__dirname, '/views/registro.html'))
+    res.sendFile(path.join(__dirname, '/views/register.html'))
 });
 app.post('/login', (req, res)=> {
     res.sendFile(path.join(__dirname, '/views/login.html'))
 });
 
 app.post('/registro', (req, res)=> {
-    res.sendFile(path.join(__dirname, '/views/registro.html'))
+    res.sendFile(path.join(__dirname, '/views/register.html'))
 });
 
 app.get('/productos', (req, res)=> {
-    res.sendFile(path.join(__dirname, '/views/productos.html'))
+    res.sendFile(path.join(__dirname, '/views/productDetail.html'))
 });
 
-app.get('/detalleDeProducto', (req, res)=> {
-    res.sendFile(path.join(__dirname, '/views/detalleDeProducto.html'))
+app.post('/productos', (req, res)=> {
+    res.sendFile(path.join(__dirname, '/views/productDetail.html'))
 });
+
