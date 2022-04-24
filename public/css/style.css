@@ -1030,6 +1030,7 @@ main.detalleDeProducto{
         margin-top: 0px;
         margin-top: 0px;
     }
+}    
         
 /* Small devices */
 @media (min-width:360px) and (max-width:719px) {
@@ -1060,6 +1061,7 @@ main.detalleDeProducto{
         margin-top: 0px;
     }
 }
+
 main.detalleDeProducto{
     padding: 20em 0 3.16em 0;
     width: 100%;
