@@ -94,20 +94,20 @@ Página simple de login al sitio web.
 
 ### **Index**
 
-![Preview del Home](https://github.com/lpnahuel/G8_Incendio_DelFuegoTecno/blob/main/public/imgREADME/index-mockup.png)
+![Home](https://github.com/lpnahuel/G8_Incendio_DelFuegoTecno/blob/main/public/imgREADME/index-mockup.png)
 
 ### **Carrito**
 
-![Preview del Home](https://github.com/lpnahuel/G8_Incendio_DelFuegoTecno/blob/main/public/imgREADME/productCart-mockup.png)
+![arrito](https://github.com/lpnahuel/G8_Incendio_DelFuegoTecno/blob/main/public/imgREADME/productCart-mockup.png)
 
 ### **Producto**
 
-![Preview del Home](https://github.com/lpnahuel/G8_Incendio_DelFuegoTecno/blob/main/public/imgREADME/productDetail-mockup.png)
+![Detalle de producto](https://github.com/lpnahuel/G8_Incendio_DelFuegoTecno/blob/main/public/imgREADME/productDetail-mockup.png)
 
 ### **Login**
 
-![Preview del Home](https://github.com/lpnahuel/G8_Incendio_DelFuegoTecno/blob/main/public/imgREADME/login-mockup.png)
+![Login](https://github.com/lpnahuel/G8_Incendio_DelFuegoTecno/blob/main/public/imgREADME/login-mockup.png)
 
-### **Register**
+### **Registro**
 
-![Preview del Home](https://github.com/lpnahuel/G8_Incendio_DelFuegoTecno/blob/main/public/imgREADME/register-mockup.png)
+![Registro](https://github.com/lpnahuel/G8_Incendio_DelFuegoTecno/blob/main/public/imgREADME/register-mockup.png)
