@@ -794,13 +794,13 @@ main.detalleDeProducto{
 
 .cont-det-producto{
     background-color: var(--gris-claro);
-    box-shadow: 4px 4px 6px var(--negro);
+    box-shadow: .25em .25em .38em var(--negro);
     display: flex;
     margin: 24px auto 0px auto;
-    height: 790px;
+    height: 51em;
     width: 70%;
-    flex-wrap: wrap;
-    padding: 30px 0;
+   /* flex-wrap: wrap;*/
+    padding: 1.88em 0;
     justify-content: space-evenly;
 }
 
@@ -808,7 +808,7 @@ main.detalleDeProducto{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin: 10px 0px 0px 25px;
+    margin: .63em 0em 0em 1.57em;
     width: 46%;
 
 }
@@ -824,7 +824,7 @@ main.detalleDeProducto{
     cursor: pointer;
     height: 100%;
     margin: auto;
-    padding: 16px;
+    padding: 1em;
     object-fit: contain;
     width: 100%;
 }
@@ -833,7 +833,7 @@ main.detalleDeProducto{
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    margin: 28px 0px 0px 0px;
+    margin: 1.75em 0em 0em 0em;
 
 }
 
@@ -850,25 +850,26 @@ main.detalleDeProducto{
     object-fit: contain;
     width: 100%;
     height: 100%;
-    padding: 8px;
+    padding: .5em;
     cursor: pointer;
 }
 
 .cont_des_prod{
     display: flex;
     flex-direction: column;
-    margin-top: 15px;
+    margin-top: .94em;
     width: 40%;
+    height: 50em;
 
 }
 
 .titulo_prod{
-    border-bottom: 1px solid var(--gris);
+    border-bottom: .06em solid var(--gris);
     font-family: "Roboto";
-    font-size: 26px;
+    font-size: 1.63em;
     font-weight: 500;
     color: var(--turq);
-    padding-bottom: 15px;
+    padding-bottom: .94em;
     width: 100%;
    
 }
@@ -876,10 +877,10 @@ main.detalleDeProducto{
 .subtitulo_prod{
     color: var(--turq);
     font-family: "Roboto";
-    font-size: 20px;
+    font-size: 1.25em;
     font-weight: 500;
-    margin-bottom: 0px;
-    margin-top: 0px;
+    margin-bottom: .25em;
+    margin-top: .25em;
 }
 
 .desc_prod{
@@ -894,13 +895,13 @@ main.detalleDeProducto{
 .precio_prod{
     color: var(--gris-osc);
     font-family: "Roboto";
-    font-size: 22px;
+    font-size: 1.38em;
     font-weight: 600;
-    padding: 15px 0 15px 0;
+    padding: .94em 0em .94em 0em;
 }
 
 .precio_prod > p{
-    margin: 0;
+    margin: 0em;
 }
 
 
@@ -910,7 +911,7 @@ main.detalleDeProducto{
     color: var(--blanco);
     cursor: pointer;
     font-weight: 500;
-    height: 50px;
+    height: 3.13em;
     width: 35%;
  
 }
@@ -929,10 +930,10 @@ main.detalleDeProducto{
     border: none;
     color: var(--magenta);
     cursor: pointer;
-    font-size: 20px;
+    font-size: 1.15em;
     text-rendering: auto;
     text-decoration: none;
-    padding: 0 25px 0 0;
+    padding: 0em 1.57em 0em 0em;
 
 }
 
@@ -941,7 +942,7 @@ main.detalleDeProducto{
     border: none;
     cursor: pointer;
     text-rendering: auto;
-    padding: 0 25px 0 0;
+    padding: 0em 1.57em 0em 0em;
 }
 
 .shop_b > a{
@@ -956,7 +957,7 @@ main.detalleDeProducto{
 }
 
 .shop_b > a > i{
-    font-size: 20px;
+    font-size: 1.25em;
 }
 
 .share_b{
@@ -964,10 +965,10 @@ main.detalleDeProducto{
     border: none;
     color:var(--gris-osc);
     cursor: pointer;
-    font-size: 20px;
+    font-size: 1.25em;
     text-rendering: auto;
     text-decoration: none;
-    padding: 0 25px 0 0;
+    padding: 0em 1.57em 0em 0em;
 }
 
 .share_b:hover{
@@ -980,6 +981,7 @@ main.detalleDeProducto{
     display: flex;
     flex-direction: column;
     margin-top: 0%;
+    margin-bottom: 0%;
     width: 100%;
     
 }
@@ -987,42 +989,9 @@ main.detalleDeProducto{
 .desc_prod_tex > p{
     color: var(--gris-osc);
     text-align: justify;
-    
+    margin-bottom: 0em;
+    margin-top: 0em;
 }
-
-/*media queries detprod*/
-
-@media (min-width:720px){
-
-    /*contenedor grande*/
-    .cont-det-producto{
-        align-items: center;
-        background-color: var(--gris-claro);
-        display: flex;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 100px;
-        justify-content: space-around;
-        padding-top: 30px;
-        padding-bottom: 30px;
-        width: 90%;
-        height: 60%;
-        box-shadow: 4px 4px 6px var(--negro);
-    }
-
-    /*contenedor imagenes producto*/
-    .cont-img-prodrticle{
-        width: 60%;
-    }
-
-    /* lado derecho */
-    .cont_des_prod{
-        background-color: var(--gris-claro);
-        display: flex;
-        width: 100%;
-        margin-bottom: 20px;
-        padding: 20px;
-    }
 
 
 
