@@ -878,6 +878,8 @@ main.detalleDeProducto{
     font-family: "Roboto";
     font-size: 20px;
     font-weight: 500;
+    margin-bottom: 0px;
+    margin-top: 0px;
 }
 
 .desc_prod{
@@ -886,7 +888,7 @@ main.detalleDeProducto{
     flex-wrap: wrap;
     justify-content: space-between;
     height: 8%;
-    padding-top: 15px;
+
     
 }
 .precio_prod{
@@ -987,6 +989,7 @@ main.detalleDeProducto{
     text-align: justify;
     
 }
+
 /* Info producto */
 
 
