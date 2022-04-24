@@ -797,7 +797,7 @@ main.detalleDeProducto{
     box-shadow: .25em .25em .38em var(--negro);
     display: flex;
     margin: 24px auto 0px auto;
-    height: 51em;
+    height: 53em;
     width: 70%;
    /* flex-wrap: wrap;*/
     padding: 1.88em 0;
