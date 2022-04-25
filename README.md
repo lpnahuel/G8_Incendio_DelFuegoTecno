@@ -98,11 +98,11 @@ Página simple de login al sitio web.
 
 ### **Carrito**
 
-![arrito](https://github.com/lpnahuel/G8_Incendio_DelFuegoTecno/blob/main/public/imgREADME/productCart-mockup.png)
+![Carrito](https://github.com/lpnahuel/G8_Incendio_DelFuegoTecno/blob/main/public/imgREADME/productCart-mockup.png)
 
 ### **Producto**
 
-![Detalle de producto](https://github.com/lpnahuel/G8_Incendio_DelFuegoTecno/blob/main/public/imgREADME/productDetail-mockup.png)
+![Producto](https://github.com/lpnahuel/G8_Incendio_DelFuegoTecno/blob/main/public/imgREADME/productDetail-mockup.png)
 
 ### **Login**
 
