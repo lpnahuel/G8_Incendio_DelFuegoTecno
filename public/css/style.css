@@ -796,12 +796,16 @@ h2.cont-prod__categorias{
 }
 
 .cont-dest__descripcion{
-    border-top: 1px solid var(--gris-osc);
     height: 124px;
     padding: 5px;
 
 }
 
+.descripcion__divis{
+    border: none;
+    border-top: 1px var(--gris-medio) solid;
+    width: 80%;
+}
 
 
 h3.descripcion__nombre-prod{
