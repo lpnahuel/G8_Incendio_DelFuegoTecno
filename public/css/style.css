@@ -279,7 +279,7 @@ body{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: space-between;
         width: 35%;
     }
 
@@ -375,7 +375,7 @@ body{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: space-between;
         width: 35%;
     }
 
