@@ -34,7 +34,7 @@ Bienvenidos al proyecto **Incendiado**, el mismo forma parte de la currícula de
 
 ![Logo del fuego tecno](https://github.com/lpnahuel/G8_Incendio_DelFuegoTecno/blob/main/public/imgREADME/dft-logo.png)
 
-**Del Fuego Tecno** es una empresa de venta de insumos tecnológicos. El objetivo es que el cliente no deba buscar en ningún otro lado lo que necesita para mejorar su conectividad con el mundo digital, encontrando todo en un sólo sitio, con precios competitivos en el mercado actual, con un listado variado de productos que satisfacen sus necesidades tecnologicas, pudiendo acceder a los mismos desde la comodidad de su casa.
+**Del Fuego Techno** es una empresa de venta de insumos tecnológicos. El objetivo es que el cliente no deba buscar en ningún otro lado lo que necesita para mejorar su conectividad con el mundo digital, encontrando todo en un sólo sitio, con precios competitivos en el mercado actual, con un listado variado de productos que satisfacen sus necesidades tecnologicas, pudiendo acceder a los mismos desde la comodidad de su casa.
 
 ### **Población Objetivo**
 
