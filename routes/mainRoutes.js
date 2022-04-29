@@ -3,14 +3,19 @@ const router = express.Router();
 const mainController = require("../controllers/MainController");
 
 router.get("/", mainController.index);
+router.post("/", mainController.indexPost);
 
 router.get("/carrito", mainController.productCart);
+router.post("/carrito", mainController.productCartPost);
 
 router.get("/producto", mainController.productDetail);
+router.post("/producto", mainController.productDetailPost);
 
 router.get("/login", mainController.login);
+router.post("/login", mainController.loginPost);
 
-router.get("/register", mainController.register);
+router.get("/registro", mainController.register);
+router.post("/registro", mainController.registerPost);
 
 module.exports = router;
 
