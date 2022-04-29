@@ -1,6 +1,6 @@
 # **Retrospectiva del Proyecto Integrador DelFuego Techno**
 
-## **Retrospectiva Primer Sprint**
+# **Retrospectiva Primer Sprint**
 
 ### **Comenzar a hacer:**
 
@@ -27,4 +27,55 @@ En primer lugar creemos que es necesario empezar a pedir ayuda con las cosas que
 ### **Dejar de hacer:**
 
 - Perder reuniones por falta de comunicacion previa o falta de organizacion.
+
+
+
+
+
+
+
+
+# **Retrospectiva Segundo Sprint**
+
+### **Comenzar a hacer:**
+
+- Retomar la reunion semanal que habiamos fijado al principio del proyecto integrador.
+
+- Informe semanal "Weeklys"
+
+- Organizarnos mejor
+
+### **Hacer más de:** 
+
+- Reunirnos más.
+
+- Practicar más.
+
+- Organizar más.
+
+- Optimizar el desarrollo de trello
+
+- Trabajar más en equipo.
+
+### **Seguir haciendo:**
+
+- Mantener la comunicacion a traves de los diferentes medios.
+
+- Seguir administrando y dividiendo el trabajo de manera ordenada.
+
+- Consultar a tutores cuando surge una duda.
+
+- Seguir utilizando la documentacion existente en paginas externas del curso (w3School, develop).
+
+### **Hacer menos de:** 
+
+- Atrasarnos con el playground.
+
+- Divagar menos en nuestro tiempo de trabajo personal y en las reuniones.
+
+### **Dejar de hacer:**
+
+- Pushear sin previo aviso (generar merge).
+
+- Modificar sin previo aviso partes del codigo que no me corresponden.
 
