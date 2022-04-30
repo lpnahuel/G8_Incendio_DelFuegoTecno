@@ -808,6 +808,37 @@ header{
 
 }
 
+ul.lista__productos {
+    min-width: 169px;
+    background: rgba(0,0,0,0.85);
+    display: none;
+    padding: 0 5px 0px 15px;
+    position: absolute;
+    z-index: 999;
+}
+
+ul.lista__productos > li {
+    list-style: none;
+    margin: 24px 0;
+}
+
+ul.lista__productos > li > a{
+    border: none;
+    color: var(--gris);
+    font-weight: 500;
+    text-decoration: none;
+
+}
+
+ul.lista__productos > li > a:hover{
+    color: var(--magenta);
+    font-weight: 600;
+}
+
+.lista__categorias:hover ul.lista__productos {
+    display: block;
+}
+
 /* -------- BOTONES SECUNDARIOS Y BÚSQUEDA -------- */
 
 .header__elem{
@@ -1010,16 +1041,20 @@ div.nav-cont__buttons{
 
 }
 
-
-
 .buttons__round > a > i{
     color:var(--gris-osc);
     text-decoration: none;
     max-height: 30px;
 }
-.buttons__round > a > i:hover{
+
+.nav-cont__buttons:hover .buttons__round > a > i{
     color:var(--magenta);
-    transition: all 250ms ease;
+    transition: all 300ms linear;
+}
+
+.nav-cont__buttons:hover .buttons__links > a{
+    color:var(--magenta);
+    transition: all 300ms linear;
 }
 
 
@@ -1080,8 +1115,9 @@ h2.cont-prod__categorias{
 
 .cont-dest:hover{
     animation: box-highlight 2s linear infinite;
-    /* transition: all 300ms linear; */
-
+} 
+.cont-dest:hover .descripcion__divis{
+    border-top: 1px var(--magenta) solid;
 } 
 
 .cont-dest > a{
@@ -1110,7 +1146,7 @@ h2.cont-prod__categorias{
 
 .descripcion__divis{
     border: none;
-    border-top: 1px var(--magenta) solid;
+    border-top: 1px var(--gris) solid;
     width: 80%;
 }
 
@@ -1155,12 +1191,14 @@ h3.descripcion__nombre-prod{
     background-color: transparent;
     border: none;
     color: var(--gris-osc);
+    cursor: pointer;
     font-size: 18px;
     position: absolute;
     right: 2%;
     top: 2%;
-
 }
+
+
 
 /* -------- Imagen central destacada -------- */
 
@@ -1235,8 +1273,7 @@ div.home-dest-central{
 
 
 .prod__img{
-    background-color: #484848;
-    box-shadow: 2px 2px 6px var(--negro);
+    background-color: var(--blanco);
     height: 75%;
     text-align: center;
     width: 100%;
@@ -1258,7 +1295,7 @@ div.home-dest-central{
 }
 
 .alt__img{
-    background-color: #484848;
+    background-color: var(--blanco);
     cursor: pointer;
     min-height: 100%;
 }
