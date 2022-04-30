@@ -18,7 +18,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!-- iconos -->
     <script src="https://kit.fontawesome.com/fe4ebeaca1.js" crossorigin="anonymous"></script>
 
-    <title>DelFuegoTechno - Carrito</title>
+    <title>DFT - Carrito</title>
 
 </head>
 <body>
@@ -36,10 +36,10 @@
             <!-- BOTONES PRINCIPALES -->
             <nav class="header__menu">    
                 <ul class="menu__lista">
-                    <li><a href="#">Productos</a></li>
-                    <li><a href="#">Ofertas</a></li>
-                    <li><a href="#">Nosotros</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">PRODUCTOS ▼</a></li>
+                    <li><a href="#">OFERTAS</a></li>
+                    <li><a href="#">NOSOTROS</a></li>
+                    <li><a href="#">CONTACTO</a></li>
                 </ul>
             </nav>
         
@@ -70,6 +70,7 @@
                 </section> -->
 
             </section>
+        </section>
             
             <!-- GUARDA DE COLORES -->
             <div class="guarda">             
@@ -77,7 +78,7 @@
 
     </header>
 
-    <main class="carrito">
+    <main class="main-general">
         <!-- carrito -->
         <!-- Seccion superior del carrito -->
         <!-- <span class="hiddenSpan">hidden</span> -->
@@ -95,7 +96,7 @@
                 <div class="caja">
                     <div class="caja-producto">
                         <div class="caja-producto-izquierda">
-                            <img class="img-producto" src="/img/kolink-inspire-k20-004.jpg" alt="Foto de kolink inspire k20">
+                            <img class="img-producto" src="/img/products/kolink-inspire-k20-001.png" alt="Foto de kolink inspire k20">
                         </div>
 
                         <div class="caja-producto-derecha">
@@ -104,14 +105,14 @@
                                     <a class="linkToProduct" href="">Gabinete Kolink Inspire K20</a>
                                 </div>
                                 <div class="caja-trashCan">
-                                    <i class="fa-solid fa-trash-can"></i>
+                                    <button type="button" class="trashCan__btn"><i class="fas fa-trash"></i></button>
                                 </div>                              
                             </div>
                             <div class="caja-producto-derecha-bottom">
                                 <div class="counter">
-                                    <i class="fa-solid fa-circle-minus"></i>
+                                    <button type="submit" class="counter__btn"><i class="fa fa-minus-circle"></i></button>
                                     <input id="count" class="count-form" name="count" type="number" value="1">
-                                    <i class="fa-solid fa-circle-plus"></i>
+                                    <button type="submit" class="counter__btn"><i class="fa fa-plus-circle"></i></button>
                                 </div>
                                 <div class="caja-price">$6500</div>                                
                             </div>
@@ -120,7 +121,7 @@
 
                     <div class="caja-producto">
                         <div class="caja-producto-izquierda">
-                            <img class="img-producto" src="/img/msi-i7-rtx2070-001.jpg" alt="Foto de kolink inspire k20">
+                            <img class="img-producto" src="/img/products/msi-i7-brx2070-001.png" alt="Foto de notebook MSI i7 brx2070">
                         </div>
 
                         <div class="caja-producto-derecha">
@@ -129,14 +130,14 @@
                                     <a class="linkToProduct" href="">Notebook Gamer Msi i7 Rtx2070 16gb</a>
                                 </div>
                                 <div class="caja-trashCan">
-                                    <i class="fa-solid fa-trash-can"></i>
+                                    <button type="button" class="trashCan__btn"><i class="fas fa-trash"></i></button>
                                 </div>                              
                             </div>
                             <div class="caja-producto-derecha-bottom">
                                 <div class="counter">
-                                    <i class="fa-solid fa-circle-minus"></i>
+                                    <button type="submit" class="counter__btn"><i class="fa fa-minus-circle"></i></button>
                                     <input id="count" class="count-form" name="count" type="number" value="1">
-                                    <i class="fa-solid fa-circle-plus"></i>
+                                    <button type="submit" class="counter__btn"><i class="fa fa-plus-circle"></i></button>
                                 </div>
                                 <div class="caja-price">$329.990</div>                                
                             </div>
@@ -160,7 +161,7 @@
 
                 <h2 class="rightArticle-resumenDeOrden">Resumen De La Orden</h2>
 
-                <hr class="solid">
+                <hr class="hr__divis">
 
                 <div class="rightArticle-div">
 
@@ -178,7 +179,7 @@
 
                 </div>
 
-                <hr class="solid">
+                <hr class="hr__divis">
 
                 <div class="rightArticle-div-total">
 
@@ -188,7 +189,7 @@
 
                 </div>
 
-                <hr class="solid">
+                <hr class="hr__divis">
 
                 <div class="rightArticle-div-finalizar">
 
@@ -202,14 +203,14 @@
         <!-- Seccion inferior del carrito -->
         <section class="main-home__cont-prod">
 
-            <h2 class="cont-prod__categorias">Productos relacionados</h2>
+            <h2 class="cont-prod__categorias">Otros usuarios también compraron</h2>
 
             <nav class="cont-prod__articulos">
 
                 <article class="cont-dest">
                     <a class="cont-dest__link" href="/producto">
                         <article class="cont-dest__img">
-                            <img src="/img/asus-zephyrus-duo_15-GX550LXS-001.jpg" class="img__producto" alt="Asus Rog Zephyrus Duo">
+                            <img src="/img/products/asus-zephyrus-duo_15-GX550LXS-001.png" class="img__producto" alt="Asus Rog Zephyrus Duo">
                         </article>
                         <article class="cont-dest__descripcion">
                             <hr class = "descripcion__divis">
@@ -224,7 +225,7 @@
                 <article class="cont-dest">
                     <a class="cont-dest__link" href="/producto">
                         <article class="cont-dest__img">
-                            <img src="/img/placa-video-radeon-rx_41411_1.jpeg" class="img__producto" alt="Acer Nitro i5">
+                            <img src="/img/products/placa-video-radeon-rx_41411_1.png" class="img__producto" alt="Placa MSI Radeon Rx6800">
                         </article>
                         <article class="cont-dest__descripcion">
                             <hr class = "descripcion__divis">
@@ -239,7 +240,7 @@
                 <article class="cont-dest">
                     <a class="cont-dest__link" href="/producto">
                         <article class="cont-dest__img">
-                            <img src="/img/kolink-inspire-k20-001.jpg" class="img__producto" alt="Acer Nitro i5">
+                            <img src="/img/products/kolink-inspire-k20-001.png" class="img__producto" alt="Gabinete Kolink Inspire K20">
                         </article>
                         <article class="cont-dest__descripcion">
                             <hr class = "descripcion__divis">
@@ -254,7 +255,7 @@
                 <article class="cont-dest">
                     <a class="cont-dest__link" href="/producto">
                         <article class="cont-dest__img">
-                            <img src="/img/steelseries-rival650-001.jpg" class="img__producto" alt="Acer Nitro i5">
+                            <img src="/img/products/steelseries-rival650-001.png" class="img__producto" alt="Steelseries Rival 650">
                         </article>
                         <article class="cont-dest__descripcion">
                             <hr class = "descripcion__divis">

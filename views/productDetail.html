@@ -23,7 +23,7 @@
 <body>
     
     <header>
-                        
+                
         <section class="contenedor-header">                   
                 
             <!-- LOGO -->
@@ -35,10 +35,10 @@
             <!-- BOTONES PRINCIPALES -->
             <nav class="header__menu">    
                 <ul class="menu__lista">
-                    <li><a href="#">Productos</a></li>
-                    <li><a href="#">Ofertas</a></li>
-                    <li><a href="#">Nosotros</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">PRODUCTOS ▼</a></li>
+                    <li><a href="#">OFERTAS</a></li>
+                    <li><a href="#">NOSOTROS</a></li>
+                    <li><a href="#">CONTACTO</a></li>
                 </ul>
             </nav>
         
@@ -69,6 +69,7 @@
                 </section> -->
 
             </section>
+        </section>
             
             <!-- GUARDA DE COLORES -->
             <div class="guarda">             
@@ -76,7 +77,7 @@
 
     </header>
 
-    <main class="detalleDeProducto">
+    <main class="main-general">
 
         
         <section class="cont-det-producto">            
@@ -85,22 +86,22 @@
             <section class="cont-img-prod">
                 
                 <div class="leftArticle-breadCrum">                    
-                    <a class="breadCrum" href="/">Home</a><span>/</span><a class="breadCrum" href="">Periféricos</a><span>/</span><a class="breadCrum" href="">Mouse</a><span>/</span>                       
+                    <a class="breadCrum" href="/">Home/<a class="breadCrum" href="">Periféricos/<a class="breadCrum" href="">Mouse/</a>                      
                 </div>
                 <div class="prod__img">
-                    <img class="img__ppal" src="\img\steelseries-rival650-001.jpg" alt="Imagen mouse">
+                    <img class="img__ppal" src="/img/products/steelseries-rival650-001.png" alt="Imagen mouse">
                 </div>
                 
                 <!-- Imagenes alternativas -->
                 <nav class="prod__alt">
                     <div class="alt__img">
-                        <img class="img__fotito" src="/img/steelseries-rival650-002.jpeg" alt="Imagen alternativa 1">
+                        <img class="img__fotito" src="/img/products/steelseries-rival650-002.png" alt="Imagen alternativa 1">
                     </div>
                     <div class="alt__img">
-                        <img class="img__fotito" src="\img\steelseries-rival650-003.jpg" alt="Imagen alternativa 2">
+                        <img class="img__fotito" src="/img/products/steelseries-rival650-003.png" alt="Imagen alternativa 2">
                     </div>
                         <div class="alt__img">
-                        <img class="img__fotito" src="\img\steelseries-rival650-004.jpg" alt="Imagen alternativa 3">
+                        <img class="img__fotito" src="/img/products/steelseries-rival650-004.png" alt="Imagen alternativa 3">
                     </div>
                 </nav>
             </section>
@@ -108,7 +109,8 @@
 
             <!-- contenedor de Descripcion del producto -->
             <section class="cont_des_prod">
-                <h1 class="titulo_prod">Mouse SteelSeries Rival 650 Wireless</h1>
+                <h1 class="titulo__prod">Mouse SteelSeries Rival 650 Wireless</h1>
+                <hr class="titulo__divis"></hr>
                 
                 <nav class="desc_prod">
                     
@@ -121,7 +123,7 @@
                     
                     <!-- Boton compra -->
                     
-                    <button type="button" class="Comprar_prod"><a href="/carrito"></a>Comprar</button>
+                    <button type="button" class="comprar_prod"><a href="/carrito"></a>Comprar</button>
                     
                     
                 </nav>
@@ -153,162 +155,159 @@
             </section>              
         </section>
         
+       
+        <!-- CARRUSEL DESTACADOS 2 -->
+        <section class="main-home__cont-prod">
 
+            <h2 class="cont-prod__categorias">Productos similares</h2>
         
-                  
-                   <!-- CARRUSEL DESTACADOS 2 -->
-
-                   <section class="main-home__cont-prod">
-
-                    <h2 class="cont-prod__categorias">Te puede interesar:</h2>
+                <nav class="cont-prod__articulos">
         
-                    <nav class="cont-prod__articulos">
-
-                        <article class="cont-dest">
-                            <a class="cont-dest__link" href="/producto">
-                                <article class="cont-dest__img">
-                                    <img src="/img/asus-zephyrus-duo_15-GX550LXS-001.jpg" class="img__producto" alt="Asus Rog Zephyrus Duo">
-                                </article>
-                                <article class="cont-dest__descripcion">
-                                    <hr class = "descripcion__divis">
-                                    <h3 class="descripcion__nombre-prod">Asus Rog Zephyrus Duo Ryzen 9 16Gb 1Tb Rtx 3060</h3>
-                                    <h4 class="descripcion__precio">$580.000</h4>
-                                </article>
-                                <a href="/carrito" class="cont-dest__carrito"><i class="material-icons">add_shopping_cart</i></a>
-                                <button class="cont-dest__fav" type="submit"><i class="fas fa-heart"></i></button>                    
-                            </a>
-                        </article>
+                    <article class="cont-dest">
+                        <a class="cont-dest__link" href="/producto">
+                            <article class="cont-dest__img">
+                                <img src="/img/products/asus-zephyrus-duo_15-GX550LXS-001.png" class="img__producto" alt="Asus Rog Zephyrus Duo">
+                            </article>
+                            <article class="cont-dest__descripcion">
+                                <hr class = "descripcion__divis">
+                                <h3 class="descripcion__nombre-prod">Asus Rog Zephyrus Duo Ryzen 9 16Gb 1Tb Rtx 3060</h3>
+                                <h4 class="descripcion__precio">$580.000</h4>
+                            </article>
+                            <a href="/carrito" class="cont-dest__carrito"><i class="material-icons">add_shopping_cart</i></a>
+                            <button class="cont-dest__fav" type="submit"><i class="fas fa-heart"></i></button>                    
+                        </a>
+                    </article>
                         
-                        <article class="cont-dest">
-                            <a class="cont-dest__link" href="/producto">
-                                <article class="cont-dest__img">
-                                    <img src="/img/placa-video-radeon-rx_41411_1.jpeg" class="img__producto" alt="Acer Nitro i5">
-                                </article>
-                                <article class="cont-dest__descripcion">
-                                    <hr class = "descripcion__divis">
-                                    <h3 class="descripcion__nombre-prod">Placa De Video Msi Gaming Radeon Rx 6800 X Trio 16G</h3>
-                                    <h4 class="descripcion__precio">$289.900</h4>
-                                </article>
-                                <a href="/carrito" class="cont-dest__carrito"><i class="material-icons">add_shopping_cart</i></a>
-                                <button class="cont-dest__fav" type="submit"><i class="far fa-heart"></i></button>                  
-                            </a>
-                        </article>
+                    <article class="cont-dest">
+                        <a class="cont-dest__link" href="/producto">
+                            <article class="cont-dest__img">
+                                <img src="/img/products/placa-video-radeon-rx_41411_1.png" class="img__producto" alt="Placa MSI Radeon Rx6800">
+                            </article>
+                            <article class="cont-dest__descripcion">
+                                <hr class = "descripcion__divis">
+                                <h3 class="descripcion__nombre-prod">Placa De Video Msi Gaming Radeon Rx 6800 X Trio 16G</h3>
+                                <h4 class="descripcion__precio">$289.900</h4>
+                            </article>
+                            <a href="/carrito" class="cont-dest__carrito"><i class="material-icons">add_shopping_cart</i></a>
+                            <button class="cont-dest__fav" type="submit"><i class="far fa-heart"></i></button>                  
+                        </a>
+                    </article>
         
-                        <article class="cont-dest">
-                            <a class="cont-dest__link" href="/producto">
-                                <article class="cont-dest__img">
-                                    <img src="/img/kolink-inspire-k20-001.jpg" class="img__producto" alt="Acer Nitro i5">
-                                </article>
-                                <article class="cont-dest__descripcion">
-                                    <hr class = "descripcion__divis">
-                                    <h3 class="descripcion__nombre-prod">Gabinete Kolink Inspire K20</h3>
-                                    <h4 class="descripcion__precio">$6.700</h4>
-                                </article>
-                                <a href="/carrito" class="cont-dest__carrito"><i class="material-icons">add_shopping_cart</i></a>
-                                <button class="cont-dest__fav" type="submit"><i class="far fa-heart"></i></button>                     
-                            </a>                
-                        </article>
+                    <article class="cont-dest">
+                        <a class="cont-dest__link" href="/producto">
+                            <article class="cont-dest__img">
+                                <img src="/img/products/kolink-inspire-k20-001.png" class="img__producto" alt="Gabinete Kolink Inspire K20">
+                            </article>
+                            <article class="cont-dest__descripcion">
+                                <hr class = "descripcion__divis">
+                                <h3 class="descripcion__nombre-prod">Gabinete Kolink Inspire K20</h3>
+                                <h4 class="descripcion__precio">$6.700</h4>
+                             </article>
+                            <a href="/carrito" class="cont-dest__carrito"><i class="material-icons">add_shopping_cart</i></a>
+                            <button class="cont-dest__fav" type="submit"><i class="far fa-heart"></i></button>                     
+                        </a>                
+                    </article>
                         
-                        <article class="cont-dest">
-                            <a class="cont-dest__link" href="/producto">
-                                <article class="cont-dest__img">
-                                    <img src="/img/steelseries-rival650-001.jpg" class="img__producto" alt="Acer Nitro i5">
-                                </article>
-                                <article class="cont-dest__descripcion">
-                                    <hr class = "descripcion__divis">
-                                    <h3 class="descripcion__nombre-prod">Mouse Steelseries Rival 650 Quantum</h3>
-                                    <h4 class="descripcion__precio">$37.570</h4>
-                                </article>
-                                <a href="/carrito" class="cont-dest__carrito"><i class="material-icons">add_shopping_cart</i></a>
-                                <button class="cont-dest__fav" type="submit"><i class="far fa-heart"></i></button>               
-                            </a>                
-                        </article>
+                    <article class="cont-dest">
+                        <a class="cont-dest__link" href="/producto">
+                            <article class="cont-dest__img">
+                                <img src="/img/products/steelseries-rival650-001.png" class="img__producto" alt="Steelseries Rival 650">
+                            </article>
+                            <article class="cont-dest__descripcion">
+                                <hr class = "descripcion__divis">
+                                <h3 class="descripcion__nombre-prod">Mouse Steelseries Rival 650 Quantum</h3>
+                                <h4 class="descripcion__precio">$37.570</h4>
+                            </article>
+                            <a href="/carrito" class="cont-dest__carrito"><i class="material-icons">add_shopping_cart</i></a>
+                            <button class="cont-dest__fav" type="submit"><i class="far fa-heart"></i></button>               
+                        </a>                
+                    </article>
         
+                </nav>
+        
+        </section>
+
+    </main>
+
+    <footer>
+        <section class="contenedor-footer">
+               
+            <!-- LOGO FOOTER -->
+            
+            <a class="footer__logo" href="/">
+                <img class = "logo__ft-img" src="img/dft-logo.png" alt="Logo del fuego techno">
+            </a>
+            
+    
+    
+            <!-- SUBTÍTULOS Y CONTENIDO FOOTER -->
+                
+            <section class="footer_elem">
+                    
+                <!-- CATEGORIAS -->
+                <nav class="elem__links">
+                    <h3 class="h3-footer">Categorías</h3>
+                    <ul>
+                        <li><a href="#">Accesorios</a></li>
+                        <li><a href="#">Componentes</a></li>
+                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#">FaQ</a></li>
+                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="#">Notebooks</a></li>
+                        <li><a href="#">Ofertas</a></li>
+                        <li><a href="#">PC Armadas</a></li>
+                        <li><a href="#">Periféricos</a></li>
+                        <li><a href="#">Sillas Gamer</a></li>
+                    </ul>
+                </nav>
+                    
+                    <!-- CONTACTO -->
+                    <nav class="elem__links">
+                        <h3 class="h3-footer">Contacto</h3>
+                        <ul>
+                            <li>Av. Saraza 21845 - CABA</li>
+                            <li>Horario de atención de 10hs a 20hs</li>
+                            <li>Teléfono: 4455-6677</li>
+                            <li>WhatsApp: +54 9 1122334455</li>
+                        </ul>
+                    </nav>
+                    
+                </section>
+    
+            <section class="elem__links">
+
+                <!-- REDES SOCIALES -->
+                <section class="links__redes">
+                    <h3 class="h3-footer">Redes Sociales</h3>
+
+                    <nav class="redes__buttons">
+                        <ul class="buttons__rs">
+                            <li class="rs__ig"><a href="https://www.instagram.com/dft.incendio/"><i class="fab fa-instagram"></i></a></li>
+                            <li class="rs__fb"><a href="https://www.facebook.com/g8DFTincendio/"><i class="fab fa-facebook"></i></a></li>
+                            <li class="rs__yt"><a href="#"><i class="fab fa-youtube"></i></a></li>
+                            <li class="rs__tw"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        </ul>    
                     </nav>
                 </section>
+                    
+                <!-- NEWSLETTER -->
+                <article class="links__newsletter">
 
-
-            </main>
-
-            <footer>
+                    <h3 class="h3-footer">Newsletter</h3>
+                    <form class="newsletter__bar">
+                        <input class="newsletter__mail" type="email" placeholder="ejemplo@mail.com" >
+                        <button class="bar__send" type="submit">
+                            Enviar
+                        </button>
+                    </form>
+                </article>
+    
+            </section>
+    
+        </section>
          
-                <section class="contenedor-footer">
-                       
-                    <!-- LOGO FOOTER -->
-                    
-                    <a class="footer__logo" href="/">
-                        <img class = "logo__ft-img" src="img/dft-logo.png" alt="Logo del fuego techno">
-                    </a>
-                    
+
+    </footer>
             
-            
-                    <!-- SUBTÍTULOS Y CONTENIDO FOOTER -->
-                        
-                    <section class="footer_elem">
-                            
-                        <!-- CATEGORIAS -->
-                        <nav class="elem__links">
-                            <h3 class="h3-footer">Categorías</h3>
-                            <ul>
-                                <li><a href="#">Accesorios</a></li>
-                                <li><a href="#">Componentes</a></li>
-                                <li><a href="#">Contacto</a></li>
-                                <li><a href="#">FaQ</a></li>
-                                <li><a href="#">Nosotros</a></li>
-                                <li><a href="#">Notebooks</a></li>
-                                <li><a href="#">Ofertas</a></li>
-                                <li><a href="#">PC Armadas</a></li>
-                                <li><a href="#">Periféricos</a></li>
-                                <li><a href="#">Sillas Gamer</a></li>
-                            </ul>
-                        </nav>
-                            
-                            <!-- CONTACTO -->
-                            <nav class="elem__links">
-                                <h3 class="h3-footer">Contacto</h3>
-                                <ul>
-                                    <li>Av. Saraza 21845 - CABA</li>
-                                    <li>Horario de atención de 10hs a 20hs</li>
-                                    <li>Teléfono: 4455-6677</li>
-                                    <li>WhatsApp: +54 9 1122334455</li>
-                                </ul>
-                            </nav>
-                            
-                        </section>
-            
-                    <section class="elem__links">
-        
-                        <!-- REDES SOCIALES -->
-                        <section class="links__redes">
-                            <h3 class="h3-footer">Redes Sociales</h3>
-        
-                            <nav class="redes__buttons">
-                                <ul class="buttons__rs">
-                                    <li class="rs__ig"><a href="https://www.instagram.com/dft.incendio/"><i class="fab fa-instagram"></i></a></li>
-                                    <li class="rs__fb"><a href="https://www.facebook.com/g8DFTincendio/"><i class="fab fa-facebook"></i></a></li>
-                                    <li class="rs__yt"><a href="#"><i class="fab fa-youtube"></i></a></li>
-                                    <li class="rs__tw"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                </ul>    
-                            </nav>
-                        </section>
-                            
-                        <!-- NEWSLETTER -->
-                        <article class="links__newsletter">
-        
-                            <h3 class="h3-footer">Newsletter</h3>
-                            <form class="newsletter__bar">
-                                <input class="newsletter__mail" type="email" placeholder="ejemplo@mail.com" >
-                                <button class="bar__send" type="submit">
-                                    Enviar
-                                </button>
-                            </form>
-                        </article>
-            
-                    </section>
-            
-                </section>
-                    
-            </footer>
-            
-    </body>
+</body>
 </html>
