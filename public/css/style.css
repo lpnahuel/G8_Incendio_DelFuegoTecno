@@ -1438,7 +1438,7 @@ div.home-dest-central{
 
 .desc_prod_tex > p{
     color: var(--gris);
-    text-align: justify;
+    text-align: left;
 }
 
 
