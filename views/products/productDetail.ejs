@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../partials/head') %> 
+<body>
+    
+    <%- include('../partials/header') %> 
+
+    <main class="main-general">
+
+        
+        <section class="cont-det-producto">            
+            
+            <!-- Contenedor de imagen del producto -->
+            <section class="cont-img-prod">
+                
+                <div class="leftArticle-breadCrum">                    
+                    <a class="breadCrum" href="/">Home/<a class="breadCrum" href="">Periféricos/<a class="breadCrum" href="">Mouse/</a>                      
+                </div>
+                <div class="prod__img">
+                    <img class="img__ppal" src="/img/products/steelseries-rival650-001.png" alt="Imagen mouse">
+                </div>
+                
+                <!-- Imagenes alternativas -->
+                <nav class="prod__alt">
+                    <div class="alt__img">
+                        <img class="img__fotito" src="/img/products/steelseries-rival650-002.png" alt="Imagen alternativa 1">
+                    </div>
+                    <div class="alt__img">
+                        <img class="img__fotito" src="/img/products/steelseries-rival650-003.png" alt="Imagen alternativa 2">
+                    </div>
+                        <div class="alt__img">
+                        <img class="img__fotito" src="/img/products/steelseries-rival650-004.png" alt="Imagen alternativa 3">
+                    </div>
+                </nav>
+            </section>
+
+
+            <!-- contenedor de Descripcion del producto -->
+            <section class="cont_des_prod">
+                <h1 class="titulo__prod">Mouse SteelSeries Rival 650 Wireless</h1>
+                <hr class="titulo__divis"></hr>
+                
+                <nav class="desc_prod">
+                    
+                    <!-- Barra icnonos -->
+                    <div class="iconos_prod">
+                        <button type="button" class="heart_b"><i class="far fa-heart"></i></button>  
+                        <button type="button" class="share_b"><i class="fa fa-share-alt"></i></button> 
+                        <button type="button" class="shop_b"><a href="/carrito"><i class="fas fa-shopping-cart"></i></a></button>
+                    </div>
+                    
+                    <!-- Boton compra -->
+                    
+                    <button type="button" class="comprar_prod"><a href="/carrito"></a>Comprar</button>
+                    
+                    
+                </nav>
+                
+                <!-- precio -->
+                <div class="precio_prod">
+                    <p>$25000</p>
+                </div>
+
+                    <!-- Descripcion producto -->
+                    <div class="desc_prod_tex">
+                        <h3 class="subtitulo_prod">Descripción</h3>
+                        <p>Mouse SteelSeries Rival 650 Wireless Rendimiento sin retrasos de Quantum Wireless. 
+                            Duración de la batería de más de 24 horas con carga rápida. Sensor óptico exclusivo TrueMove3 + 12.000 CPI, 
+                            350 IPS. La distancia de despegue más baja y precisa del mundo. 256 configuraciones de ajuste de peso del centro de gravedad. 
+                            Interruptores mecánicos de disparador dividido de 60 millones de clics. Agarres laterales de silicona para mayor agarre y 
+                            durabilidad. Iluminación RGB de 8 zonas con notificaciones Discord. Guarde la configuración del sensor, las macros y los
+                            efectos de iluminación a bordo. Personalización total con SteelSeries Engine</p>
+                    </div>
+                
+                    <div class="desc_prod_tex">
+                        <h3 class="subtitulo_prod">Características técnicas</h3>
+                        <p>Sensor óptico exclusivo TrueMove3 + 12.000 CPI, 350 IPS
+                            Características	Interruptores mecánicos de disparador dividido de 60 millones de clics
+                            Agarres laterales de silicona para mayor agarre y durabilidad. 
+                            Iluminación RGB de 8 zonas con notificaciones Discord 
+                            Personalización total con SteelSeries. Duración de la batería de más de 24 horas con carga rápida</p>
+                    </div>        
+            </section>              
+        </section>
+        
+       
+        <!-- CARRUSEL DESTACADOS 2 -->
+        <section class="main-home__cont-prod">
+
+            <h2 class="cont-prod__categorias">Productos similares</h2>
+        
+                <nav class="cont-prod__articulos">
+        
+                    <%- include('../partials/carrusel') %> 
+        
+                </nav>
+        
+        </section>
+
+    </main>
+
+    <%- include('../partials/footer') %> 
+            
+</body>
+</html>

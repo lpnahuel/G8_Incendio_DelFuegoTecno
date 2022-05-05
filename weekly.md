@@ -23,6 +23,7 @@ En la reunion se trataron los siguientes puntos:
 (opcional) Generar nuevas vistas para la web.
 
 **Informe comienzo de semana 04/05/2022**
+- Se reprogramó la reunión del 03/05 debido a una clase extra
 
 **Informe comienzo de semana 11/05/2022**
 

@@ -1,89 +1,19 @@
-<!-- CARRUSEL DESTACADOS 2 -->
-
-<section class="main-home__cont-prod">
-
-    <h2 class="cont-prod__categorias">Notebooks</h2>
-
-    <nav class="cont-prod__articulos">
-
-        <article class="cont-dest">
-            <a class="cont-dest__link" href="/producto">
-                <article class="cont-dest__img">
-                    <img src="/img/products/asus-zephyrus-duo_15-GX550LXS-001.png" class="img__producto" alt="Asus Rog Zephyrus Duo">
-                </article>
-                <article class="cont-dest__descripcion">
-                    <hr class = "descripcion__divis">
-                    <h3 class="descripcion__nombre-prod">Asus Rog Zephyrus Duo Ryzen 9 16Gb 1Tb Rtx 3060</h3>
-                    <h4 class="descripcion__precio">$580.000</h4>
-                </article>
-                <a href="/carrito" class="cont-dest__carrito"><i class="material-icons">add_shopping_cart</i></a>
-                <button class="cont-dest__fav" type="submit"><i class="far fa-heart"></i></button>                    
-            </a>
-        </article>
-        
-        <article class="cont-dest">
-            <a class="cont-dest__link" href="/producto">
-                <article class="cont-dest__img">
-                    <img src="/img/products/hp-omen-1020-001.png" class="img__producto" alt="HP omen 1020">
-                </article>
-                <article class="cont-dest__descripcion">
-                    <hr class = "descripcion__divis">
-                    <h3 class="descripcion__nombre-prod">Notebook Gamer HP OMEN 15-DC1020NR</h3>
-                    <h4 class="descripcion__precio">$335.000</h4>
-                </article>
-                <a href="/carrito" class="cont-dest__carrito"><i class="material-icons">add_shopping_cart</i></a>
-                <button class="cont-dest__fav" type="submit"><i class="far fa-heart"></i></button>                  
-            </a>
-        </article>
-
-        <article class="cont-dest">
-            <a class="cont-dest__link" href="/producto">
-                <article class="cont-dest__img">
-                    <img src="/img/products/acer-nitro-i5-001.png" class="img__producto" alt="Acer Nitro i5">
-                </article>
-                <article class="cont-dest__descripcion">
-                    <hr class = "descripcion__divis">
-                    <h3 class="descripcion__nombre-prod">Notebook Gamer Acer Nitro I5 10Ma 8Gb Ssd256 Gtx1650</h3>
-                    <h4 class="descripcion__precio">$144.000</h4>
-                </article>
-                <a href="/carrito" class="cont-dest__carrito"><i class="material-icons">add_shopping_cart</i></a>
-                <button class="cont-dest__fav" type="submit"><i class="far fa-heart"></i></button>                     
-            </a>                
-        </article>
-        
-        <article class="cont-dest">
-            <a class="cont-dest__link" href="/producto">
-                <article class="cont-dest__img">
-                    <img src="/img/products/alienware-17-r5-001.png" class="img__producto" alt="Alienware 17 R5 17.3' ">
-                </article>
-                <article class="cont-dest__descripcion">
-                    <hr class = "descripcion__divis">
-                    <h3 class="descripcion__nombre-prod">Notebook Gamer Dell Alienware 17 R5 17.3'</h3>
-                    <h4 class="descripcion__precio">$508.890</h4>
-                </article>
-                <a href="/carrito" class="cont-dest__carrito"><i class="material-icons">add_shopping_cart</i></a>
-                <button class="cont-dest__fav" type="submit"><i class="far fa-heart"></i></button>               
-            </a>                
-        </article>
-
-    </nav>
-
-</section>
+        <% productos.forEach(producto => { %>
+            <article class="cont-dest">
+                <a class="cont-dest__link" href="/producto">
+                    <article class="cont-dest__img">
+                        <img src="/img/products/<%= producto.imagen %>.png" class="img__producto" alt="<%= productos.nombre %>">
+                    </article>
+                    <article class="cont-dest__descripcion">
+                        <hr class = "descripcion__divis">
+                        <h3 class="descripcion__nombre-prod"><%= producto.nombre %></h3>
+                        <h4 class="descripcion__precio"><%= producto.precio %></h4>
+                    </article>
+                    <a href="/carrito" class="cont-dest__carrito"><i class="material-icons">add_shopping_cart</i></a>
+                    <button class="cont-dest__fav" type="submit"><i class="far fa-heart"></i></button>                    
+                </a>
+            </article>
+        <% }) %> 
 
 
-<section class="main-home__banner-marcas">
-    <h4 class="banner-marcas__titulo">ENCONTRÁ TUS MARCAS FAVORITAS</h4>
-    <nav class="banner-marcas__logos">
-        <a href="#" class="logos__link"><img src="/img/logitech-logo.png" alt="Logitech" class="link__img"></a>
-        <a href="#" class="logos__link"><img src="/img/hp-logo.png" alt="HP" class="link__img"></a>
-        <a href="#" class="logos__link"><img src="/img/amd-logo.png" alt="AMD" class="link__img"></a>
-        <a href="#" class="logos__link"><img src="/img/msi-logo.png" alt="MSI" class="link__img"></a>
-        <a href="#" class="logos__link"><img src="/img/asus-logo.png" alt="ASUS" class="link__img"></a>
-        <a href="#" class="logos__link"><img src="/img/evga-logo.png" alt="EVGA" class="link__img"></a>
-        <a href="#" class="logos__link"><img src="/img/intel-logo.png" alt="INTEL" class="link__img"></a>
-        <a href="#" class="logos__link"><img src="/img/razer-logo.png" alt="Razer" class="link__img"></a>
-        <a href="#" class="logos__link"><img src="/img/nvidia-logo.png" alt="N-vidia" class="link__img"></a>
-        <a href="#" class="logos__link"><img src="/img/corsair-logo.png" alt="Corsair" class="link__img"></a>
-        <a href="#" class="logos__link"><img src="/img/gigabyte-logo.png" alt="Gigabyte" class="link__img"></a>
-    </nav>
-</section>
+

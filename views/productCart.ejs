@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <%- include('./partials/head') %> 
+<body>
+
+    <%- include('./partials/header') %> 
+
+    <main class="main-general">
+        <!-- carrito -->
+        <!-- Seccion superior del carrito -->
+        <!-- <span class="hiddenSpan">hidden</span> -->
+        <section class="top-section">
+            <!-- Contenedor de productos para la compra -->
+            <article class="leftArticle">
+
+                
+                <div class="leftArticle-breadCrum">                    
+                    <a class="breadCrum" href="/">Volver</a><span>                 
+                </div>
+
+                <h2 class="carrito-title"><i class="fa-solid fa-cart-shopping"></i>  Mi Carrito</h2>
+
+                <div class="caja">
+                    <div class="caja-producto">
+                        <div class="caja-producto-izquierda">
+                            <img class="img-producto" src="/img/products/kolink-inspire-k20-001.png" alt="Foto de kolink inspire k20">
+                        </div>
+
+                        <div class="caja-producto-derecha">
+                            <div class="caja-producto-derecha-top">
+                                <div class="caja-descripcion-producto">
+                                    <a class="linkToProduct" href="">Gabinete Kolink Inspire K20</a>
+                                </div>
+                                <div class="caja-trashCan">
+                                    <button type="button" class="trashCan__btn"><i class="fas fa-trash"></i></button>
+                                </div>                              
+                            </div>
+                            <div class="caja-producto-derecha-bottom">
+                                <div class="counter">
+                                    <button type="submit" class="counter__btn"><i class="fa fa-minus-circle"></i></button>
+                                    <input id="count" class="count-form" name="count" type="number" value="1">
+                                    <button type="submit" class="counter__btn"><i class="fa fa-plus-circle"></i></button>
+                                </div>
+                                <div class="caja-price">$6500</div>                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="caja-producto">
+                        <div class="caja-producto-izquierda">
+                            <img class="img-producto" src="/img/products/msi-i7-brx2070-001.png" alt="Foto de notebook MSI i7 brx2070">
+                        </div>
+
+                        <div class="caja-producto-derecha">
+                            <div class="caja-producto-derecha-top">
+                                <div class="caja-descripcion-producto">
+                                    <a class="linkToProduct" href="">Notebook Gamer Msi i7 Rtx2070 16gb</a>
+                                </div>
+                                <div class="caja-trashCan">
+                                    <button type="button" class="trashCan__btn"><i class="fas fa-trash"></i></button>
+                                </div>                              
+                            </div>
+                            <div class="caja-producto-derecha-bottom">
+                                <div class="counter">
+                                    <button type="submit" class="counter__btn"><i class="fa fa-minus-circle"></i></button>
+                                    <input id="count" class="count-form" name="count" type="number" value="1">
+                                    <button type="submit" class="counter__btn"><i class="fa fa-plus-circle"></i></button>
+                                </div>
+                                <div class="caja-price">$329.990</div>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="leftArticle-btns">
+
+                    <button class="leftArticle-btn">Vaciar Carrito</button>
+
+                    <a class="seguirComprando" href="">Seguir Comprando</a>
+
+                </div>
+
+
+            </article>
+
+            <!-- contenedor de resumen de la compra -->
+            <article class="rightArticle">
+
+                <h2 class="rightArticle-resumenDeOrden">Resumen De La Orden</h2>
+
+                <hr class="hr__divis">
+
+                <div class="rightArticle-div">
+
+                    <p>Subtotal:</p>
+
+                    <p>$336.490</p>
+
+                </div>
+
+                <div class="rightArticle-div">
+
+                    <p>Costo del envio:</p>
+
+                    <p>$400</p>
+
+                </div>
+
+                <hr class="hr__divis">
+
+                <div class="rightArticle-div-total">
+
+                    <p class="totalP">Total:</p>
+
+                    <p class="totalPrice">$336.890</p>
+
+                </div>
+
+                <hr class="hr__divis">
+
+                <div class="rightArticle-div-finalizar">
+
+                <button class="rightArticle-button">Finalizar Compra</button>
+
+                </div>
+
+            </article>
+        </section>
+
+        <!-- Seccion inferior del carrito -->
+        <section class="main-home__cont-prod">
+            <h2 class="cont-prod__categorias">Otros usuarios también compraron</h2>
+            <nav class="cont-prod__articulos"> 
+                <%- include('./partials/carrusel') %> 
+            </nav>
+        </section>
+
+    </main>
+
+    <%- include('./partials/footer') %> 
+    
+</body>
+</html>

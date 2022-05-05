@@ -12,30 +12,6 @@ app.use(express.static(path.join(__dirname, "/public")));
 
 app.use("/", rutasMain);
 
-app.use("/register", rutasMain);
-
-app.use("/login", rutasMain);
-
-app.use("/carrito", rutasMain);
-
-app.use("/producto", rutasMain);
-
-// app.get('/', (req, res)=> {
-//     res.sendFile(path.join(__dirname, '/views/index.html'))
-// });
-// app.get('/carrito', (req, res)=> {
-//     res.sendFile(path.join(__dirname, '/views/productCart.html'))
-// });
-// app.get('/login', (req, res)=> {
-//     res.sendFile(path.join(__dirname, '/views/login.html'))
-// });
-
-// app.get('/registro', (req, res)=> {
-//     res.sendFile(path.join(__dirname, '/views/register.html'))
-// });
-// app.get('/producto', (req, res)=> {
-//     res.sendFile(path.join(__dirname, '/views/productDetail.html'))
-// });
-
+app.set('view engine', 'ejs');
 
 
