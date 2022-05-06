@@ -655,7 +655,7 @@ header{
     position: fixed;
     height: 102px;
     width: 100%;
-    z-index: 10;
+    z-index: 1000;
 
 }
 
@@ -2014,6 +2014,69 @@ div.home-dest-central{
     width: 100%;
 }
 
+/* -------- PRODUCT LIST  -------- */
+
+.nav__prodList{
+    padding: 2px 0;
+    background-color: #444444;
+    margin-top: 24px;
+}
+
+.prodList__menu{
+    display: none;
+}
+
+
+
+.prodList__dropdwn{
+    background-color: var(--negro);
+    height: 48px;
+    list-style: none;
+    margin: 36px auto;
+    padding: 14px 0 0 0; 
+    text-align: center;
+    width: 248px;
+}
+
+.prodList__dropdwn > a{
+    color: var(--gris);
+    font-weight: 500;
+    text-decoration: none;
+
+}
+
+
+.dropdwn__categories {
+    background: rgba(0,0,0,0.85);
+    border-top: 1px solid var(--gris-medio);
+    display: none;
+    padding: 0;
+    position: absolute;
+    width: 248px;
+    z-index: 999;
+}
+
+.dropdwn__categories > li {
+    list-style: none;
+    margin: 24px 0;
+}
+
+.dropdwn__categories > li > a{
+    border: none;
+    color: var(--gris-medio);
+    font-weight: 500;
+    text-decoration: none;
+
+}
+
+.dropdwn__categories > li > a:hover{
+    color: var(--magenta);
+    font-weight: 600;
+}
+
+.prodList__dropdwn:hover .dropdwn__categories {
+    display: block;
+}
 
 
 
