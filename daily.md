@@ -42,6 +42,7 @@ A continuacion detallaremos los temas que se trataron cada día:
 - Creacion de un daily además del weekly.
 - Empezamos a armar un archivo de base de productos.
 - Buscamos datos y armamos graficos para la presentacion de nuestro sprint.
+- Se modificaron las tarjetas de trello
 
 **Informe comienzo de semana 06/05/2022**
 
