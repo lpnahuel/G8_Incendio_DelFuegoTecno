@@ -67,6 +67,10 @@ const mainController = {
     productDetail:function(req,res){
         res.render('products/productDetail', {productos : productos});
     },
+
+    productList:function(req,res){
+        res.render('products/productList', {productos : productos});
+    },
  
     register:function(req,res){
         res.render('users/register');

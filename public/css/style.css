@@ -1963,19 +1963,26 @@ div.home-dest-central{
 }
 
 .menu__items{
-    list-style: none;
-    height: 46px;
     background: var(--negro);
-    padding: 10px;
+    border-left: 4px solid var(--negro);
+    height: 46px;
+    list-style: none;
+    padding: 14px 0 0 0;
     margin: 10px;
 }
 
 .menu__items > a{
     font-size: 14px;
     font-weight: 500;
-    color: #ababab;
+    color: var(--gris-medio);
     text-decoration: none;
 }
+
+.menu__items:hover{
+    border-left: 4px solid var(--magenta);
+}
+
+
 
 .admin-forms{
     margin: 40px auto 0 auto;
@@ -2211,7 +2218,7 @@ footer{
 
 
 
-@media (min-width:578px) and (max-width:768px){
+@media (min-width:578px){
 
     /*HEADER*/
 
@@ -2231,9 +2238,6 @@ footer{
         top: 102px;
     }
 
-    nav.header__menu{
-        display:none;
-    }
 
     .header__logo{
         position: relative;
@@ -2258,26 +2262,13 @@ footer{
 
 }
 
-@media (min-width:769px) and (max-width:992px){
+@media (min-width:769px){
 
     /*HEADER*/
 
-    header{
-        height: 102px;
-        padding: 4px 0;
-    }
-
-    div.guarda{
-        top: 102px;
-    }
-
-    .elem__burger{
-        display:none;
-    }
 
     .contenedor-header{
         align-items: flex-end;
-        margin: 0px auto 0px auto;
         padding: 12px 8px 4px 8px;
         width: 85%;
     }
@@ -2317,6 +2308,11 @@ footer{
         display: block;
         margin-top: 15px;
     
+    }
+
+    .admin__nav{
+        margin: 41px auto 0 auto;
+        width: 50%;
     }
 
 
@@ -2399,6 +2395,27 @@ footer{
     }
 
 
+    /* ADMIN ADD*/
+    .cont-admin{
+        display: flex;
+        align-items: flex-start;
+        padding: 48px 0;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 85%;
+    }
+
+    .admin__nav{
+        margin: 24px auto 0 auto;
+        margin-top: 0px;
+        width: 30%;
+    }
+
+    .admin-forms{
+        margin: 0px;
+        width: 60%;
+    }
+
 }
 
 @media (min-width:1200px){
@@ -2426,11 +2443,34 @@ footer{
         width: 40%;
     }
 
+    /* ADMIN ADD */
+
+    .admin__nav {
+        width: 25%;
+    }
+
+    .menu__items{
+        padding: 14px 0 0 14px;
+        text-align: left;
+    }
+
+    .admin-forms{
+        width: 65%;
+    }
+
+    .campos__column{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .column__forms{
+        width: 45%;
+    }
 
 
 }
 
-@media (min-width:1401px){
+@media (min-width:1400px){
 
     /*HEADER*/
 
@@ -2474,6 +2514,21 @@ footer{
         width: 75%;
     }
 
+    /* ADMIN ADD */
+
+    .cont-admin{
+        width: 75%;
+    }
+
+
+    .admin__nav {
+        margin: 24px 0 0 0;
+        width: 22%;
+    }
+
+    .admin-forms {
+        width: 72%;
+    }
 
 }
 
