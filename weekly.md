@@ -24,6 +24,18 @@ En la reunion se trataron los siguientes puntos:
 
 **Informe comienzo de semana 04/05/2022**
 - Se reprogramó la reunión del 03/05 debido a una clase extra
+- Tuvimos el segundo meet semanal el día 05/05/2022 dónde se nos unio Dani para que nos aclare dudas sobre la devolución del Sprint anterior y dudas del nuevo sprint. Luego dividimos las tareas que nos quedan completar para la entrega del lunes:
+- Agregar al Header Registro y Admin
+- Carrito: Modificar la alineación, colocar "volver" en el contenedor, agregar un disable al cuadro de cantidad del producto
+- Detalleproducto: Convertirlo en dinamino, agregar puntaje de clientes, mover el texto por debajo de las imagenes.
+- CSS: Todo lo que sea mobile first que quede por fuera de la query, buscar los break points para las medias queries y borrar repetido. Colocar un contraste a todo entre 4.5 y 7.
+- Carusel: Agregar el transform y transition.
+- Crear vista de productos
+- Crear vista de administracion (en un futuro se va a agregar como modal con javascript)
+- Crear vista de administracion productos (si llegamos con el tiempo)
+- Correcion del puntaje del trello siguiendo la frecuencia de Fibonacci.
+- Creacion de un daily además del weekly.
+- Armado de un archivo de base de productos.
 
 **Informe comienzo de semana 11/05/2022**
 
