@@ -1607,6 +1607,10 @@ div.home-dest-central{
     justify-content: space-between;
 }
 
+.rightArticle-div-cupon{
+    margin: 30px 0 30px 0;
+}
+
 .rightArticle-div-finalizar{
     display: flex;
     justify-content: center;
