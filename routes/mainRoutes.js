@@ -6,7 +6,7 @@ router.get("/", mainController.index);
 
 router.get("/carrito", mainController.productCart);
 
-router.get("/producto", mainController.productDetail);
+router.get("/producto/:id", mainController.productDetail);
 
 router.get("/categorias", mainController.productList);
 
