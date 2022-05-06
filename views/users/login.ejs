@@ -1,90 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="DFT - Del fuego tecno" content="Del Fuego Tecno es una empresa de venta de insumos tecnológicos. El objetivo es que el cliente no deba buscar en ningún otro lado lo que necesita para mejorar su conectividad con el mundo digital, encontrando todo en un sólo sitio, con precios competitivos en el mercado actual, con un listado variado de productos que satisfacen sus necesidades tecnologicas, pudiendo acceder a los mismos desde la comodidad de su casa.">
-
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/style.css">  <!-- hoja de estilos -->
-
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"> <!-- fonts -->
-
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"rel="stylesheet"/> <!-- iconos -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!-- iconos -->
-
-    <title>DFT - Login Usuarios</title>
-
-</head>
+    <%- include('../partials/head') %> 
 <body>
 
-    <header>
-                
-        <section class="contenedor-header">                   
-                
-            <!-- LOGO -->
-            <a class="header__logo" href="/">
-                <img class="logo__img" src="img/dft-logo.png" alt="Logo del fuego techno">
-            </a>
-               
-                
-            <!-- BOTONES PRINCIPALES -->
-            <nav class="header__menu">    
-                <ul class="menu__lista">
-                    <li class="lista__categorias"><a href="#">PRODUCTOS ▼</a>
-                        <ul class="lista__productos">
-                            <li><a href="#">Notebooks</a></li>
-                            <li><a href="#">Accesorios</a></li>
-                            <li><a href="#">Periféricos</a></li>
-                            <li><a href="#">Componentes</a></li>
-                            <li><a href="#">Consolas</a></li>
-                            <li><a href="#">Sillas Gamer</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">OFERTAS</a></li>
-                    <li><a href="#">NOSOTROS</a></li>
-                    <li><a href="#">CONTACTO</a></li>
-                </ul>
-            </nav>
-        
-            <!-- SECCIÓN SECUNDARIOS Y BÚSQUEDA -->
-            <section class="header__elem">
-                    
-                    
-                <!-- BOTONES LOGIN Y CARRITO -->
-                <section class="elem__sec-buttons">
-                    <button type="button" class="log-shop"><a href="/login"><i class="far fa-user-circle"></i>LOGIN</a></button>
-                    <button type="button" class="log-shop"><a href="/carrito"><i class="fas fa-shopping-cart"></i>CARRITO</a></button>
-                </section>
-                    
-                <!-- BARRA DE BÚSQUEDA -->
-                <section class="elem__area-bar">
-                    <form action="" method="">
-                        <input type="text" class="area-bar__search" placeholder="Buscar productos..." >
-                        <button class="mag-glass" type="submit">
-                                <i class="fas fa-search"></i>
-                        </button>
-                    </form>
-                </section>
-
-                <!-- <section class="elem__burger">
-                    <nav class="burger__menu">
-                        <i class="fas fa-bars"></i>
-                    </nav>
-                </section> -->
-
-            </section>
-        </section>
-            
-            <!-- GUARDA DE COLORES -->
-            <div class="guarda">             
-            </div>
-
-    </header>
+    <%- include('../partials/header') %> 
 
 
 
@@ -129,85 +48,7 @@
 
     </main>
 
-    <footer>
-         
-        <section class="contenedor-footer">
-               
-            <!-- LOGO FOOTER -->
-            
-            <a class="footer__logo" href="/">
-                <img class = "logo__ft-img" src="img/dft-logo.png" alt="Logo del fuego techno">
-            </a>
-            
-    
-    
-            <!-- SUBTÍTULOS Y CONTENIDO FOOTER -->
-                
-            <section class="footer_elem">
-                    
-                <!-- CATEGORIAS -->
-                <nav class="elem__links">
-                    <h3 class="h3-footer">Categorías</h3>
-                    <ul>
-                        <li><a href="#">Accesorios</a></li>
-                        <li><a href="#">Componentes</a></li>
-                        <li><a href="#">Contacto</a></li>
-                        <li><a href="#">FaQ</a></li>
-                        <li><a href="#">Nosotros</a></li>
-                        <li><a href="#">Notebooks</a></li>
-                        <li><a href="#">Ofertas</a></li>
-                        <li><a href="#">PC Armadas</a></li>
-                        <li><a href="#">Periféricos</a></li>
-                        <li><a href="#">Sillas Gamer</a></li>
-                    </ul>
-                </nav>
-                    
-                    <!-- CONTACTO -->
-                    <nav class="elem__links">
-                        <h3 class="h3-footer">Contacto</h3>
-                        <ul>
-                            <li>Av. Saraza 21845 - CABA</li>
-                            <li>Horario de atención de 10hs a 20hs</li>
-                            <li>Teléfono: 4455-6677</li>
-                            <li>WhatsApp: +54 9 1122334455</li>
-                        </ul>
-                    </nav>
-                    
-                </section>
-    
-            <section class="elem__links">
-
-                <!-- REDES SOCIALES -->
-                <section class="links__redes">
-                    <h3 class="h3-footer">Redes Sociales</h3>
-
-                    <nav class="redes__buttons">
-                        <ul class="buttons__rs">
-                            <li class="rs__ig"><a href="https://www.instagram.com/dft.incendio/"><i class="fab fa-instagram"></i></a></li>
-                            <li class="rs__fb"><a href="https://www.facebook.com/g8DFTincendio/"><i class="fab fa-facebook"></i></a></li>
-                            <li class="rs__yt"><a href="#"><i class="fab fa-youtube"></i></a></li>
-                            <li class="rs__tw"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                        </ul>    
-                    </nav>
-                </section>
-                    
-                <!-- NEWSLETTER -->
-                <article class="links__newsletter">
-
-                    <h3 class="h3-footer">Newsletter</h3>
-                    <form class="newsletter__bar">
-                        <input class="newsletter__mail" type="email" placeholder="ejemplo@mail.com" >
-                        <button class="bar__send" type="submit">
-                            Enviar
-                        </button>
-                    </form>
-                </article>
-    
-            </section>
-    
-        </section>
-            
-    </footer>
+    <%- include('../partials/footer') %> 
     
 </body>
 </html>

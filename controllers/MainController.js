@@ -75,7 +75,11 @@ const mainController = {
     login:function(req,res){
         res.render('users/login');
     },
-
+    
+    admin:function(req,res){
+        res.render('users/admin-edit');
+    },
+    
 };
 
 module.exports = mainController;

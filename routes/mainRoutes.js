@@ -12,5 +12,6 @@ router.get("/login", mainController.login);
 
 router.get("/registro", mainController.register);
 
-module.exports = router;
+router.get("/admin", mainController.admin);
 
+module.exports = router;
