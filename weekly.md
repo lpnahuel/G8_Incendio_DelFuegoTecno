@@ -28,7 +28,7 @@ En la reunion se trataron los siguientes puntos:
 - Agregar al Header Registro y Admin
 - Carrito: Modificar la alineación, colocar "volver" en el contenedor, agregar un disable al cuadro de cantidad del producto
 - Detalleproducto: Convertirlo en dinamino, agregar puntaje de clientes, mover el texto por debajo de las imagenes.
-- CSS: Todo lo que sea mobile first que quede por fuera de la query, buscar los break points para las medias queries y borrar repetido.
+- CSS: Todo lo que sea mobile first que quede por fuera de la query, buscar los break points para las medias queries y borrar repetido. Colocar un contraste a todo entre 4.5 y 7.
 - Carusel: Agregar el transform y transition.
 - Crear vista de productos
 - Crear vista de administracion (en un futuro se va a agregar como modal con javascript)
