@@ -1,6 +1,6 @@
         <% productos.forEach(producto => { %>
             <article class="cont-dest">
-                <a class="cont-dest__link" href="/producto">
+                <a class="cont-dest__link" href="/producto/<%= producto.id %> ">
                     <article class="cont-dest__img">
                         <img src="/img/products/<%= producto.imagen %>.png" class="img__producto" alt="<%= productos.nombre %>">
                     </article>
