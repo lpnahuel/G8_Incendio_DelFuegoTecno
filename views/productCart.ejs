@@ -10,15 +10,15 @@
         <!-- carrito -->
         <!-- Seccion superior del carrito -->
         <!-- <span class="hiddenSpan">hidden</span> -->
+        <div class="cont-top-section">
+            <div class="leftArticle-breadCrum">                    
+                <a class="breadCrum" href="/">Volver</a><span>                 
+            </div>
+
         <section class="top-section">
             <!-- Contenedor de productos para la compra -->
-            <article class="leftArticle">
-
+            <article class="leftArticle">           
                 
-                <div class="leftArticle-breadCrum">                    
-                    <a class="breadCrum" href="/">Volver</a><span>                 
-                </div>
-
                 <h2 class="carrito-title"><i class="fa-solid fa-cart-shopping"></i>  Mi Carrito</h2>
 
                 <div class="caja">
@@ -64,7 +64,7 @@
                             <div class="caja-producto-derecha-bottom">
                                 <div class="counter">
                                     <button type="submit" class="counter__btn"><i class="fa fa-minus-circle"></i></button>
-                                    <input id="count" class="count-form" name="count" type="number" value="1">
+                                    <input id="count" class="count-form" name="count" type="number" value="1" disabled="true">
                                     <button type="submit" class="counter__btn"><i class="fa fa-plus-circle"></i></button>
                                 </div>
                                 <div class="caja-price">$329.990</div>                                
@@ -77,7 +77,7 @@
 
                     <button type="reset" class="leftArticle-btn">Vaciar Carrito</button>
 
-                    <a class="seguirComprando" href="">Seguir Comprando</a>
+                    <a class="seguirComprando" href="/">Seguir Comprando</a>
 
                 </div>
 
@@ -126,7 +126,9 @@
                 </div>
 
             </article>
-        </section>
+        </section>            
+        </div>
+            
 
         <!-- Seccion inferior del carrito -->
         <section class="main-home__cont-prod">
