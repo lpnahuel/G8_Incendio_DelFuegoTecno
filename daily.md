@@ -45,5 +45,14 @@ A continuacion detallaremos los temas que se trataron cada día:
 - Se modificaron las tarjetas de trello
 
 **Informe comienzo de semana 06/05/2022**
+- Realizamos varios meet durante la mañana y la tarde para poder terminar el proyecto.
+- Terminamos las vistas que faltaban (producto y admin)
+- Corregimos todo lo pendiente del carrito.
+- Se modifico el carussel.
+- Se agrego el registro y admin al header.
+- Se modificaron las media queries del CSS.
+- Seguimos con el archivo base de producto y la modificacion de las nuevas imagenes.
+- Le agregamos ID a los productos, les agregamos categorias y aumentamos la cantidad en nuestra base.
+- Queda para el fin de semana el armado del PDF para la presentación.
 
 **Informe comienzo de semana 07/05/2022**
