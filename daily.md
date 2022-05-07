@@ -44,7 +44,7 @@ A continuacion detallaremos los temas que se trataron cada día:
 - Buscamos datos y armamos graficos para la presentacion de nuestro sprint.
 - Se modificaron las tarjetas de trello
 
-**Informe comienzo de semana 06/05/2022**
+**Informe 06/05/2022**
 - Realizamos varios meet durante la mañana y la tarde para poder terminar el proyecto.
 - Terminamos las vistas que faltaban (producto y admin)
 - Corregimos todo lo pendiente del carrito.
@@ -56,4 +56,4 @@ A continuacion detallaremos los temas que se trataron cada día:
 - Le agregamos ID a los productos, les agregamos categorias y aumentamos la cantidad en nuestra base.
 - Queda para el fin de semana el armado del PDF para la presentación.
 
-**Informe comienzo de semana 07/05/2022**
+**Informe 07/05/2022**
