@@ -51,7 +51,8 @@ A continuacion detallaremos los temas que se trataron cada día:
 - Se modifico el carussel.
 - Se agrego el registro y admin al header.
 - Se modificaron las media queries del CSS.
-- Seguimos con el archivo base de producto y la modificacion de las nuevas imagenes.
+- Se termino archivo base de productos
+- Se genero el csv de los productos con el cual se armo un json con un array
 - Le agregamos ID a los productos, les agregamos categorias y aumentamos la cantidad en nuestra base.
 - Queda para el fin de semana el armado del PDF para la presentación.
 
