@@ -238,5 +238,30 @@
     "Categoria": "Almacenamiento",
     "Descripcion": "Con la unidad en estado sólido XPG vas a incrementar la capacidad de respuesta de tu equipo. Gracias a esta tecnología podrás invertir en velocidad y eficiencia para el inicio, la carga y la transferencia de datos.\nEste disco transfiere datos a través de sus interfaces PCIe 3.0 y NVMe 1.3, lo que te permite transmitir una mayor cantidad de información de una sola vez.",
     "caracteristicas tecnicas": "Marca: XPG\nLínea: Spectrix S40G\nModelo: AS40G-1TT-C\nAncho: 80 mm\nAltura: 22 mm\nProfundidad: 8 mm\nPeso: 13.4 g\nCapacidad: 1 TB\nTecnología de almacenamiento: SSD\nInterfaces: PCIe 3.0, NVMe 1.3\nAplicaciones: PC\nUbicación del disco: Interno\nFactor de forma: M.2 2280\nCon tecnología 3D NAND: Sí\nCon disipador de calor: Sí"
+  },
+  {
+    "Id": 21,
+    "Producto": "Notebook Gigabyte AORUS RTX 3080Q",
+    "Imagen": "Notebook-Gigabyte-AORUS-RTX-3080Q",
+    "Imagenes complementarias 1": "",
+    "Imagenes complementarias 2": "",
+    "Imagenes complementarias 3": "",
+    "Precio": "$483.340",
+    "Categoria": "Notebook",
+    "Descripcion": "En el corazón de AORUS 15P se encuentra un procesador Intel Core i7 de 2,3 GHz con 8 núcleos, 16 subprocesos y una frecuencia turbo máxima de 4,6 GHz, que le brinda la potencia de alto octanaje que necesita, ya sea que esté jugando o editando. Con 32 GB de RAM DDR4 de 3200 MHz, puede realizar múltiples tareas de manera eficiente y reproducir sus videos rápidamente. Almacene su biblioteca digital de juegos con una unidad de estado sólido M.2 NVMe PCIe 4.0 de 1 TB, lo que mejora el rendimiento del sistema y permite que sus aplicaciones se ejecuten más rápido. Experimente un rendimiento gráfico mejorado con la GPU NVIDIA GeForce RTX 3080, que le brinda 8 GB de GDDR6 VRAM junto con un conjunto de tecnologías NVIDIA Max-Q que optimizan su sistema para obtener imágenes fluidas al diseñar y jugar.",
+    "caracteristicas tecnicas": "Procesador: Intel Core i7-11800H (11.ª generación)\nUPC: 2,3 a 4,6 GHz 8 núcleos\nCaché L3: 24 MB\nTipo de gráficos: Dedicado\nGPU: NVIDIA GeForce RTX 3080 con 8 GB GDDR6 VRAM\nTipo de memoria: DDR4 de 3200 MHz\nMemoria total instalada: 32GB\nConfiguración de memoria: 2 x 16 GB\nCapacidad máxima de memoria: 64GB\nTipo de ranura de memoria: DIMM SO de 260 pines"
+  },
+
+  {
+    "Id": 22,
+    "Producto": "Notebook MSI GL66 Pulse 11UEK-801AR",
+    "Imagen": "MSI-NOTEBOOK-GAMER-GL66-PULSE-11UEK801AR",
+    "Imagenes complementarias 1": "MSI-NOTEBOOK-GAMER-GL66-PULSE-11UEK801AR-1",
+    "Imagenes complementarias 2": "",
+    "Imagenes complementarias 3": "",
+    "Precio": "$483.340",
+    "Categoria": "Notebook",
+    "Descripcion": "CPU: Intel Core I7 11800H\nODD: NO\nBateria: 11.4V 53.5Wh 3 Cells\nVGA. GeForce RTX3060/6GB Gddr6\nHdd: 512 GB SSD\nLed Panel: 15:6 FHD anti-Glare IPS 144Hz\nRAM: DDR4 16GB (8x2)\nRF: WLAN+BT\nOS: Windows 11 64Bit Home\nColor: Grey/Black\nKeyboard: Spanish",
+    "caracteristicas tecnicas": ""
   }
 ]

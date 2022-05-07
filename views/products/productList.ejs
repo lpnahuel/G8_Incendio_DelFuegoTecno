@@ -11,7 +11,7 @@
             
             <nav class="nav-prodList">
                 <ul class="prodList__menu">
-                    <li class="menu__items"><a href="#">NOTEBOOKS</a></li>
+                    <li class="menu__items"><a href="/categorias">NOTEBOOKS</a></li>
                     <li class="menu__items"><a href="#">PERIFÉRICOS</a></li>
                     <li class="menu__items"><a href="#">ACCESORIOS</a></li>
                     <li class="menu__items"><a href="#">ALMACENAMIENTO</a></li>
@@ -21,77 +21,39 @@
                     <li class="menu__items"><a href="#">SILLAS GAMER</a></li>
                 </ul>
 
-                <li class="prodList__dropdwn"><a href="#">CATEGORIAS ▼</a>
+                <ul class="prodList__dropdwn"><a href="#">CATEGORIAS ▼</a>
                     <ul class="dropdwn__categories">
                         <li><a href="#">Notebooks</a></li>
                         <li><a href="#">Accesorios</a></li>
+                        <li><a href="#">Almacenamiento</a></li>
                         <li><a href="#">Periféricos</a></li>
                         <li><a href="#">Componentes</a></li>
                         <li><a href="#">Consolas</a></li>
                         <li><a href="#">Sillas Gamer</a></li>
                     </ul>
-                </li>
+                </ul>
             </nav>
         
             <section class="prodDisplay">
 
-            
+            <% notebooks.forEach(notebook => { %>
+              
                 <article class="prodDisplay__cont">
                     <a class="cont-dest__link" href="/producto/detalle ">
                         <article class="cont-dest__img">
-                            <img src="/img/products/acer-nitro-i5-001.webp" class="img__producto" alt="Acer Nitro i5">
+                            <img src="/img/products/<%= notebook.Imagen %>.webp" class="img__producto" alt="<%= notebook.Producto %>">
                             <hr class = "descripcion__divis">
                         </article>
                         <article class="cont__dispDesc">
-                            <h3 class="dispDesc__nombre">Notebook Gamer Acer Nitro I5 10Ma 8Gb Ssd256 Gtx1650</h3>
-                            <h4 class="dispDesc__precio">$144.000</h4>
+                            <h3 class="dispDesc__nombre"><%= notebook.Producto %></h3>
+                            <h4 class="dispDesc__precio"><%= notebook.Precio %></h4>
                         </article>
                         <button type="button" class="dispDesc__btn"><a href="/carrito"></a>Comprar ahora</button>
                     </a>
                 </article>
-            
-                <article class="prodDisplay__cont">
-                    <a class="cont-dest__link" href="/producto/detalle ">
-                        <article class="cont-dest__img">
-                            <img src="/img/products/acer-nitro-i5-001.webp" class="img__producto" alt="Acer Nitro i5">
-                        <hr class = "descripcion__divis">
-                        </article>
-                        <article class="cont__dispDesc">
-                            <h3 class="dispDesc__nombre">Notebook Gamer Acer Nitro I5 10Ma 8Gb Ssd256 Gtx1650</h3>
-                            <h4 class="dispDesc__precio">$144.000</h4>
-                        </article>
-                        <button type="button" class="dispDesc__btn"><a href="/carrito"></a>Comprar ahora</button>
-                    </a>
-                </article>
-            
-                <article class="prodDisplay__cont">
-                    <a class="cont-dest__link" href="/producto/detalle ">
-                        <article class="cont-dest__img">
-                            <img src="/img/products/acer-nitro-i5-001.webp" class="img__producto" alt="Acer Nitro i5">
-                            <hr class = "descripcion__divis">
-                        </article>
-                        <article class="cont__dispDesc">
-                            <h3 class="dispDesc__nombre">Notebook Gamer Acer Nitro I5 10Ma 8Gb Ssd256 Gtx1650</h3>
-                            <h4 class="dispDesc__precio">$144.000</h4>
-                        </article>
-                        <button type="button" class="dispDesc__btn"><a href="/carrito"></a>Comprar ahora</button>
-                    </a>
-                </article>
-            
-                <article class="prodDisplay__cont">
-                    <a class="cont-dest__link" href="/producto/detalle ">
-                        <article class="cont-dest__img">
-                            <img src="/img/products/acer-nitro-i5-001.webp" class="img__producto" alt="Acer Nitro i5">
-                            <hr class = "descripcion__divis">
-                        </article>
-                        <article class="cont__dispDesc">
-                            <h3 class="dispDesc__nombre">Notebook Gamer Acer Nitro I5 10Ma 8Gb Ssd256 Gtx1650</h3>
-                            <h4 class="dispDesc__precio">$144.000</h4>
-                        </article>
-                        <button type="button" class="dispDesc__btn"><a href="/carrito"></a>Comprar ahora</button>
-                    </a>
-                </article>
-            
+                
+            <% }) %>
+          
             
             </section>
 

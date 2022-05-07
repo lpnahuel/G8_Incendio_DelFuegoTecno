@@ -6,6 +6,7 @@
     /*Colors*/
     --negro: #000;
     --fondo-main: #1E1F24;
+    --gris-int: #444444;
     --gris-osc: #7E7E83;
     --gris: #B3B3B3;
     --gris-medio: #ababab;
@@ -17,7 +18,6 @@
     --aqua: #08FBD2;
     --yellow: #F4D30F;
     --magenta: #EE2B79;
-    --azul: #22205F;
     --violet: #B537F2;
 }
 
@@ -29,6 +29,7 @@
 
 
 body{
+    font-display: swap;
     font-family: 'Roboto', 'sans-serif';
     margin: 0px;
     padding: 0px;
@@ -194,7 +195,7 @@ ul.lista__productos > li > a:hover{
 }
 
 .log-shop > a > i{
-    color:#3cb9fc;
+    color: var(--celeste-logo);
     margin-right: 8px;
     text-decoration: none;
 }
@@ -219,9 +220,9 @@ ul.lista__productos > li > a:hover{
 .mag-glass {
     background: white;
     border: none;
-    border-left: 1px solid #989898;
+    border-left: 1px solid var(--gris);
     cursor: pointer;
-    color: #989898;
+    color: var(--gris);
     font-size: 14px;
     position: absolute;
     right: 4px;
@@ -771,17 +772,17 @@ div.guarda{
 
 .iconos_prod_opinions_text{
     margin: 0 0 0 5px;
-    color: #989898;
+    color: var(--gris);
 }
 
 .far.fa-star{
     margin: 0 2px 0 0;
-    color: #F4D30F;
+    color: var(--yellow);
 }
 
 .fas.fa-star{
     margin: 0 2px 0 0;
-    color: #F4D30F;
+    color: var(--yellow);
 }
 
 
@@ -875,7 +876,7 @@ div.guarda{
 }
 
 .desc_prod-btn:active{
-    background-color: #01A9B4;
+    background-color: var(--celeste-logo);
     color: var(--fondo-main);
 } 
 
@@ -1249,7 +1250,7 @@ div.guarda{
 
 
 .bottom-section-title{
-    color: #e1e1e1;
+    color: var(--gris-claro);
 }
 
 
@@ -1431,7 +1432,7 @@ div.guarda{
 
 .admin__nav{
     padding: 2px 0;
-    background-color: #444444;
+    background-color: var(--gris-int);
     margin-top: 24px;
 }
 
@@ -1467,6 +1468,7 @@ div.guarda{
 }
 
 
+
 .admin-forms{
     margin: 40px auto 0 auto;
     width: 100%;
@@ -1480,7 +1482,7 @@ div.guarda{
     
 }
 .form-title{
-    color: #4FD0D9;
+    color: var(--turq);
     font-size: 24px;
 }
 
@@ -1501,7 +1503,7 @@ div.guarda{
 
 .nav__prodList{
     padding: 2px 0;
-    background-color: #444444;
+    background-color: var(--gris-int);
     margin-top: 24px;
 }
 
@@ -2076,7 +2078,7 @@ footer{
     }
     
     .prodList__menu{
-        background-color: #444444;
+        background-color: var(--gris-int);
         display: block;
         padding: 1px 0;
         width: 100%;
