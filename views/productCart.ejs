@@ -9,10 +9,10 @@
     <main class="main-general">
         <!-- carrito -->
         <!-- Seccion superior del carrito -->
-        <!-- <span class="hiddenSpan">hidden</span> -->
+
         <div class="cont-top-section">
             <div class="leftArticle-breadCrum">                    
-                <a class="breadCrum" href="/">Volver</a><span>                 
+                <a class="breadCrum" href="/">Volver</a>                 
             </div>
 
         <section class="top-section">
@@ -39,7 +39,7 @@
                             <div class="caja-producto-derecha-bottom">
                                 <div class="counter">
                                     <button type="submit" class="counter__btn"><i class="fa fa-minus-circle"></i></button>
-                                    <input id="count" class="count-form" name="count" type="number" value="1">
+                                    <input id="count" class="count-form" name="count" type="number" value="1" disabled="true">
                                     <button type="submit" class="counter__btn"><i class="fa fa-plus-circle"></i></button>
                                 </div>
                                 <div class="caja-price">$6500</div>                                
@@ -107,12 +107,10 @@
 
                 </div>
 
-                <hr class="hr__divis">
-
                 <div class="rightArticle-div-cupon">
-                    <label for="cupon">
-                        <p class="lg__descrip">Cupon de Descuento</p>                        
-                        <input class="rg__campos" type="text" id="cupon" name="name" placeholder="Ingrese su Cupon de Descuento" required>
+                    <label class="rightArticle-div" for="cupon">
+                        <p class="lg__descrip">Cupón de Descuento</p>                        
+                        <input type="text" id="cupon" name="name" placeholder="Ingrese su cupón..." required>
                         <span class="feedback"></span>
                     </label>
                 </div>

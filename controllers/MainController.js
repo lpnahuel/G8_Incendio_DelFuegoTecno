@@ -57,30 +57,37 @@ const productos = [
 const mainController = {
     
     index:function(req,res){
+        res.locals.title = "DelFuegoTechno"
         res.render('index', {productos : productos});
     },
   
     productCart:function(req,res){
+        res.locals.title = "DFT - Carrito"
         res.render('productCart', {productos : productos});
     },
 
     productDetail:function(req,res){
+        res.locals.title = "DFT - Detalle"
         res.render('products/productDetail', {productos : productos});
     },
 
     productList:function(req,res){
+        res.locals.title = "DFT - Categorías"
         res.render('products/productList', {productos : productos});
     },
  
     register:function(req,res){
+        res.locals.title = "DFT - Registro Usuarios"
         res.render('users/register');
     },
 
     login:function(req,res){
+        res.locals.title = "DFT - Login Usuarios"
         res.render('users/login');
     },
     
     admin:function(req,res){
+        res.locals.title = "DFT - Admin Panel"
         res.render('users/admin-edit');
     },
     
