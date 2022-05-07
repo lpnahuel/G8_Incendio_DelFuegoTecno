@@ -3,14 +3,14 @@
                 <a class="cont-dest__link" href="/producto/<%= producto.id %> ">
                     <article class="cont-dest__img">
                         <img src="/img/products/<%= producto.imagen %>.png" class="img__producto" alt="<%= productos.nombre %>">
+                        <hr class = "descripcion__divis">
                     </article>
                     <article class="cont-dest__descripcion">
-                        <hr class = "descripcion__divis">
                         <h3 class="descripcion__nombre-prod"><%= producto.nombre %></h3>
                         <h4 class="descripcion__precio"><%= producto.precio %></h4>
                     </article>
                     <a href="/carrito" class="cont-dest__carrito"><i class="material-icons">add_shopping_cart</i></a>
-                    <button class="cont-dest__fav" type="submit"><i class="far fa-heart"></i></button>                    
+                    <button aria-label= "fav" class="cont-dest__fav" type="submit"><i class="far fa-heart"></i></button>                    
                 </a>
             </article>
         <% }) %> 
