@@ -62,6 +62,6 @@ A continuacion detallaremos los temas que se trataron cada día:
 - Le agregamos color y contraste a los productos
 
 **Informe 09/05/2022**
-- Modificamos el ID de los productos para que quede siempre igual.
+- Modificamos el ID de los productos para que queden siempre igual.
 - Se separaron los array de productos por categoria.
 - Se logro modificar el logo para que se vea correctamente en todas las vistas tanto en header como footer.
