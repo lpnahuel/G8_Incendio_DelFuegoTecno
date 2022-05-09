@@ -51,14 +51,16 @@ A continuacion detallaremos los temas que se trataron cada día:
 - Se modifico el carussel.
 - Se agrego el registro y admin al header.
 - Se modificaron las media queries del CSS.
-- Se termino archivo base de productos
-- Se genero el csv de los productos con el cual se armo un json con un array
+- Se termino archivo base de productos.
+- Se genero el csv de los productos con el cual se armo un json con un array.
 - Le agregamos ID a los productos, les agregamos categorias y aumentamos la cantidad en nuestra base.
 - Queda para el fin de semana el armado del PDF para la presentación.
 
 **Informe 07/05/2022**
-- Quedo pendiente que el logo se vea correcto en el footer y header en detalle de producto
+- Quedo pendiente que el logo se vea correcto en el footer y header en detalle de producto.
 - Queda modificar que cuando hacemos click en cada producto ese sea el que aparezca en detalle y no sólo el mouse.
 
 **Informe 09/05/2022**
-- Modificamos el ID de los productos para que quede siempre igual
+- Modificamos el ID de los productos para que quede siempre igual.
+- Se separaron los array de productos por categoria.
+- Se logro modificar el logo para que se vea correctamente en todas las vistas tanto en header como footer.
