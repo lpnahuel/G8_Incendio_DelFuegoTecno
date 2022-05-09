@@ -65,3 +65,5 @@ A continuacion detallaremos los temas que se trataron cada día:
 - Modificamos el ID de los productos para que queden siempre igual.
 - Se separaron los array de productos por categoria.
 - Se logro modificar el logo para que se vea correctamente en todas las vistas tanto en header como footer.
+- Creamos el archivo products.json
+- Creamos el archivo users.json
