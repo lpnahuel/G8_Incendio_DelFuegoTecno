@@ -59,6 +59,7 @@ A continuacion detallaremos los temas que se trataron cada día:
 **Informe 07/05/2022**
 - Quedo pendiente que el logo se vea correcto en el footer y header en detalle de producto.
 - Queda modificar que cuando hacemos click en cada producto ese sea el que aparezca en detalle y no sólo el mouse.
+- Le agregamos color y contraste a los productos
 
 **Informe 09/05/2022**
 - Modificamos el ID de los productos para que quede siempre igual.
