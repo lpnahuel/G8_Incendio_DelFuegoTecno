@@ -3,10 +3,11 @@ const almacenamiento=[
     "Id": 21,
     "name": "Disco Externo 2 Tb Seagate Game Drive Para Ps4 Usb 3.0",
     "image": "Disco-Externo-2-tb-Seagate-Game-Drive-para-PS4-Usb-30",
-    "image_2": "",
-    "image_3": "",
-    "image_4": "",
+    "image_2": "Disco-Externo-2-tb-Seagate-Game-Drive-para-PS4-Usb-30",
+    "image_3": "Disco-Externo-2-tb-Seagate-Game-Drive-para-PS4-Usb-30",
+    "image_4": "Disco-Externo-2-tb-Seagate-Game-Drive-para-PS4-Usb-30",
     "price": "$ 19.511",
+    "cuotas": "$1.625,92",
     "category": "Almacenamiento",
     "description": "Disco duro externo poderoso que le brinda montones de capacidad y un rendimiento perfecto en PS4™ de modo que pueda conservar los juegos que adora e instalar títulos nuevos.\\nAlmacene una colección masiva de juegos nuevos y clásicos.\\nDiseñada en conjunto para brindar un rendimiento rápido y sin interrupciones\\nConfiguración sencilla por conexión directa en USB 3.0.\\nJuegue en cualquier lugar con su fácil portabilidad",
     "caracteristics": "Compatibilidad:Pc\\nCompatibilidad:Windows\\nCompatibilidad:Playstation 4\\nConectividad:USB 3.0\\nFactor de Forma:2.5 “"
@@ -15,14 +16,15 @@ const almacenamiento=[
     "Id": 22,
     "name": "Disco Ssd Adata 1Tb Spectrix Xpg S40G Gen 3X4 M.2 2280",
     "image": "DISCO-SSD-ADATA-1TB-SPECTRIX-XPG-S40G-GEN-3X4-M2-2280",
-    "image_2": "",
-    "image_3": "",
-    "image_4": "",
+    "image_2": "DISCO-SSD-ADATA-1TB-SPECTRIX-XPG-S40G-GEN-3X4-M2-2280",
+    "image_3": "DISCO-SSD-ADATA-1TB-SPECTRIX-XPG-S40G-GEN-3X4-M2-2280",
+    "image_4": "DISCO-SSD-ADATA-1TB-SPECTRIX-XPG-S40G-GEN-3X4-M2-2280",
     "price": "$ 26.322",
+    "cuotas": "$2.193,50",
     "category": "Almacenamiento",
     "description": "Con la unidad en estado sólido XPG vas a incrementar la capacidad de respuesta de tu equipo. Gracias a esta tecnología podrás invertir en velocidad y eficiencia para el inicio, la carga y la transferencia de datos.\\nEste disco transfiere datos a través de sus interfaces PCIe 3.0 y NVMe 1.3, lo que te permite transmitir una mayor cantidad de información de una sola vez.",
     "caracteristics": "Marca: XPG\\nLínea: Spectrix S40G\\nModelo: AS40G-1TT-C\\nAncho: 80 mm\\nAltura: 22 mm\\nProfundidad: 8 mm\\nPeso: 13.4 g\\nCapacidad: 1 TB\\nTecnología de almacenamiento: SSD\\nInterfaces: PCIe 3.0, NVMe 1.3\\nAplicaciones: PC\\nUbicación del disco: Interno\\nFactor de forma: M.2 2280\\nCon tecnología 3D NAND: Sí\\nCon disipador de calor: Sí"
-  },
+  }
   ];
 const sillas =[
   {
@@ -177,68 +179,17 @@ const componentes =[
 
 const productos = [  
   {
-  "Id": 1,
-  "name": "Asus Rog Zephyrus Duo Ryzen 9 16Gb 1Tb Rtx 3060",
-  "image": "asus-zephyrus-duo_15-GX550LXS-001",
-  "image_2": "asus-zephyrus-duo_15-GX550LXS-002",
-  "image_3": "",
-  "image_4": "",
-  "price": "$580.000",
-  "category": "Notebook",
-  "description": "Caracteristicas: Asus Rog Zephyrus Duo 15 Se (Gx551Qm-Es96), Amd Ryzen 9 5980Hx Processor (3.3Ghz - 4.8Ghz) Processor, 15.6\" 300Hz (3Ms) Ips-Level Full Hd (1920 X 1080) 100% Srgb Display, 16Gb (2X 8Gb) Ddr4 3200Mhz Memory, 1Tb Pcie Nvme Ssd, Nvidia Geforce Rtx 3060 Max Performance (6Gb) Gddr6 Graphics Card W/ Rog Boost, Microsoft Windows 10 Home, Intel Wi-Fi 6 (802.11Ax), Bluetooth 5.1, Hdmi 2.0B, Usb 3.2 Type C (Gen 2), 3X Usb 3.2 Type A (Gen 2), Backlit Chiclet Per-Key Rgb Keyboard",
-  "caracteristics": ""
-},
-{
-  "Id": 2,
-  "name": "Notebook Gamer Hp Omen 15-Dc1020Nr",
-  "image": "hp-omen-1020-001",
-  "image_2": "hp-omen-1020-002",
-  "image_3": "hp-omen-1020-003",
-  "image_4": "",
-  "price": "$335.000",
-  "category": "Notebook",
-  "description": "Processor: 11th Gen Intel® Core™ i7-11800H (8-Core), Memory: 16 GB DDR4-3200 SDRAM, Hard Drive: 1 TB PCIe® NVMe™ M.2 SSD, Display: 15.6\"\"\"\" IPS Micro-Edge Anti-Glare FHD (1920 x 1080) 300-Nits 144Hz Display\\nIntegrated 10/100/1000 GbE LAN, Intel® Wi-Fi 6 AX 201 (2x2) and Bluetooth® 5 Combo, 1 USB 3.1 Gen 2 Type-C™ with Thunderbolt™ 3, Audio by Bang & Olufsen; DTS:X® Ultra; OMEN Audio Control Support DTS:X® Ultra; Dual speakers; HP Audio Boost 2.0",
-  "caracteristics": "Video Card: NVIDIA® GeForce RTX™ 3070 Graphics, 8GB\\nWindows 11 Home x 64 bits, preinstalado.\\nPeso 2.45Kg. - HP Wide Vision 720p HD Webcam with Integrated Dual Array Digital Microphones"
-},
-{
-  "Id": 3,
-  "name": "Notebook Gamer Acer Nitro I5 10Ma 8Gb Ssd256 Gtx1650",
-  "image": "acer-nitro-i5-001",
-  "image_2": "",
-  "image_3": "",
-  "image_4": "",
-  "price": "$144.000",
-  "category": "Notebook",
-  "description": "Notebook Acer Nitro I5 11Va 8Gb 256Ssd Geforce Gtx1650 W11\\n\\nModelo An515-57-536Q\\nParte Nh.Qekaa.001",
-  "caracteristics": "Procesador Intel Core i5 11-400H\\nPantalla 15.6\" FHD IPS 144Hz\\nResolución 1920 x 1080 (Full HD)\\nGráficos Placa de video dedicada Nvidia Geforce GTX 1650 4GB DDR6\\nMemoria 8GB DDR4 3200 (ampliable hasta 64GB)\\nDisco 256 GB SSD\\nAmpliaciones de disco SSD M.2 hasta 2TB / SSD o HDD 2.5\" hasta 2TB\\nConectividad inalámbrica Wi-Fi 802.11AX + Bluetooth\\nSistema operativo Windows 11 Home en inglés configurable en español\\nTeclado retroiluminado en inglés configurable español\\nPuertos 1 Ethernet, 1 HDMI, 4 USB ( 3 USB 3.2 y 1 Type C).\\nCámara frontal 720dpi\\nSonido 5.1\\nGarantía XTR Directo 6 meses"
-},
-{
-  "Id": 4,
-  "name": "Notebook Gamer Dell Alienware 17 R5 17.3",
-  "image": "alienware-17-r5-001",
-  "image_2": "dell-g5-5550-001",
-  "image_3": "",
-  "image_4": "",
-  "price": "$508.890",
-  "category": "Notebook",
-  "description": "Notebook Dell Alienware M15R5 Extreme Gaming / Modelo Awm15R5 / Pantalla 15.6” Full Hd ( 1920 X 1080 ) 360Hz / Procesador Amd Ryzen 9 5900Hx 8 Cores 4.6Ghz / Capacidad Disco Estado Sólido 1Tb ( 1000 Gigas ) / Memoria Ram 16Gb Máxima Velocidad Y Frecuencia / Placa Gráfica Dedicada Nvidia Geforce Rtx 3070 Súper Max Q 8Gb Dedicados / Windows 11 / Dark Side Of The Moon",
-  "caracteristics": "8ª generación Intel Core i7-8750H (6 núcleos, 9 MB de caché, hasta 4. 1 GHz con Turbo Boost)\\n17. 3 pulgadas FHD (1920 x 1080) 60 Hz IPS antirreflejos 300-nits | NVIDIA GeForce GTX 1070 con 8 GB GDDR5\\n16 GB, DDR4, 2400 MHz\\nUnidad de estado sólido de 256 GB + disco duro de 1 TB 7200 rpm\\nBatería de iones de litio (99 Why) | Windows 10 Home"
-},
-
-]
-
-const notebooks = [
-  {
     "Id": 1,
     "name": "Asus Rog Zephyrus Duo Ryzen 9 16Gb 1Tb Rtx 3060",
     "image": "asus-zephyrus-duo_15-GX550LXS-001",
     "image_2": "asus-zephyrus-duo_15-GX550LXS-002",
-    "image_3": "",
-    "image_4": "",
+    "image_3": "asus-zephyrus-duo_15-GX550LXS-002",
+    "image_4": "asus-zephyrus-duo_15-GX550LXS-002",
     "price": "$580.000",
+    "cuotas": "$48.333,33",
     "category": "Notebook",
-    "description": "Caracteristicas: Asus Rog Zephyrus Duo 15 Se (Gx551Qm-Es96), Amd Ryzen 9 5980Hx Processor (3.3Ghz - 4.8Ghz) Processor, 15.6\" 300Hz (3Ms) Ips-Level Full Hd (1920 X 1080) 100% Srgb Display, 16Gb (2X 8Gb) Ddr4 3200Mhz Memory, 1Tb Pcie Nvme Ssd, Nvidia Geforce Rtx 3060 Max Performance (6Gb) Gddr6 Graphics Card W/ Rog Boost, Microsoft Windows 10 Home, Intel Wi-Fi 6 (802.11Ax), Bluetooth 5.1, Hdmi 2.0B, Usb 3.2 Type C (Gen 2), 3X Usb 3.2 Type A (Gen 2), Backlit Chiclet Per-Key Rgb Keyboard",
-    "caracteristics": ""
+    "description": "Asus Rog Zephyrus Duo 15 Se (Gx551Qm-Es96),",
+    "caracteristics": "Amd Ryzen 9 5980Hx Processor (3.3Ghz - 4.8Ghz) Processor, 15.6\" 300Hz (3Ms) Ips-Level Full Hd (1920 X 1080) 100% Srgb Display, 16Gb (2X 8Gb) Ddr4 3200Mhz Memory, 1Tb Pcie Nvme Ssd, Nvidia Geforce Rtx 3060 Max Performance (6Gb) Gddr6 Graphics Card W/ Rog Boost, Microsoft Windows 10 Home, Intel Wi-Fi 6 (802.11Ax), Bluetooth 5.1, Hdmi 2.0B, Usb 3.2 Type C (Gen 2), 3X Usb 3.2 Type A (Gen 2), Backlit Chiclet Per-Key Rgb Keyboard"
   },
   {
     "Id": 2,
@@ -248,6 +199,7 @@ const notebooks = [
     "image_3": "hp-omen-1020-003",
     "image_4": "",
     "price": "$335.000",
+    "cuotas": "$27.916,67",
     "category": "Notebook",
     "description": "Processor: 11th Gen Intel® Core™ i7-11800H (8-Core), Memory: 16 GB DDR4-3200 SDRAM, Hard Drive: 1 TB PCIe® NVMe™ M.2 SSD, Display: 15.6\"\"\"\" IPS Micro-Edge Anti-Glare FHD (1920 x 1080) 300-Nits 144Hz Display\\nIntegrated 10/100/1000 GbE LAN, Intel® Wi-Fi 6 AX 201 (2x2) and Bluetooth® 5 Combo, 1 USB 3.1 Gen 2 Type-C™ with Thunderbolt™ 3, Audio by Bang & Olufsen; DTS:X® Ultra; OMEN Audio Control Support DTS:X® Ultra; Dual speakers; HP Audio Boost 2.0",
     "caracteristics": "Video Card: NVIDIA® GeForce RTX™ 3070 Graphics, 8GB\\nWindows 11 Home x 64 bits, preinstalado.\\nPeso 2.45Kg. - HP Wide Vision 720p HD Webcam with Integrated Dual Array Digital Microphones"
@@ -256,10 +208,11 @@ const notebooks = [
     "Id": 3,
     "name": "Notebook Gamer Acer Nitro I5 10Ma 8Gb Ssd256 Gtx1650",
     "image": "acer-nitro-i5-001",
-    "image_2": "",
-    "image_3": "",
-    "image_4": "",
+    "image_2": "acer-nitro-i5-001",
+    "image_3": "acer-nitro-i5-001",
+    "image_4": "acer-nitro-i5-001",
     "price": "$144.000",
+    "cuotas": "$12.000,00",
     "category": "Notebook",
     "description": "Notebook Acer Nitro I5 11Va 8Gb 256Ssd Geforce Gtx1650 W11\\n\\nModelo An515-57-536Q\\nParte Nh.Qekaa.001",
     "caracteristics": "Procesador Intel Core i5 11-400H\\nPantalla 15.6\" FHD IPS 144Hz\\nResolución 1920 x 1080 (Full HD)\\nGráficos Placa de video dedicada Nvidia Geforce GTX 1650 4GB DDR6\\nMemoria 8GB DDR4 3200 (ampliable hasta 64GB)\\nDisco 256 GB SSD\\nAmpliaciones de disco SSD M.2 hasta 2TB / SSD o HDD 2.5\" hasta 2TB\\nConectividad inalámbrica Wi-Fi 802.11AX + Bluetooth\\nSistema operativo Windows 11 Home en inglés configurable en español\\nTeclado retroiluminado en inglés configurable español\\nPuertos 1 Ethernet, 1 HDMI, 4 USB ( 3 USB 3.2 y 1 Type C).\\nCámara frontal 720dpi\\nSonido 5.1\\nGarantía XTR Directo 6 meses"
@@ -269,49 +222,110 @@ const notebooks = [
     "name": "Notebook Gamer Dell Alienware 17 R5 17.3",
     "image": "alienware-17-r5-001",
     "image_2": "dell-g5-5550-001",
-    "image_3": "",
-    "image_4": "",
+    "image_3": "dell-g5-5550-001",
+    "image_4": "dell-g5-5550-001",
     "price": "$508.890",
+    "cuotas": "$42.407,50",
     "category": "Notebook",
     "description": "Notebook Dell Alienware M15R5 Extreme Gaming / Modelo Awm15R5 / Pantalla 15.6” Full Hd ( 1920 X 1080 ) 360Hz / Procesador Amd Ryzen 9 5900Hx 8 Cores 4.6Ghz / Capacidad Disco Estado Sólido 1Tb ( 1000 Gigas ) / Memoria Ram 16Gb Máxima Velocidad Y Frecuencia / Placa Gráfica Dedicada Nvidia Geforce Rtx 3070 Súper Max Q 8Gb Dedicados / Windows 11 / Dark Side Of The Moon",
     "caracteristics": "8ª generación Intel Core i7-8750H (6 núcleos, 9 MB de caché, hasta 4. 1 GHz con Turbo Boost)\\n17. 3 pulgadas FHD (1920 x 1080) 60 Hz IPS antirreflejos 300-nits | NVIDIA GeForce GTX 1070 con 8 GB GDDR5\\n16 GB, DDR4, 2400 MHz\\nUnidad de estado sólido de 256 GB + disco duro de 1 TB 7200 rpm\\nBatería de iones de litio (99 Why) | Windows 10 Home"
   },
+
+]
+
+const notebooks = [
   {
-    "Id": 5,
-    "name": "Notebook Nsx Kairos I5 16G Ssd250 W10P+O",
-    "image": "NOTEBOOK-NSX-KAIROS-I5-16G-SSD250-W10PO",
-    "image_2": "",
-    "image_3": "",
-    "image_4": "",
-    "price": "$ 159.533",
-    "category": "Notebook",
-    "description": "La notebook ULTRASLIM cuenta con un diseño compacto y funcional. Posee los nuevos procesadores Intel® CoreTM i5 de 10a generación, que junto a SSD puedes experimentar una mejora monumental en las velocidades de lectura / escritura, ideal para tareas que requieren multiples procesos. Con un chasis sólido y liviano, su acabado metálico de primera calidad llama la atención y se destaca entre la multitud.",
-    "caracteristics": "Marca: NSX\\nLínea: Kairos\\nResolución de la pantalla: 1920 px x 1080 px\\nCon pantalla táctil: No\\nTipo de resolución: Full HD\\nTamaño de la pantalla: 14 \"\\nCon Wi-Fi: Sí\\nPeso: 1.5 kg\\nMemoria RAM: 16 GB\\nTipo de memoria RAM: DDR4\\nCapacidad del SSD: 250 GB\\nMarca del procesador: Intel\\nLínea del procesador: Core i5\\nCantidad de núcleos: 2\\nNombre del sistema operativo: FreeDOS\\nTipo de batería: Ion de litio\\nEs gamer: No"
-  },
-  {
-    "Id": 6,
-    "name": "Notebook Gigabyte AORUS RTX 3080Q",
-    "image": "Notebook-Gigabyte-AORUS-RTX-3080Q",
-    "image_2": "",
-    "image_3": "",
-    "image_4": "",
-    "price": "$483.340",
-    "category": "Notebook",
-    "description": "En el corazón de AORUS 15P se encuentra un procesador Intel Core i7 de 2,3 GHz con 8 núcleos, 16 subprocesos y una frecuencia turbo máxima de 4,6 GHz, que le brinda la potencia de alto octanaje que necesita, ya sea que esté jugando o editando. Con 32 GB de RAM DDR4 de 3200 MHz, puede realizar múltiples tareas de manera eficiente y reproducir sus videos rápidamente. Almacene su biblioteca digital de juegos con una unidad de estado sólido M.2 NVMe PCIe 4.0 de 1 TB, lo que mejora el rendimiento del sistema y permite que sus aplicaciones se ejecuten más rápido. Experimente un rendimiento gráfico mejorado con la GPU NVIDIA GeForce RTX 3080, que le brinda 8 GB de GDDR6 VRAM junto con un conjunto de tecnologías NVIDIA Max-Q que optimizan su sistema para obtener imágenes fluidas al diseñar y jugar.",
-    "caracteristics": "Procesador: Intel Core i7-11800H (11.ª generación)\\nUPC: 2,3 a 4,6 GHz 8 núcleos\\nCaché L3: 24 MB\\nTipo de gráficos: Dedicado\\nGPU: NVIDIA GeForce RTX 3080 con 8 GB GDDR6 VRAM\\nTipo de memoria: DDR4 de 3200 MHz\\nMemoria total instalada: 32GB\\nConfiguración de memoria: 2 x 16 GB\\nCapacidad máxima de memoria: 64GB\\nTipo de ranura de memoria: DIMM SO de 260 pines"
-  },
-  {
-    "Id": 7,
-    "name": "Notebook MSI GL66 Pulse 11UEK-801AR",
-    "image": "MSI-NOTEBOOK-GAMER-GL66-PULSE-11UEK801AR",
-    "image_2": "MSI-NOTEBOOK-GAMER-GL66-PULSE-11UEK801AR-1",
-    "image_3": "",
-    "image_4": "",
-    "price": "$483.340",
-    "category": "Notebook",
-    "description": "CPU: Intel Core I7 11800H\\nODD: NO\\nBateria: 11.4V 53.5Wh 3 Cells\\nVGA. GeForce RTX3060/6GB Gddr6\\nHdd: 512 GB SSD\\nLed Panel: 15:6 FHD anti-Glare IPS 144Hz\\nRAM: DDR4 16GB (8x2)\\nRF: WLAN+BT\\nOS: Windows 11 64Bit Home\\nColor: Grey/Black\\nKeyboard: Spanish",
-    "caracteristics": ""
-  },
+    {
+      "Id": 1,
+      "name": "Asus Rog Zephyrus Duo Ryzen 9 16Gb 1Tb Rtx 3060",
+      "image": "asus-zephyrus-duo_15-GX550LXS-001",
+      "image_2": "asus-zephyrus-duo_15-GX550LXS-002",
+      "image_3": "asus-zephyrus-duo_15-GX550LXS-002",
+      "image_4": "asus-zephyrus-duo_15-GX550LXS-002",
+      "price": "$580.000",
+      "cuotas": "$48.333,33",
+      "category": "Notebook",
+      "description": "Asus Rog Zephyrus Duo 15 Se (Gx551Qm-Es96),",
+      "caracteristics": "Amd Ryzen 9 5980Hx Processor (3.3Ghz - 4.8Ghz) Processor, 15.6\" 300Hz (3Ms) Ips-Level Full Hd (1920 X 1080) 100% Srgb Display, 16Gb (2X 8Gb) Ddr4 3200Mhz Memory, 1Tb Pcie Nvme Ssd, Nvidia Geforce Rtx 3060 Max Performance (6Gb) Gddr6 Graphics Card W/ Rog Boost, Microsoft Windows 10 Home, Intel Wi-Fi 6 (802.11Ax), Bluetooth 5.1, Hdmi 2.0B, Usb 3.2 Type C (Gen 2), 3X Usb 3.2 Type A (Gen 2), Backlit Chiclet Per-Key Rgb Keyboard"
+    },
+    {
+      "Id": 2,
+      "name": "Notebook Gamer Hp Omen 15-Dc1020Nr",
+      "image": "hp-omen-1020-001",
+      "image_2": "hp-omen-1020-002",
+      "image_3": "hp-omen-1020-003",
+      "image_4": "",
+      "price": "$335.000",
+      "cuotas": "$27.916,67",
+      "category": "Notebook",
+      "description": "Processor: 11th Gen Intel® Core™ i7-11800H (8-Core), Memory: 16 GB DDR4-3200 SDRAM, Hard Drive: 1 TB PCIe® NVMe™ M.2 SSD, Display: 15.6\"\"\"\" IPS Micro-Edge Anti-Glare FHD (1920 x 1080) 300-Nits 144Hz Display\\nIntegrated 10/100/1000 GbE LAN, Intel® Wi-Fi 6 AX 201 (2x2) and Bluetooth® 5 Combo, 1 USB 3.1 Gen 2 Type-C™ with Thunderbolt™ 3, Audio by Bang & Olufsen; DTS:X® Ultra; OMEN Audio Control Support DTS:X® Ultra; Dual speakers; HP Audio Boost 2.0",
+      "caracteristics": "Video Card: NVIDIA® GeForce RTX™ 3070 Graphics, 8GB\\nWindows 11 Home x 64 bits, preinstalado.\\nPeso 2.45Kg. - HP Wide Vision 720p HD Webcam with Integrated Dual Array Digital Microphones"
+    },
+    {
+      "Id": 3,
+      "name": "Notebook Gamer Acer Nitro I5 10Ma 8Gb Ssd256 Gtx1650",
+      "image": "acer-nitro-i5-001",
+      "image_2": "acer-nitro-i5-001",
+      "image_3": "acer-nitro-i5-001",
+      "image_4": "acer-nitro-i5-001",
+      "price": "$144.000",
+      "cuotas": "$12.000,00",
+      "category": "Notebook",
+      "description": "Notebook Acer Nitro I5 11Va 8Gb 256Ssd Geforce Gtx1650 W11\\n\\nModelo An515-57-536Q\\nParte Nh.Qekaa.001",
+      "caracteristics": "Procesador Intel Core i5 11-400H\\nPantalla 15.6\" FHD IPS 144Hz\\nResolución 1920 x 1080 (Full HD)\\nGráficos Placa de video dedicada Nvidia Geforce GTX 1650 4GB DDR6\\nMemoria 8GB DDR4 3200 (ampliable hasta 64GB)\\nDisco 256 GB SSD\\nAmpliaciones de disco SSD M.2 hasta 2TB / SSD o HDD 2.5\" hasta 2TB\\nConectividad inalámbrica Wi-Fi 802.11AX + Bluetooth\\nSistema operativo Windows 11 Home en inglés configurable en español\\nTeclado retroiluminado en inglés configurable español\\nPuertos 1 Ethernet, 1 HDMI, 4 USB ( 3 USB 3.2 y 1 Type C).\\nCámara frontal 720dpi\\nSonido 5.1\\nGarantía XTR Directo 6 meses"
+    },
+    {
+      "Id": 4,
+      "name": "Notebook Gamer Dell Alienware 17 R5 17.3",
+      "image": "alienware-17-r5-001",
+      "image_2": "dell-g5-5550-001",
+      "image_3": "dell-g5-5550-001",
+      "image_4": "dell-g5-5550-001",
+      "price": "$508.890",
+      "cuotas": "$42.407,50",
+      "category": "Notebook",
+      "description": "Notebook Dell Alienware M15R5 Extreme Gaming / Modelo Awm15R5 / Pantalla 15.6” Full Hd ( 1920 X 1080 ) 360Hz / Procesador Amd Ryzen 9 5900Hx 8 Cores 4.6Ghz / Capacidad Disco Estado Sólido 1Tb ( 1000 Gigas ) / Memoria Ram 16Gb Máxima Velocidad Y Frecuencia / Placa Gráfica Dedicada Nvidia Geforce Rtx 3070 Súper Max Q 8Gb Dedicados / Windows 11 / Dark Side Of The Moon",
+      "caracteristics": "8ª generación Intel Core i7-8750H (6 núcleos, 9 MB de caché, hasta 4. 1 GHz con Turbo Boost)\\n17. 3 pulgadas FHD (1920 x 1080) 60 Hz IPS antirreflejos 300-nits | NVIDIA GeForce GTX 1070 con 8 GB GDDR5\\n16 GB, DDR4, 2400 MHz\\nUnidad de estado sólido de 256 GB + disco duro de 1 TB 7200 rpm\\nBatería de iones de litio (99 Why) | Windows 10 Home"
+    },
+    {
+      "Id": 5,
+      "name": "Notebook Nsx Kairos I5 16G Ssd250 W10P+O",
+      "image": "NOTEBOOK-NSX-KAIROS-I5-16G-SSD250-W10PO",
+      "image_2": "NOTEBOOK-NSX-KAIROS-I5-16G-SSD250-W10PO",
+      "image_3": "NOTEBOOK-NSX-KAIROS-I5-16G-SSD250-W10PO",
+      "image_4": "NOTEBOOK-NSX-KAIROS-I5-16G-SSD250-W10PO",
+      "price": "$ 159.533",
+      "cuotas": "$13.294,42",
+      "category": "Notebook",
+      "description": "La notebook ULTRASLIM cuenta con un diseño compacto y funcional. Posee los nuevos procesadores Intel® CoreTM i5 de 10a generación, que junto a SSD puedes experimentar una mejora monumental en las velocidades de lectura / escritura, ideal para tareas que requieren multiples procesos. Con un chasis sólido y liviano, su acabado metálico de primera calidad llama la atención y se destaca entre la multitud.",
+      "caracteristics": "Marca: NSX\\nLínea: Kairos\\nResolución de la pantalla: 1920 px x 1080 px\\nCon pantalla táctil: No\\nTipo de resolución: Full HD\\nTamaño de la pantalla: 14 \"\\nCon Wi-Fi: Sí\\nPeso: 1.5 kg\\nMemoria RAM: 16 GB\\nTipo de memoria RAM: DDR4\\nCapacidad del SSD: 250 GB\\nMarca del procesador: Intel\\nLínea del procesador: Core i5\\nCantidad de núcleos: 2\\nNombre del sistema operativo: FreeDOS\\nTipo de batería: Ion de litio\\nEs gamer: No"
+    },
+    {
+      "Id": 6,
+      "name": "Notebook Gigabyte AORUS RTX 3080Q",
+      "image": "Notebook-Gigabyte-AORUS-RTX-3080Q",
+      "image_2": "Notebook-Gigabyte-AORUS-RTX-3080Q",
+      "image_3": "Notebook-Gigabyte-AORUS-RTX-3080Q",
+      "image_4": "Notebook-Gigabyte-AORUS-RTX-3080Q",
+      "price": "$483.340",
+      "cuotas": "$40.278,33",
+      "category": "Notebook",
+      "description": "En el corazón de AORUS 15P se encuentra un procesador Intel Core i7 de 2,3 GHz con 8 núcleos, 16 subprocesos y una frecuencia turbo máxima de 4,6 GHz, que le brinda la potencia de alto octanaje que necesita, ya sea que esté jugando o editando. Con 32 GB de RAM DDR4 de 3200 MHz, puede realizar múltiples tareas de manera eficiente y reproducir sus videos rápidamente. Almacene su biblioteca digital de juegos con una unidad de estado sólido M.2 NVMe PCIe 4.0 de 1 TB, lo que mejora el rendimiento del sistema y permite que sus aplicaciones se ejecuten más rápido. Experimente un rendimiento gráfico mejorado con la GPU NVIDIA GeForce RTX 3080, que le brinda 8 GB de GDDR6 VRAM junto con un conjunto de tecnologías NVIDIA Max-Q que optimizan su sistema para obtener imágenes fluidas al diseñar y jugar.",
+      "caracteristics": "Procesador: Intel Core i7-11800H (11.ª generación)\\nUPC: 2,3 a 4,6 GHz 8 núcleos\\nCaché L3: 24 MB\\nTipo de gráficos: Dedicado\\nGPU: NVIDIA GeForce RTX 3080 con 8 GB GDDR6 VRAM\\nTipo de memoria: DDR4 de 3200 MHz\\nMemoria total instalada: 32GB\\nConfiguración de memoria: 2 x 16 GB\\nCapacidad máxima de memoria: 64GB\\nTipo de ranura de memoria: DIMM SO de 260 pines"
+    },
+    {
+      "Id": 7,
+      "name": "Notebook MSI GL66 Pulse 11UEK-801AR",
+      "image": "MSI-NOTEBOOK-GAMER-GL66-PULSE-11UEK801AR",
+      "image_2": "MSI-NOTEBOOK-GAMER-GL66-PULSE-11UEK801AR-1",
+      "image_3": "MSI-NOTEBOOK-GAMER-GL66-PULSE-11UEK801AR-1",
+      "image_4": "MSI-NOTEBOOK-GAMER-GL66-PULSE-11UEK801AR-1",
+      "price": "$483.340",
+      "cuotas": "$40.278,33",
+      "category": "Notebook",
+      "description": "CPU: Intel Core I7 11800H\\nODD: NO\\nBateria: 11.4V 53.5Wh 3 Cells\\nVGA. GeForce RTX3060/6GB Gddr6\\nHdd: 512 GB SSD\\nLed Panel: 15:6 FHD anti-Glare IPS 144Hz\\nRAM: DDR4 16GB (8x2)\\nRF: WLAN+BT\\nOS: Windows 11 64Bit Home\\nColor: Grey/Black\\nKeyboard: Spanish",
+      "caracteristics": ""
+    },
 ]
 
 const mainController = {
