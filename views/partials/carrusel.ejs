@@ -1,13 +1,13 @@
         <% productos.forEach(producto => { %>
             <article class="cont-dest">
-                <a class="cont-dest__link" href="/producto/<%= producto.id %> ">
+                <a class="cont-dest__link" href="/producto/<%= producto.id %>.ejs ">
                     <article class="cont-dest__img">
-                        <img src="/img/products/<%= producto.imagen %>.png" class="img__producto" alt="<%= productos.nombre %>">
+                        <img src="/img/products/<%= producto.image %>.png" class="img__producto" alt="<%= productos.name %>">
                         <hr class = "descripcion__divis">
                     </article>
                     <article class="cont-dest__descripcion">
-                        <h3 class="descripcion__nombre-prod"><%= producto.nombre %></h3>
-                        <h4 class="descripcion__precio"><%= producto.precio %></h4>
+                        <h3 class="descripcion__nombre-prod"><%= producto.name %></h3>
+                        <h4 class="descripcion__precio"><%= producto.price %></h4>
                     </article>
                     <a href="/carrito" class="cont-dest__carrito"><i class="material-icons">add_shopping_cart</i></a>
                     <button aria-label= "fav" class="cont-dest__fav" type="submit"><i class="far fa-heart"></i></button>                    
