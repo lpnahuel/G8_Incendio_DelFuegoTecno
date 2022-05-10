@@ -6,8 +6,11 @@
     <%- include('../partials/header') %> 
 
     <main class="main-general">
+        <% productos.forEach(producto => { %>
+         
+        
         <div class="article-breadCrum">                    
-            <a class="breadCrum" href="/">Home/<a class="breadCrum" href="">Periféricos/<a class="breadCrum" href="">Mouse/</a>                      
+            <a class="breadCrum" href="/">Home/<a class="breadCrum" href=""><%= producto.category %>/<a class="breadCrum" href=""><%= producto.name %> </a>                      
         </div>
 
         <section class="cont-det">
@@ -18,19 +21,19 @@
                 <section class="cont-img-prod">
                     
                     <div class="prod__img">
-                        <img class="img__ppal" src="/img/products/steelseries-rival650-001.png" alt="Imagen mouse">
+                        <img class="img__ppal" src="/img/products/<%= producto.image %>.png" alt="Imagen <%= producto.name %> ">
                     </div>
                     
                     <!-- Imagenes alternativas -->
                     <div class="prod__alt">
                         <div class="alt__img">
-                            <img class="img__fotito" src="/img/products/steelseries-rival650-002.png" alt="Imagen alternativa 1">
+                            <img class="img__fotito" src="/img/products/<%= producto.image_2 %>.png" alt="Imagen alternativa 1">
                         </div>
                         <div class="alt__img">
-                            <img class="img__fotito" src="/img/products/steelseries-rival650-003.png" alt="Imagen alternativa 2">
+                            <img class="img__fotito" src="/img/products/<%= producto.image_3 %>.png" alt="Imagen alternativa 2">
                         </div>
                             <div class="alt__img">
-                            <img class="img__fotito" src="/img/products/steelseries-rival650-004.png" alt="Imagen alternativa 3">
+                            <img class="img__fotito" src="/img/products/<%= producto.image_4 %>.png" alt="Imagen alternativa 3">
                         </div>
                     </div>
                 </section>
@@ -38,7 +41,7 @@
     
                 <!-- contenedor de Descripcion del producto -->
                 <section class="cont_des_prod">
-                    <h1 class="titulo__prod">Mouse SteelSeries Rival 650 Wireless</h1>
+                    <h1 class="titulo__prod"><%= producto.name %> </h1>
                     <hr class="titulo__divis"></hr>
                     
                     <div class="desc_prod">
@@ -46,7 +49,7 @@
                             <!-- precio -->
                         <div class="precio_prod">
 
-                         <p>$25000</p>
+                         <p><%= producto.price %> </p>
 
                         </div>                         
                         
@@ -80,7 +83,7 @@
 
                     <div class="info_venta_prod">
                         <i class='fas fa-wallet'></i>
-                        <p class="info_venta_prod-text">12 cuotas sin interés de $3.130,83</p>
+                        <p class="info_venta_prod-text">12 cuotas sin interés de <%= producto.cuotas %>  </p>
                     </div>
 
                     <hr class="divisor_info_ventas"></hr>
@@ -124,25 +127,25 @@
 
                 <!-- Descripcion producto -->
                 <div class="desc_prod_tex">
-                    <p class="desc_prod_tex_1">SteelSeries es un lider mundial en la industria de los juegos y los deportes electrónicos, que está compuesta por miles de millones de jugadores de todo el mundo y que necesitan y quieren solo el mejor equipo de juego. Fabricamos los productos más innovadores y galardonados para ayudar a los jugadores a jugar como los profesionales.<br />
-                        Los profesionales de los deportes electrónicos han ganado la mayor cantidad de dinero con el equipo de SteelSeries. Para nosotros se trata de eliminar toda la exageración para satisfacer las necesidades reales de los jugadores. Ya sea en una consola, una PC o su telefono movil, su camino hacia la gloria de los juegos requiere los mejores productos de una empresa que ha creído en los deportes electrónicos y los juegos desde un principio.</p>
+                    <p class="desc_prod_tex_1"><%= producto.description %> </p>
                 </div>
         
                 <div class="desc_prod_tex">
-                    <p class="desc_prod_tex_2">Sensor óptico exclusivo TrueMove3:</p>
-
-                    <ul>
+                    <p class="desc_prod_tex_2">Caracteristicas tecnicas de <%= producto.name  %> </p>
+                    <p class="desc_prod_tex_1"> <%= producto.caracteristics %> </p>
+                    <!-- <ul>
                         <li>+ 12.000 CPI, 350 IPS.</li>
                         <li>Interruptores mecánicos de disparador dividido de 60 millones de clics.</li>
                         <li>Agarres laterales de silicona para mayor agarre y durabilidad.</li>
                         <li>Iluminación RGB de 8 zonas con notificaciones Discord.</li>
                         <li>Personalización total con SteelSeries.</li>
                         <li>Duración de la batería de más de 24 horas con carga rápida.</li>
-                    </ul>
+                    </ul> -->
                 </div>
             </section>
         </section>
         
+        <% }) %>
         
        
         <!-- CARRUSEL DESTACADOS 2 -->

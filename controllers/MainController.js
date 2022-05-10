@@ -351,7 +351,7 @@ const mainController = {
     },
 
     productDetail:function(req,res){
-        res.locals.title = "DFT - " + productos.name 
+        res.locals.title = "DFT - Detalles del Producto" 
         res.render('products/productDetail', {productos : productos});
     },
 
