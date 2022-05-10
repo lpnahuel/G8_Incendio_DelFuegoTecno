@@ -6,8 +6,6 @@
     <%- include('../partials/header') %> 
 
     <main class="main-general">
-        <% productos.forEach(producto => { %>
-         
         
         <div class="article-breadCrum">                    
             <a class="breadCrum" href="/">Home/<a class="breadCrum" href=""><%= producto.category %>/<a class="breadCrum" href=""><%= producto.name %> </a>                      
@@ -144,9 +142,6 @@
                 </div>
             </section>
         </section>
-        
-        <% }) %>
-        
        
         <!-- CARRUSEL DESTACADOS 2 -->
         <section class="main-home__cont-prod">
