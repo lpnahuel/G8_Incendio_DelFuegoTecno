@@ -3,99 +3,155 @@
       "id": 1,
       "firstName": "daniel",
       "lastName": "duque",
+      "birth":"",
       "email": "daniel@dh.com.ar",
       "password": "*****",
       "category": "",
-      "image": ""
+      "image": "",
+      "phone":"",
+      "adress":"",
+      "city":"",
+      "cp":""
+
     },
     {
       "id": 2,
       "firstName": "gian",
       "lastName": "quaranta",
+       "birth":"",
       "email": "gian@dh.com.ar",
       "password": "*****",
       "category": "",
-      "image": ""
+      "image": "",
+      "phone":"",
+      "adress":"",
+      "city":"",
+      "cp":""
     },
     {
       "id": 3,
       "firstName": "maria",
       "lastName": "dumas",
+      "birth":"",
       "email": "maria@dh.com.ar",
       "password": "*****",
       "category": "",
-      "image": ""
+      "image": "",
+      "phone":"",
+      "adress":"",
+      "city":"",
+      "cp":""
     },
     {
       "id": 4,
       "firstName": "joe",
       "lastName": "casas",
+      "birth":"",
       "email": "joe@dh.com.ar",
       "password": "*****",
       "category": "",
-      "image": ""
+      "image": "",
+      "phone":"",
+      "adress":"",
+      "city":"",
+      "cp":""
     },
     {
       "id": 5,
       "firstName": "daniel",
       "lastName": "acevedo",
+      "birth":"",
       "email": "daniel1@dh.com.ar",
       "password": "*****",
       "category": "",
-      "image": ""
+      "image": "",
+      "phone":"",
+      "adress":"",
+      "city":"",
+      "cp":""
     },
     {
       "id": 6,
       "firstName": "fernando",
       "lastName": "gorordo",
+      "birth":"",
       "email": "fernando@dh.com.ar",
       "password": "*****",
       "category": "",
-      "image": ""
+      "image": "",
+      "phone":"",
+      "adress":"",
+      "city":"",
+      "cp":""
     },
     {
       "id": 7,
       "firstName": "bautista",
       "lastName": "vicens",
+      "birth":"",
       "email": "bautista@dh.com.ar",
       "password": "*****",
       "category": "",
-      "image": ""
+      "image": "",
+      "phone":"",
+      "adress":"",
+      "city":"",
+      "cp":""
     },
     {
       "id": 8,
       "firstName": "juan",
       "lastName": "meirino",
+      "birth":"",
       "email": "juan@dh.com.ar",
       "password": "*****",
       "category": "",
-      "image": ""
+      "image": "",
+      "phone":"",
+      "adress":"",
+      "city":"",
+      "cp":""
     },
     {
       "id": 9,
       "firstName": "lucas",
       "lastName": "ackerman",
+      "birth":"",
       "email": "lucas@dh.com.ar",
       "password": "*****",
       "category": "",
-      "image": ""
+      "image": "",
+      "phone":"",
+      "adress":"",
+      "city":"",
+      "cp":""
     },
     {
       "id": 10,
       "firstName": "german",
       "lastName": "carosio",
+      "birth":"",
       "email": "german@dh.com.ar",
       "password": "*****",
       "category": "",
-      "image": ""
+      "image": "",
+      "phone":"",
+      "adress":"",
+      "city":"",
+      "cp":""
     },
     {
       "id": 11,
       "firstName": "alexander",
       "lastName": "perez",
+      "birth":"",
       "email": "alexander@dh.com.ar",
       "password": "",
       "category": "*****",
-      "image": ""
+      "image": "",
+      "phone":"",
+      "adress":"",
+      "city":"",
+      "cp":""
     }
   ]
