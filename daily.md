@@ -68,3 +68,5 @@ A continuacion detallaremos los temas que se trataron cada día:
 - Creamos el archivo products.json
 - Creamos el archivo users.json
 - Le agregamos animación al boton "comprar" de productdetail
+- Nos quedamos post clase tratar de arreglar productDetail
+- Modificamos filtros MainController
