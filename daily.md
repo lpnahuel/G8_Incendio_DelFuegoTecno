@@ -72,3 +72,6 @@ A continuacion detallaremos los temas que se trataron cada día:
 - Modificamos filtros MainController.
 - Listo Sprint 3.
 - Iniciamos Sprint 4.
+
+**Informe 09/05/2022**
+- Se actualizó el archivo en Heroku
