@@ -209,7 +209,7 @@ const productos = [
     "image": "hp-omen-1020-001",
     "image_2": "hp-omen-1020-002",
     "image_3": "hp-omen-1020-003",
-    "image_4": "",
+    "image_4": "hp-omen-1020-003",
     "price": "$335.000",
     "cuotas": "$27.916,67",
     "category": "Notebook",
