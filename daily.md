@@ -67,3 +67,4 @@ A continuacion detallaremos los temas que se trataron cada día:
 - Se logro modificar el logo para que se vea correctamente en todas las vistas tanto en header como footer.
 - Creamos el archivo products.json
 - Creamos el archivo users.json
+- Le agregamos animación al boton "comprar" de productdetail
