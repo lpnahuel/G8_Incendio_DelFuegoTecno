@@ -245,62 +245,9 @@ const productos = [
 
 ]
 
-const notebooks = [
-  {
-    "id": 1,
-    "name": "Asus Rog Zephyrus Duo Ryzen 9 16Gb 1Tb Rtx 3060",
-    "image": "asus-zephyrus-duo_15-GX550LXS-001",
-    "image_2": "asus-zephyrus-duo_15-GX550LXS-002",
-    "image_3": "asus-zephyrus-duo_15-GX550LXS-002",
-    "image_4": "asus-zephyrus-duo_15-GX550LXS-002",
-    "price": "$580.000",
-    "cuotas": "$48.333,33",
-    "category": "Notebook",
-    "description": "Asus Rog Zephyrus Duo 15 Se (Gx551Qm-Es96),",
-    "caracteristics": "Amd Ryzen 9 5980Hx Processor (3.3Ghz - 4.8Ghz) Processor, 15.6\" 300Hz (3Ms) Ips-Level Full Hd (1920 X 1080) 100% Srgb Display, 16Gb (2X 8Gb) Ddr4 3200Mhz Memory, 1Tb Pcie Nvme Ssd, Nvidia Geforce Rtx 3060 Max Performance (6Gb) Gddr6 Graphics Card W/ Rog Boost, Microsoft Windows 10 Home, Intel Wi-Fi 6 (802.11Ax), Bluetooth 5.1, Hdmi 2.0B, Usb 3.2 Type C (Gen 2), 3X Usb 3.2 Type A (Gen 2), Backlit Chiclet Per-Key Rgb Keyboard"
-  },
-  {
-    "id": 2,
-    "name": "Notebook Gamer Hp Omen 15-Dc1020Nr",
-    "image": "hp-omen-1020-001",
-    "image_2": "hp-omen-1020-002",
-    "image_3": "hp-omen-1020-003",
-    "image_4": "hp-omen-1020-003",
-    "price": "$335.000",
-    "cuotas": "$27.916,67",
-    "category": "Notebook",
-    "description": "Processor: 11th Gen Intel® Core™ i7-11800H (8-Core), Memory: 16 GB DDR4-3200 SDRAM, Hard Drive: 1 TB PCIe® NVMe™ M.2 SSD, Display: 15.6\"\"\"\" IPS Micro-Edge Anti-Glare FHD (1920 x 1080) 300-Nits 144Hz Display\\nIntegrated 10/100/1000 GbE LAN, Intel® Wi-Fi 6 AX 201 (2x2) and Bluetooth® 5 Combo, 1 USB 3.1 Gen 2 Type-C™ with Thunderbolt™ 3, Audio by Bang & Olufsen; DTS:X® Ultra; OMEN Audio Control Support DTS:X® Ultra; Dual speakers; HP Audio Boost 2.0",
-    "caracteristics": "Video Card: NVIDIA® GeForce RTX™ 3070 Graphics, 8GB\\nWindows 11 Home x 64 bits, preinstalado.\\nPeso 2.45Kg. - HP Wide Vision 720p HD Webcam with Integrated Dual Array Digital Microphones"
-  },
-  {
-    "id": 3,
-    "name": "Notebook Gamer Acer Nitro I5 10Ma 8Gb Ssd256 Gtx1650",
-    "image": "acer-nitro-i5-001",
-    "image_2": "acer-nitro-i5-001",
-    "image_3": "acer-nitro-i5-001",
-    "image_4": "acer-nitro-i5-001",
-    "price": "$144.000",
-    "cuotas": "$12.000,00",
-    "category": "Notebook",
-    "description": "Notebook Acer Nitro I5 11Va 8Gb 256Ssd Geforce Gtx1650 W11\\n\\nModelo An515-57-536Q\\nParte Nh.Qekaa.001",
-    "caracteristics": "Procesador Intel Core i5 11-400H\\nPantalla 15.6\" FHD IPS 144Hz\\nResolución 1920 x 1080 (Full HD)\\nGráficos Placa de video dedicada Nvidia Geforce GTX 1650 4GB DDR6\\nMemoria 8GB DDR4 3200 (ampliable hasta 64GB)\\nDisco 256 GB SSD\\nAmpliaciones de disco SSD M.2 hasta 2TB / SSD o HDD 2.5\" hasta 2TB\\nConectividad inalámbrica Wi-Fi 802.11AX + Bluetooth\\nSistema operativo Windows 11 Home en inglés configurable en español\\nTeclado retroiluminado en inglés configurable español\\nPuertos 1 Ethernet, 1 HDMI, 4 USB ( 3 USB 3.2 y 1 Type C).\\nCámara frontal 720dpi\\nSonido 5.1\\nGarantía XTR Directo 6 meses"
-  },
-  {
-    "id": 4,
-    "name": "Notebook Gamer Dell Alienware 17 R5 17.3",
-    "image": "alienware-17-r5-001",
-    "image_2": "dell-g5-5550-001",
-    "image_3": "dell-g5-5550-001",
-    "image_4": "dell-g5-5550-001",
-    "price": "$508.890",
-    "cuotas": "$42.407,50",
-    "category": "Notebook",
-    "description": "Notebook Dell Alienware M15R5 Extreme Gaming / Modelo Awm15R5 / Pantalla 15.6” Full Hd ( 1920 X 1080 ) 360Hz / Procesador Amd Ryzen 9 5900Hx 8 Cores 4.6Ghz / Capacidad Disco Estado Sólido 1Tb ( 1000 Gigas ) / Memoria Ram 16Gb Máxima Velocidad Y Frecuencia / Placa Gráfica Dedicada Nvidia Geforce Rtx 3070 Súper Max Q 8Gb Dedicados / Windows 11 / Dark Side Of The Moon",
-    "caracteristics": "8ª generación Intel Core i7-8750H (6 núcleos, 9 MB de caché, hasta 4. 1 GHz con Turbo Boost)\\n17. 3 pulgadas FHD (1920 x 1080) 60 Hz IPS antirreflejos 300-nits | NVIDIA GeForce GTX 1070 con 8 GB GDDR5\\n16 GB, DDR4, 2400 MHz\\nUnidad de estado sólido de 256 GB + disco duro de 1 TB 7200 rpm\\nBatería de iones de litio (99 Why) | Windows 10 Home"
-  },
-]
 
-const notebooks2 = [
+
+const notebooks = [
   {
     "id": 1,
     "name": "Asus Rog Zephyrus Duo Ryzen 9 16Gb 1Tb Rtx 3060",

@@ -79,3 +79,48 @@ En primer lugar creemos que es necesario empezar a pedir ayuda con las cosas que
 
 - Modificar sin previo aviso partes del codigo que no me corresponden.
 
+
+# **Retrospectiva Tercer Sprint**
+
+### **Comenzar a hacer:**
+
+- Realizar los trabajos prácticos a tiempo
+
+- Realizar ejercitación adicional para entender más el material
+
+- Calcular mejor los tiempos de cada tarea, para no llegar al límite con las entregas
+
+
+### **Hacer más de:** 
+
+- Ver más videos y tutoriales para seguir complementando nuestro conocimiento
+
+- Practicar
+
+- Consultar más a los profesores cuando estamos perdidos con una tarea que no nos sale
+
+
+### **Seguir haciendo:**
+
+- Seguir manteniendo buena comunicación y relación entre los compañeros del equipo
+
+- Seguir con el meet semanal
+
+- Continuar asistiendo a todas clases, y aprovechar las explicaciones extra que dan los profesores
+
+- Seguir repartiendo las tareas y apoyando el trabajo en equipo
+
+- Seguir buscando a Nico para que ayude
+
+### **Hacer menos de:** 
+
+- Pedir ayuda a último momento cuando algo nos cuesta
+
+- Planificar más tareas de las necesarias sin calcular adecuadamente los tiempos de realización
+
+### **Dejar de hacer:**
+
+- No dejar tareas sin terminar
+
+- No aplazar tareas
+
