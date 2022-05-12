@@ -73,5 +73,16 @@ A continuacion detallaremos los temas que se trataron cada día:
 - Listo Sprint 3.
 - Iniciamos Sprint 4.
 
-**Informe 09/05/2022**
+**Informe 10/05/2022**
 - Se actualizó el archivo en Heroku
+- Agregamos las tarjetas del nuevo sprint a Trello
+- Modificamos los parciales del carrito que los ejs estaban mal escritos.
+- Modificamos las rutas del ejs.
+- Declaramos constantes en el controlador.
+
+**Informe 11/05/2022**
+- Hicimos un cambio en la hoja de estilo: modificamos descripcion del meta correctamente.
+
+**Informe 12/05/2022**
+- Realizamos meet semanal.
+- Repartimos tareas.
