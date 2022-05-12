@@ -38,6 +38,11 @@ En la reunion se trataron los siguientes puntos:
 - Armado de un archivo de base de productos.
 
 **Informe comienzo de semana 11/05/2022**
+- Finalizamos con el Sprint 3
+- Agregamos las tarjetas del nuevo sprint a Trello
+- Creamos carpeta data con archivo users.json y products.json
+- Realizamos el meet
+- Realizamos la restrospectiva
 
 **Informe comienzo de semana 18/05/2022**
 
