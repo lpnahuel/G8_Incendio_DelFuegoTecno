@@ -86,3 +86,27 @@ A continuacion detallaremos los temas que se trataron cada día:
 **Informe 12/05/2022**
 - Realizamos meet semanal.
 - Repartimos tareas.
+- Planificamos el siguiente meet
+- Realizamos un analisis FODA y comparamos con nuestra competencia
+
+**Informe 13/05/2022**
+- Nos sentiamos todos mal, no pudimos juntarnos como planeamos.
+
+
+**Informe 16/05/2022**
+- Nos reunimos para terminar el proyecto de la clase.
+- Recibimos el feedback del ultimo sprint y debatimos estrategias.
+- Decidimos crear menos tareas en el Trello, basandonos en el feedback.
+- Crear partials del producto.
+- Eliminar fotos alternativas y agregar todas en un mismo campo.
+- Creamos los archivos: productscontrollers.j y usercontrollers.js
+- creamos archivos de rutas: users.js y products.js
+- Instalamos method-override
+- instalamos multer
+- Ordenamos el archivo de app.js
+- Decidimos crear una vista de perfil de usuario (con todos los campos, incluido contraseña), editar usuario y hacer otra de mis pedidos para ver el historial de pedidos.
+- Nos quedamos tiempo post clase para seguir con el proyecto.
+
+
+**Informe 17/05/2022**
+- Modificamos el products.json
