@@ -72,8 +72,18 @@
         <!-- CARRUSEL DESTACADOS 1 -->
         <section class="main-home__cont-prod">
             <h2 class="cont-prod__categorias">Productos destacados</h2>
-            <nav class="cont-prod__articulos"> 
-                <%- include('./partials/carrusel') %> 
+            <nav class="cont-prod__articulos">
+
+                <% productos.forEach((producto, index) => { %>
+
+                    <% if (index < 4) { %>
+
+                        <%- include('./components/carruselProduct', {producto : producto}) %>
+
+                    <% } %>
+
+                <% }) %> 
+
             </nav>
         </section>
 
@@ -92,7 +102,17 @@
 
             <h2 class="cont-prod__categorias">Notebooks</h2>
             <nav class="cont-prod__articulos"> 
-                <%- include('./partials/carrusel') %> 
+
+                <% productos.forEach((producto, index) => { %>
+
+                    <% if (index < 4) { %>
+
+                        <%- include('./components/carruselProduct', {producto : producto}) %>
+
+                    <% } %>
+
+                <% }) %> 
+
             </nav>
 
         </section>

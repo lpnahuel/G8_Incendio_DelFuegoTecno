@@ -51,25 +51,22 @@
                             </label>
                             <label for="foto-producto">
                                 <p class="lg__descrip">Foto de producto*</p>
-                                <input class="rg__avatar" type="file" name="foto-producto" id="foto-producto" accept=".jpg, .png, .webp" required>
+                                <input class="rg__avatar" type="file" name="foto-producto" id="foto-producto" enctype="multipart/form-data"  accept=".jpg, .png, .webp" required>
                                 <span class="feedback"></span>
                             </label>
-                            <label for="foto-producto">
-                                <p class="lg__descrip">Fotos alternativas</p>
-                                <input class="rg__avatar" type="file" name="foto-producto" id="foto-producto" accept=".jpg, .png, .webp">
-                            </label>
+                            <!-- poner un solo campo que permita carga múltiple-->
                         </form>
                     </div>
                     <div class="column__forms">
                         <form action="/producto" method="POST" class="forms__campos">
                             <label for="descripcion">
                                 <p class="lg__descrip">Descripción del producto*</p>                        
-                                <input class="campos__textarea" type="textarea" id="descripcion" name="descripcion" placeholder="Descripción del producto..." required>
+                                <textarea class="campos__textarea" id="descripcion" name="descripcion" placeholder="Descripción del producto..." required></textarea>
                                 <span class="feedback"></span>
                             </label>
                             <label for="specs">
                                 <p class="lg__descrip">Características técnicas*</p>                        
-                                <input class="campos__textarea" type="textarea" id="specs" name="specs" placeholder="Características técnicas..." required>
+                                <textarea class="campos__textarea" id="specs" name="specs" placeholder="Características técnicas..." required></textarea>
                                 <span class="feedback"></span>
                             </label>
 

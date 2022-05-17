@@ -131,14 +131,7 @@
                 <div class="desc_prod_tex">
                     <p class="desc_prod_tex_2">Caracteristicas tecnicas de <%= producto.name  %> </p>
                     <p class="desc_prod_tex_1"> <%= producto.caracteristics %> </p>
-                    <!-- <ul>
-                        <li>+ 12.000 CPI, 350 IPS.</li>
-                        <li>Interruptores mecánicos de disparador dividido de 60 millones de clics.</li>
-                        <li>Agarres laterales de silicona para mayor agarre y durabilidad.</li>
-                        <li>Iluminación RGB de 8 zonas con notificaciones Discord.</li>
-                        <li>Personalización total con SteelSeries.</li>
-                        <li>Duración de la batería de más de 24 horas con carga rápida.</li>
-                    </ul> -->
+
                 </div>
             </section>
         </section>
@@ -149,8 +142,16 @@
             <h2 class="cont-prod__categorias">Productos similares</h2>
         
                 <nav class="cont-prod__articulos">
-        
-                    <%- include('../partials/carrusel') %> 
+
+                    <% productos.forEach((producto, index) => { %>
+
+                        <% if (index < 4) { %>
+    
+                            <%- include('../components/carruselProduct', {producto : producto}) %>
+    
+                        <% } %>
+    
+                    <% }) %> 
         
                 </nav>
         

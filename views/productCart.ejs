@@ -142,7 +142,15 @@
         <section class="main-home__cont-prod">
             <h2 class="cont-prod__categorias">Otros usuarios también compraron</h2>
             <div class="cont-prod__articulos"> 
-                <%- include('./partials/carrusel') %> 
+                <% productos.forEach((producto, index) => { %>
+
+                    <% if (index < 4) { %>
+
+                        <%- include('./components/carruselProduct', {producto : producto}) %>
+
+                    <% } %>
+
+                <% }) %> 
             </div>
         </section>
 
