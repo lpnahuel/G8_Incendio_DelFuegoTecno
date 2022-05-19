@@ -19,19 +19,19 @@
                 <section class="cont-img-prod">
                     
                     <div class="prod__img">
-                        <img class="img__ppal" src="/img/products/<%= productRequested.image[0] %>.png" alt="Imagen <%= productRequested.name %> ">
+                        <img class="img__ppal" src="/img/products/<%= productRequested.image[0] %>" alt="Imagen <%= productRequested.name %> ">
                     </div>
                     
                     <!-- Imagenes alternativas -->
                     <div class="prod__alt">
                         <div class="alt__img">
-                            <img class="img__fotito" src="/img/products/<%= productRequested.image[0] %>.png" alt="Imagen alternativa 1">
+                            <img class="img__fotito" src="/img/products/<%= productRequested.image[0] %>" alt="Imagen alternativa 1">
                         </div>
                         <div class="alt__img">
-                            <img class="img__fotito" src="/img/products/<%= productRequested.image[0] %>.png" alt="Imagen alternativa 2">
+                            <img class="img__fotito" src="/img/products/<%= productRequested.image[1] !== "" ? productRequested.image[1] : "default.webp" %>" alt="Imagen alternativa 2">
                         </div>
                             <div class="alt__img">
-                            <img class="img__fotito" src="/img/products/<%= productRequested.image[0] %>.png" alt="Imagen alternativa 3">
+                            <img class="img__fotito" src="/img/products/<%= productRequested.image[2]  !== "" ? productRequested.image[2] : "default.webp" %>" alt="Imagen alternativa 3">
                         </div>
                     </div>
                 </section>
@@ -53,7 +53,7 @@
                         
                         <!-- Boton compra -->
                         
-                        <button type="button" class="comprar_prod"><a href="/cart"></a>Comprar</button>                        
+                        <button type="button" class="comprar_prod" aria-label= "add to cart"><a href="/cart"></a>Comprar</button>                        
                         
                     </div>                   
                       
@@ -72,8 +72,8 @@
                         </div>
                         
                         <div>
-                            <button type="button" class="heart_b"><i class="far fa-heart"></i></button>  
-                            <button type="button" class="share_b"><i class="fa fa-share-alt"></i></button>
+                            <button type="button" class="heart_b" aria-label= "favorites"><i class="far fa-heart"></i></button>  
+                            <button type="button" class="share_b" aria-label= "share"><i class="fa fa-share-alt"></i></button>
                         </div>
                     </div>
 
@@ -106,7 +106,7 @@
                     </div>
 
                     <div class="agregar_carrito_btn_div">
-                        <button type="button" class="agregar_carrito"><a href="/cart"></a>Agregar al Carrito</button>
+                        <button type="button" class="agregar_carrito" aria-label= "add to cart"><a href="/cart"></a>Agregar al Carrito</button>
                     </div>
                                 
                 </section>         
@@ -116,9 +116,9 @@
             <section class="cont-det-producto-bot">
                 <!-- Botones de Descripcion de producto -->
                 <div class="desc_prod_btns">
-                    <button type="button" class="desc_prod-btn"><a href="/cart"></a>Descripción</button>
+                    <button type="button" class="desc_prod-btn" aria-label= "description"><a href="/cart"></a>Descripción</button>
 
-                    <button type="button" class="desc_prod-btn"><a href="/cart"></a>Especificaciones</button>
+                    <button type="button" class="desc_prod-btn"><a href="/cart" aria-label= "specs"></a>Especificaciones</button>
                 </div>
 
                 <hr class="titulo__divis"></hr>
