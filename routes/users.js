@@ -1,6 +1,13 @@
-// const express = require("express");
-// const router = express.Router();
-// // const UsersController = require("../controllers/UsersController");
+// ************ Require's ************
+// const fs = require('fs');
+// const path = require('path');
+// const multer = require('multer');
+
+// ************ Path's ************
+// const productsFilePath = path.join(__dirname, '../data/products.json');
+// const usersFilePath = path.join(__dirname, '../data/users.json');
+
+// let users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
 
 // /*** Armar vista de perfil de usuario y editar usuario */
 

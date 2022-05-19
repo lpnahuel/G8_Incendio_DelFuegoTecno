@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include('../partials/head') %> 
+    <%- include('../partials/head', {title: productRequested.name})%> 
 <body>
     
-    <%- include('../partials/header') %> 
+    <%- include('../partials/header')%> 
 
     <main class="main-general">
         
         <div class="article-breadCrum">                    
-            <a class="breadCrum" href="/">Home/<a class="breadCrum" href=""><%= producto.category %>/<a class="breadCrum" href=""><%= producto.name %> </a>                      
+            <a class="breadCrum" href="/">Home/<a class="breadCrum" href=""><%= productRequested.category %>/<a class="breadCrum" href=""><%= productRequested.name %> </a>                      
         </div>
 
         <section class="cont-det">
@@ -19,19 +19,19 @@
                 <section class="cont-img-prod">
                     
                     <div class="prod__img">
-                        <img class="img__ppal" src="/img/products/<%= producto.image %>.png" alt="Imagen <%= producto.name %> ">
+                        <img class="img__ppal" src="/img/products/<%= productRequested.image[0] %>.png" alt="Imagen <%= productRequested.name %> ">
                     </div>
                     
                     <!-- Imagenes alternativas -->
                     <div class="prod__alt">
                         <div class="alt__img">
-                            <img class="img__fotito" src="/img/products/<%= producto.image_2 %>.png" alt="Imagen alternativa 1">
+                            <img class="img__fotito" src="/img/products/<%= productRequested.image[0] %>.png" alt="Imagen alternativa 1">
                         </div>
                         <div class="alt__img">
-                            <img class="img__fotito" src="/img/products/<%= producto.image_3 %>.png" alt="Imagen alternativa 2">
+                            <img class="img__fotito" src="/img/products/<%= productRequested.image[0] %>.png" alt="Imagen alternativa 2">
                         </div>
                             <div class="alt__img">
-                            <img class="img__fotito" src="/img/products/<%= producto.image_4 %>.png" alt="Imagen alternativa 3">
+                            <img class="img__fotito" src="/img/products/<%= productRequested.image[0] %>.png" alt="Imagen alternativa 3">
                         </div>
                     </div>
                 </section>
@@ -39,7 +39,7 @@
     
                 <!-- contenedor de Descripcion del producto -->
                 <section class="cont_des_prod">
-                    <h1 class="titulo__prod"><%= producto.name %> </h1>
+                    <h1 class="titulo__prod"><%= productRequested.name %> </h1>
                     <hr class="titulo__divis"></hr>
                     
                     <div class="desc_prod">
@@ -47,13 +47,13 @@
                             <!-- precio -->
                         <div class="precio_prod">
 
-                         <p><%= producto.price %> </p>
+                         <p>$<%= productRequested.price %> </p>
 
                         </div>                         
                         
                         <!-- Boton compra -->
                         
-                        <button type="button" class="comprar_prod"><a href="/carrito"></a>Comprar</button>                        
+                        <button type="button" class="comprar_prod"><a href="/cart"></a>Comprar</button>                        
                         
                     </div>                   
                       
@@ -81,7 +81,7 @@
 
                     <div class="info_venta_prod">
                         <i class='fas fa-wallet'></i>
-                        <p class="info_venta_prod-text">12 cuotas sin interés de <%= producto.cuotas %>  </p>
+                        <p class="info_venta_prod-text">12 cuotas sin interés de $<%= productRequested.price / 12 %>  </p>
                     </div>
 
                     <hr class="divisor_info_ventas"></hr>
@@ -106,7 +106,7 @@
                     </div>
 
                     <div class="agregar_carrito_btn_div">
-                        <button type="button" class="agregar_carrito"><a href="/carrito"></a>Agregar al Carrito</button>
+                        <button type="button" class="agregar_carrito"><a href="/cart"></a>Agregar al Carrito</button>
                     </div>
                                 
                 </section>         
@@ -116,21 +116,21 @@
             <section class="cont-det-producto-bot">
                 <!-- Botones de Descripcion de producto -->
                 <div class="desc_prod_btns">
-                    <button type="button" class="desc_prod-btn"><a href="/carrito"></a>Descripción</button>
+                    <button type="button" class="desc_prod-btn"><a href="/cart"></a>Descripción</button>
 
-                    <button type="button" class="desc_prod-btn"><a href="/carrito"></a>Especificaciones</button>
+                    <button type="button" class="desc_prod-btn"><a href="/cart"></a>Especificaciones</button>
                 </div>
 
                 <hr class="titulo__divis"></hr>
 
                 <!-- Descripcion producto -->
                 <div class="desc_prod_tex">
-                    <p class="desc_prod_tex_1"><%= producto.description %> </p>
+                    <p class="desc_prod_tex_1"><%= productRequested.description %> </p>
                 </div>
         
                 <div class="desc_prod_tex">
-                    <p class="desc_prod_tex_2">Caracteristicas tecnicas de <%= producto.name  %> </p>
-                    <p class="desc_prod_tex_1"> <%= producto.caracteristics %> </p>
+                    <p class="desc_prod_tex_2">Caracteristicas tecnicas de   <%= productRequested.name  %> </p>
+                    <p class="desc_prod_tex_1"> <%= productRequested.specs %> </p>
 
                 </div>
             </section>
@@ -143,11 +143,11 @@
         
                 <nav class="cont-prod__articulos">
 
-                    <% productos.forEach((producto, index) => { %>
+                    <% productsDB.forEach((product, index) => { %>
 
                         <% if (index < 4) { %>
     
-                            <%- include('../components/carruselProduct', {producto : producto}) %>
+                            <%- include('../components/carruselProduct', {product : product}) %>
     
                         <% } %>
     

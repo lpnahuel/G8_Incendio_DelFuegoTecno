@@ -74,11 +74,11 @@
             <h2 class="cont-prod__categorias">Productos destacados</h2>
             <nav class="cont-prod__articulos">
 
-                <% productos.forEach((producto, index) => { %>
+                <% productsDB.forEach((product, index) => { %>
 
                     <% if (index < 4) { %>
 
-                        <%- include('./components/carruselProduct', {producto : producto}) %>
+                        <%- include('./components/carruselProduct', {product : product}) %>
 
                     <% } %>
 
@@ -103,11 +103,11 @@
             <h2 class="cont-prod__categorias">Notebooks</h2>
             <nav class="cont-prod__articulos"> 
 
-                <% productos.forEach((producto, index) => { %>
+                <% productsDB.forEach((product, index) => { %>
 
                     <% if (index < 4) { %>
 
-                        <%- include('./components/carruselProduct', {producto : producto}) %>
+                        <%- include('./components/carruselProduct', {product : product}) %>
 
                     <% } %>
 

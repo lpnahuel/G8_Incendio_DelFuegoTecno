@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include('../partials/head') %> 
+    <%- include('../partials/head', {title: 'DFT - Todos los productos'})%> 
 <body>
     <%- include('../partials/header') %> 
 
@@ -36,9 +36,9 @@
         
             <section class="prodDisplay">
 
-            <% notebooks.forEach(notebook => { %>
+            <% productsDB.forEach(product => { %>
               
-                <%- include('../components/singleProduct', {notebook : notebook}) %> 
+                <%- include('../components/singleProduct', {product : product}) %> 
                 
             <% }) %>
           

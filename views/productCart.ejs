@@ -19,9 +19,21 @@
             <!-- Contenedor de productos para la compra -->
             <article class="leftArticle">           
                 
-                <h2 class="carrito-title"><i class="fa-solid fa-cart-shopping"></i>  Mi Carrito</h2>
+                <h2 class="carrito-title"><i class="fa-solid fa-cart-shopping"></i>  Mi carrito</h2>
 
-                <div class="caja">
+
+                <% productsDB.forEach((product, index) => { %>
+
+                    <% if (index < 3) { %>
+
+                        <%- include('./components/cartAddedProduct', {product : product}) %>
+
+                    <% } %>
+
+                <% }) %> 
+
+
+                <!-- <div class="caja">
                     <div class="caja-producto">
                         <div class="caja-producto-izquierda">
                             <img class="img-producto" src="/img/products/kolink-inspire-k20-001.png" alt="Foto de kolink inspire k20">
@@ -45,9 +57,9 @@
                                 <div class="caja-price">$6500</div>                                
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
-                    <div class="caja-producto">
+                    <!-- <div class="caja-producto">
                         <div class="caja-producto-izquierda">
                             <img class="img-producto" src="/img/products/msi-i7-brx2070-001.png" alt="Foto de notebook MSI i7 brx2070">
                         </div>
@@ -71,7 +83,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <div class="leftArticle-btns">
 
@@ -142,11 +154,11 @@
         <section class="main-home__cont-prod">
             <h2 class="cont-prod__categorias">Otros usuarios también compraron</h2>
             <div class="cont-prod__articulos"> 
-                <% productos.forEach((producto, index) => { %>
+                <% productsDB.forEach((product, index) => { %>
 
                     <% if (index < 4) { %>
 
-                        <%- include('./components/carruselProduct', {producto : producto}) %>
+                        <%- include('./components/carruselProduct', {product : product}) %>
 
                     <% } %>
 

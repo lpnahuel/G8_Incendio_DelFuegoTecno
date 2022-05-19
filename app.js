@@ -3,23 +3,29 @@ const express = require("express");
 const path = require("path");
 const methodOverride = require('method-override');
 
+/*** Rutas (require) */
+const mainRoutes = require("./routes/mainRoutes")
+const productsRoutes = require("./routes/products")
+// const usersRoutes = require("./routes/users")
+
 // ************ Express() ************
 const app = express();
 
-// ************ app.use ************
-app.use(methodOverride('_method'));
+// ************  Middlewares ************
 app.use(express.static(path.join(__dirname, "/public")));
+app.use(express.urlencoded({ extended: false }));
+app.use(methodOverride('_method')); 
 
 
-/*** Rutas (use & require) */
+// ************ EJS ************
+app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, '/views'));
 
-const rutasMain = require("./routes/mainRoutes")
-// const rutasProducts = require("./routes/products")
-// const rutasUsers = require("./routes/users")
 
-app.use("/", rutasMain);
-// app.use("/products", rutasProducts);
-// app.use("/profile", rutasUsers);
+/*** Rutas (use) */
+app.use("/", mainRoutes);
+app.use("/products", productsRoutes);
+//app.use("/profile", usersRoutes);
 
 
 // ************ Servidor ************
@@ -29,8 +35,6 @@ app.listen(process.env.PORT || port, () => {
 });
 
 
-// ************ EJS ************
-app.set('view engine', 'ejs');
 
 
 

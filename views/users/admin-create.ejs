@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../partials/head', {title : 'Admin Panel'}) %> 
+<body>
+
+    <%- include('../partials/header') %> 
+
+    <main class="main-general">
+
+        <section class="cont-admin">
+
+            <nav class="admin__nav">
+                <ul class="nav__admin-menu">
+                    <li class="menu__items"><a href="#">PANEL DE CONTROL</a></li>
+                    <li class="menu__items"><a href="#">CARGA DE PRODUCTOS</a></li>
+                    <li class="menu__items"><a href="#">EDICIÓN DE PRODUCTOS</a></li>
+                    <li class="menu__items"><a href="#">VENTAS</a></li>
+                    <li class="menu__items"><a href="#">MENSAJES</a></li>
+                </ul>
+
+            </nav>
+
+            <section class="admin-forms">
+                <h2 class="form-title">Agregar producto</h2>
+                <hr class="forms__div">
+                    <div class="column__forms">
+
+                        <form action="/products/admin" method="POST" enctype="multipart/form-data" class="forms__campos">
+                            <div>
+                                <label for="name"class="lg__descrip" >Nombre del producto*</label>
+                                <input type="text" id="name" name="name" placeholder="Nombre del producto..." class="rg__campos" required>
+                                    <span class="feedback"></span>
+                                </label>
+                                <label for="category"class="lg__descrip" >Nombre del producto*</label>
+                                    <select id="category" name="category" class="rg__campos" required>
+                                        <option value="" selected>Seleccioná una categoría</option>
+                                        <option value="Notebooks" >Notebooks</option>
+                                        <option value="Accesorios">Accesorios</option>
+                                        <option value="Periféricos">Periféricos</option>
+                                        <option value="Sillas">Sillas</option>
+                                        <option value="Componentes">Componentes</option>
+                                        <option value="Varios">Varios</option>
+                                    </select>
+                                <span class="feedback"></span>
+                                </label>
+                                <label for="price" class="lg__descrip">Precio*</label>                    
+                                    <input class="rg__campos" type="number" id="price" name="price" placeholder="$99999" required>
+                                    <span class="feedback"></span>
+                                </label>
+                                <label for="stock" class="lg__descrip">Cantidad en stock*</label>                    
+                                    <input type="number" id="stock" name="stock" placeholder="Cantidad" class="rg__campos" required>
+                                    <span class="feedback"></span>
+                                </label>
+                                <label for="image" class="lg__descrip">Imagen del producto*</label>                    
+                                    <input type="file" name="image" id="image" accept=".jpg, .png, .webp" class="rg__avatar" multiple>
+                                    <span class="feedback"></span>
+                                </label>
+                            </div>
+                            <div>
+                                <label for="description" class="lg__descrip">Descripción*</label>                    
+                                    <textarea id="description" name="description" placeholder="Descripción del producto..." class="campos__textarea"  required></textarea>
+                                    <span class="feedback"></span>
+                                </label>
+                                <label for="description" class="lg__descrip">Especificaciones*</label>                         
+                                    <textarea class="campos__textarea" id="specs" name="specs" placeholder="Especificaciones técnicas..." required></textarea>
+                                    <span class="feedback"></span>
+                                </label>
+                            </div>
+                            <div>
+                                <button type="submit" class="add__btn">Agregar</button>
+                            </div>
+                        
+                        </form>
+                       
+                    </div>
+            
+            </section>
+
+
+        </section>
+
+
+    </main>
+    
+    <%- include('../partials/footer') %> 
+</body>
+</html>

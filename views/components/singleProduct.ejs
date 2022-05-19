@@ -1,13 +1,13 @@
 <article class="prodDisplay__cont">
-    <a class="cont-dest__link" href="/producto/detalle ">
+    <a class="cont-dest__link" href="/products/detail/<%= product.id %> ">
         <article class="cont-dest__img">
-            <img src="/img/products/<%= notebook.image %>.webp" class="img__producto" alt="<%= notebook.name %>">
+            <img src="/img/products/<%= product.image[0] %>.webp" class="img__producto" alt="<%= product.name %>">
             <hr class = "descripcion__divis">
         </article>
         <article class="cont__dispDesc">
-            <h3 class="dispDesc__nombre"><%= notebook.name %></h3>
-            <h4 class="dispDesc__precio"><%= notebook.price %></h4>
+            <h3 class="dispDesc__nombre"><%= product.name %></h3>
+            <h4 class="dispDesc__precio"><%= product.price %></h4>
         </article>
-        <button type="button" class="dispDesc__btn"><a href="/carrito"></a>Comprar ahora</button>
+        <button type="button" class="dispDesc__btn"><a href="/cart"></a>Comprar ahora</button>
     </a>
 </article>
