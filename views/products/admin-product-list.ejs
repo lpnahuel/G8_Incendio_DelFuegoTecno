@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../partials/head', {title : 'DFT - Admin Panel'}) %> 
+<body>
+    <%- include('../partials/header')%>
+
+    <main class="main-general">
+
+        <section class="cont-admin">
+            <%- include('../components/adminBar') %> 
+            <section class="admin-forms">
+
+                <h2 class="form-title">Panel de administrador</h2>
+                <hr class="forms__div">
+                <div class="adminPanelCont">
+
+                    <% productsDB.forEach(product => { %>
+                        
+                        <%- include('../components/adminPanelItem', {product : product}) %> 
+                        
+                        <% }) %>
+                </div>
+            </section>
+        </section>
+                        
+                
+
+    </main>
+
+
+    <%- include('../partials/footer')%>
+</body>
+</html>

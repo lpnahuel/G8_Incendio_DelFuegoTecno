@@ -21,73 +21,22 @@
                 
                 <h2 class="carrito-title"><i class="fa-solid fa-cart-shopping"></i>  Mi carrito</h2>
 
+                <div class="caja">
 
-                <% productsDB.forEach((product, index) => { %>
-
-                    <% if (index < 3) { %>
-
-                        <%- include('./components/cartAddedProduct', {product : product}) %>
-
-                    <% } %>
-
-                <% }) %> 
-
-
-                <!-- <div class="caja">
-                    <div class="caja-producto">
-                        <div class="caja-producto-izquierda">
-                            <img class="img-producto" src="/img/products/kolink-inspire-k20-001.webp" alt="Foto de kolink inspire k20">
-                        </div>
-
-                        <div class="caja-producto-derecha">
-                            <div class="caja-producto-derecha-top">
-                                <div class="caja-descripcion-producto">
-                                    <a class="linkToProduct" href="">Gabinete Kolink Inspire K20</a>
-                                </div>
-                                <div class="caja-trashCan">
-                                    <button aria-label= "borrar" type="button" class="trashCan__btn"><i class="fas fa-trash"></i></button>
-                                </div>                              
-                            </div>
-                            <div class="caja-producto-derecha-bottom">
-                                <div class="counter">
-                                    <button aria-label= "restar" type="submit" class="counter__btn"><i class="fa fa-minus-circle"></i></button>
-                                    <input id="count" class="count-form" name="count" type="number" value="1" disabled="true">
-                                    <button aria-label= "sumar" type="submit" class="counter__btn"><i class="fa fa-plus-circle"></i></button>
-                                </div>
-                                <div class="caja-price">$6500</div>                                
-                            </div>
-                        </div>
-                    </div> -->
-
-                    <!-- <div class="caja-producto">
-                        <div class="caja-producto-izquierda">
-                            <img class="img-producto" src="/img/products/msi-i7-brx2070-001.webp" alt="Foto de notebook MSI i7 brx2070">
-                        </div>
-
-                        <div class="caja-producto-derecha">
-                            <div class="caja-producto-derecha-top">
-                                <div class="caja-descripcion-producto">
-                                    <a class="linkToProduct" href="">Notebook Gamer Msi i7 Rtx2070 16gb</a>
-                                </div>
-                                <div class="caja-trashCan">
-                                    <button aria-label= "eliminar" type="button" class="trashCan__btn"><i class="fas fa-trash"></i></button>
-                                </div>                              
-                            </div>
-                            <div class="caja-producto-derecha-bottom">
-                                <div class="counter">
-                                    <button aria-label= "restar"type="submit" class="counter__btn"><i class="fa fa-minus-circle"></i></button>
-                                    <input id="count" class="count-form" name="count" type="number" value="1" disabled="true">
-                                    <button aria-label= "sumar" type="submit" class="counter__btn"><i class="fa fa-plus-circle"></i></button>
-                                </div>
-                                <div class="caja-price">$329.990</div>                                
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-
+                    <% productsDB.forEach((product, index) => { %>
+                        
+                        <% if (index < 3) { %>
+                            
+                            <%- include('./components/cartAddedProduct', {product : product}) %>
+                            
+                            <% } %>
+                            
+                            <% }) %> 
+                            
+                </div>
                 <div class="leftArticle-btns">
 
-                    <button type="reset" class="leftArticle-btn">Vaciar Carrito</button>
+                    <button aria-label="vaciar carrito" type="reset" class="leftArticle-btn">Vaciar Carrito</button>
 
                     <a class="seguirComprando" href="/">Seguir Comprando</a>
 
@@ -96,56 +45,15 @@
 
             </article>
 
+            
             <!-- contenedor de resumen de la compra -->
-            <article class="rightArticle">
-
-                <h2 class="rightArticle-resumenDeOrden">Resumen De La Orden</h2>
-
-                <hr class="hr__divis">
-
-                <div class="rightArticle-div">
-
-                    <p>Subtotal:</p>
-
-                    <p>$336.490</p>
+            
+            
+            <%- include('./components/buyDetail', {productsDB : productsDB}) %>
 
                 </div>
 
-                <div class="rightArticle-div">
-
-                    <p>Costo del envio:</p>
-
-                    <p>$400</p>
-
-                </div>
-
-                <div class="rightArticle-div-cupon">
-                    <label class="rightArticle-div" for="cupon">
-                        <p class="lg__descrip">Cupón de Descuento</p>                        
-                        <input type="text" id="cupon" name="name" placeholder="Ingrese su cupón..." required>
-                        <span class="feedback"></span>
-                    </label>
-                </div>
-
-                <hr class="hr__divis">
-
-                <div class="rightArticle-div-total">
-
-                    <p class="totalP">Total:</p>
-
-                    <p class="totalPrice">$336.890</p>
-
-                </div>
-
-                <hr class="hr__divis">
-
-                <div class="rightArticle-div-finalizar">
-
-                <button type="submit" class="rightArticle-button">Finalizar Compra</button>
-
-                </div>
-
-            </article>
+            </article> 
         </section>            
         </div>
             

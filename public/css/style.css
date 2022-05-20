@@ -1459,7 +1459,6 @@ div.guarda{
     font-size: 14px;
     font-weight: 500;
     color: var(--gris-medio);
-    padding-left: 15px;
     text-decoration: none;
 }
 
@@ -1491,6 +1490,8 @@ div.guarda{
 .form-title{
     color: var(--turq);
     font-size: 24px;
+    margin-bottom: 16px;
+    text-align: center;
 }
 
 .forms__div{
@@ -1624,7 +1625,87 @@ div.guarda{
 }
 
 
+/* -------- ADMIN PANEL - LIST  -------- */
 
+/* .adminPanelCont{
+
+} */
+
+.adminProductCont{
+    background-color: var(--gris-medio);
+    margin: 40px auto;
+    padding: 8px;
+    width: 90%;
+
+}
+
+.adminProductCont__img{
+    background-color: var(--blanco);
+    margin: 10px auto;
+    width: 90%;
+}
+
+.adminProductCont__img > img{
+    object-fit: contain;
+    text-align: center;
+    padding: 8px;
+    width: 100%;
+}
+
+.adminProductCont__name{
+    color: var(--fondo-main);
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+
+}
+
+.name__div{
+    border: 1px solid var(--magenta);
+}
+
+
+.adminProductCont__data{
+    color: var(--fondo-main);
+    font-size: 16px;
+    font-weight: 500;
+    height: 40%;
+    padding: 5px;
+
+}
+
+.adminProductCont__btns{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 12px;
+}
+
+.delete__btn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    text-rendering: auto;
+}
+
+.delete__btn:hover{
+    text-decoration: underline;
+}
+
+.adminProductCont__btns > button > a{
+    color: var(--negro);
+    cursor: pointer;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.adminProductCont__btns > button > a:hover{
+    color: var(--magenta);
+}
+.adminProductCont__btns > button > a > i{
+    color: var(--magenta);
+}
 
 /* -------- FOOTER  -------- */
 
@@ -1816,6 +1897,7 @@ footer{
 .bar__send {
     background-color: var(--gris-osc);
     color: var(--fondo-main);
+    cursor: pointer;
     border: 1px solid var(--gris-osc);
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
@@ -2154,6 +2236,10 @@ footer{
         width: 60%;
     }
 
+    .form-title{
+        text-align: left;
+    }
+
     /*CARRITO*/
     .leftArticle-breadCrum {
         margin: 0;
@@ -2257,6 +2343,57 @@ footer{
         font-size: 20px;
     }
 
+    /*ADMIN PANEL*/
+    .adminPanelCont{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .adminProductCont{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 16px auto;
+        max-height: 112px;
+        padding: 8px 25px 8px 8px;
+        position: relative;
+        width: 100%;
+    }
+
+    .adminProductCont__img{
+        margin: 0;
+        width: 88px;
+        max-height: 88px;
+    }
+
+    
+
+    .name__div{
+        display: none;
+    }
+
+    .adminProductCont__name{
+        margin: 4px 0 0 0;
+        width: 88px;
+    }
+    .adminProductCont__name, .adminProductCont__data {
+        font-size: 14px;
+        text-align: left;
+    }
+    
+    .adminProductCont__data {
+        width: 76px;
+    }
+
+    .adminProductCont__btns{
+        font-size: 14px;
+        bottom: 8px;
+        margin: 0;
+        position: absolute;
+        right: 8px;
+    }
 
 }
 
@@ -2550,6 +2687,14 @@ footer{
     .agregar_carrito {
         width: 50%;
     }
+
+    /*ADMIN PANEL*/
+
+    .adminProductCont{
+        height: 120px;
+
+    }
+
 
 }
 

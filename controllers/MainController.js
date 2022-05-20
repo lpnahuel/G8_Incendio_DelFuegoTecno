@@ -25,15 +25,15 @@ const mainController = {
     },
 
  
-    register:function(req,res){
-        res.locals.title = "DFT - Registro Usuarios"
-        res.render('users/register');
-    },
+    // register:function(req,res){
+    //     res.locals.title = "DFT - Registro Usuarios"
+    //     res.render('users/register');
+    // },
 
-    login:function(req,res){
-        res.locals.title = "DFT - Login Usuarios"
-        res.render('users/login');
-    },
+    // login:function(req,res){
+    //     res.locals.title = "DFT - Login Usuarios"
+    //     res.render('users/login');
+    // },
     
 };
 

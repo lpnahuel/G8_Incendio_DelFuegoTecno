@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../partials/head', {title: 'DFT - Todos los productos'})%> 
+<body>
+    <%- include('../partials/header') %> 
+
+    <main class="main-general">
+
+        <section class="prodListing">
+
+            
+            <%- include('../components/productListNav') %> 
+        
+            <section class="prodDisplay">
+
+            <% selectedCategory.forEach(product => { %>
+              
+                <%- include('../components/singleProduct', {product : product}) %> 
+                
+            <% }) %>
+          
+            
+            </section>
+
+        </section>
+        
+    </main>
+    
+    <%- include('../partials/footer') %> 
+</body>
+</html>

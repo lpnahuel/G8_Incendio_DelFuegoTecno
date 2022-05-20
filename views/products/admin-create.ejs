@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../partials/head', {title : 'DFT - Admin Add Product'}) %> 
+<body>
+
+    <%- include('../partials/header') %> 
+
+    <main class="main-general">
+
+        <section class="cont-admin">
+
+            <%- include('../components/adminBar') %> 
+
+            <section class="admin-forms">
+                <h2 class="form-title">Agregar producto</h2>
+                <hr class="forms__div">
+                <article class="campos__column">
+
+                    <div class="column__forms">
+                        <form action="/products/admin" method="POST" enctype="multipart/form-data" class="forms__campos">
+                            <label for="name">
+                                <p class="lg__descrip">Nombre del producto*</p>                        
+                                <input class="rg__campos" type="text" id="name" name="name" placeholder="Nombre del producto"  required>
+                                <span class="feedback"></span>
+                            </label>
+                            <label for="category">
+                                <p class="lg__descrip">Categoría*</p>                        
+                                <select class="rg__campos" id="category" name="category" required>
+                                    <option value="Select" selected>Seleccioná una categoría</option>
+                                    <option value="Notebooks" >Notebooks</option>
+                                    <option value="Periféricos">Periféricos</option>
+                                    <option value="Almacenamiento" >Almacenamiento</option>
+                                    <option value="Componentes">Componentes</option>
+                                    <option value="Consolas">Consolas</option>
+                                    <option value="Sillas">Sillas</option>
+                            </select>
+                            <span class="feedback"></span>
+                            </label>
+                            <label for="precio">
+                                <p class="lg__descrip">Precio*</p>                        
+                                <input class="rg__campos" type="number" id="precio" name="precio" placeholder="$00000"  required>
+                                <span class="feedback"></span>
+                            </label>
+                            <label for="stock">
+                                <p class="lg__descrip">Stock*</p>                        
+                                <input class="rg__campos" type="number" id="stock" name="stock" placeholder="#"  required>
+                                <span class="feedback"></span>
+                            </label>
+                            <label for="image">
+                                <p class="lg__descrip">Foto de producto*</p>
+                                <input class="rg__avatar" type="file" name="image" id="image" accept=".jpg, .png, .webp" multiple>
+                                <span class="feedback"></span>
+                            </label>
+          
+                    </div>
+                    <div class="column__forms">
+
+                            <label for="description">
+                                <p class="lg__descrip">Descripción*</p>                        
+                                <textarea class="campos__textarea" id="description" name="description" required></textarea>
+                                <span class="feedback"></span>
+                            </label>
+                            <label for="specs">
+                                <p class="lg__descrip">Especificaciones*</p>                        
+                                <textarea class="campos__textarea" id="specs" name="specs"></textarea>
+                                <span class="feedback"></span>
+                            </label>
+
+                            <button aria-label="Agregar producto" class="add__btn" type="submit">Agregar</button>
+                        
+                        </form>
+                    </div>
+                </article>
+            </section>
+
+
+        </section>
+
+
+    </main>
+    
+    <%- include('../partials/footer') %> 
+</body>
+</html>

@@ -1,0 +1,16 @@
+<div class="adminProductCont">
+    <div class="adminProductCont__img">
+        <img src="/img/products/thumbnails/<%= product.thumb %>" alt="Imagen producto">
+    </div>
+    <p class="adminProductCont__name"><%= product.name %></p>
+    <hr class="name__div">
+    <p class="adminProductCont__data">Precio: $<%= product.price %></p>
+    <p class="adminProductCont__data">Cantidad: <%= product.stock %></p>
+    <p class="adminProductCont__data">Categoría: <%= product.category %></p>
+    <div class="adminProductCont__btns">
+        <form action="/products/admin/edit/<%= product.id %>?_method=DELETE" method="POST">
+            <button aria-label="borrar" type="submit" class="delete__btn"><i class="fas fa-trash"></i> Eliminar</button>
+        </form>
+        <button type="submit" class="trashCan__btn"><a href="/products/admin/edit/<%= product.id %>"><i class="fa fa-edit"></i> Editar</a></button>
+    </div>
+</div>

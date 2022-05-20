@@ -2,18 +2,21 @@
 const express = require("express");
 const path = require("path");
 const methodOverride = require('method-override');
+const bodyParser = require('body-parser');
 
 /*** Rutas (require) */
 const mainRoutes = require("./routes/mainRoutes")
 const productsRoutes = require("./routes/products")
-// const usersRoutes = require("./routes/users")
+const usersRoutes = require("./routes/users")
 
 // ************ Express() ************
 const app = express();
 
 // ************  Middlewares ************
 app.use(express.static(path.join(__dirname, "/public")));
-app.use(express.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({ extended: false })); //SOLUCIONES DE INTERNET QUE NO FUNCIONAN :)
+app.use(bodyParser.json())
+app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride('_method')); 
 
 
@@ -25,7 +28,7 @@ app.set('views', path.join(__dirname, '/views'));
 /*** Rutas (use) */
 app.use("/", mainRoutes);
 app.use("/products", productsRoutes);
-//app.use("/profile", usersRoutes);
+app.use("/users", usersRoutes);
 
 
 // ************ Servidor ************
