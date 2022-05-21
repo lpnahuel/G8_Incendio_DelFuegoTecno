@@ -14,6 +14,34 @@ const ProductsController = {
 
         res.render('products/productList', {productsDB : productsDB});
     },
+    
+    search : (req,res)=>{
+        let productsDB = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+
+        let userSearch = req.query.search.toLowerCase();
+
+        let searchResults = [];
+
+        productsDB.forEach(foundProduct => {
+            if (foundProduct.name.toLowerCase().includes(userSearch)){
+            searchResults.push(foundProduct);
+            }
+            // else {
+            //     res.send('No se encontraron resultados');
+            // };
+        });
+
+        res.render('products/productList', {productsDB : searchResults});
+
+        //Se queda trabado sólo en el primero
+        // productsDB.forEach(foundProduct =>{
+        //     foundProduct.name.toLowerCase().includes(req.query.search)
+        // });
+        
+        // searchResults.push(foundProduct)
+        // res.render('products/productList', {productsDB : searchResults});
+    },
+
 
     category : (req,res)=>{
         let productsDB = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
@@ -48,18 +76,27 @@ const ProductsController = {
 
         let lastItem = productsDB.length -1;
         let NewItemId = productsDB[lastItem].id +1;
-        
-        console.log('ACA LLEGA EL REQ.BODY');
-        console.log(req.body);
-        console.log('=========================');
+
+        let imageName = req.files;
+
+        console.log('ACÁ LLEGA REQ.FILES');
+        console.log('===================');
+        console.log(req.files);
+        console.log('===================');
+
+        let image = imageName.map(function (elem) {
+            return elem.originalname
+        });
+
 
         let newProduct = {
             id : NewItemId,
             name:  req.body.name,
             category : req.body.category,
-            price : req.body.price,
-            stock : req.body.stock,
-        //    image: req.file.image,
+            price : parseInt(req.body.price),
+            stock : parseInt(req.body.stock),
+            image: image,
+            // thumb : req.file.thumb,
             description : req.body.description,
             specs :  req.body.specs
          
@@ -95,9 +132,10 @@ const ProductsController = {
             id : req.params.id,
             name : req.body.name,
             category : req.body.category,
-            price : req.body.price,
-            stock : req.body.stock,
-            //  image : req.body.stock,
+            price : parseInt(req.body.price),
+            stock : parseInt(req.body.stock),
+            image : req.file.image,
+            // thumb : req.file.thumb,
             description : req.body.description,
             specs : req.body.specs
 
@@ -109,7 +147,7 @@ const ProductsController = {
 
         fs.writeFileSync(productsFilePath, JSON.stringify(productsDB,null,"\t"));
 
-        res.redirect('/products')
+        res.redirect('/products/admin')
 
 
     },

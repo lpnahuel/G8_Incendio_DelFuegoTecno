@@ -15,9 +15,9 @@
                 <h2 class="form-title">Agregar producto</h2>
                 <hr class="forms__div">
                 <article class="campos__column">
-
+              
                     <div class="column__forms">
-                        <form action="/products/admin" method="POST" enctype="multipart/form-data" class="forms__campos">
+                        <form action="/products/admin" method="POST" enctype="multipart/form-data"class="forms__campos">
                             <label for="name">
                                 <p class="lg__descrip">Nombre del producto*</p>                        
                                 <input class="rg__campos" type="text" id="name" name="name" placeholder="Nombre del producto"  required>
@@ -36,9 +36,9 @@
                             </select>
                             <span class="feedback"></span>
                             </label>
-                            <label for="precio">
+                            <label for="price">
                                 <p class="lg__descrip">Precio*</p>                        
-                                <input class="rg__campos" type="number" id="precio" name="precio" placeholder="$00000"  required>
+                                <input class="rg__campos" type="number" id="price" name="price" placeholder="$00000"  required>
                                 <span class="feedback"></span>
                             </label>
                             <label for="stock">
@@ -51,6 +51,11 @@
                                 <input class="rg__avatar" type="file" name="image" id="image" accept=".jpg, .png, .webp" multiple>
                                 <span class="feedback"></span>
                             </label>
+                            <!-- <label for="thumb">
+                                <p class="lg__descrip">Thumbnail*</p>
+                                <input class="rg__avatar" type="file" name="thumb" id="thumb" accept=".jpg, .png, .webp">
+                                <span class="feedback"></span>
+                            </label> -->
           
                     </div>
                     <div class="column__forms">

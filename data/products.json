@@ -1,7 +1,7 @@
 [
 	{
 		"id": 1,
-		"name": "Asus Rog Zephyrus Duo Ryzen 9 16Gb 1Tb Rtx 3060",
+		"name": "Notebook Gamer Asus Rog Zephyrus Duo Ryzen 9 16Gb 1Tb Rtx 3060",
 		"image": [
 			"asus-zephyrus-duo_15-GX550LXS-001.webp",
 			"asus-zephyrus-duo_15-GX550LXS-002.webp",
@@ -65,7 +65,7 @@
 	},
 	{
 		"id": 5,
-		"name": "Notebook Nsx Kairos I5 16G Ssd250 W10P+O",
+		"name": "Notebook Gamer Nsx Kairos I5 16G Ssd250 W10P+O",
 		"image": [
 			"NOTEBOOK-NSX-KAIROS-I5-16G-SSD250-W10PO-001.webp",
 			"",
@@ -81,7 +81,7 @@
 	},
 	{
 		"id": 6,
-		"name": "Notebook Gigabyte AORUS RTX 3080Q",
+		"name": "Notebook Gamer Gigabyte AORUS RTX 3080Q",
 		"image": [
 			"Notebook-Gigabyte-AORUS-RTX-3080Q-001.webp",
 			"",
@@ -97,7 +97,7 @@
 	},
 	{
 		"id": 7,
-		"name": "Notebook MSI GL66 Pulse 11UEK-801AR",
+		"name": "Notebook Gamer MSI GL66 Pulse 11UEK-801AR",
 		"image": [
 			"MSI-NOTEBOOK-GAMER-GL66-PULSE-11UEK801AR-001.webp",
 			"",
@@ -161,7 +161,7 @@
 	},
 	{
 		"id": 11,
-		"name": "Razer Blackwidow V3 Mini Teclado Mecánico Inalambrico 65%",
+		"name": "Teclado Gamer Razer Blackwidow V3 Mini Mecánico Inalambrico 65%",
 		"image": [
 			"razer-blackwidow-mini-v3-001.webp",
 			"",
@@ -367,5 +367,4 @@
 		"specs": "Conexión: USB 2.0\\nRango de frecuencia: 20Hz - 20KHz\\nDriver: 50mm\\nImpedancia: 16 ohm\\nLargo de cable: 2m\\nDimensiones: 220 x 220 x 95 mm\\nPeso: 380 g",
 		"stock": 42
 	}
-
 ]
