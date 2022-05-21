@@ -45,7 +45,23 @@ En la reunion se trataron los siguientes puntos:
 - Realizamos la restrospectiva
 
 **Informe comienzo de semana 18/05/2022**
+- Recibimos el feedback del ultimo sprint y debatimos estrategias.
+- Decidimos crear menos tareas en el Trello, basandonos en el feedback.
+- Crear partials del producto.
+- products.jason: Creamos el archivo, modificamos las imagenes alternativas para que aparezcan como un array, agregamos stock, quitamos cuotas y el signo de pesos en price para que quede como division dentro de detalleproducto.
+- Pasamos todas las imagenes a WEBP y le colocamos el nombre con la extnsión completa en la base de datos.
+- Creamos los archivos: productscontrollers.j y usercontrollers.js.
+- creamos archivos de rutas: users.js y products.js.
+- Instalamos method-override.
+- instalamos multer.
+- Ordenamos el archivo de app.js
+- Decidimos crear una vista de perfil de usuario (con todos los campos, incluido contraseña), editar usuario y hacer otra de mis pedidos para ver el historial de pedidos.
+- carrito: convertimos el producto como component.
+- Armamos las primeras rutas que necesitamos para este sprint.
+- Se nos generaron varios errores (No carga el nuevo producto entero, sólo el ID y Los componentes se ven raros en la lista), le preguntamos a Dany si podía ayudarnos.
+- Día jueves 19/05 realizamos la reu semanal.
 
-**Informe comienzo de semana 25/05/2022**
 
-**Informe comienzo de semana 01/06/2022**
+*Informe comienzo de semana 25/05/2022*
+
+*Informe comienzo de semana 01/06/2022*

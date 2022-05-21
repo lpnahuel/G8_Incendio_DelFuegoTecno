@@ -8,7 +8,15 @@
 
         <p>Subtotal:</p>
  
-        <p>$<%= (productsDB[0].price + productsDB[1].price + productsDB[2].price) %></p>
+        <p><% let subtotal = 0 %>
+
+            <% productsDB.forEach((element, index) => { %>
+                <% if(index < 3){  %>
+                    <%  subtotal += element.price; %>
+                    <% } %>
+            <% }) %>
+            
+            <%= subtotal %></p>
     </div>
 
     <div class="rightArticle-div">
@@ -33,7 +41,15 @@
 
         <p class="totalP">Total:</p>
 
-        <p class="totalPrice">$<%= (productsDB[0].price + productsDB[1].price + productsDB[2].price) + 400 %></p>
+        <p class="totalPrice">$   <% let totalPrice = 0 %>
+
+            <% productsDB.forEach((element, index) => { %>
+                <% if(index < 3){  %>
+                    <%  totalPrice += element.price; %>
+                    <% } %>
+            <% }) %>
+            
+            <%= totalPrice+400 %></p>
 
     </div>
 

@@ -110,3 +110,29 @@ A continuacion detallaremos los temas que se trataron cada día:
 
 **Informe 17/05/2022**
 - Modificamos el products.json
+
+**Informe 18/05/2022**
+- clase de middleworms
+- pasamos todas las imagenes a webp y le pusimos el nombre con la extensión completa en la base de datos
+
+**Informe 19/05/2022**
+- convertimos el producto del carrito como component
+- armamos las primeras rutas 
+- se nos generaron varios errores (No carga el nuevo producto entero, sólo el ID y Los componentes se ven raros en la lista)
+- modificamos el array de las imagenes en el listado de productos
+- agregamos stock al listado de productos.
+- Arreglamos el texarea
+- agregamos un foreach al total del carrito
+- creamos varios componentes: cartAddedProduct, adminBar, buyButton y buyDetail.
+- Creamos las vistas admin-edit y admin-create
+- No logramos que el form agregue o modifique productos al json, sólo agrega el ID. --> le preguntaremos mañana a dany luego de una extensa investigación sin respuesta a nuestro error.
+- Logramos utilizar DELETE para los productos del admin
+- Ajustamos el CSS del panel del admin.
+
+**Informe 20/05/2022**
+- Tenemos que arreglar el Multer.
+- Modificar la barra de busqueda. Logramos que encuentre lo que tenemos en la DataBase, sino se rompe.
+- Hicimos Meet para seguir con lo que nos queda del proyecto.
+- Logramos agregar y que se vean nuevos productos con sus respectivas imagenes.
+- Agregamos un map para crear el array de imagenes que se cargan.
+- Modificamos la ecuacion de cuotas para que solo se vean dos decimales
