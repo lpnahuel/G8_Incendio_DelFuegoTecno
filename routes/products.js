@@ -19,10 +19,12 @@ const imgStorage = multer.diskStorage({
 
 const upload = multer({storage : imgStorage});
 
+const multipleUpload = upload.fields([{name : 'image', maxCount: 4},{name : 'thumb'}])
+
 
 /*** CREATE ONE PRODUCT ***/ 
 router.get('/admin/create', ProductsController.create); 
-router.post('/admin', upload.array('image'), ProductsController.store); 
+router.post('/admin', multipleUpload, ProductsController.store); 
 
 /*** GET ALL PRODUCTS ***/ 
 router.get('/', ProductsController.index); 

@@ -33,13 +33,6 @@ const ProductsController = {
 
         res.render('products/productList', {productsDB : searchResults});
 
-        //Se queda trabado sólo en el primero
-        // productsDB.forEach(foundProduct =>{
-        //     foundProduct.name.toLowerCase().includes(req.query.search)
-        // });
-        
-        // searchResults.push(foundProduct)
-        // res.render('products/productList', {productsDB : searchResults});
     },
 
 
@@ -79,15 +72,13 @@ const ProductsController = {
 
         let imageName = req.files;
 
-        console.log('ACÁ LLEGA REQ.FILES');
-        console.log('===================');
-        console.log(req.files);
-        console.log('===================');
-
         let image = imageName.map(function (elem) {
             return elem.originalname
         });
 
+        console.log('REQ.FILE');
+        console.log('==========');
+        console.log(req.file);
 
         let newProduct = {
             id : NewItemId,
@@ -96,7 +87,7 @@ const ProductsController = {
             price : parseInt(req.body.price),
             stock : parseInt(req.body.stock),
             image: image,
-            // thumb : req.file.thumb,
+            thumb : req.file.thumb,
             description : req.body.description,
             specs :  req.body.specs
          
@@ -128,14 +119,21 @@ const ProductsController = {
 
         let productToEdit = productsDB.find(item => item.id == req.params.id);
 
+        let imageName = req.files;
+
+        let image = imageName.map(function (elem) {
+            return elem.originalname
+        });
+
+
         let newEdition = {
             id : req.params.id,
             name : req.body.name,
             category : req.body.category,
             price : parseInt(req.body.price),
             stock : parseInt(req.body.stock),
-            image : req.file.image,
-            // thumb : req.file.thumb,
+            image : image,
+            thumb : req.file.thumb,
             description : req.body.description,
             specs : req.body.specs
 

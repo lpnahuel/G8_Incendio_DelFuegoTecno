@@ -12,12 +12,16 @@
             <%- include('../components/productListNav') %> 
         
             <section class="prodDisplay">
-
-            <% productsDB.forEach(product => { %>
+                <% if (productsDB == "") { %>
+                    <h3 class="titulo__prod">No se encontraron resultados que coincidan con tu búsqueda</span></h3>
+                    <% }else { %>
+                        <% productsDB.forEach(product => { %>
               
-                <%- include('../components/singleProduct', {product : product}) %> 
-                
-            <% }) %>
+                            <%- include('../components/singleProduct', {product : product}) %> 
+                            
+                        <% }) %>
+                      <% } %>
+
           
             
             </section>
