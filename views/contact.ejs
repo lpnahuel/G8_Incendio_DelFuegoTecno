@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/head', {title : 'DFT - Contacto'}) %> 
+<body>
+    <%- include('./partials/header') %> 
+    <main class="main-general">
+        <div class="contactForm">
+            <div class="contactForm__areas">
+                <form action="/contacto" method="POST">
+                    <h2 class="form-title">Dejanos tu mensaje</h2>
+                    <hr class="forms__div">
+                    <label for="name" class="lg__descrip">Nombre*
+                        <input type="text" name="name" id="name" placeholder="Nombre" class="rg__campos" required>
+                    </label>
+                    <label for="mail" class="lg__descrip">E-mail*
+                        <input type="email" name="mail" id="mail" placeholder="Email" class="rg__campos" required>
+                    </label>
+                    <label for="message" class="lg__descrip">Consulta*
+                        <textarea name="message" id="message" placeholder="Mensaje..." class="campos__textarea" required></textarea>
+                    </label>
+                    <button type="submit" class="add__btn">Enviar</button>
+                </form>
+            </div>          
+            <div class="contactForm__areas">
+                <h2 class="form-title">Información de contacto</h2>
+                <hr class="forms__div">
+                <p class="areas__subt"><i class='fas fa-home'></i> Dirección</p>
+                <p class="areas__info">Av. Saraza 21845</p>
+                <p class="areas__info">CABA (Argentina)</p>
+                <p></p>
+                <p class="areas__info"><i class='fas fa-phone'></i> (+54 11)4455-6677</p>
+                <p class="areas__info"><i class='fab fa-whatsapp'></i> +54 9 1122334455</p>
+                <p></p>
+                <p class="areas__subt"><i class="fa fa-envelope"></i> E-mail</p>
+                <p class="areas__info">contacto@delfuegotechno.com</p>
+                <p></p>
+                <p class="areas__subt"><i class="fas fa-users"></i> Horarios de atención</p>
+                <p class="areas__info">Luneas a Viernes de 10 a 20hs</p>
+                <p class="areas__info">Sábados de 10 a 15hs</p>
+            </div>
+        </div>
+
+    </main>
+    <%- include('./partials/footer') %> 
+</body>
+</html>

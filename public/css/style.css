@@ -27,7 +27,6 @@
 
 body{
     font-family: 'Roboto', 'sans-serif';
-    font-display: swap;
     margin: 0px;
     padding: 0px;
 }
@@ -139,11 +138,7 @@ body{
 }
 
 
-
-
-/*--------- Carrusel destacados ---------- */
-
-
+/* Carrusel destacados  */
 
 .main-home__cont-prod{
     margin: 32px auto auto auto;
@@ -151,7 +146,6 @@ body{
     width: 90%;
 
 }
-
 
 .cont-prod__categorias{
     color: var(--gris-medio);
@@ -179,7 +173,6 @@ body{
     width: 260px;
 }
 
-
 @keyframes box-highlight {
     0% {
       box-shadow: 0px 0px 3px 3px var(--magenta);
@@ -197,7 +190,7 @@ body{
       box-shadow: 0px 0px 3px 3px var(--violet);
     }
 
-  }
+}
 
 .cont-dest:hover{
     transform: scale(105%, 105%);
@@ -246,7 +239,6 @@ body{
     background: var(--rb-gradient)
 }
 
-
 .descripcion__nombre-prod{
     color: var(--gris-claro);
     font-size: 16px;
@@ -254,7 +246,6 @@ body{
     height: 40%;
     padding: 5px;
 }
-
 
 .descripcion__precio{
     color: var(--gris-claro);
@@ -273,6 +264,7 @@ body{
     right: 3%;
     text-decoration: none;
 }
+
 .cont-dest__carrito > i{
     color: var(--celeste-logo);
     font-size: 28px;
@@ -281,8 +273,6 @@ body{
 .cont-dest__carrito > i:hover{
     color: var(--violet);
 }
-
-
 
 .cont-dest__fav{
     background-color: transparent;
@@ -295,9 +285,7 @@ body{
     top: 2%;
 }
 
-
-
-/* -------- Imagen central destacada -------- */
+/* Imagen central destacada */
 
 .home-dest-central{
     margin: 0 auto 16px auto;
@@ -309,7 +297,7 @@ body{
     width: 100%;
 }
 
-/* -------- Banner marcas ---------- */
+/* Banner marcas */
 
 .main-home__banner-marcas{
     display: none;
@@ -353,11 +341,7 @@ body{
 
 /*----------- MAIN PRODUCTO ----------*/
 
-
-
 /* Imagen producto */
-
-
 .article-breadCrum {
     font-size: 12px;
     margin: 38px auto 8px auto;
@@ -372,15 +356,12 @@ body{
 
 }
 
-
 .breadCrum:hover {
     color: var(--turq);
     cursor: pointer;
     text-decoration: underline;
 
 }
-
-
 .cont-det{
     border: 1px solid var(--gris-claro);
     border-radius: 16px;
@@ -567,7 +548,6 @@ body{
 
 }
 
-
 .share_b{
     background-color:transparent;
     border: none;
@@ -675,10 +655,6 @@ body{
 }
 
 
-
-
-
-
 /* ------------------ MAIN CARRITO ------------------ */
 
 .cont-top-section{
@@ -738,7 +714,6 @@ body{
 }
 
 
-
 /*caja del carrito*/
 
 .caja{
@@ -759,8 +734,6 @@ body{
     padding: 16px;
     width: 100%;
 }
-
-
 
 .caja-producto-izquierda{
     background-color: var(--blanco);
@@ -909,9 +882,7 @@ body{
     transition: all 250ms;
 }
 
-
-
-/* --- rightArticle --- */
+/*  rightArticle */
 
 .rightArticle {
     border-radius: 16px;
@@ -999,7 +970,6 @@ body{
 
 /*Main Carrito Bottom Section*/
 
-
 .bottom-section{
     margin-left: auto;
     margin-right: auto;
@@ -1023,8 +993,7 @@ body{
 }
 
 
-
-/* ---------------- REGISTRO -------------*/
+/* ---------------- MAIN REGISTRO -------------*/
 
 
 .cont-form-rg{
@@ -1069,9 +1038,11 @@ body{
     margin: 8px 0 8px 0;
     width: 100%;
 }
+
 .rg__campos{
     padding-left: 15px;
 }
+
 .rg__avatar{
     padding: 8px 0 0 8px;
 }
@@ -1096,12 +1067,7 @@ body{
 }
 
 
-
-/*------------ LOGIN--------------------*/
-
-
-
-
+/*------------ MAIN LOGIN --------------*/
 
 .cont-form-login{
     margin: 0 auto 0 auto;
@@ -1197,7 +1163,6 @@ body{
 
 /* -------- ADMIN ADD  -------- */
 
-
 .cont-admin{
     display: block;
     margin: 0 auto 0 auto;
@@ -1240,8 +1205,6 @@ body{
     color: var(--magenta);
 }
 
-
-
 .admin-forms{
     border: solid 1px var(--gris);
     border-radius: 16px;
@@ -1270,6 +1233,7 @@ body{
 
 .campos__textarea{
     height: 136px;
+    padding: 8px;
 }
 
 .add__btn{
@@ -1289,8 +1253,6 @@ body{
     display: none;
 }
 
-
-
 .prodList__dropdwn{
     background-color: var(--negro);
     height: 48px;
@@ -1307,7 +1269,6 @@ body{
     text-decoration: none;
 
 }
-
 
 .dropdwn__categories {
     background: rgba(0,0,0,0.85);
@@ -1362,10 +1323,18 @@ body{
     transform: scale(102%, 102%);
 }
 
+.cont__dispDesc{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 78px;
+}
+
 .dispDesc__nombre{
-    font-size: 16px;
+    font-size: 14px;
     color: var(--gris-claro);
     margin: 15px auto 5px auto;
+    padding: 0 8px;
     text-align: center;
 }
 
@@ -1396,10 +1365,6 @@ body{
 
 
 /* -------- ADMIN PANEL - LIST  -------- */
-
-/* .adminPanelCont{
-
-} */
 
 .adminProductCont{
     background-color: var(--gris-medio);
@@ -1499,10 +1464,7 @@ footer{
 }
 
 
-
-/* -------- LOGO -------- */
-
-
+/*  LOGO  */
 
 .footer__logo{
     display: none;
@@ -1513,12 +1475,11 @@ footer{
     width:100%;
 }
 
-/* -------- TITULARES -------- */
+/*  TITULARES  */
 
 .footer_elem{
     display: none;
 }
-
 
 .h3-footer{
     display: none;
@@ -1528,9 +1489,7 @@ footer{
     font-weight: 700;
 }
 
-
-/* -------- LINKS   -------- */
-
+/*  LINKS    */
 
 .elem__links{
     display: flex;
@@ -1566,14 +1525,8 @@ footer{
 
 }
 
-
-
-
-/* -------- REDES Y NEWSLETTER   -------- */
-
-
-
-/* --------- Links redes --------- */
+/*  REDES Y NEWSLETTER    */
+/*  Links redes  */
 
 .links__redes{
     margin-bottom: 10px;
@@ -1605,7 +1558,6 @@ footer{
     width: 48px;
 }
 
-
 .buttons__rs > li > a{
     align-self: center;
 
@@ -1618,7 +1570,6 @@ footer{
     text-decoration: none;
 
 }
-
 
 .rs__ig:hover{
     background-color: var(--magenta);
@@ -1638,12 +1589,11 @@ footer{
 }
 
 
-/* --------- Newsletter --------- */
+/*  Newsletter  */
 
 .links__newsletter{
     display: none;
 }
-
 
 .newsletter__bar{
     margin-top: 15px;
@@ -1661,7 +1611,6 @@ footer{
     width: 100%;
 }
 
-
 .bar__send {
     background-color: var(--gris-osc);
     color: var(--blanco);
@@ -1673,6 +1622,24 @@ footer{
     font-weight: 600;
     height: 28px;
     position: absolute;
+}
+
+/* -------- MAIN CONTACTO  -------- */
+.contactForm{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+}
+.contactForm__areas >p{
+    text-align: center;
+}
+.areas__subt{
+    color: var(--celeste-logo);
+}
+.areas__info{
+    color: var(--gris-claro);
+
 }
 
 
@@ -1778,6 +1745,11 @@ footer{
 }
 
 @media (min-width:993px){
+
+    .main-general{
+        min-height: 0;
+    }
+    
 
     /* HOME */
 
@@ -2065,6 +2037,25 @@ footer{
         right: 8px;
     }
 
+    /*CONTACTO*/
+    .contactForm{
+        align-items: flex-start;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-top: 50px;
+        width: 85%;
+    }
+
+    .contactForm__areas >p{
+        text-align: left;
+    }
+
+    .contactForm__areas{
+        width: 40%;
+
+    }
+
 }
 
 @media (min-width:1200px){
@@ -2228,7 +2219,7 @@ footer{
     }
 
     .linkToProduct {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .caja-price {
@@ -2317,5 +2308,9 @@ footer{
 
     }
 
+    /*CONTACTO*/
+    .contactForm{
+        width: 75%;
+    }
 
 }

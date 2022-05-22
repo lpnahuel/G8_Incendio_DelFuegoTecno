@@ -16,7 +16,7 @@
                     <% } %>
             <% }) %>
             
-            <%= subtotal %></p>
+            <%= '$'+subtotal.toLocaleString('es-ES') %></p>
     </div>
 
     <div class="rightArticle-div">
@@ -49,7 +49,8 @@
                     <% } %>
             <% }) %>
             
-            <%= totalPrice+400 %></p>
+            <% totalPrice = totalPrice + 400%>
+            <%= totalPrice.toLocaleString('es-ES')  %></p>
 
     </div>
 

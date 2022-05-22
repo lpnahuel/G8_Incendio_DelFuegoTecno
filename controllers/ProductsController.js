@@ -1,12 +1,12 @@
-// ************ Require's ************
+// ************ Require's ************/
 const fs = require('fs');
 const path = require('path');
 
-// ************ Path's ************
+// *** Path's */
 const productsFilePath = path.join(__dirname, '../data/products.json');
-const usersFilePath = path.join(__dirname, '../data/users.json');
 
-// let users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
+
+//*** Products Controller */
 
 const ProductsController = {
     index : (req,res)=>{
@@ -26,9 +26,6 @@ const ProductsController = {
             if (foundProduct.name.toLowerCase().includes(userSearch)){
             searchResults.push(foundProduct);
             }
-            // else {
-            //     res.send('No se encontraron resultados');
-            // };
         });
 
         res.render('products/productList', {productsDB : searchResults});
@@ -174,9 +171,6 @@ const ProductsController = {
 
 
     },
-
-
-
 
 }
 

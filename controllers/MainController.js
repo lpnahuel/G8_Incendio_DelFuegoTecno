@@ -1,4 +1,5 @@
 // ************ Require's ************
+const req = require('express/lib/request');
 const fs = require('fs');
 const path = require('path');
 
@@ -14,7 +15,6 @@ const mainController = {
     
     index:function(req,res){
       let productsDB = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
-      res.locals.title = "DelFuegoTechno"
       res.render('index', {productsDB : productsDB});
     },
   
@@ -24,17 +24,9 @@ const mainController = {
         res.render('productCart', {productsDB : productsDB});
     },
 
- 
-    // register:function(req,res){
-    //     res.locals.title = "DFT - Registro Usuarios"
-    //     res.render('users/register');
-    // },
-
-    // login:function(req,res){
-    //     res.locals.title = "DFT - Login Usuarios"
-    //     res.render('users/login');
-    // },
-    
+    contact: (req, res)=>{
+      res.render('contact')
+    }
 };
 
 module.exports = mainController;
