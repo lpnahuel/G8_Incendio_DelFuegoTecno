@@ -8,7 +8,7 @@
     <main class="main-general">
         
         <div class="article-breadCrum">                    
-            <a class="breadCrum" href="/">Home/<a class="breadCrum" href=""><%= productRequested.category %>/<a class="breadCrum" href=""><%= productRequested.name %> </a>                      
+            <a class="breadCrum" href="/">Home/<a class="breadCrum" href="/products/category/<%= productRequested.category %>"><%= productRequested.category %>/<a class="breadCrum" href="/products/details/<%= productRequested.name %>"><%= productRequested.name %> </a>                      
         </div>
 
         <section class="cont-det">
@@ -47,7 +47,7 @@
                             <!-- precio -->
                         <div class="precio_prod">
 
-                         <p>$<%= productRequested.price %> </p>
+                         <p>$<%= productRequested.price.toLocaleString('es-ES') %> </p>
 
                         </div>                         
                         
@@ -83,7 +83,7 @@
 
                     <div class="info_venta_prod">
                         <i class='fas fa-wallet'></i>
-                        <p class="info_venta_prod-text">12 cuotas sin interés de $<%= Math.round((productRequested.price / 12) * 100 ) / 100 %>  </p>
+                        <p class="info_venta_prod-text">12 cuotas sin interés de $<%=( Math.round((productRequested.price / 12) * 100 ) / 100).toLocaleString('es-ES') %>  </p>
                     </div>
 
                     <hr class="divisor_info_ventas"></hr>
