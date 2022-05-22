@@ -131,8 +131,9 @@ A continuacion detallaremos los temas que se trataron cada día:
 
 **Informe 20/05/2022**
 - Tenemos que arreglar el Multer.
-- Modificar la barra de busqueda. Logramos que encuentre lo que tenemos en la DataBase, sino se rompe.
+- Barra de búsqueda funcional.
+- Solucionamos errores visuales en carrito
 - Hicimos Meet para seguir con lo que nos queda del proyecto.
-- Logramos agregar y que se vean nuevos productos con sus respectivas imagenes.
+- Logramos agregar y que se vean nuevos productos con sus respectivas imagenes (de un solo input).
 - Agregamos un map para crear el array de imagenes que se cargan.
 - Modificamos la ecuacion de cuotas para que solo se vean dos decimales

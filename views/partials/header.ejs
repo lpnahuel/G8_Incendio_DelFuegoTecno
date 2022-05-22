@@ -4,7 +4,7 @@
             
         <!-- LOGO -->
         <a class="header__logo" href="/">
-            <img class="logo__img" src="\img\dft-logo.png" alt="Logo del fuego techno">
+            <img class="logo__img" src="\img\dft-logo.webp" alt="Logo del fuego techno">
         </a>
            
             
@@ -31,13 +31,25 @@
     
         <!-- SECCIÓN SECUNDARIOS Y BÚSQUEDA -->
         <section class="header__elem">
-                
+            <!--  -->
                 
             <!-- BOTONES LOGIN Y CARRITO -->
             <section class="elem__sec-buttons">
-                <button aria-label= "login" type="button" class="log-shop"><a href="/users/login"><i class="far fa-user-circle"></i>LOGIN</a><a href="/users/register"> | REGISTRO</a></button>
-                <button aria-label= "carrito" type="button" class="log-shop"><a href="/cart"><i class="fas fa-shopping-cart"></i>CARRITO</a></button>
+                <a href="/users/login"class="log-shop" ><i class="fas fa-user-alt"></i><span>LOGIN</span></a>
+                <a href="/users/register" class="log-shop"><i class="fas fa-user-plus"></i><span>REGISTRO</span></a>
+                <a href="/cart" class="log-shop" ><i class="fas fa-shopping-cart"></i><span>CARRITO</span></a>
+                <nav class="burger-menu">
+                    <i class="fas fa-bars"></i>
+                    <ul class="burger-menu__dropdwn">
+                        <li><a href="/products">PRODUCTOS</a></li>
+                        <li><a href="/">OFERTAS</a></li>
+                        <li><a href="/">NOSOTROS</a></li>
+                        <li><a href="/">CONTACTO</a></li>
+                        <li><a href="/products/admin">ADMIN</a></li>
+                    </ul>
+                </nav>
             </section>
+
                 
             <!-- BARRA DE BÚSQUEDA -->
             <section class="elem__area-bar">
@@ -49,11 +61,7 @@
                 </form>
             </section>
 
-            <!-- <section class="elem__burger">
-                <nav class="burger__menu">
-                    <i class="fas fa-bars"></i>
-                </nav>
-            </section> -->
+
 
         </section>
     </section>

@@ -66,19 +66,32 @@ const ProductsController = {
     
     store : (req, res)=>{
         let productsDB = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+        
+                console.log('REQ.FILES');
+                console.log('==========');
+                console.log(req.files);
+                console.log('REQ.FILES.IMAGE');
+                console.log('==========');
+                console.log(req.files.image);
+                console.log('REQ.FILES.THUMB');
+                console.log('==========');
+                console.log(req.files.thumb);
 
         let lastItem = productsDB.length -1;
         let NewItemId = productsDB[lastItem].id +1;
 
-        let imageName = req.files;
-
-        let image = imageName.map(function (elem) {
-            return elem.originalname
-        });
-
-        console.log('REQ.FILE');
+        
+            
+        let imageName = req.files.image;
+        console.log('REQ.FILES.THUMB');
         console.log('==========');
-        console.log(req.file);
+        console.log(req.files.thumb);
+        
+        let image = imageName.image.map(elem => elem.originalname);
+    
+        let thumbName = req.files.thumb;
+
+        let thumb = thumbName.thumb.map(elem => elem.originalname);
 
         let newProduct = {
             id : NewItemId,
@@ -87,7 +100,7 @@ const ProductsController = {
             price : parseInt(req.body.price),
             stock : parseInt(req.body.stock),
             image: image,
-            thumb : req.file.thumb,
+            thumb : thumb,
             description : req.body.description,
             specs :  req.body.specs
          
