@@ -24,11 +24,6 @@ const UsersController = {
         res.render('users/login');
     },
 
-
-
-
-
-
 }
 
 

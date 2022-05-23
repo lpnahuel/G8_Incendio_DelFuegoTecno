@@ -44,7 +44,7 @@ router.post('/admin', multipleUpload, ProductsController.store);
 
 /*** EDIT ONE PRODUCT */ 
 router.get('/admin/edit/:id', ProductsController.edit); 
-router.put('/admin/edit/:id', upload.array('image'), ProductsController.update); 
+router.put('/admin/edit/:id', multipleUpload, ProductsController.update); 
 
 /*** DELETE ONE PRODUCT */ 
 router.delete('/admin/edit/:id', ProductsController.destroy); 

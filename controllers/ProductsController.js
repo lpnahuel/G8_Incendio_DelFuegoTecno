@@ -63,32 +63,14 @@ const ProductsController = {
     
     store : (req, res)=>{
         let productsDB = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
-        
-                console.log('REQ.FILES');
-                console.log('==========');
-                console.log(req.files);
-                console.log('REQ.FILES.IMAGE');
-                console.log('==========');
-                console.log(req.files.image);
-                console.log('REQ.FILES.THUMB');
-                console.log('==========');
-                console.log(req.files.thumb);
 
         let lastItem = productsDB.length -1;
         let NewItemId = productsDB[lastItem].id +1;
-
         
-            
-        let imageName = req.files.image;
-        console.log('REQ.FILES.THUMB');
-        console.log('==========');
-        console.log(req.files.thumb);
-        
-        let image = imageName.image.map(elem => elem.originalname);
-    
-        let thumbName = req.files.thumb;
+        let image = (req.files.image).map(elem => elem.originalname);
 
-        let thumb = thumbName.thumb.map(elem => elem.originalname);
+        let thumb = (req.files.thumb)[0].originalname;
+
 
         let newProduct = {
             id : NewItemId,
@@ -129,13 +111,18 @@ const ProductsController = {
 
         let productToEdit = productsDB.find(item => item.id == req.params.id);
 
-        let imageName = req.files;
+        console.log('req.files.image');
+        console.log('===============');
+        console.log(req.files.image);
 
-        let image = imageName.map(function (elem) {
-            return elem.originalname
-        });
+        let image = (req.files.image).map(item => item.originalname);
 
+        image = [] ? image = productsDB.find(item => item.image == req.params.image) : image;
 
+        let thumb = (req.files.thumb)[0].originalname;
+
+        thumb = '' ? thumb = productsDB.find(item => item.thumb == req.params.thumb) : thumb;
+ 
         let newEdition = {
             id : req.params.id,
             name : req.body.name,
@@ -143,7 +130,7 @@ const ProductsController = {
             price : parseInt(req.body.price),
             stock : parseInt(req.body.stock),
             image : image,
-            thumb : req.file.thumb,
+            thumb : thumb,
             description : req.body.description,
             specs : req.body.specs
 

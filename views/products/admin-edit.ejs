@@ -27,12 +27,12 @@
                             <label for="category">
                                 <p class="lg__descrip">Categoría*</p>                        
                                 <select class="rg__campos" id="category" name="category" required>
-                                <option value="Notebooks" <%= productRequested.category==='notebooks'? 'selected' : '' %>>Notebooks</option>
-                                <option value="Periféricos" <%= productRequested.category==='perifericos'? 'selected' : '' %>>Periféricos</option>
-                                <option value="Almacenamiento" <%= productRequested.category==='almacenamiento'? 'selected' : '' %>>Almacenamiento</option>
-                                <option value="Componentes" <%= productRequested.category==='componentes'? 'selected' : '' %>>Componentes</option>
-                                <option value="Consolas" <%= productRequested.category==='consolas'? 'selected' : '' %>>Consolas</option>
-                                <option value="Sillas" <%= productRequested.category==='sillas'? 'selected' : '' %>>Sillas</option>
+                                <option value="Notebooks" <%= productRequested.category==='notebooks'? 'selected' : '' %>>notebooks</option>
+                                <option value="Periféricos" <%= productRequested.category==='perifericos'? 'selected' : '' %>>periféricos</option>
+                                <option value="Almacenamiento" <%= productRequested.category==='almacenamiento'? 'selected' : '' %>>almacenamiento</option>
+                                <option value="Componentes" <%= productRequested.category==='componentes'? 'selected' : '' %>>componentes</option>
+                                <option value="Consolas" <%= productRequested.category==='consolas'? 'selected' : '' %>>consolas</option>
+                                <option value="Sillas" <%= productRequested.category==='sillas'? 'selected' : '' %>>sillas</option>
                             </select>
                             <span class="feedback"></span>
                             </label>
@@ -48,14 +48,14 @@
                             </label>
                             <label for="image">
                                 <p class="lg__descrip">Foto de producto*</p>
-                                <input class="rg__avatar" type="file" name="image" id="image" accept=".jpg, .png, .webp" multiple>
+                                <input type="file" name="image" id="image" accept=".jpg, .png, .webp"  class="rg__avatar" multiple>
                                 <span class="feedback"></span>
                             </label>
-                            <!-- <label for="thumb">
+                            <label for="thumb">
                                 <p class="lg__descrip">Thumbnail*</p>
                                 <input class="rg__avatar" type="file" name="thumb" id="thumb" accept=".jpg, .png, .webp">
                                 <span class="feedback"></span>
-                            </label> -->
+                            </label> 
           
                     </div>
                     <div class="column__forms">

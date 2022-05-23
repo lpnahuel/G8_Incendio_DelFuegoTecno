@@ -1170,40 +1170,43 @@ body{
 }
 
 .admin__nav{
-    padding: 2px 0;
     background-color: var(--gris-int);
     margin-top: 24px;
+    padding: 2px 0;
+    width: 100%;
+    height: 100%;
 }
 
 .nav__admin-menu{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     text-align: center;
     padding: 0;
+    width: 100%;
 }
 
 .menu__items{
     background: var(--negro);
     border-left: 4px solid var(--negro);
     cursor: pointer;
-    height: 46px;
-    list-style: none;
-    padding: 14px 0 0 0;
-    margin: 10px;
-}
-
-.menu__items > a{
+    color: var(--gris-medio);
     font-size: 14px;
     font-weight: 500;
-    color: var(--gris-medio);
+    height: 46px;
+    list-style: none;
+    margin: 5px 10px;
+    padding: 14px 0 0 0;
     text-decoration: none;
+    width: 93%;
 }
 
 .menu__items:hover{
     border-left: 4px solid var(--magenta);
-}
-
-.menu__items:hover > a{
     color: var(--magenta);
 }
+
 
 .admin-forms{
     border: solid 1px var(--gris);
@@ -1801,20 +1804,30 @@ footer{
         justify-content: space-around;
         width: 90%;
     }
-
-    .nav-prodList{
-        width: 25%;
-    }
-
+    
     .prodList__dropdwn{
         display: none;
     }
+
+    .nav-prodList{
+        height: 100%;
+        padding-top: 14px;
+        width: 218px;
+    }
     
     .prodList__menu{
+        align-content: center;
         background-color: var(--gris-int);
-        display: block;
-        padding: 1px 0;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 5px 0px;
         width: 100%;
+    }
+
+    .menu__items{
+        padding: 14px 0 0 14px;
+        text-align: left;
     }
     
     .prodDisplay{
@@ -1867,9 +1880,10 @@ footer{
     }
 
     .admin__nav{
-        margin: 24px auto 0 auto;
+        background-color: var(--gris-int);
         margin-top: 0px;
-        width: 30%;
+        padding: 2px 0;
+        width: 280px;
     }
 
     .admin-forms{
@@ -2092,24 +2106,11 @@ footer{
         width: 85%;
     }
 
-    .nav-prodList {
-        width: 22%;
-    }
-
     .prodDisplay{
         justify-content: flex-start;
     }
 
     /* ADMIN ADD */
-
-    .admin__nav {
-        width: 25%;
-    }
-
-    .menu__items{
-        padding: 14px 0 0 14px;
-        text-align: left;
-    }
 
     .admin-forms{
         width: 65%;
@@ -2175,7 +2176,6 @@ footer{
 
     .nav-prodList {
         margin-right: 20px;
-        width: 208px;
     }
 
     .prodListing{
@@ -2196,11 +2196,6 @@ footer{
 
     .cont-admin{
         width: 75%;
-    }
-
-    .admin__nav {
-        margin: 24px 0 0 0;
-        width: 22%;
     }
 
     .admin-forms {
