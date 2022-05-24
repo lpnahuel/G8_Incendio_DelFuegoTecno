@@ -28,5 +28,7 @@ app.use("/", mainRoutes);
 // ************ Servidor ************/
 const port = 3030;
 app.listen(process.env.PORT || port, () => {
-    console.log(`Servidor corriendo en puerto ${port}`)
+    console.log(`Servidor corriendo en puerto ${port} - URL: http://localhost:${port}`)
 });
+
+module.exports = app;
