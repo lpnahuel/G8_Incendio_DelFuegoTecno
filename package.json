@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon app.js",
-    "start": "node app.js"
+    "start": "nodemon app.js"
   },
   "repository": {
     "type": "git",
@@ -20,8 +20,11 @@
   },
   "homepage": "https://github.com/lpnahuel/G8_Incendio_DelFuegoTecno#readme",
   "dependencies": {
+    "body-parser": "^1.20.0",
+    "cookie-parser": "^1.4.6",
     "ejs": "^3.1.7",
     "express": "^4.17.3",
+    "express-session": "^1.17.3",
     "express-validator": "^6.14.0",
     "image-thumbnail": "^1.0.15",
     "method-override": "^3.0.0",

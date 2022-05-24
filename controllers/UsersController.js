@@ -26,7 +26,7 @@ const UsersController = {
             firstName : req.body.firstName,
             lastName : req.body.lastName,
             birth : req.body.birth,
-            image : req.file.image,
+            image : req.file.filename,
             phone :  req.body.phone,
             address :  req.body.address,
             cp :  req.body.cp,

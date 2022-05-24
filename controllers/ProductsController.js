@@ -1,6 +1,7 @@
 // ************ Require's ************/
 const fs = require('fs');
 const path = require('path');
+const { validationResult } = require('express-validator')
 
 // *** Path's */
 const productsFilePath = path.join(__dirname, '../data/products.json');
@@ -63,37 +64,48 @@ const ProductsController = {
     
     store : (req, res)=>{
         let productsDB = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
-
-        let lastItem = productsDB.length -1;
-        let NewItemId = productsDB[lastItem].id +1;
         
-        let image = (req.files.image).map(elem => elem.originalname);
+        let validationResults = validationResult(req);
+        let errors = validationResults.mapped();
+        
+        if(validationResults.errors.length === 0){
+            
+            let lastItem = productsDB.length -1;
+            let NewItemId = productsDB[lastItem].id +1;
+            
+            let image;
+            (req.files.image) ? image = (req.files.image.map(item => item.originalname)) : image = [];
+            
+            let thumb;
+            (req.files.thumb)? thumb = (req.files.thumb[0].originalname) : thumb = '';
+            
+            let newProduct = {
+                id : NewItemId,
+                name:  req.body.name,
+                category : req.body.category,
+                price : parseInt(req.body.price),
+                stock : parseInt(req.body.stock),
+                image: image,
+                thumb : thumb,
+                description : req.body.description,
+                specs :  req.body.specs
+                     
+                }
+            
+            let newProductList;
+            
+            productsDB == '' ? newProductList = [] : newProductList = productsDB;
+            
+            newProductList.push(newProduct);
+            
+            fs.writeFileSync(productsFilePath, JSON.stringify(newProductList, null, "\t"));
+            
+            res.redirect('/products');
 
-        let thumb = (req.files.thumb)[0].originalname;
+        }else{
 
-
-        let newProduct = {
-            id : NewItemId,
-            name:  req.body.name,
-            category : req.body.category,
-            price : parseInt(req.body.price),
-            stock : parseInt(req.body.stock),
-            image: image,
-            thumb : thumb,
-            description : req.body.description,
-            specs :  req.body.specs
-         
+            res.render('products/admin-create', {errors : errors});
         }
-
-        let newProductList;
-
-        productsDB == '' ? newProductList = [] : newProductList = productsDB;
-
-        newProductList.push(newProduct);
-
-        fs.writeFileSync(productsFilePath, JSON.stringify(newProductList, null, "\t"));
-
-        res.redirect('/products');
 
 
     },

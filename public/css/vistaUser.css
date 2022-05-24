@@ -41,6 +41,7 @@
     font-size: 15px;
     height: 40px;
     margin: 8px 0 8px 0;
+    text-transform: capitalize;
     width: 100%;
 }
 
@@ -131,6 +132,13 @@
 .lg__descrip{
     color: var(--gris);
     margin: 0;
+}
+
+.errorMsg{
+    background-color: #FFA8B5;
+    color: #400000;
+    font-size: 12px;
+    padding: 6px;
 }
 
 .form-lg__btn, .add__btn{

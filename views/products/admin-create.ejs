@@ -17,58 +17,64 @@
                 <article class="campos__column">
               
                     <div class="column__forms">
+ 
                         <form action="/products/admin" method="POST" enctype="multipart/form-data"class="forms__campos">
                             <label for="name">
                                 <p class="lg__descrip">Nombre del producto*</p>                        
-                                <input class="rg__campos" type="text" id="name" name="name" placeholder="Nombre del producto"  required>
-                                <span class="feedback"></span>
+                                <% if (locals.errors && errors.name) {%> 
+                                    <p class="errorMsg"><%= errors.name.msg %></p>
+                                <%}  %> 
+                                <input class="rg__campos" type="text" id="name" name="name" placeholder="Nombre del producto">
                             </label>
                             <label for="category">
-                                <p class="lg__descrip">Categoría*</p>                        
-                                <select class="rg__campos" id="category" name="category" required>
-                                    <option value="select" selected>Seleccioná una categoría</option>
-                                    <option value="notebooks" >notebooks</option>
-                                    <option value="periféricos">periféricos</option>
-                                    <option value="almacenamiento" >almacenamiento</option>
-                                    <option value="componentes">componentes</option>
-                                    <option value="sonsolas">consolas</option>
-                                    <option value="sillas">sillas</option>
+                                <p class="lg__descrip">Categoría*</p> 
+                                <% if (locals.errors && errors.category) {%> 
+                                    <p class="errorMsg"><%= errors.category.msg %></p>
+                                <%}  %>                        
+                                <select class="rg__campos" id="category" name="category">
+                                    <option value="" selected>Seleccioná</option>
+                                    <% let categorias = ['notebooks', 'periféricos', 'almacenamiento', 'componentes', 'accesorios', 'consolas', 'sillas',] %> 
+                                    <% categorias.forEach(category => { %> 
+                                    <option value="<%= category %> " ><%= category %> </option>
+                                    <% }) %> 
                             </select>
-                            <span class="feedback"></span>
-                            </label>
+                        </label>
                             <label for="price">
-                                <p class="lg__descrip">Precio*</p>                        
-                                <input class="rg__campos" type="number" id="price" name="price" placeholder="$00000"  required>
-                                <span class="feedback"></span>
+                                <p class="lg__descrip">Precio*</p>
+                                <% if (locals.errors && errors.price) {%> 
+                                    <p class="errorMsg"><%= errors.price.msg %></p>
+                                <%}  %>                             
+                                <input class="rg__campos" type="number" id="price" name="price" placeholder="$00000"  >
                             </label>
                             <label for="stock">
-                                <p class="lg__descrip">Stock*</p>                        
-                                <input class="rg__campos" type="number" id="stock" name="stock" placeholder="#"  required>
-                                <span class="feedback"></span>
+                                <p class="lg__descrip">Stock*</p>
+                                <% if (locals.errors && errors.stock) {%> 
+                                    <p class="errorMsg"><%= errors.stock.msg %></p>
+                                <%}  %>                            
+                                <input class="rg__campos" type="number" id="stock" name="stock" placeholder="#"  >
                             </label>
                             <label for="image">
                                 <p class="lg__descrip">Foto de producto*</p>
                                 <input class="rg__avatar" type="file" name="image" id="image" accept=".jpg, .png, .webp" multiple>
-                                <span class="feedback"></span>
                             </label>
                             <label for="thumb">
                                 <p class="lg__descrip">Thumbnail*</p>
                                 <input class="rg__avatar" type="file" name="thumb" id="thumb" accept=".jpg, .png, .webp">
-                                <span class="feedback"></span>
                             </label>
           
                     </div>
                     <div class="column__forms">
 
                             <label for="description">
-                                <p class="lg__descrip">Descripción*</p>                        
-                                <textarea class="campos__textarea" id="description" name="description" required></textarea>
-                                <span class="feedback"></span>
+                                <p class="lg__descrip">Descripción*</p>
+                                <% if (locals.errors && errors.description) {%> 
+                                    <p class="errorMsg"><%= errors.description.msg %></p>
+                                <%}  %>                            
+                                <textarea class="campos__textarea" id="description" name="description" ></textarea>
                             </label>
                             <label for="specs">
                                 <p class="lg__descrip">Especificaciones*</p>                        
                                 <textarea class="campos__textarea" id="specs" name="specs"></textarea>
-                                <span class="feedback"></span>
                             </label>
 
                             <button aria-label="Agregar producto" class="add__btn" type="submit">Agregar</button>

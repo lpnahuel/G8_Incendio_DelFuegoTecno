@@ -8,7 +8,7 @@
     <p class="adminProductCont__data">Cantidad: <%= product.stock %></p>
     <p class="adminProductCont__data">Categoría: <%= product.category %></p>
     <div class="adminProductCont__btns">
-        <form action="/products/admin/edit/<%= product.id %>?_method=DELETE" method="POST">
+        <form action="/products/admin/edit/<%= product.id %>?_method=DELETE" method="POST" onsubmit="return confirm('Estás a punto de eliminar el producto. ¿Querés continuar?')">
             <button aria-label="borrar" type="submit" class="delete__btn"><i class="fas fa-trash"></i> Eliminar</button>
         </form>
         <button type="submit" class="trashCan__btn"><a href="/products/admin/edit/<%= product.id %>"><i class="fa fa-edit"></i> Editar</a></button>

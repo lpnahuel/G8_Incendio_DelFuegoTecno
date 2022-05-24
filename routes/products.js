@@ -3,8 +3,8 @@ const express = require("express");
 const path = require('path');
 const router = express.Router();
 const ProductsController = require("../controllers/ProductsController");
-const multer = require('multer');
 const productValidator = require('../middlewares/productValidator');
+const multer = require('multer');
 
 /*** Middlewares - MULTER */
 
@@ -14,14 +14,13 @@ const storage = multer.diskStorage({
     },
     
     filename: (req, file, cb)=>{
-        cb(null, file.originalname ); /* + path.extname(file.originalname)*/
+        cb(null, file.originalname);
     }
 })
 
 const upload = multer({storage : storage});
 
 const multipleUpload = upload.fields([{name : 'image', maxCount: 4},{name : 'thumb', maxCount: 1}])
-
 
 
 /*** GET ALL PRODUCTS */ 
@@ -41,7 +40,7 @@ router.get('/admin', ProductsController.admin);
 
 /*** CREATE ONE PRODUCT */ 
 router.get('/admin/create', ProductsController.create); 
-router.post('/admin', multipleUpload, ProductsController.store); 
+router.post('/admin', multipleUpload, productValidator, ProductsController.store); 
 
 /*** EDIT ONE PRODUCT */ 
 router.get('/admin/edit/:id', ProductsController.edit); 

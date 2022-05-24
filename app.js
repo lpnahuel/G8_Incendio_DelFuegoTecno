@@ -2,6 +2,9 @@
 const express = require("express");
 const path = require("path");
 const methodOverride = require('method-override');
+const bodyParser = require('body-parser');
+const cookieParser = require('cookie-parser');
+const session = require('express-session');
 
 /*** Main Router (require) */
 const mainRoutes = require("./routes/mainRoutes")
@@ -12,7 +15,7 @@ const app = express();
 
 // ************  Middlewares ************/
 app.use(express.static(path.join(__dirname, "/public")));
-app.use(express.urlencoded({ extended: true }));
+app.use(express.urlencoded({ extended: false }));
 app.use(methodOverride('_method')); 
 
 
