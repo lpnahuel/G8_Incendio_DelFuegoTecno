@@ -4,10 +4,11 @@ const path = require('path');
 const router = express.Router();
 const ProductsController = require("../controllers/ProductsController");
 const multer = require('multer');
+const productValidator = require('../middlewares/productValidator');
 
 /*** Middlewares - MULTER */
 
-const imgStorage = multer.diskStorage({
+const storage = multer.diskStorage({
     destination: (req, file, cb)=>{
         cb(null, path.join(__dirname + '/../public/img/products'));
     },
@@ -17,9 +18,9 @@ const imgStorage = multer.diskStorage({
     }
 })
 
-const upload = multer({storage : imgStorage});
+const upload = multer({storage : storage});
 
-const multipleUpload = upload.fields([{name : 'image', maxCount: 4},{name : 'thumb'}])
+const multipleUpload = upload.fields([{name : 'image', maxCount: 4},{name : 'thumb', maxCount: 1}])
 
 
 

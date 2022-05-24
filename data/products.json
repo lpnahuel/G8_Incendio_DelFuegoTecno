@@ -2,6 +2,9 @@
 	{
 		"id": 1,
 		"name": "Notebook Gamer Asus Rog Zephyrus Duo Ryzen 9 16Gb 1Tb Rtx 3060",
+		"category": "Notebooks",
+		"price": 580000,
+		"stock": 10,
 		"image": [
 			"asus-zephyrus-duo_15-GX550LXS-001.webp",
 			"asus-zephyrus-duo_15-GX550LXS-002.webp",
@@ -9,11 +12,8 @@
 			""
 		],
 		"thumb": "thumb-asus-zephyrus-duo_15-GX550LXS-001.webp",
-		"price": 580000,
-		"category": "notebooks",
 		"description": "Asus Rog Zephyrus Duo 15 SE (Gx551Qm-Es96)",
-		"specs": "Amd Ryzen 9 5980Hx Processor (3.3Ghz - 4.8Ghz) Processor, 15.6\" 300Hz (3Ms) Ips-Level Full Hd (1920 X 1080) 100% Srgb Display, 16Gb (2X 8Gb) Ddr4 3200Mhz Memory, 1Tb Pcie Nvme Ssd, Nvidia Geforce Rtx 3060 Max Performance (6Gb) Gddr6 Graphics Card W/ Rog Boost, Microsoft Windows 10 Home, Intel Wi-Fi 6 (802.11Ax), Bluetooth 5.1, Hdmi 2.0B, Usb 3.2 Type C (Gen 2), 3X Usb 3.2 Type A (Gen 2), Backlit Chiclet Per-Key Rgb Keyboard",
-		"stock": 10
+		"specs": "Amd Ryzen 9 5980Hx Processor (3.3Ghz - 4.8Ghz) Processor, 15.6\" 300Hz (3Ms) Ips-Level Full Hd (1920 X 1080) 100% Srgb Display, 16Gb (2X 8Gb) Ddr4 3200Mhz Memory, 1Tb Pcie Nvme Ssd, Nvidia Geforce Rtx 3060 Max Performance (6Gb) Gddr6 Graphics Card W/ Rog Boost, Microsoft Windows 10 Home, Intel Wi-Fi 6 (802.11Ax), Bluetooth 5.1, Hdmi 2.0B, Usb 3.2 Type C (Gen 2), 3X Usb 3.2 Type A (Gen 2), Backlit Chiclet Per-Key Rgb Keyboard"
 	},
 	{
 		"id": 2,
@@ -382,5 +382,4 @@
 		"description": "La PS5, la consola de videojuegos más esperada de los últimos años, está de regreso en Hiraoka.com.pe. Por ello, preparamos esta nota para explicarte todo sobre sus especificaciones técnicas, características, accesorios y más sobre la PlayStation5. La nueva consola de Sony se encuentra disponible en dos versiones: la PS5 (con lectora de discos) y la PS5 Digital Edition. Además, de una serie de accesorios que harán tu experiencia de juego fantástica. Definitivamente, estamos hablando de una máquina fuera de serie y si quieres saber más sobre ella, sigue leyendo este artículo donde te contaremos todas sus características. ",
 		"specs": "Procesador AMD Ryzen Zen 2 con 8 núcleos, 16 subprocesos.. Frecuencia variable de procesador hasta 3.5 GHz.. GPU AMD Radeon RDNA 2 con aceleración de trazado de rayos.. Frecuencia variable de GPU hasta 2.23 GHz (10.3 TFLOPS).. . Memoria GDDR6 16 GB con ancho de banda de 448 GB/s.. . Unidad de almacenamiento SSD 825 GB.. . Ancho de banda de lectura 5.5 GB/s (datos puros) y 9 GB/s (datos comprimidos).. . Sonido Tempest 3D AudioTech.. . Conectividad inalámbrica WiFi 6 y Bluetooth 5.1.. . Puertos: 1 HDMI 2.1, 2 USB 3.1, 1 USB 2.0, 1 USB 3.1 de tipo C, 1 Gigabit Ethernet y 1 ranura PCIe 4.0 M.2.. Lector óptico Blu-Ray 4K (no viene incluido en PS5 Digital Edition). Dimensiones 39 cm alto x 10.4 cm ancho x 26.0 cm profundidad."
 	}
-
 ]

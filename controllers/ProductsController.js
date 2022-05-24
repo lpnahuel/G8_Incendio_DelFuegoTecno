@@ -111,20 +111,14 @@ const ProductsController = {
 
         let productToEdit = productsDB.find(item => item.id == req.params.id);
 
-        console.log('req.files.image');
-        console.log('===============');
-        console.log(req.files.image);
+        let image;
+        (req.files.image) ? image = (req.files.image.map(item => item.originalname)) : image = productToEdit.image;
 
-        let image = (req.files.image).map(item => item.originalname);
-
-        image = [] ? image = productsDB.find(item => item.image == req.params.image) : image;
-
-        let thumb = (req.files.thumb)[0].originalname;
-
-        thumb = '' ? thumb = productsDB.find(item => item.thumb == req.params.thumb) : thumb;
+        let thumb;
+        (req.files.thumb)? thumb = (req.files.thumb[0].originalname) : thumb = productToEdit.thumb;
  
         let newEdition = {
-            id : req.params.id,
+            id : parseInt(req.params.id),
             name : req.body.name,
             category : req.body.category,
             price : parseInt(req.body.price),
