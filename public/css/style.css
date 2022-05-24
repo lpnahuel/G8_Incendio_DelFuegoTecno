@@ -1427,8 +1427,12 @@ body{
     text-rendering: auto;
 }
 
+.delete__btn > i{
+    color: red;
+}
+
 .delete__btn:hover{
-    text-decoration: underline;
+    color: red;
 }
 
 .adminProductCont__btns > button > a{

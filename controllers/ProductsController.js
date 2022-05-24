@@ -109,7 +109,7 @@ const ProductsController = {
     update : (req, res)=>{
         let productsDB = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
-        let productToEdit = productsDB.find(item => item.id == req.params.id);
+        let productToEdit = productsDB.find(item => item.id === parseInt(req.params.id));
 
         let image;
         (req.files.image) ? image = (req.files.image.map(item => item.originalname)) : image = productToEdit.image;
@@ -144,9 +144,9 @@ const ProductsController = {
     destroy : (req, res)=>{
 		let productsDB = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
-        const newDatabase = productsDB.filter(item => item.id !== parseInt(req.params.id));
+        const newProductsDatabase = productsDB.filter(item => item.id !== parseInt(req.params.id));
 
-        fs.writeFileSync(productsFilePath, JSON.stringify(newDatabase,null,"\t"));
+        fs.writeFileSync(productsFilePath, JSON.stringify(newProductsDatabase,null,"\t"));
 
         res.redirect('/products')
 

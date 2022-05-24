@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <%- include('../partials/head', {title : 'Mi perfil: ' + userProfile.firstName}) %>
+<body>
+    <%- include('../partials/header') %> 
+    <main class="main-general">
+        <div class="contactForm">
+            <div class="contactForm__areas">
+                <h2 class="form-title">Perfil de usuario</h2>
+                <hr class="titulo__divis">
+                <p class="areas__subt">Imagen de perfil</p>
+                <img src="/img/users/<%= userProfile.image != "" ? userProfile.image : "user-default.png" %>" width="300" alt="Imagen de perfil de <%= userProfile.firstName %>">
+                <p class="areas__subt">Nombre Completo</p>
+                <p class="areas__info"><%= userProfile.firstName + ' ' + userProfile.lastName  %></p>
+                <br>
+                <p class="areas__subt">Dirección</p>
+                <p class="areas__info"><%= userProfile.address %></p>
+                <br>
+                <p class="areas__subt">E-mail</p>
+                <p class="areas__info"><%= userProfile.email %></p>
+                <br>
+                <a href="/users/edit/<%= userProfile.id %>">EDITAR</a>
+            </div>
+        </div>
+
+    </main>
+    <%- include('../partials/footer') %> 
+</body>
+</html>

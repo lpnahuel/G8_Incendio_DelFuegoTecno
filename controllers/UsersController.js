@@ -3,25 +3,16 @@ const fs = require('fs');
 const path = require('path');
 
 // ************ Path's ************
-// const productsFilePath = path.join(__dirname, '../data/products.json');
 const usersFilePath = path.join(__dirname, '../data/users.json');
 
 const UsersController = {
-
-    index : (req,res)=>{
-        
-
-        res.render('products/productList', {productsDB : productsDB});
+    
+    login:(req,res)=>{
+        res.render('users/login');
     },
 
     register:(req,res)=>{
-        res.locals.title = "DFT - Registro Usuarios"
         res.render('users/register');
-    },
-
-    login:(req,res)=>{
-        res.locals.title = "DFT - Login Usuarios"
-        res.render('users/login');
     },
 
     create:(req,res)=>{
@@ -37,7 +28,7 @@ const UsersController = {
             birth : req.body.birth,
             image : req.file.image,
             phone :  req.body.phone,
-            adress :  req.body.adress,
+            address :  req.body.address,
             cp :  req.body.cp,
             city :  req.body.city,
             email :  req.body.email,
@@ -52,8 +43,77 @@ const UsersController = {
 
         fs.writeFileSync(usersFilePath, JSON.stringify(newUserList, null, '\t'));
 
-        res.redirect('/');
+        res.redirect('/users/profile/' + newUser.id);
+    },
+
+    profile : (req, res) =>{
+        let usersDB = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
+
+        let userProfile = usersDB.find(user => user.id === parseInt(req.params.id));
+
+        res.render('users/profile', {userProfile : userProfile})
+
+    },
+
+    view : (req, res) =>{
+        let usersDB = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
+
+        let userProfile = usersDB.find(user => user.id === parseInt(req.params.id));
+
+        res.render('users/user-edit', {userProfile : userProfile})
+
+    },
+
+    update:(req,res)=>{
+        let usersDB = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
+
+        let userToEdit = usersDB.find(user => user.id === parseInt(req.params.id))
+
+        console.log('req.body',req.body)
+        console.log('req.file',req.file)
+        let image;
+        req.file == undefined ? image = userToEdit.image : image = req.file.filename;
+
+        let editedUser = {
+            id: parseInt(req.params.id),
+            firstName : req.body.firstName,
+            lastName : req.body.lastName,
+            birth : req.body.birth,
+            image : image,
+            phone :  req.body.phone,
+            address :  req.body.address,
+            cp :  req.body.cp,
+            city :  req.body.city,
+            email :  req.body.email,
+            password :  req.body.password,
+        }
+
+        let userIndex = usersDB.indexOf(userToEdit);
+
+        usersDB[userIndex] = editedUser;
+
+        fs.writeFileSync(usersFilePath, JSON.stringify(usersDB, null, '\t'));
+
+        res.redirect('/users/profile/' + userToEdit.id);
+    },
+
+    list : (req, res)=>{
+        let usersDB = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
+        res.render('users/users-list', {usersDB : usersDB});
+
+    },
+
+    delete : (req, res)=>{
+        let usersDB = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
+         
+        let newUserDataBase = usersDB.filter(item => item.id !== parseInt(req.params.id));
+
+        fs.writeFileSync(usersFilePath, JSON.stringify(newUserDataBase,null,"\t"));
+
+        res.redirect('/users/list');
+
     }
+
 
 }
 

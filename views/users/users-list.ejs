@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../partials/head', {title : 'DFT - Usuarios Registrados'}) %> 
+<body>
+    <%- include('../partials/header')%>
+
+    <main class="main-general">
+
+        <section class="cont-admin">
+            <%- include('../components/adminBar') %> 
+            <section class="admin-forms">
+
+                <h2 class="form-title">Listado de usuarios registrados</h2>
+                <hr class="forms__div">
+                <div class="adminPanelCont">
+
+                    <% usersDB.forEach(user => { %>
+                        
+                        <%- include('../components/allUsers', {user : user}) %> 
+                        
+                        <% }) %>
+                </div>
+            </section>
+        </section>
+                        
+                
+
+    </main>
+
+
+    <%- include('../partials/footer')%>
+</body>
+</html>

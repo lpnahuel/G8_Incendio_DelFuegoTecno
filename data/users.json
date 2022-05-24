@@ -1,17 +1,16 @@
 [
 	{
 		"id": 1,
-		"firstName": "daniel",
+		"firstName": "DANI",
 		"lastName": "duque",
-		"birth": "",
+		"birth": "2022-05-05",
+		"image": "user-image1653362865166.jpg",
+		"phone": "11111111",
+		"address": "Calle Falsa 1234",
+		"cp": "11111",
+		"city": "Twin Peaks",
 		"email": "daniel@dh.com.ar",
-		"password": "*****",
-		"category": "",
-		"image": "",
-		"phone": "",
-		"adress": "",
-		"city": "",
-		"cp": ""
+		"password": "dasdas"
 	},
 	{
 		"id": 2,
@@ -23,7 +22,7 @@
 		"category": "",
 		"image": "",
 		"phone": "",
-		"adress": "",
+		"address": "",
 		"city": "",
 		"cp": ""
 	},
@@ -37,7 +36,7 @@
 		"category": "",
 		"image": "",
 		"phone": "",
-		"adress": "",
+		"address": "",
 		"city": "",
 		"cp": ""
 	},
@@ -51,7 +50,7 @@
 		"category": "",
 		"image": "",
 		"phone": "",
-		"adress": "",
+		"address": "",
 		"city": "",
 		"cp": ""
 	},
@@ -65,7 +64,7 @@
 		"category": "",
 		"image": "",
 		"phone": "",
-		"adress": "",
+		"address": "",
 		"city": "",
 		"cp": ""
 	},
@@ -79,7 +78,7 @@
 		"category": "",
 		"image": "",
 		"phone": "",
-		"adress": "",
+		"address": "",
 		"city": "",
 		"cp": ""
 	},
@@ -93,7 +92,7 @@
 		"category": "",
 		"image": "",
 		"phone": "",
-		"adress": "",
+		"address": "",
 		"city": "",
 		"cp": ""
 	},
@@ -107,7 +106,7 @@
 		"category": "",
 		"image": "",
 		"phone": "",
-		"adress": "",
+		"address": "",
 		"city": "",
 		"cp": ""
 	},
@@ -121,7 +120,7 @@
 		"category": "",
 		"image": "",
 		"phone": "",
-		"adress": "",
+		"address": "",
 		"city": "",
 		"cp": ""
 	},
@@ -135,9 +134,8 @@
 		"category": "",
 		"image": "",
 		"phone": "",
-		"adress": "",
+		"address": "",
 		"city": "",
 		"cp": ""
 	}
-
 ]
