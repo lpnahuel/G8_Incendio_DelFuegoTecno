@@ -138,28 +138,6 @@
 		"adress": "",
 		"city": "",
 		"cp": ""
-	},
-	{
-		"id": 11,
-		"firstName": "alexander",
-		"lastName": "perez",
-		"birth": "",
-		"email": "alexander@dh.com.ar",
-		"password": "",
-		"category": "*****",
-		"image": "",
-		"phone": "",
-		"adress": "",
-		"city": "",
-		"cp": ""
-	},
-	{
-		"id": 12
-	},
-	{
-		"id": 13
-	},
-	{
-		"id": 14
 	}
+
 ]

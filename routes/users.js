@@ -3,6 +3,19 @@
  const router = express.Router();
  const UsersController = require("../controllers/UsersController");
  const multer = require('multer');
+ const path = require('path');
+
+ const storage = multer.diskStorage({
+    destination: (req, file, cb)=>{
+        cb(null, path.join(__dirname + '/../public/img/users'));
+    },
+    
+    filename: (req, file, cb)=>{
+        cb(null, 'user-'+ file.fieldname +  Date.now() + path.extname(file.originalname)); 
+        }
+});
+
+const upload = multer({ storage: storage });
 
 
  
@@ -14,7 +27,7 @@
  /*** GET REGISTER FORM*/
  router.get("/register", UsersController.register);
  /*** POST NEW USER*/
- router.post("/register", UsersController.create);
+ router.post("/register", upload.single('image'), UsersController.create);
  
  /**** GET PROFILE ID */
  //router.get('profile/:id', UsersController.profile); 

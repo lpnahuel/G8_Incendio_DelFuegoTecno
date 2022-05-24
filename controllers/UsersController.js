@@ -30,14 +30,12 @@ const UsersController = {
         let lastUser = usersDB.length -1;
         let NewUserId = usersDB[lastUser].id +1;
 
-        console.log('REQ.BODY', req.body);
-
         let newUser = {
             id: NewUserId,
             firstName : req.body.firstName,
             lastName : req.body.lastName,
             birth : req.body.birth,
-            //image : 
+            image : req.file.image,
             phone :  req.body.phone,
             adress :  req.body.adress,
             cp :  req.body.cp,
@@ -55,7 +53,7 @@ const UsersController = {
         fs.writeFileSync(usersFilePath, JSON.stringify(newUserList, null, '\t'));
 
         res.redirect('/');
-    },
+    }
 
 }
 
