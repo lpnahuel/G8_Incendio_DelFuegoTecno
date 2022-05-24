@@ -146,3 +146,11 @@ A continuacion detallaremos los temas que se trataron cada día:
 
 **Informe 23/05/2022**
 - Logramos que funcione el thumbnails.
+- Creamos la vista de perfil de usuario, falta que la imagen se cargue de una y no sólo se guarde.
+- Modificamos el registro para que sea funcional.
+
+**Informe 23/05/2022**
+- Cargamos todos los usuarios con avatars.
+- Falta que en phone acepte solo numbers.
+-¿porque cuando achicamos la pantalla los iconos de registro, carrito y login cambian de color?
+- falta validación
