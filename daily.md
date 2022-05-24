@@ -131,9 +131,18 @@ A continuacion detallaremos los temas que se trataron cada día:
 
 **Informe 20/05/2022**
 - Tenemos que arreglar el Multer.
-- Barra de búsqueda funcional.
-- Solucionamos errores visuales en carrito
+- Modificar la barra de busqueda. Logramos que encuentre lo que tenemos en la DataBase, sino se rompe.
 - Hicimos Meet para seguir con lo que nos queda del proyecto.
-- Logramos agregar y que se vean nuevos productos con sus respectivas imagenes (de un solo input).
+- Logramos agregar y que se vean nuevos productos con sus respectivas imagenes.
 - Agregamos un map para crear el array de imagenes que se cargan.
 - Modificamos la ecuacion de cuotas para que solo se vean dos decimales
+
+**Informe 21/05/2022**
+- Hicimos el Newsletter del footer funcional, que almacene los mails en un json
+
+**Informe 22/05/2022**
+- En el Header: Modificamos la vista celular, Agregamo un burger menú que funciona y así todos pueden acceder desde cualquier dispositivo.
+- Se ajusto el diseño del sitio.
+
+**Informe 23/05/2022**
+- Logramos que funcione el thumbnails.
