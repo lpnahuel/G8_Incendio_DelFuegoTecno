@@ -37,14 +37,14 @@ En la reunion se trataron los siguientes puntos:
 - Creacion de un daily además del weekly.
 - Armado de un archivo de base de productos.
 
-**Informe comienzo de semana 11/05/2022**
+**Informe comienzo de semana 09/05/2022**
 - Finalizamos con el Sprint 3
 - Agregamos las tarjetas del nuevo sprint a Trello
 - Creamos carpeta data con archivo users.json y products.json
 - Realizamos el meet
 - Realizamos la restrospectiva
 
-**Informe comienzo de semana 18/05/2022**
+**Informe comienzo de semana 16/05/2022**
 - Recibimos el feedback del ultimo sprint y debatimos estrategias.
 - Decidimos crear menos tareas en el Trello, basandonos en el feedback.
 - Crear partials del producto.
@@ -62,6 +62,7 @@ En la reunion se trataron los siguientes puntos:
 - Día jueves 19/05 realizamos la reu semanal.
 
 
-*Informe comienzo de semana 25/05/2022*
+**Informe comienzo de semana 23/05/2022**
+- Logramos que funcione el thumbnails.
 
-*Informe comienzo de semana 01/06/2022*
+**Informe comienzo de semana 01/06/2022**
