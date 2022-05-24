@@ -148,9 +148,11 @@ A continuacion detallaremos los temas que se trataron cada día:
 - Logramos que funcione el thumbnails.
 - Creamos la vista de perfil de usuario, falta que la imagen se cargue de una y no sólo se guarde.
 - Modificamos el registro para que sea funcional.
+- Falta que en phone acepte solo numbers.
+- falta validación
 
 **Informe 23/05/2022**
 - Cargamos todos los usuarios con avatars.
-- Falta que en phone acepte solo numbers.
--¿porque cuando achicamos la pantalla los iconos de registro, carrito y login cambian de color?
-- falta validación
+- Agregamos un cartel de advertencia a la hora de eliminar productos.
+- separamos el CSS en 3: general, usuario y producto.
+- Arreglamos la imagen de registro.

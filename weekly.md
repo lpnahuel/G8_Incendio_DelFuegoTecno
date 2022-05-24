@@ -7,19 +7,12 @@ A continuacion detallaremos los temas que se trataron en cada reunion semanal y 
 **Informe comienzo de semana 27/04/2022**
 
 En la reunion se trataron los siguientes puntos:
-
 - Realizamos retrospectiva estrella de mar del 2do sprint
-
 - Revision de pdf del tercer sprint
-
 - Actualizar tareas en trello y dividir las mismas
-
 - Creamos redes sociales del sitio web.
-
 - Boceto carga de producto
-
 - Boceto listado categoria
-
 (opcional) Generar nuevas vistas para la web.
 
 **Informe comienzo de semana 04/05/2022**
@@ -64,5 +57,9 @@ En la reunion se trataron los siguientes puntos:
 
 **Informe comienzo de semana 23/05/2022**
 - Logramos que funcione el thumbnails.
+- Creamos la vista de perfil de usuario.
+- Modificamos el registro para que sea funcional.
+- Cargamos todos los usuarios con avatars.
+- Agregamos un cartel de advertencia a la hora de eliminar productos.
 
 **Informe comienzo de semana 01/06/2022**
