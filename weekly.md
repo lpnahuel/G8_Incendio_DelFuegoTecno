@@ -61,5 +61,7 @@ En la reunion se trataron los siguientes puntos:
 - Modificamos el registro para que sea funcional.
 - Cargamos todos los usuarios con avatars.
 - Agregamos un cartel de advertencia a la hora de eliminar productos.
-
-**Informe comienzo de semana 01/06/2022**
+- separamos el CSS en 4: general, header y footer, usuario y producto.
+- Arreglamos la imagen de registro.
+- Agregamos la validación.
+- Retocamos el CSS de algunas vistas.
