@@ -2,7 +2,7 @@
 	{
 		"id": 1,
 		"name": "Notebook Gamer Asus Rog Zephyrus Duo Ryzen 9 16Gb 1Tb Rtx 3060",
-		"category": "Notebooks",
+		"category": "notebooks",
 		"price": 580000,
 		"stock": 10,
 		"image": [
@@ -78,22 +78,6 @@
 		"description": "La notebook ULTRASLIM cuenta con un diseño compacto y funcional. Posee los nuevos procesadores Intel® CoreTM i5 de 10a generación, que junto a SSD puedes experimentar una mejora monumental en las velocidades de lectura / escritura, ideal para tareas que requieren multiples procesos. Con un chasis sólido y liviano, su acabado metálico de primera calidad llama la atención y se destaca entre la multitud.",
 		"specs": "Marca: NSX. Línea: Kairos. Resolución de la pantalla: 1920 px x 1080 px. Con pantalla táctil: No. Tipo de resolución: Full HD. Tamaño de la pantalla: 14 \". Con Wi-Fi: Sí. Peso: 1.5 kg. Memoria RAM: 16 GB. Tipo de memoria RAM: DDR4. Capacidad del SSD: 250 GB. Marca del procesador: Intel. Línea del procesador: Core i5. Cantidad de núcleos: 2. Nombre del sistema operativo: FreeDOS. Tipo de batería: Ion de litio. Es gamer: No",
 		"stock": 5
-	},
-	{
-		"id": 6,
-		"name": "Notebook Gamer Gigabyte AORUS RTX 3080Q",
-		"image": [
-			"Notebook-Gigabyte-AORUS-RTX-3080Q-001.webp",
-			"",
-			"",
-			""
-		],
-		"thumb": "thumb-Notebook-Gigabyte-AORUS-RTX-3080Q-001.webp",
-		"price": 483340,
-		"category": "notebooks",
-		"description": "En el corazón de AORUS 15P se encuentra un procesador Intel Core i7 de 2,3 GHz con 8 núcleos, 16 subprocesos y una frecuencia turbo máxima de 4,6 GHz, que le brinda la potencia de alto octanaje que necesita, ya sea que esté jugando o editando. Con 32 GB de RAM DDR4 de 3200 MHz, puede realizar múltiples tareas de manera eficiente y reproducir sus videos rápidamente. Almacene su biblioteca digital de juegos con una unidad de estado sólido M.2 NVMe PCIe 4.0 de 1 TB, lo que mejora el rendimiento del sistema y permite que sus aplicaciones se ejecuten más rápido. Experimente un rendimiento gráfico mejorado con la GPU NVIDIA GeForce RTX 3080, que le brinda 8 GB de GDDR6 VRAM junto con un conjunto de tecnologías NVIDIA Max-Q que optimizan su sistema para obtener imágenes fluidas al diseñar y jugar.",
-		"specs": "Procesador: Intel Core i7-11800H (11.ª generación). UPC: 2,3 a 4,6 GHz 8 núcleos. Caché L3: 24 MB. Tipo de gráficos: Dedicado. GPU: NVIDIA GeForce RTX 3080 con 8 GB GDDR6 VRAM. Tipo de memoria: DDR4 de 3200 MHz. Memoria total instalada: 32GB. Configuración de memoria: 2 x 16 GB. Capacidad máxima de memoria: 64GB. Tipo de ranura de memoria: DIMM SO de 260 pines",
-		"stock": 16
 	},
 	{
 		"id": 7,
