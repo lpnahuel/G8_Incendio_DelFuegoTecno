@@ -150,8 +150,6 @@ A continuacion detallaremos los temas que se trataron cada día:
 - Modificamos el registro para que sea funcional.
 - Falta que en phone acepte solo numbers.
 - falta validación
-
-**Informe 23/05/2022**
 - Cargamos todos los usuarios con avatars.
 - Agregamos un cartel de advertencia a la hora de eliminar productos.
 - separamos el CSS en 3: general, usuario y producto.
@@ -160,3 +158,4 @@ A continuacion detallaremos los temas que se trataron cada día:
 **Informe 24/05/2022**
 - Agregamos la validación.
 - Retocamos el CSS de algunas vistas.
+- Modificamos las tarjetas de trello para agregar detalle y objetivos que no habíamos entendido que eran para está entrega.
