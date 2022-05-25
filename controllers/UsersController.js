@@ -1,6 +1,7 @@
 // ************ Require's ************
 const fs = require('fs');
 const path = require('path');
+const { validationResult } = require('express-validator')
 
 // ************ Path's ************
 const usersFilePath = path.join(__dirname, '../data/users.json');
@@ -18,32 +19,45 @@ const UsersController = {
     create:(req,res)=>{
         let usersDB = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
 
-        let lastUser = usersDB.length -1;
-        let NewUserId = usersDB[lastUser].id +1;
+        let validationResults = validationResult(req);
+        let errors = validationResults.mapped();
 
-        let newUser = {
-            id: NewUserId,
-            firstName : req.body.firstName,
-            lastName : req.body.lastName,
-            birth : req.body.birth,
-            image : req.file.filename,
-            phone :  req.body.phone,
-            address :  req.body.address,
-            cp :  req.body.cp,
-            city :  req.body.city,
-            email :  req.body.email,
-            password :  req.body.password,
+        if(validationResults.errors.length === 0){
+            let lastUser = usersDB.length -1;
+            let NewUserId = usersDB[lastUser].id +1;
+            
+            let image;
+            (req.file) ? image = (req.file.filename) : image = '';
+
+            let newUser = {
+                id: NewUserId,
+                firstName : req.body.firstName,
+                lastName : req.body.lastName,
+                birth : req.body.birth,
+                image : image,
+                phone :  req.body.phone,
+                address :  req.body.address,
+                cp :  req.body.cp,
+                city :  req.body.city,
+                email :  req.body.email,
+                password :  req.body.password,
+            }
+
+            let newUserList;
+
+            usersDB == '' ? newUserList = [] : newUserList = usersDB;
+
+            newUserList.push(newUser);
+
+            fs.writeFileSync(usersFilePath, JSON.stringify(newUserList, null, '\t'));
+
+            res.redirect('/users/profile/' + newUser.id);
+
+        }else{
+
+            res.render('users/register', {errors : errors, oldData : req.body})
         }
 
-        let newUserList;
-
-        usersDB == '' ? newUserList = [] : newUserList = usersDB;
-
-        newUserList.push(newUser);
-
-        fs.writeFileSync(usersFilePath, JSON.stringify(newUserList, null, '\t'));
-
-        res.redirect('/users/profile/' + newUser.id);
     },
 
     profile : (req, res) =>{

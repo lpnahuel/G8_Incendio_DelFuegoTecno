@@ -1,0 +1,371 @@
+/* Variables de color */
+
+:root {
+
+    /*Colors*/
+    --negro: #000;
+    --fondo-main: #1E1F24;
+    --gris-int: #444444;
+    --gris-osc: #7E7E83;
+    --gris: #B3B3B3;
+    --gris-medio: #ababab;
+    --gris-claro: #e3e3e3;
+    --blanco: #fff;
+    --turq: #4FD0D9;
+    --celeste-logo: #3CB9FC;
+    --cyan: #07F7FE;
+    --aqua: #08FBD2;
+    --yellow: #F4D30F;
+    --magenta: #EE2B79;
+    --violet: #B537F2;
+    --rb-gradient: linear-gradient(to right, var(--celeste-logo), var(--violet), var(--magenta), var(--yellow), var(--aqua), var(--cyan));
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', 'sans-serif';
+    margin: 0px;
+    padding: 0px;
+}
+
+/* ---------------- MAIN REGISTRO -------------*/
+
+
+.cont-form-rg{
+    margin: 0 auto 0 auto;
+}
+
+.form-registro{
+    align-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid var(--gris);
+    border-radius: 16px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    display: flex;
+    height: auto;
+    justify-content: center;
+    margin: 40px auto 0 auto;
+    min-width: 300px;
+    padding: 24px 0 24px 0;
+    width: 30%;
+
+}
+
+.cont-rg{
+    border-top: solid 2px var(--magenta);
+    border-bottom: solid 2px var(--magenta);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+    min-width: 215px;
+    padding: 28px 0 7px 0;
+    width: 70%;
+}
+
+.rg__campos, .rg__avatar, .rg__nac, .campos__textarea{
+    background-color: var(--gris-claro);
+    border: 1px solid var(--gris-osc);
+    border-radius: 8px;
+    font-size: 15px;
+    height: 40px;
+    margin: 8px 0 8px 0;
+    width: 100%;
+}
+
+.errorMsg{
+    color: var(--magenta);
+    margin: 0;
+    padding: 4px 0 0 0 ;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.invalid{
+    background-color:  #FFA8B5;
+    border: 1px solid #400000;
+}
+
+.rg__campos{
+    padding-left: 15px;
+}
+
+select#category.rg__campos{
+    text-transform: capitalize;
+}
+
+.rg__avatar{
+    padding: 8px 0 0 8px;
+}
+
+.rg__nac{
+    padding: 0 15px 0 8px;
+}
+
+.registro__cont{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 10px 0 10px 0;
+}
+
+.rg__subtitulo{
+    align-self: flex-start;
+    border-bottom: solid 2px var(--magenta);
+    color: var(--turq);
+    font-size: 14px;
+    width: 100%;
+}
+
+
+/*------------ MAIN LOGIN --------------*/
+
+.cont-form-login{
+    margin: 0 auto 0 auto;
+}
+
+.login__form{
+    align-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid var(--gris);
+    border-radius: 16px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    margin: 40px auto 0 auto;
+    padding: 15px 0;
+    min-width: 300px;
+    width: 25%;
+}
+
+.titulo-login{
+    align-self: flex-start;
+    color: var(--turq);
+}
+
+.form-lg{
+    border-top: solid 2px var(--magenta);
+    border-bottom: solid 2px var(--magenta);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+    padding: 28px 0 28px 0;
+    min-width: 250px;
+    width: 60%;
+}
+
+.form-lg__campos{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 10px 0 10px 0;
+}
+
+.lg__campos{
+    background-color: var(--gris-claro);
+    border: 1px solid var(--gris-osc);
+    border-radius: 8px;
+    font-size: 15px;
+    height: 40px;
+    margin-top: 8px;
+    padding-left: 15px;
+    width: 100%;
+}
+
+.lg__descrip{
+    color: var(--gris);
+    margin: 0;
+}
+
+
+.form-lg__btn, .add__btn{
+    background-color: var(--gris-osc);
+    border: none;
+    border-radius: 6px;
+    color: var(--blanco);
+    cursor: pointer;
+    font-weight: 500;
+    width: 180px;
+    height: 50px;
+}
+
+.form-lg__btn:hover, .add__btn:hover{
+    animation: box-highlight 2s linear infinite;
+    transition: all 400ms linear;
+
+}
+
+.lg-msg{
+    color: var(--gris);
+    font-size: 12px;
+}
+
+.lg-msg > a{
+    color: var(--turq);
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.lg-msg > a:hover{
+    text-decoration: underline;
+}
+
+/*----------- MAIN PROFILE ----------*/
+.userProfileCont{
+    margin: 0 auto;
+    padding: 26px 0;
+    max-width: 550px;
+    width: 90%;
+}
+
+.profileWelcome{
+    align-items: flex-end;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.profileGreeting{
+    align-self: center;
+    color: var(--turq);
+    font-size: 24px;
+    margin: 0;
+    text-align: right;
+    text-transform: capitalize;
+}
+
+.profileImg{
+    width: 132px;
+}
+
+.profileImg > img{
+    border: 1px solid var(--turq);
+    border-radius: 50%;
+    height: 100%;
+    object-fit: cover;
+    padding: 6px;
+    width: 100%;
+}
+
+.profileInfo{
+    border: 1px var(--magenta) solid;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    padding: 8px 0 0 18px;
+}
+.infoTitles{
+    color: var(--celeste-logo);
+}
+
+
+.profileInfo >p{
+    text-align: left;
+}
+.infoData{
+    color: var(--gris-claro);
+    text-transform: capitalize;
+}
+.profileEditCont{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.profileEdit{
+    background: var(--negro);
+    border-left: 3px solid var(--negro);
+    cursor: pointer;
+    color: var(--gris-medio);
+    font-size: 14px;
+    font-weight: 500;
+    height: 51px;
+    margin: 5px 10px;
+    padding: 18px 0 0 0;
+    text-decoration: none;
+    width: 250px;
+}
+
+.profileEdit:hover{
+    color: var(--magenta);
+    border-left: 3px solid var(--magenta);
+}
+
+
+/**** MEDIA QUERIES */
+
+@media (min-width:578px){
+
+}
+
+@media (min-width:769px){
+
+
+}
+
+@media (min-width:993px){
+    /*CONTACTO*/
+    .userProfileCont{
+        display: flex;
+        padding-top: 50px;
+        width: 85%;
+        max-width: 1200px;
+        justify-content: space-between;
+    }
+
+    .profileWelcome {
+        flex-direction: column;
+        align-items: center;
+        justify-content: normal;
+        width: 188px;
+    }
+
+    .profileGreeting{
+        align-self: auto;
+        margin-top: 18px;
+    }
+
+    .profileInfo{
+        padding: 8px 0 0 32px;
+        width: 68%;
+    }
+
+    .profileEditCont{
+        align-items: flex-end;
+        margin: 0 auto;
+        max-width: 1200px;
+        width: 85%;
+    }
+
+    .profileEdit{
+        margin: 0;
+    }
+
+
+}
+
+@media (min-width:1200px){
+
+}
+
+@media (min-width:1400px){
+
+    /*CONTACTO*/
+    .userProfileCont{
+        width: 75%;
+    }
+
+    .profileEditCont{
+        width: 75%;
+    }
+}

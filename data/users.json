@@ -1,16 +1,16 @@
 [
 	{
 		"id": 1,
-		"firstName": "DANI",
+		"firstName": "dani",
 		"lastName": "duque",
-		"birth": "2022-05-05",
+		"birth": "2088-08-08",
 		"image": "user-image1653362865166.jpg",
 		"phone": "11111111",
 		"address": "Calle Colombia 1234",
 		"cp": "11111",
 		"city": "Twin Peaks",
 		"email": "daniel@dh.com.ar",
-		"password": "dasdas"
+		"password": "dasda"
 	},
 	{
 		"id": 2,

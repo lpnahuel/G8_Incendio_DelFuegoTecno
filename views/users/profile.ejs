@@ -5,24 +5,30 @@
 <body>
     <%- include('../partials/header') %> 
     <main class="main-general">
-        <div class="contactForm">
-            <div class="contactForm__areas">
-                <h2 class="form-title">Perfil de usuario</h2>
-                <hr class="titulo__divis">
-                <p class="areas__subt">Imagen de perfil</p>
-                <img src="/img/users/<%= userProfile.image != "" ? userProfile.image : "user-default.png" %>" width="300" alt="Imagen de perfil de <%= userProfile.firstName %>">
-                <p class="areas__subt">Nombre Completo</p>
-                <p class="areas__info"><%= userProfile.firstName + ' ' + userProfile.lastName  %></p>
+
+        <div class="userProfileCont">
+            <div class="profileWelcome">
+                <div class="profileImg">
+                    <img src="/img/users/<%= userProfile.image != "" ? userProfile.image : "user-default.png" %>" alt="Imagen de perfil de <%= userProfile.firstName %>">
+                </div>
+                <h2 class="profileGreeting">Hola <%= userProfile.firstName %>!</h2>
+            </div>
+            <div class="profileInfo">
+                <p class="infoTitles">Nombre Completo</p>
+                <p class="infoData"><%= userProfile.firstName + ' ' + userProfile.lastName  %></p>
                 <br>
-                <p class="areas__subt">Dirección</p>
-                <p class="areas__info"><%= userProfile.address %></p>
+                <p class="infoTitles">Dirección</p>
+                <p class="infoData"><%= userProfile.address %></p>
                 <br>
-                <p class="areas__subt">E-mail</p>
+                <p class="infoTitles">E-mail</p>
                 <p class="areas__info"><%= userProfile.email %></p>
                 <br>
-                <a href="/users/edit/<%= userProfile.id %>">EDITAR</a>
             </div>
         </div>
+        <div class="profileEditCont">
+           <a href="/users/edit/<%= userProfile.id %>" class="profileEdit">EDITAR</a>
+       </div>
+
 
     </main>
     <%- include('../partials/footer') %> 

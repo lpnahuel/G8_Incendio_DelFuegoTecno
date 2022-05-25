@@ -1,7 +1,7 @@
 // ************ Require's ************/
 const fs = require('fs');
 const path = require('path');
-const { validationResult } = require('express-validator')
+const { validationResult } = require('express-validator');
 
 // *** Path's */
 const productsFilePath = path.join(__dirname, '../data/products.json');
@@ -104,7 +104,7 @@ const ProductsController = {
 
         }else{
 
-            res.render('products/admin-create', {errors : errors});
+            res.render('products/admin-create', {errors : errors, oldData : req.body});
         }
 
 
