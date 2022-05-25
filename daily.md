@@ -156,3 +156,7 @@ A continuacion detallaremos los temas que se trataron cada día:
 - Agregamos un cartel de advertencia a la hora de eliminar productos.
 - separamos el CSS en 3: general, usuario y producto.
 - Arreglamos la imagen de registro.
+
+**Informe 24/05/2022**
+- Agregamos la validación.
+- Retocamos el CSS de algunas vistas.
