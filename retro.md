@@ -136,6 +136,7 @@ En primer lugar creemos que es necesario empezar a pedir ayuda con las cosas que
 
 - Realizar ejercitaciones para repasar contenido.
 - Gestionar mejor el tiempo de cada uno.
+- Seguir poniendole buena onda las reuniones de grupo.
 
 ### **Seguir haciendo:**
 
