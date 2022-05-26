@@ -124,3 +124,31 @@ En primer lugar creemos que es necesario empezar a pedir ayuda con las cosas que
 
 - No aplazar tareas
 
+# **Retrospectiva Cuarto Sprint**
+
+### **Comenzar a hacer:**
+
+- Dejar de atrasarse en las clases.
+- Ser mas honestos con la disponibilidad real que uno tiene.
+- Calcular mejor los tiempos de cada tarea, para no llegar al límite con las entregas.
+
+### **Hacer más de:** 
+
+- Realizar ejercitaciones para repasar contenido.
+- Gestionar mejor el tiempo de cada uno.
+
+### **Seguir haciendo:**
+
+- Seguir con los daily por whatsapp. 
+- Seguir con los meets dos veces por semana.
+
+### **Hacer menos de:** 
+
+- Dejar de procrastinar en los meet.
+- Dejar de esperar hasta último momento para decir que no puedo hacer algo.
+
+### **Dejar de hacer:**
+
+- No apoyarse en una sóla persona del equipo, no comprometerme a hacer cosas que uno sabe que no va a llegar a hacer.
+- No cancelar meets.
+- No aplazar entregas.
