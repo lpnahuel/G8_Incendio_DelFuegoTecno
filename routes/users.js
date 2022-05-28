@@ -3,23 +3,8 @@
  const router = express.Router();
  const UsersController = require("../controllers/UsersController");
  const path = require('path');
- 
- /*** Middlewares */
  const userValidator = require('../middlewares/userValidator');
- const multer = require('multer');
- 
- const storage = multer.diskStorage({
-    destination: (req, file, cb)=>{
-        cb(null, path.join(__dirname + '/../public/img/users'));
-    },
-    
-    filename: (req, file, cb)=>{
-        cb(null, 'user-'+ file.fieldname +  Date.now() + path.extname(file.originalname)); 
-        }
-});
-
-const upload = multer({ storage: storage });
-
+ const upload = require('../middlewares/multerUsers');
  
  /**** GET LOGIN */
  router.get('/login', UsersController.login); 

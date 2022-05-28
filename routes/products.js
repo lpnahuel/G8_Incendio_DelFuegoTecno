@@ -4,23 +4,7 @@ const path = require('path');
 const router = express.Router();
 const ProductsController = require("../controllers/ProductsController");
 const productValidator = require('../middlewares/productValidator');
-const multer = require('multer');
-
-/*** Middlewares - MULTER */
-
-const storage = multer.diskStorage({
-    destination: (req, file, cb)=>{
-        cb(null, path.join(__dirname + '/../public/img/products'));
-    },
-    
-    filename: (req, file, cb)=>{
-        cb(null, file.originalname);
-    }
-})
-
-const upload = multer({storage : storage});
-
-const multipleUpload = upload.fields([{name : 'image', maxCount: 4},{name : 'thumb', maxCount: 1}])
+const multipleUpload = require('../middlewares/multerProducts');
 
 
 /*** GET ALL PRODUCTS */ 

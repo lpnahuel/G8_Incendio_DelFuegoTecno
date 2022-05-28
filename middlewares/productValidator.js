@@ -12,11 +12,11 @@ const productValidator = [
     //         throw new Error ('Tienes que subir al menos una imagen')
     //     }
     // }),
-    check('thumb').custom((value, {req}) => {
-        let file = req.file;
-        if(!file){
-            throw new Error ('Tienes que subir una imagen')
-        }
-    })
+    // check('thumb').custom((value, {req}) => {
+    //     let file = req.files;
+    //     if(!file){
+    //         throw new Error ('Tienes que subir una imagen')
+    //     }
+    // })
 ];
 module.exports = productValidator;
