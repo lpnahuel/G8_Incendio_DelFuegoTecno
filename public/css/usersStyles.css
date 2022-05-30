@@ -51,7 +51,7 @@ body{
     justify-content: center;
     margin: 40px auto 0 auto;
     min-width: 300px;
-    padding: 24px 0 24px 0;
+    padding: 8px 0 24px 0;
     width: 30%;
 
 }
@@ -64,7 +64,7 @@ body{
     margin-bottom: 24px;
     min-width: 215px;
     padding: 28px 0 7px 0;
-    width: 70%;
+    width: 85%;
 }
 
 .rg__campos, .rg__avatar, .rg__nac, .campos__textarea{
@@ -141,7 +141,7 @@ select#category.rg__campos{
     margin: 40px auto 0 auto;
     padding: 15px 0;
     min-width: 300px;
-    width: 25%;
+    width: 70%;
 }
 
 .titulo-login{
@@ -305,6 +305,14 @@ select#category.rg__campos{
 /**** MEDIA QUERIES */
 
 @media (min-width:578px){
+    .login__form{
+        max-width: 550px;
+    }
+
+    .form-registro{
+        max-width: 600px;
+        width: 80%;
+    }
 
 }
 

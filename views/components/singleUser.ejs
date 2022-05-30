@@ -6,6 +6,7 @@
     <p class="adminProductCont__name">Nombre completo: <%= user.firstName + ' ' + user.lastName%></p>
     <hr class="name__div">
     <p class="adminProductCont__name">Email: <%= user.email %></p>
+    <hr class="name__div">
     <div class="adminProductCont__btns">
         <form action="/users/edit/<%= user.id %>?_method=DELETE" method="POST" onsubmit="return confirm('Estás a punto de eliminar al usuario. ¿Querés continuar?')">
             <button aria-label="borrar" type="submit" class="delete__btn"><i class="fas fa-trash"></i> Eliminar</button>

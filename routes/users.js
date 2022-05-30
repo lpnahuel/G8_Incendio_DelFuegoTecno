@@ -8,12 +8,15 @@
  
  /**** GET LOGIN */
  router.get('/login', UsersController.login); 
+
+ /**** PROCESS LOGIN */
+ router.post('/login', UsersController.processLogin); 
  
  /*** GET REGISTER FORM*/
  router.get("/register", UsersController.register);
 
  /*** POST NEW USER*/
- router.post("/register", upload.single('image'), userValidator, UsersController.create);
+ router.post("/register", upload.single('image'), userValidator, UsersController.processRegister);
  
  /**** GET PROFILE ID */
  router.get('/profile/:id', UsersController.profile); 

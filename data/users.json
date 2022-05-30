@@ -115,5 +115,18 @@
 		"city": "San Luis",
 		"email": "juan@dh.com.ar",
 		"password": "ef34i398vh"
+	},
+	{
+		"id": 10,
+		"firstName": "Paula",
+		"lastName": "Yafar",
+		"birth": "1986-06-09",
+		"image": "",
+		"phone": "+541136468707",
+		"address": "Ramón Falcón 2509 1/A",
+		"cp": "1406",
+		"city": "Capital Federal",
+		"email": "palita65@gmail.com",
+		"password": "$2a$10$u3F0fMgTK9jAO/VfqbyzsOv.95eBpeYScW5j63btWkkZtpqapNtwi"
 	}
 ]

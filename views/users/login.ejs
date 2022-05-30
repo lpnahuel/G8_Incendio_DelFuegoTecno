@@ -17,6 +17,9 @@
                 <h2 class="titulo-login">Login</h2>
                 
                     <article class="form-lg">
+                        <% if (locals.errors && errors) {%>
+                            <%= errors.msg %>                           
+                        <% } %>
 
                         <div class="form-lg__campos">
                             <label for="email">
@@ -33,6 +36,13 @@
                                 <span class="feedback"></span>
                             </label>
                         </div>
+                        <div class="form-lg__campos">
+                            <label for="recodarme">
+                                <p class="lg__descrip">Recordame</p>
+                                <input type="checkbox" name="password"><br>
+                                <!-- verificar si funciona con diferente coso en el for del label que en el name del input  -->
+                            </label>
+                        </div> 
                         
                     </article>
                         

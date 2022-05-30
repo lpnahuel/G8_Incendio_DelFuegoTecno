@@ -2,6 +2,7 @@
 const fs = require('fs');
 const path = require('path');
 const { validationResult } = require('express-validator')
+const bcrypt = require('bcryptjs');
 
 // ************ Path's ************
 const usersFilePath = path.join(__dirname, '../data/users.json');
@@ -12,11 +13,58 @@ const UsersController = {
         res.render('users/login');
     },
 
+    processLogin: (req, res) => {
+        let errors = validationResult(req);
+        //1. buscar al usuario por mail
+        //2. chequear que la contraseña coincida con la que está guardada
+        //3. primero leemos la base de datos
+        //4. buscamos el mail que coincida con el ingresado en el body
+        //5. una vez que encontramos el usuario, comparamos que la contraseña esté OK
+    
+        if (errors.isEmpty()){
+            //lee todos los usuarios
+            let usersDB = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
+
+            //acá encuentra el perfil que coincida con el mail ingresado por body
+            let usuarioALoguearse = usersDB.find(user => user.email === req.body.email);
+
+            // si encuentra un usuario, verifica la contraseña
+            if (usuarioALoguearse){
+                // acá compara la contraseña ingresada con la contraseña de la DB
+                let check = bcrypt.compareSync(req.body.password, usuarioALoguearse.password);
+
+                //si check es true, se loguea
+                if(check){
+                    res.redirect('/users/profile/' + usuarioALoguearse.id)
+                }else{
+                //si no encuentra al usuario tira un error, o no coinciden
+                    res.render('users/login', { errors: [{msg: 'Credenciales Invalidas'}]});
+                };
+
+            } else {
+                res.render('users/login', {errors : errors.errors});
+            };
+
+            //acá no estamos muy seguras qué pasa (preguntarle a dani)
+            //req.session.usuarioLogueado = usuarioALoguearse;
+
+            //acá le decimos que si está tildado "recordame" se hace una cookie ?
+            //cómo hacemos para que se quede logueado??
+            if (req.body.recordame != undefined) {
+                res.cookie('recordame', usuarioALoguearse.email, { maxAge: 60000  })
+            }
+        
+        } else {
+            res.render('users/login', {errors : errors.errors});
+        };
+    },
+
     register:(req,res)=>{
         res.render('users/register');
     },
 
-    create:(req,res)=>{
+    processRegister:(req,res)=>{
+
         let usersDB = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
 
         let validationResults = validationResult(req);
@@ -29,6 +77,8 @@ const UsersController = {
             let image;
             (req.file) ? image = (req.file.filename) : image = '';
 
+            let password = bcrypt.hashSync(req.body.password, 10);
+            
             let newUser = {
                 id: NewUserId,
                 firstName : req.body.firstName,
@@ -40,7 +90,7 @@ const UsersController = {
                 cp :  req.body.cp,
                 city :  req.body.city,
                 email :  req.body.email,
-                password :  req.body.password,
+                password : password,
             }
 
             let newUserList;

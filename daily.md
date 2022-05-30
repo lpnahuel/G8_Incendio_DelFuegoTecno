@@ -159,3 +159,18 @@ A continuacion detallaremos los temas que se trataron cada día:
 - Agregamos la validación.
 - Retocamos el CSS de algunas vistas.
 - Modificamos las tarjetas de trello para agregar detalle y objetivos que no habíamos entendido que eran para está entrega.
+
+**Informe 27/05/2022**
+- Realizamos el meet semanal.
+- Vimos el sprint y separamos las tareas.
+- Arreglamos el trello.
+
+**Informe 29/05/2022**
+- comenzamos con las cookies y login.
+- modificamos los archivos: app.js, daily.ms, weekly.md, login.ejs, UsersController.js.
+- Se creo la carpeta models con el archivo User.js.
+- Se creo el archivo recordameMiddleware.js.
+- en app.js.
+- Se agrego express-session.
+- Se agrego cookie-parse.
+- en mainRoutes.js agregamos un contador de visitas.

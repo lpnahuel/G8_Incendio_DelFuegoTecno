@@ -7,6 +7,7 @@
     <p class="adminProductCont__data">Precio: $<%= product.price.toLocaleString('es-ES') %></p>
     <p class="adminProductCont__data">Cantidad: <%= product.stock %></p>
     <p class="adminProductCont__data">Categoría: <%= product.category %></p>
+    <hr class="name__div">
     <div class="adminProductCont__btns">
         <form action="/products/admin/edit/<%= product.id %>?_method=DELETE" method="POST" onsubmit="return confirm('Estás a punto de eliminar el producto. ¿Querés continuar?')">
             <button aria-label="borrar" type="submit" class="delete__btn"><i class="fas fa-trash"></i> Eliminar</button>

@@ -661,10 +661,11 @@
 
 .admin__nav{
     background-color: var(--gris-int);
-    margin-top: 24px;
+    height: 100%;
+    margin: 24px auto 0 auto;
+    max-width: 350px;
     padding: 2px 0;
     width: 100%;
-    height: 100%;
 }
 
 .nav__admin-menu{
@@ -699,7 +700,6 @@
 
 
 .admin-forms{
-    border: solid 1px var(--gris);
     border-radius: 16px;
     padding: 0 16px;
     margin: 40px auto 0 auto;
@@ -861,14 +861,15 @@
 
 .adminProductCont{
     background-color: var(--gris-medio);
+    border-radius: 8px;
     margin: 40px auto;
     padding: 8px;
-    width: 90%;
-
+    width: 100%;
 }
 
 .adminProductCont__img{
     background-color: var(--blanco);
+    border-radius: 8px;
     margin: 10px auto;
     width: 90%;
 }
@@ -882,14 +883,18 @@
 
 .adminProductCont__name{
     color: var(--fondo-main);
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
+    margin: 16px auto;
     text-align: center;
-
+    width: 90%;
 }
 
 .name__div{
-    border: 1px solid var(--magenta);
+    border: none;
+    border-bottom: 1px solid var(--magenta);
+    margin: 12px auto;
+    width: 85%;
 }
 
 
@@ -898,6 +903,7 @@
     font-size: 16px;
     font-weight: 500;
     height: 40%;
+    margin: 0 auto;
     padding: 5px;
 
 }
@@ -906,7 +912,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-bottom: 12px;
+    margin: 16px auto;
 }
 
 .delete__btn{
@@ -1000,7 +1006,11 @@
         width: 60%;
     }       
 
+    /*ADMIN LIST*/ 
 
+    .adminProductCont__name{
+        font-size: 18px;
+    }
 }
 
 @media (min-width:993px){
@@ -1184,6 +1194,10 @@
     }
 
     /* ADMIN PANEL */
+    .admin-forms{
+        border: solid 1px var(--gris);
+    }
+
     .adminPanelCont{
         display: flex;
         flex-wrap: wrap;
@@ -1217,7 +1231,8 @@
         width: 88px;
     }
     .adminProductCont__name, .adminProductCont__data {
-        font-size: 14px;
+        font-size: 12px;
+        margin-left: 8px;
         text-align: left;
     }
     
@@ -1245,6 +1260,11 @@
 
     .prodDisplay{
         justify-content: flex-start;
+    }
+
+    /*ADMIN PROD LIST*/
+    .adminProductCont__name, .adminProductCont__data {
+        font-size: 14px;
     }
 
     /* ADMIN ADD */
