@@ -130,6 +130,7 @@ ul.lista__productos > li > a:hover{
     margin-right: 24px;
     text-rendering: auto;
     text-decoration: none;
+    text-transform: uppercase;
 
 }
 

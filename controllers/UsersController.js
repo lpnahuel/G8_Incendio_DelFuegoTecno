@@ -26,33 +26,36 @@ const UsersController = {
             let usersDB = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
 
             //acá encuentra el perfil que coincida con el mail ingresado por body
-            let usuarioALoguearse = usersDB.find(user => user.email === req.body.email);
+            let userToLogin = usersDB.find(user => user.email === req.body.email);
 
             // si encuentra un usuario, verifica la contraseña
-            if (usuarioALoguearse){
+            if (userToLogin){
+
                 // acá compara la contraseña ingresada con la contraseña de la DB
-                let check = bcrypt.compareSync(req.body.password, usuarioALoguearse.password);
+                let check = bcrypt.compareSync(req.body.password, userToLogin.password);
 
                 //si check es true, se loguea
                 if(check){
-                    res.redirect('/users/profile/' + usuarioALoguearse.id)
+                    //borra la contraseña por seguridad
+                    delete userToLogin.password;
+                    //guarda el usuario en la sesión
+                    req.session.userLogged = userToLogin;
+
+                    //seteo la cookie de recordarme
+                    if (req.body.recordame) {
+                         res.cookie('userEmail', req.body.email, { maxAge: 60000 })
+                    }
+
+                    res.redirect('/users/profile')
                 }else{
                 //si no encuentra al usuario tira un error, o no coinciden
-                    res.render('users/login', { errors: [{msg: 'Credenciales Invalidas'}]});
+                    res.render('users/login', { errors: {msg: 'Credenciales Invalidas'}});
                 };
 
             } else {
-                res.render('users/login', {errors : errors.errors});
+                res.render('users/login', {errors : {msg: 'Credenciales Invalidas'}});
             };
 
-            //acá no estamos muy seguras qué pasa (preguntarle a dani)
-            //req.session.usuarioLogueado = usuarioALoguearse;
-
-            //acá le decimos que si está tildado "recordame" se hace una cookie ?
-            //cómo hacemos para que se quede logueado??
-            if (req.body.recordame != undefined) {
-                res.cookie('recordame', usuarioALoguearse.email, { maxAge: 60000  })
-            }
         
         } else {
             res.render('users/login', {errors : errors.errors});
@@ -111,22 +114,19 @@ const UsersController = {
     },
 
     profile : (req, res) =>{
-        let usersDB = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
-
-        let userProfile = usersDB.find(user => user.id === parseInt(req.params.id));
-
-        res.render('users/profile', {userProfile : userProfile})
+        console.log(req.cookies.userEmail);
+        res.render('users/profile', {userProfile : req.session.userLogged})
 
     },
 
-    view : (req, res) =>{
-        let usersDB = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
+    // view : (req, res) =>{
+    //     let usersDB = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
 
-        let userProfile = usersDB.find(user => user.id === parseInt(req.params.id));
+    //     let userProfile = usersDB.find(user => user.id === parseInt(req.params.id));
 
-        res.render('users/user-edit', {userProfile : userProfile})
+    //     res.render('users/user-edit', {userProfile : userProfile})
 
-    },
+    // },
 
     update:(req,res)=>{
         let usersDB = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
@@ -176,6 +176,11 @@ const UsersController = {
 
         res.redirect('/users/list');
 
+    },
+
+    logout : (req, res)=>{
+        req.session.destroy();
+        res.redirect('/');
     }
 
 

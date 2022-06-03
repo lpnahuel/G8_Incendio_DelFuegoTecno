@@ -350,6 +350,8 @@ select#category.rg__campos{
 
     .profileEditCont{
         align-items: flex-end;
+        flex-direction: row;
+        justify-content: space-between;
         margin: 0 auto;
         max-width: 1200px;
         width: 85%;

@@ -5,20 +5,25 @@ const methodOverride = require('method-override');
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
 const session = require('express-session');
+const userLoggedMiddleware = require('./middlewares/userLoggedMiddleware');
 
 /*** Main Router (require) */
 const mainRoutes = require("./routes/mainRoutes")
-const recordameMiddleware = require('./middlewares/recordameMiddleware');
-
 
 // ************ Express() ************/
 const app = express();
 
 // ************  Middlewares ************/
+app.use(session({
+    secret: "The secret",
+    resave: false, 
+    saveUninitialized: false
+}));
+
+app.use(userLoggedMiddleware);
 app.use(express.static(path.join(__dirname, "/public")));
 app.use(express.json());
 app.use(cookieParser());
-app.use(recordameMiddleware);
 app.use(express.urlencoded({ extended: false }));
 app.use(methodOverride('_method')); 
 

@@ -35,8 +35,12 @@
                 
             <!-- BOTONES LOGIN Y CARRITO -->
             <section class="elem__sec-buttons">
+                <% if (locals.isLogged) { %> 
+                    <a href="/users/profile"class="log-shop" ><i class="fas fa-user-alt"></i><span><%= locals.userLogged.firstName %></span></a>
+                <% } else { %>
                 <a href="/users/login"class="log-shop" ><i class="fas fa-user-alt"></i><span>LOGIN</span></a>
                 <a href="/users/register" class="log-shop"><i class="fas fa-user-plus"></i><span>REGISTRO</span></a>
+                <% } %> 
                 <a href="/cart" class="log-shop" ><i class="fas fa-shopping-cart"></i><span>CARRITO</span></a>
                 <nav class="burger-menu">
                     <i class="fas fa-bars"></i>

@@ -174,3 +174,6 @@ A continuacion detallaremos los temas que se trataron cada día:
 - Se agrego express-session.
 - Se agrego cookie-parse.
 - en mainRoutes.js agregamos un contador de visitas.
+- comenzamos el método processLogin
+- Logramos que funcione el encrypt
+- No logramos que funcionen cookies y "recordame"
