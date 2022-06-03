@@ -17,13 +17,13 @@ const app = express();
 app.use(session({
     secret: "The secret",
     resave: false, 
-    saveUninitialized: false
+    saveUninitialized: true
 }));
 
-app.use(userLoggedMiddleware);
 app.use(express.static(path.join(__dirname, "/public")));
 app.use(express.json());
 app.use(cookieParser());
+app.use(userLoggedMiddleware);
 app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride('_method')); 
 

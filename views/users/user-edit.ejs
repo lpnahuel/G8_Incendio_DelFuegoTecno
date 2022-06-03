@@ -48,9 +48,6 @@
                         
                         <label for="image">
                             <p class="lg__descrip">Foto de perfil</p>
-                            <% if (locals.errors && errors.image) {%> 
-                                <p class="errorMsg"><%= errors.image.msg %></p>
-                            <%}  %> 
                             <input class="form__fields" type="file" name="image" id="image" accept=".jpg, .png, .webp">
                             <span class="feedback"></span>
                         </label>

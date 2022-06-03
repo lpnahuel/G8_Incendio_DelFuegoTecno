@@ -6,14 +6,19 @@ const usersDB = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
 const userLoggedMiddleware = (req, res, next) => {
     res.locals.isLogged = false;
 
+    let cookieEmail = req.cookies.userEmail;
+    
+    let userProfile = usersDB.find(user => user.email === cookieEmail);
+    
+    if(userProfile){
+        req.session.userLogged = userProfile;
+    };
+
+
     if(req.session.userLogged){
         res.locals.isLogged = true;
         res.locals.userLogged = req.session.userLogged
     };
-
-    //acá debería leer la cookie pero todo es caos y confusión
-    // let cookieEmail = req.cookies.userEmail;
-    // console.log(cookieEmail)
 
 
     next();
