@@ -29,10 +29,10 @@
  router.get('/logout', UsersController.logout); 
  
 /**** GET USER EDIT FORM */
-//router.get('/edit/:id', UsersController.view); 
+router.get('/edit/:id', UsersController.edit); 
 
 /**** EDIT USER */
-router.put('/edit/:id', upload.single('image'), UsersController.update);
+router.put('/edit/:id', upload.single('image'), userValidator, UsersController.update);
 
 /**** GET ALL USERS */
 router.get('/list', UsersController.list); 

@@ -3,130 +3,130 @@
 		"id": 1,
 		"firstName": "dani",
 		"lastName": "duque",
-		"birth": "2088-08-08",
+		"birth": "",
 		"image": "user-image1653362865166.jpg",
 		"phone": "11111111",
 		"address": "Calle Colombia 1234",
 		"cp": "11111",
 		"city": "Twin Peaks",
 		"email": "daniel@dh.com.ar",
-		"password": "dasda"
+		"password": "$2a$10$KkF1SeOF8hFK3nO8UKspSOsewwCzJ9C8W/QZ.BQE2OsL9OPvC8vnK"
 	},
 	{
 		"id": 2,
 		"firstName": "Gian",
 		"lastName": "Quaranta",
-		"birth": "1998-04-23",
+		"birth": "4555-05-21",
 		"image": "user-image1653398757773.png",
 		"phone": "43252323",
 		"address": "av nodemon 1234",
 		"cp": "12134",
 		"city": "Cordoba",
 		"email": "gian@dh.com.ar",
-		"password": "fvfwfewef"
+		"password": "$2a$10$6mS9jhe7vsYfYUSYuLCkt.4zc9TjBfVN4MounmENhMwKBoccAfWi."
 	},
 	{
 		"id": 3,
 		"firstName": "Maria",
 		"lastName": "Dumas",
-		"birth": "1998-01-23",
+		"birth": "6544-04-06",
 		"image": "user-image1653398938655.png",
 		"phone": "4324252",
 		"address": "Av digital 214",
 		"cp": "4322",
 		"city": "Neuquen",
 		"email": "maria@dh.com.ar",
-		"password": "432523f4"
+		"password": "$2a$10$GLFV9umFyIFECidVLJGdpOeh504LeKCFyGKlnTyqJo7dvECs98wZC"
 	},
 	{
 		"id": 4,
 		"firstName": "Joe",
 		"lastName": "Casas",
-		"birth": "1989-03-04",
+		"birth": "43243-03-31",
 		"image": "user-image1653399387392.png",
 		"phone": "4324235",
 		"address": "Av house 1213",
 		"cp": "3214",
 		"city": "caba",
 		"email": "joe@dh.com.ar",
-		"password": "rt53twe"
+		"password": "$2a$10$f33LSozEF9t5Ql6pmfTll.XtpIFyTsi5cN8zUQUNpVli58i/KoyTC"
 	},
 	{
 		"id": 5,
 		"firstName": "Daniel",
 		"lastName": "Acevedo",
-		"birth": "2001-03-04",
+		"birth": "2423-02-04",
 		"image": "user-image1653399571929.png",
 		"phone": "4235436",
 		"address": "Av. ejs 1341",
 		"cp": "3252",
 		"city": "salta",
 		"email": "daniel1@dh.com.ar",
-		"password": "523feg54"
+		"password": "$2a$10$TeiSDoopVNccH8Z.EdBtEO70mdoPnDhwWZmMQadLXYKRjvvAX2d0i"
 	},
 	{
 		"id": 6,
 		"firstName": "Fernando",
 		"lastName": "Gorordo",
-		"birth": "2001-04-05",
+		"birth": "2342-03-04",
 		"image": "user-image1653399824851.png",
 		"phone": "24236645",
 		"address": "Av programacion 543",
 		"cp": "5433",
 		"city": "Santa fe",
 		"email": "fernando@dh.com.ar",
-		"password": "r43t3vg465"
+		"password": "$2a$10$H0nMjv8hZl/DcJ5XPI/dDunsMXXQDRlT/hzlnjsjAWwInyDAFzLLa"
 	},
 	{
 		"id": 7,
 		"firstName": "bautista",
 		"lastName": "vicens",
-		"birth": "1989-04-05",
+		"birth": "3432-03-04",
 		"image": "user-image1653400230605.png",
 		"phone": "6564547",
 		"address": "Av python 5423",
 		"cp": "54390",
 		"city": "Berazategui",
 		"email": "bautista@dh.com.ar",
-		"password": "453643"
+		"password": "$2a$10$MsBqXnMctKZ5VJRUUUYAuuid/4cbtQOlqD2ZiauKoyd3FzCXEBnHi"
 	},
 	{
 		"id": 8,
 		"firstName": "lucas",
 		"lastName": "ackerman",
-		"birth": "2002-12-03",
+		"birth": "0353-05-31",
 		"image": "user-image1653400427393.png",
 		"phone": "34252",
 		"address": "Av. css 1111",
 		"cp": "11111",
 		"city": "Bariloche",
 		"email": "lucas@dh.com.ar",
-		"password": "42r3f354g45"
+		"password": "$2a$10$z065bPT1Qups1xuTj.sUseqM2m3WWbqetjVrl9kBqfoicQTPAxX.a"
 	},
 	{
 		"id": 9,
 		"firstName": "Juan",
 		"lastName": "Meirino",
-		"birth": "1990-11-23",
+		"birth": "43453-02-04",
 		"image": "user-image1653400741369.png",
 		"phone": "453634564",
 		"address": "Av. HTML 4232",
 		"cp": "3453",
 		"city": "San Luis",
 		"email": "juan@dh.com.ar",
-		"password": "ef34i398vh"
+		"password": "$2a$10$pwBoEjErjwyBAuzbPPoWcOSGIawj6kFmq4ZQkDrJ/7rK27HwCCwaW"
 	},
 	{
 		"id": 10,
-		"firstName": "Paula",
+		"firstName": "Pali",
 		"lastName": "Yafar",
 		"birth": "1986-06-09",
-		"image": "",
+		"image": "user-image1654228686221.png",
 		"phone": "+541136468707",
-		"address": "Ramón Falcón 2509 1/A",
-		"cp": "1406",
-		"city": "Capital Federal",
+		"address": "Tucuman 2454",
+		"cp": "7600",
+		"city": "Mar D",
 		"email": "palita65@gmail.com",
-		"password": "$2a$10$u3F0fMgTK9jAO/VfqbyzsOv.95eBpeYScW5j63btWkkZtpqapNtwi"
+		"password": "$2a$10$n5yLLPQ.tYoL728xKwrowuYLOSSvCpEa8/3HbAYJ1xliXUzcBEc1."
 	}
 ]

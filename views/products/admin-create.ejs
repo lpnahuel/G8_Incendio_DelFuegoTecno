@@ -24,14 +24,14 @@
                                 <% if (locals.errors && errors.name) {%> 
                                     <p class="errorMsg"><%= errors.name.msg %></p>
                                 <%}  %> 
-                                <input class="rg__campos <%= locals.errors && errors.name ? 'invalid' : '' %>" type="text" id="name" name="name" value="<%= locals.oldData ? oldData.name : null %>" placeholder="Nombre del producto">
+                                <input class="form__fields <%= locals.errors && errors.name ? 'invalid' : '' %>" type="text" id="name" name="name" value="<%= locals.oldData ? oldData.name : null %>" placeholder="Nombre del producto">
                             </label>
                             <label for="category">
                                 <p class="lg__descrip">Categoría*</p> 
                                 <% if (locals.errors && errors.category) {%> 
                                     <p class="errorMsg"><%= errors.category.msg %></p>
                                 <%}  %>                        
-                                <select class="rg__campos <%= locals.errors && errors.category ? 'invalid' : '' %>" id="category" name="category">
+                                <select class="form__fields <%= locals.errors && errors.category ? 'invalid' : '' %>" id="category" name="category">
                                     <option value="" selected>Seleccioná</option>
                                     <% let categorias = ['notebooks', 'periféricos', 'almacenamiento', 'componentes', 'accesorios', 'consolas', 'sillas',] %> 
                                     <% categorias.forEach(category => { %> 
@@ -45,25 +45,28 @@
                                 <% if (locals.errors && errors.price) {%> 
                                     <p class="errorMsg"><%= errors.price.msg %></p>
                                 <%}  %>                             
-                                <input class="rg__campos  <%= locals.errors && errors.price ? 'invalid' : '' %>" type="number" id="price" name="price" value="<%= locals.oldData ? oldData.price : null %>" placeholder="$00000"  >
+                                <input class="form__fields  <%= locals.errors && errors.price ? 'invalid' : '' %>" type="number" id="price" name="price" value="<%= locals.oldData ? oldData.price : null %>" placeholder="$00000"  >
                             </label>
                             <label for="stock">
                                 <p class="lg__descrip">Stock*</p>
                                 <% if (locals.errors && errors.stock) {%> 
                                     <p class="errorMsg"><%= errors.stock.msg %></p>
                                 <%}  %>                            
-                                <input class="rg__campos <%= locals.errors && errors.stock ? 'invalid' : '' %>" type="number" id="stock" value="<%= locals.oldData ? oldData.stock : null %>"name="stock" placeholder="#"  >
+                                <input class="form__fields <%= locals.errors && errors.stock ? 'invalid' : '' %>" type="number" id="stock" value="<%= locals.oldData ? oldData.stock : null %>"name="stock" placeholder="#"  >
                             </label>
                             <label for="image">
                                 <p class="lg__descrip">Fotos de producto*</p>
-                                <input class="rg__avatar " type="file" name="image" id="image" accept=".jpg, .png, .webp" multiple>
+                                <% if (locals.errors && errors.image) {%> 
+                                    <p class="errorMsg"><%= errors.image.msg %></p>
+                                <%}  %> 
+                                <input class="form__fields <%= locals.errors && errors.image ? 'invalid' : '' %>" type="file" name="image" id="image" accept=".jpg, .png, .webp" multiple>
                             </label>
                             <label for="thumb">
+                                <p class="lg__descrip">Thumbnail*</p>
                                 <% if (locals.errors && errors.thumb) {%> 
                                     <p class="errorMsg"><%= errors.thumb.msg %></p>
                                 <%}  %> 
-                                <p class="lg__descrip">Thumbnail*</p>
-                                <input class="rg__avatar <%= locals.errors && errors.thumb ? 'invalid' : '' %>" type="file" name="thumb" id="thumb" accept=".jpg, .png, .webp">
+                                <input class="form__fields <%= locals.errors && errors.thumb ? 'invalid' : '' %>" type="file" name="thumb" id="thumb" accept=".jpg, .png, .webp">
                             </label>
           
                     </div>
@@ -74,11 +77,11 @@
                                 <% if (locals.errors && errors.description) {%> 
                                     <p class="errorMsg"><%= errors.description.msg %></p>
                                 <%}  %>                            
-                                <textarea class="campos__textarea  <%= locals.errors && errors.description ? 'invalid' : '' %>" id="description" name="description" ><%= locals.oldData ? oldData.description : null %></textarea>
+                                <textarea class="form__fields  <%= locals.errors && errors.description ? 'invalid' : '' %>" id="description" name="description" ><%= locals.oldData ? oldData.description : null %></textarea>
                             </label>
                             <label for="specs">
                                 <p class="lg__descrip">Especificaciones*</p>                        
-                                <textarea class="campos__textarea" id="specs" name="specs"><%= locals.oldData ? oldData.specs : null %></textarea>
+                                <textarea class="form__fields" id="specs" name="specs"><%= locals.oldData ? oldData.specs : null %></textarea>
                             </label>
 
                             <button aria-label="Agregar producto" class="add__btn" type="submit">Agregar</button>

@@ -119,46 +119,55 @@ const UsersController = {
 
     },
 
-    // view : (req, res) =>{
-    //     let usersDB = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
+    edit : (req, res) =>{
+        let usersDB = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
 
-    //     let userProfile = usersDB.find(user => user.id === parseInt(req.params.id));
+        let userProfile = usersDB.find(user => user.id === parseInt(req.params.id));
 
-    //     res.render('users/user-edit', {userProfile : userProfile})
+        res.render('users/user-edit', {userProfile : userProfile})
 
-    // },
+    },
 
     update:(req,res)=>{
         let usersDB = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
 
-        let userToEdit = usersDB.find(user => user.id === parseInt(req.params.id))
+        let userToEdit = usersDB.find(user => user.id === parseInt(req.params.id));
 
-        console.log('req.body',req.body)
-        console.log('req.file',req.file)
-        let image;
-        req.file == undefined ? image = userToEdit.image : image = req.file.filename;
+        let validationResults = validationResult(req);
+        let errors = validationResults.mapped();
 
-        let editedUser = {
-            id: parseInt(req.params.id),
-            firstName : req.body.firstName,
-            lastName : req.body.lastName,
-            birth : req.body.birth,
-            image : image,
-            phone :  req.body.phone,
-            address :  req.body.address,
-            cp :  req.body.cp,
-            city :  req.body.city,
-            email :  req.body.email,
-            password :  req.body.password,
+        if(validationResults.errors.length === 0){
+
+            let image;
+            req.file == undefined ? image = userToEdit.image : image = req.file.filename;
+
+            let password = bcrypt.hashSync(req.body.password, 10);
+
+            let editedUser = {
+                id: parseInt(req.params.id),
+                firstName : req.body.firstName,
+                lastName : req.body.lastName,
+                birth : req.body.birth,
+                image : image,
+                phone :  req.body.phone,
+                address :  req.body.address,
+                cp :  req.body.cp,
+                city :  req.body.city,
+                email :  req.body.email,
+                password : password,
+            }
+
+            let userIndex = usersDB.indexOf(userToEdit);
+
+            usersDB[userIndex] = editedUser;
+
+            fs.writeFileSync(usersFilePath, JSON.stringify(usersDB, null, '\t'));
+
+            res.redirect('/users/list');
+        }else{
+
+            res.render('users/user-edit', {userProfile : userToEdit, errors : errors, oldData : req.body})
         }
-
-        let userIndex = usersDB.indexOf(userToEdit);
-
-        usersDB[userIndex] = editedUser;
-
-        fs.writeFileSync(usersFilePath, JSON.stringify(usersDB, null, '\t'));
-
-        res.redirect('/users/profile/' + userToEdit.id);
     },
 
     list : (req, res)=>{

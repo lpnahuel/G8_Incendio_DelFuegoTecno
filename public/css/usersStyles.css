@@ -67,16 +67,6 @@ body{
     width: 85%;
 }
 
-.rg__campos, .rg__avatar, .rg__nac, .campos__textarea{
-    background-color: var(--gris-claro);
-    border: 1px solid var(--gris-osc);
-    border-radius: 8px;
-    font-size: 15px;
-    height: 40px;
-    margin: 8px 0 8px 0;
-    width: 100%;
-}
-
 .errorMsg{
     color: var(--magenta);
     margin: 0;
@@ -98,11 +88,11 @@ select#category.rg__campos{
     text-transform: capitalize;
 }
 
-.rg__avatar{
+input[type=file]{
     padding: 8px 0 0 8px;
 }
 
-.rg__nac{
+input[type=date]{
     padding: 0 15px 0 8px;
 }
 
@@ -167,15 +157,34 @@ select#category.rg__campos{
     padding: 10px 0 10px 0;
 }
 
-.lg__campos{
+label[for=recodarme]{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+input[type=checkbox]{
+    margin-left: 10px;
+}
+
+textarea[id=description], textarea[id=specs]{
+    height: 150px;
+}
+
+.form__fields{
     background-color: var(--gris-claro);
     border: 1px solid var(--gris-osc);
     border-radius: 8px;
     font-size: 15px;
     height: 40px;
-    margin-top: 8px;
+    margin: 8px 0 8px 0;
     padding-left: 15px;
     width: 100%;
+}
+
+.form__fields:focus{
+    background-color: var(--gris);
+    outline: none;
 }
 
 .lg__descrip{

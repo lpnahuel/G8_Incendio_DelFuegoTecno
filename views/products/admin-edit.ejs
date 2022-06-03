@@ -21,12 +21,12 @@
                         <form action="/products/admin/edit/<%= productRequested.id %>?_method=PUT" method="POST" enctype="multipart/form-data" class="forms__campos">
                             <label for="name">
                                 <p class="lg__descrip">Nombre del producto*</p>                        
-                                <input class="rg__campos" type="text" id="name" name="name" value="<%= productRequested.name %>"  required>
+                                <input class="form__fields" type="text" id="name" name="name" value="<%= productRequested.name %>"  required>
                                 <span class="feedback"></span>
                             </label>
                             <label for="category">
                                 <p class="lg__descrip">Categoría*</p>                        
-                            <select class="rg__campos" id="category" name="category" required>
+                            <select class="form__fields" id="category" name="category" required>
                                 <option value="Notebooks" <%= productRequested.category==='notebooks'? 'selected' : '' %>>notebooks</option>
                                 <option value="Periféricos" <%= productRequested.category==='perifericos'? 'selected' : '' %>>periféricos</option>
                                 <option value="Almacenamiento" <%= productRequested.category==='almacenamiento'? 'selected' : '' %>>almacenamiento</option>
@@ -38,22 +38,22 @@
                             </label>
                             <label for="price">
                                 <p class="lg__descrip">Precio*</p>                        
-                                <input class="rg__campos" type="number" id="price" name="price" value="<%= productRequested.price %>"  required>
+                                <input class="form__fields" type="text" id="price" name="price" value="<%= productRequested.price %>"  required>
                                 <span class="feedback"></span>
                             </label>
                             <label for="stock">
                                 <p class="lg__descrip">Stock*</p>                        
-                                <input class="rg__campos" type="number" id="stock" name="stock" value="<%= productRequested.stock %>"  required>
+                                <input class="form__fields" type="text" id="stock" name="stock" value="<%= productRequested.stock %>"  required>
                                 <span class="feedback"></span>
                             </label>
                             <label for="image">
                                 <p class="lg__descrip">Foto de producto*</p>
-                                <input class="rg__avatar" type="file" name="image" id="image" accept=".jpg, .png, .webp" multiple>
+                                <input class="form__fields" type="file" name="image" id="image" accept=".jpg, .png, .webp" multiple>
                                 <span class="feedback"></span>
                             </label>
                             <label for="thumb">
                                 <p class="lg__descrip">Thumbnail*</p>
-                                <input class="rg__avatar" type="file" name="thumb" id="thumb" accept=".jpg, .png, .webp">
+                                <input class="form__fields" type="file" name="thumb" id="thumb" accept=".jpg, .png, .webp">
                                 <span class="feedback"></span>
                             </label>
           
@@ -62,12 +62,12 @@
 
                             <label for="description">
                                 <p class="lg__descrip">Descripción*</p>                        
-                                <textarea class="campos__textarea" id="description" name="description" required><%= productRequested.description %></textarea>
+                                <textarea class="form__fields" id="description" name="description" required><%= productRequested.description %></textarea>
                                 <span class="feedback"></span>
                             </label>
                             <label for="specs">
                                 <p class="lg__descrip">Especificaciones*</p>                        
-                                <textarea class="campos__textarea" id="specs" name="specs"  required><%= productRequested.specs %></textarea>
+                                <textarea class="form__fields" id="specs" name="specs"  required><%= productRequested.specs %></textarea>
                                 <span class="feedback"></span>
                             </label>
 
