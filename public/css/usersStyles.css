@@ -167,7 +167,8 @@ input[type=checkbox]{
     margin-left: 10px;
 }
 
-textarea[id=description], textarea[id=specs]{
+textarea[id=description], textarea[id=specs], textarea[id=message]{
+    padding-top: 12px;
     height: 150px;
 }
 

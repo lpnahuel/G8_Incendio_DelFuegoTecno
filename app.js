@@ -7,6 +7,7 @@ const cookieParser = require('cookie-parser');
 const session = require('express-session');
 const userLoggedMiddleware = require('./middlewares/userLoggedMiddleware');
 
+
 /*** Main Router (require) */
 const mainRoutes = require("./routes/mainRoutes")
 
@@ -25,7 +26,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(userLoggedMiddleware);
 app.use(express.urlencoded({ extended: true }));
-app.use(methodOverride('_method')); 
+app.use(methodOverride('_method'));
 
 
 // ************ EJS *************/
@@ -35,6 +36,11 @@ app.set('views', path.join(__dirname, '/views'));
 
 /*** Main Router (use) */
 app.use("/", mainRoutes);
+
+/*** Error (404) */
+app.use((req, res, next)=>{
+    res.status(404).render('error404')
+});
 
 
 // ************ Servidor ************/

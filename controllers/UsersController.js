@@ -188,6 +188,7 @@ const UsersController = {
 
     logout : (req, res)=>{
         req.session.destroy();
+        res.cookie('userEmail', '', { maxAge: -1 })
         res.redirect('/');
     }
 

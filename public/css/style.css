@@ -358,6 +358,24 @@ body{
 
 }
 
+/**** ERROR(404) */
+.image-404{
+    margin: 24px auto 0 auto;
+    text-align: center;
+    width: 340px;
+}
+
+.image-404 > img{
+    width: 330px;
+}
+
+.image-404 > p{
+    color: var(--celeste-logo);
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 auto;
+    width: 75%;
+}
 
 /**** MEDIA QUERIES */
 
@@ -448,6 +466,20 @@ body{
 
     .main-home__cont-prod {
         width: 85%;
+    }
+
+    /* ERROR */
+    .image-404{
+        width: 600px;
+    }
+    
+    .image-404 > img{
+        width: 550px;
+    }
+    
+    .image-404 > p{
+        font-size: 24px;
+        width: 100%;
     }
 }
 

@@ -1,0 +1,20 @@
+[
+	{
+		"id": -1,
+		"name": "Pali",
+		"email": "palita65@gmail.com",
+		"message": "Funciona?"
+	},
+	{
+		"id": 2,
+		"name": "Pali",
+		"email": "palita65@gmail.com",
+		"message": "El contador enloqueció"
+	},
+	{
+		"id": 3,
+		"name": "Pali",
+		"email": "palita65@gmail.com",
+		"message": "Sigue contando bien?"
+	}
+]

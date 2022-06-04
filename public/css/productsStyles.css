@@ -863,13 +863,14 @@
     background-color: var(--gris-medio);
     border-radius: 8px;
     margin: 40px auto;
+    max-width: 370px;
     padding: 8px;
     width: 100%;
 }
 
 .adminProductCont__img{
     background-color: var(--blanco);
-    border-radius: 8px;
+    border: 2px solid var(--gris-osc);
     margin: 10px auto;
     width: 90%;
 }
@@ -1211,13 +1212,14 @@
         justify-content: space-between;
         margin: 16px auto;
         max-height: 112px;
+        max-width: 1200px;
         padding: 8px 25px 8px 8px;
         position: relative;
         width: 100%;
     }
 
     .adminProductCont__img{
-        margin: 0;
+        margin: 5px;
         width: 88px;
         max-height: 88px;
     }
@@ -1265,6 +1267,10 @@
     /*ADMIN PROD LIST*/
     .adminProductCont__name, .adminProductCont__data {
         font-size: 14px;
+    }
+
+    .adminProductCont__name{
+        width: 212px
     }
 
     /* ADMIN ADD */
@@ -1338,6 +1344,12 @@
     .admin-forms {
         padding: 0 32px;
         width: 72%;
+    }
+
+    /* ADMIN PROD LIST */
+
+    .adminProductCont__name{
+        width: 268px
     }
 
     /*CARRITO*/

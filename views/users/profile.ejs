@@ -9,6 +9,9 @@
         <div class="userProfileCont">
             <div class="profileWelcome">
                 <div class="profileImg">
+                    <% if (userProfile) { %>
+                     
+                    
                     <img src="/img/users/<%= userProfile.image != "" ? userProfile.image : "user-default.png" %>" alt="Imagen de perfil de <%= userProfile.firstName %>">
                 </div>
                 <h2 class="profileGreeting">Hola <%= userProfile.firstName %>!</h2>
@@ -29,7 +32,7 @@
            <a href="/users/edit/<%= userProfile.id %>" class="profileEdit">EDITAR</a>
            <a href="/users/logout" class="profileEdit">CERRAR SESIÓN</a>
        </div>
-
+       <% } %>
 
     </main>
     <%- include('../partials/footer') %> 

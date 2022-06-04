@@ -24,7 +24,7 @@ const ProductsController = {
         let searchResults = [];
 
         productsDB.forEach(foundProduct => {
-            if (foundProduct.name.toLowerCase().includes(userSearch)){
+            if (foundProduct.name.toLowerCase().includes(userSearch) || foundProduct.category.toLowerCase().includes(userSearch)) {
             searchResults.push(foundProduct);
             }
         });
