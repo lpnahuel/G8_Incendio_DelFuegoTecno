@@ -42,40 +42,18 @@
                     <h1 class="titulo__prod"><%= productRequested.name %> </h1>
                     <hr class="titulo__divis"></hr>
                     
-                    <div class="desc_prod">
-                        
-                            <!-- precio -->
-                        <div class="precio_prod">
-
-                         <p>$<%= productRequested.price.toLocaleString('es-ES') %> </p>
-
-                        </div>                         
-                        
-                        <!-- Boton compra -->
-
-                        <%- include('../components/buyButton') %> 
-                        
-                       
-                    </div>                   
-                      
                     <!-- Barra icnonos -->
                     <div class="iconos_prod">
-                        <div class="iconos_prod_opinions">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
 
-                            <div class="iconos_prod_opinions_text">
-                                <p>(50 opiniones)</p>
-                            </div>
-                        </div>
+                        <div class="precio_prod">
+                            <p>$<%= productRequested.price.toLocaleString('es-ES') %> </p>
+                        </div>  
+
                         
-                        <div>
-                            <button type="button" class="heart_b" aria-label= "favorites"><i class="far fa-heart"></i></button>  
-                            <button type="button" class="share_b" aria-label= "add to cart"><i class="fas fa-cart-plus"></i></button>  
-                            <button type="button" class="share_b" aria-label= "share"><i class="fa fa-share-alt"></i></button>
+                        <div class="detail__buttons">
+                            <button type="button" class="action-btns bookmark" aria-label= "favorites"><i class="far fa-heart"></i></button>  
+                            <button type="button" class="action-btns share-cart" aria-label= "add to cart"><i class="material-icons">add_shopping_cart</i></button>  
+                            <button type="button" class="action-btns share-cart" aria-label= "share"><i class="fa fa-share-alt"></i></button>
                         </div>
                     </div>
 
@@ -106,11 +84,24 @@
                         <i class='fas fa-user-shield'></i>
                         <p class="info_venta_prod-text">Garantía (1 año)</p>
                     </div>
+                    
+                    <div class="desc_prod">
 
-                    <div class="agregar_carrito_btn_div">
-                        <button type="button" class="agregar_carrito" aria-label= "add to cart"><a href="/cart"></a>Agregar al Carrito</button>
+                        <div class="rate-icons">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+
+                            <div class="rate-opinions">
+                                <p>(50 opiniones)</p>
+                            </div>
+                        </div>
+
+                        <%- include('../components/buyButton') %> 
                     </div>
-                                
+
                 </section>         
                 
             </section>
@@ -118,23 +109,23 @@
             <section class="cont-det-producto-bot">
                 <!-- Botones de Descripcion de producto -->
                 <div class="desc_prod_btns">
-                    <button type="button" class="desc_prod-btn" aria-label= "description"><a href="/cart"></a>Descripción</button>
+                    <button type="button" class="prod-btn show-descript" aria-label="description">Descripción</button>
 
-                    <button type="button" class="desc_prod-btn"><a href="/cart" aria-label= "specs"></a>Especificaciones</button>
+                    <button type="button" class="prod-btn show-specs" aria-label="specs">Especificaciones</button>
                 </div>
 
                 <hr class="titulo__divis"></hr>
 
                 <!-- Descripcion producto -->
-                <div class="desc_prod_tex">
-                    <p class="desc_prod_tex_1"><%= productRequested.description %> </p>
+                <div class="product-info">
+                    <p class="product-info description"><%= productRequested.description %> </p>
                 </div>
         
-                <div class="desc_prod_tex">
-                    <p class="desc_prod_tex_2">Características técnicas de   <%= productRequested.name  %> </p>
-                    <p class="desc_prod_tex_2"> <%= productRequested.specs %> </p>
+                <div class="product-info">
+                    <p class="product-info specs">Características técnicas de   <%= productRequested.name  %> </p>
+                    <p class="product-info specs"> <%= productRequested.specs %> </p>
 
-                </div>
+                </div>  
             </section>
         </section>
        

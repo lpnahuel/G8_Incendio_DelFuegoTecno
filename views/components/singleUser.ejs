@@ -2,16 +2,16 @@
     <div class="adminProductCont__img">
         <img src="/img/users/<%= user.image != "" ? user.image : "user-default.png" %>" alt="Imagen de <%= user.firstName %>">
     </div>
-    <p class="adminProductCont__name">User ID: <%= user.id %></p>
-    <p class="adminProductCont__name">Nombre completo: <%= user.firstName + ' ' + user.lastName%></p>
+    <p class="adminProductCont__name user-id">User ID: <%= user.id %></p>
     <hr class="name__div">
-    <p class="adminProductCont__name">Email: <%= user.email %></p>
+    <p class="adminProductCont__data">Nombre completo: <%= user.firstName + ' ' + user.lastName%></p>
+    <p class="adminProductCont__data data-email">Email: <%= user.email %></p>
     <hr class="name__div">
     <div class="adminProductCont__btns">
         <form action="/users/edit/<%= user.id %>?_method=DELETE" method="POST" onsubmit="return confirm('Estás a punto de eliminar al usuario. ¿Querés continuar?')">
             <button aria-label="borrar" type="submit" class="delete__btn"><i class="fas fa-trash"></i> Eliminar</button>
         </form>
         <button type="button" class="trashCan__btn"><a href="/users/edit/<%= user.id %>"><i class="fa fa-edit"></i> Editar</a></button>
-        <button type="button" class="trashCan__btn"><a href="/users/profile/<%= user.id %>"><i class="fas fa-user-alt"></i> Ver perfil</a></button>
+        <button type="button" class="trashCan__btn"><a href="/users/profile"><i class="fas fa-user-alt"></i> Ver perfil</a></button>
     </div>
 </div>

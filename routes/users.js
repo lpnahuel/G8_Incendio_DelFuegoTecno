@@ -5,7 +5,6 @@
  const path = require('path');
  const userValidator = require('../middlewares/userValidator');
  const upload = require('../middlewares/multerUsers');
- // Con este middleware podemos verificar si el usuario está logueado o no
  const guestMiddleware = require('../middlewares/guestMiddleware');
  const authMiddleware = require('../middlewares/authMiddleware');
  

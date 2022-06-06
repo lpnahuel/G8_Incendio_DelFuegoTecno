@@ -194,7 +194,7 @@ textarea[id=description], textarea[id=specs], textarea[id=message]{
 }
 
 
-.form-lg__btn, .add__btn{
+.main-btns{
     background-color: var(--gris-osc);
     border: none;
     border-radius: 6px;
@@ -205,7 +205,7 @@ textarea[id=description], textarea[id=specs], textarea[id=message]{
     height: 50px;
 }
 
-.form-lg__btn:hover, .add__btn:hover{
+.main-btns:hover{
     animation: box-highlight 2s linear infinite;
     transition: all 400ms linear;
 

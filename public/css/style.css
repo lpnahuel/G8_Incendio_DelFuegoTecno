@@ -79,9 +79,13 @@ body{
     align-items: center;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 0 auto;
     width: 90%;
+}
+
+.vertical-div{
+    border: none;
 }
 
 .nav-cont__buttons{
@@ -137,11 +141,72 @@ body{
     transition: all 300ms linear;
 }
 
+/* Contacto*/
+.contact-us{
+    align-items: center;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 15px auto;
+    max-width: 340px;
+    padding: 12px;
+    height: 396px;
+    width: 80%;
+}
+
+.cont-online{
+    border: 1px solid var(--magenta);
+}
+.cont-store{
+    border: 1px solid var(--celeste-logo);
+}
+
+.contact-us__img {
+    text-align: center;
+}
+.contact-us__img > img{
+    width: 126px;
+}
+
+.contact-us__title {
+    font-size: 24px;
+    margin: 12px auto;
+    text-align: center;
+}
+
+.title-online {
+    color: var(--magenta);
+}
+.title-store {
+    color: var(--celeste-logo);
+}
+
+.contact-us__text{
+    color: var(--gris-claro);
+    font-size: 14px;
+}
+
+.contact-us__link{
+    align-self: flex-end;
+    color: var(--celeste-logo);
+    cursor: pointer;
+    margin: 11px 0 0 0;
+    text-decoration: underline;
+}
+
+
+/* Banner Ad */
+
+.index__banner-ad{
+    display: none;
+}
 
 /* Carrusel destacados  */
 
 .main-home__cont-prod{
-    margin: 32px auto auto auto;
+    margin: 74px auto auto auto;
     padding-bottom: 68px;
     width: 90%;
 
@@ -243,7 +308,9 @@ body{
     color: var(--gris-claro);
     font-size: 16px;
     font-weight: 500;
-    height: 40%;
+    height: 42px;
+    margin: 8px auto 38px auto;
+    overflow-y: hidden;
     padding: 5px;
 }
 
@@ -287,7 +354,19 @@ body{
 
 /* Imagen central destacada */
 
+/* mobile */
+.featured-mobile{
+    margin: 0 auto;
+    width: 90%;
+}
+.featured-mobile__img{
+    width: 100%;
+}
+
+/* desktop */
+
 .home-dest-central{
+    display: none;
     margin: 0 auto 16px auto;
     width: 100%;
 }
@@ -295,6 +374,63 @@ body{
 .home-dest-central__img{
     object-fit: cover;
     width: 100%;
+}
+
+/* Producto destacado */
+
+.featured-product{
+    background-color: var(--negro);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 90%;
+}
+.featured__image-cont{
+    width: 100%;
+}
+.featured__image-cont > img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.featured__info-cont{
+    margin: 12px auto;
+    text-align: center;
+    width: 90%;
+}
+
+.featured__title{
+    color: var(--magenta);
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.feat-div{
+    border: 1px var(--magenta) solid;
+    width: 25%;
+}
+
+.featured__subt{
+    color: var(--gris-claro);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.featured__text{
+    color: var(--gris-claro);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: left;
+}
+
+.featured__link{
+    color: var(--magenta);
+    text-decoration: none;
 }
 
 /* Banner marcas */
@@ -398,7 +534,7 @@ body{
     /* HOME */
 
     .main-home{
-        padding-top: 108px;
+        padding-top: 103px;
     }
 
     .ss-home-ppal {
@@ -407,7 +543,7 @@ body{
 
     .main-home__sect-cont{
         display: flex;
-        height: 196px;
+        height: 148px;
     }
 
     .buttons__round{
@@ -433,6 +569,85 @@ body{
     .main-home__banner-marcas{
         display: block;
     }
+
+    .nav-cont{
+        width: 85%;
+    }
+
+    .vertical-div{
+        border: none;
+        border-left: 1px solid var(--magenta);
+        display: inline-block;
+        margin: 0;
+        height: 69px;
+        width: 1px;
+    }
+    .main-home__cont-prod {
+        width: 85%;
+    }
+
+    .featured-product{
+        flex-direction: row;
+        max-height: 584px;
+        width: 85%;
+    }
+
+    .featured__info-cont{
+        padding: 16px;
+        position: relative;
+    }
+
+    .featured__link{
+        position: absolute;
+        bottom: 4px;
+        right: 16px;
+    }
+
+    .index__contact-us{
+        display: flex;
+        margin: 80px auto;
+        justify-content: space-between;
+        width: 85%;
+    }
+
+    .contact-us{
+        flex-direction: row;
+        justify-content: space-around;
+        height: 206px;
+        margin: 12px 0;
+        max-width: 1500px;
+        position: relative;
+        width: 416px;
+    }
+
+    .contact-us__img > img {
+        width: 88px;
+    }
+
+    .contact-us__info{
+        text-align: right;
+        width: 70%;
+    }
+
+    .text-store{
+        text-align: left;
+    }
+
+    .store__img > img{
+        position: absolute;
+        bottom: 0px;
+        right: 6px;
+        width: 150px;
+    }
+
+    .home-dest-central{
+        display: block;
+    }
+
+    .featured-mobile{
+        display: none;
+    }
+
 
     /*CONTACTO*/
     .contactForm{
@@ -468,13 +683,30 @@ body{
         width: 85%;
     }
 
+    .featured__title{
+        margin: 8px 0 24px 0;
+        font-size: 32px;
+    }
+
+    .featured__subt{
+        padding: 0 18px;
+        font-size: 24px;
+    }
+
+    .featured__text{
+        padding: 0 24px;
+        margin-top: 16px;
+        font-size: 16px;
+    }
+
+
     /* ERROR */
     .image-404{
         width: 600px;
     }
     
     .image-404 > img{
-        width: 550px;
+        width: 472px;
     }
     
     .image-404 > p{
@@ -497,6 +729,23 @@ body{
     }
 
     .main-home__cont-prod {
+        width: 75%;
+    }
+
+    .nav-cont{
+        width: 75%;
+    }
+
+    .vertical-div{
+        height: 124px;
+    }
+
+    .featured-product{
+        width: 75%;
+    }
+
+    .index__contact-us {
+        justify-content: space-evenly;
         width: 75%;
     }
 

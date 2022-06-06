@@ -27,6 +27,7 @@
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    max-width: 648px;
     padding: 16px;
     width: 90%;
 }
@@ -123,44 +124,29 @@
     font-family: "Roboto";
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     height: 8%;
     padding-top: 22px;
     align-items: flex-end;
 }
 
 .precio_prod{
-    color: var(--gris);
+    color: var(--celeste-logo);
     font-family: "Roboto";
-    font-size: 22px;
+    font-size: 28px;
     font-weight: 600;
-    padding: 24px 0 12px 0;
+    padding: 16px 0 12px 0;
 }
 
 .precio_prod > p{
     margin: 0;
 }
 
-.comprar_prod{
-    background-color: var(--celeste-logo);
-    border-radius: 6px;
+.buy-btn{
     cursor: pointer;
-    height: 50px;
-    width: 156px;
-}
-
-.comprar_prod > button{
-    background-color: transparent;
-    border: none;
-    color: var(--blanco);
-    cursor: pointer;
-    font-weight: 500;
-    padding: 16px 0 0 45px;
-}
-
-.comprar_prod:hover{
-    background-color: var(--turq);
-    transition: all 400ms linear;
+    padding-top: 16px;
+    text-align: center;
+    text-decoration: none;
 }
 
 .iconos_prod{
@@ -168,46 +154,36 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin: 15px 0;
 }
 
-.iconos_prod_opinions{
+.rate-icons{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 
-.iconos_prod_opinions_text{
+.rate-opinions{
     margin: 0 0 0 5px;
     color: var(--gris);
 }
 
-.far.fa-star{
+.far.fa-star, .fas.fa-star{
     margin: 0 2px 0 0;
     color: var(--yellow);
 }
 
-.fas.fa-star{
-    margin: 0 2px 0 0;
-    color: var(--yellow);
+.detail__buttons {
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 152px;
 }
 
-
-.heart_b{
-    background-color: transparent;
-    border: none;
-    color: var(--magenta);
-    cursor: pointer;
-    font-size: 20px;
-    text-rendering: auto;
-    text-decoration: none;
-    padding: 0 25px 0 0;
-
-}
-
-.share_b{
+.action-btns{
     background-color:transparent;
     border: none;
     color:var(--gris);
@@ -218,7 +194,10 @@
     padding: 0 25px 0 0;
 }
 
-.share_b:hover{
+.bookmark:hover{
+    color: var(--magenta);
+}
+.share-cart:hover{
     color:var(--celeste-logo);
 
 }
@@ -234,33 +213,10 @@
     margin-left: 15px;
 }
 
-.agregar_carrito_btn_div{
-    display: flex;
-    justify-content: center;
-}
-
-
 .divisor_info_ventas{
     border: none;
     border-bottom: 1px solid #666;
 }
-
-.agregar_carrito{
-    background-color: var(--celeste-logo);
-    border: none;
-    border-radius: 6px;
-    color: var(--blanco);
-    cursor: pointer;
-    font-weight: 500;
-    height: 50px;
-    margin: 30px auto 20px auto;        
-    width: 100%;
-}
-
-.agregar_carrito:hover{
-    background-color: var(--turq);
-}
-
 
 .desc_prod_btns{
     display: flex;
@@ -269,8 +225,9 @@
     margin-bottom: 30px;
 }
 
-.desc_prod-btn{
-    background-color: var(--fondo-main);
+.prod-btn{
+    background-color: transparent;
+    border-bottom: none;
     color: var(--turq);
     cursor: pointer;
     border: none;        
@@ -278,40 +235,42 @@
     height: 30px;
 }
 
-.desc_prod-btn:hover{
-    background-color: var(--turq);
-    color: var(--fondo-main);
+.prod-btn:focus, .prod-btn:hover{
+    border-bottom: 1px solid var(--turq);
+    border-radius: 0;
+    font-weight: 600;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
 }
 
-.desc_prod-btn:active{
-    background-color: var(--celeste-logo);
-    color: var(--fondo-main);
-} 
 
-.desc_prod_tex{
-    font-family: "Roboto";
+.product-info{
+    color: var(--gris);
     display: flex;
     flex-direction: column;
-    margin-top: 0%;
+    font-size: 14px;
+    margin: 12px auto;
+    text-align: left;
     width: 100%;
 
 }
 
-.desc_prod_tex_1{
-    color: var(--gris);
-    text-align: center;
+/*
+TRATANDO DE HACER FUNCIONAR ESOS BOTONES :)
+.specs {
+    display: none;
+
 }
 
-.desc_prod_tex_2{
-    color: var(--gris);
-    text-align: left;
+.show-specs:focus .specs{
+    display: flex;
+    
 }
 
-.desc_prod_tex > ul{
-    color: var(--gris);
-    text-align: left;
-    margin-top: 0;
-}
+.show-specs:focus .description{
+    display: none;
+    
+} */
 
 
 /* ------------------ MAIN CARRITO ------------------ */
@@ -465,6 +424,7 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
+    margin-bottom: 8px;
     text-rendering: auto;
 }
 
@@ -659,25 +619,6 @@
     width: 75%;
 }
 
-.admin__nav{
-    background-color: var(--gris-int);
-    height: 100%;
-    margin: 24px auto 0 auto;
-    max-width: 350px;
-    padding: 2px 0;
-    width: 100%;
-}
-
-.nav__admin-menu{
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    text-align: center;
-    padding: 0;
-    width: 100%;
-}
-
 .menu__items{
     background: var(--negro);
     border-left: 4px solid var(--negro);
@@ -687,10 +628,10 @@
     font-weight: 500;
     height: 46px;
     list-style: none;
-    margin: 5px 10px;
+    margin: 3px 6px;
     padding: 14px 0 0 0;
     text-decoration: none;
-    width: 93%;
+    width: 98%;
 }
 
 .menu__items:hover{
@@ -722,6 +663,7 @@
 
 .forms__div{
     border: solid var(--magenta) 1px;
+    max-width: 408px;
 }
 
 .campos__textarea{
@@ -736,17 +678,11 @@
 
 /* -------- PRODUCT LIST  -------- */
 
-.nav__prodList{
-    padding: 2px 0;
-    background-color: var(--gris-int);
-    margin-top: 24px;
-}
-
-.prodList__menu{
+.menu__options{
     display: none;
 }
 
-.prodList__dropdwn{
+.navigation__dropdwn{
     background-color: var(--negro);
     height: 48px;
     list-style: none;
@@ -756,14 +692,14 @@
     width: 248px;
 }
 
-.prodList__dropdwn > a{
+.navigation__dropdwn > a{
     color: var(--gris);
     font-weight: 500;
     text-decoration: none;
 
 }
 
-.dropdwn__categories {
+.dropdwn__menu {
     background: rgba(0,0,0,0.85);
     border-top: 1px solid var(--gris-medio);
     display: none;
@@ -773,12 +709,12 @@
     z-index: 999;
 }
 
-.dropdwn__categories > li {
+.dropdwn__menu > li {
     list-style: none;
     margin: 24px 0;
 }
 
-.dropdwn__categories > li > a{
+.dropdwn__menu > li > a{
     border: none;
     color: var(--gris-medio);
     font-weight: 500;
@@ -786,12 +722,12 @@
 
 }
 
-.dropdwn__categories > li > a:hover{
+.dropdwn__menu > li > a:hover{
     color: var(--magenta);
     font-weight: 600;
 }
 
-.prodList__dropdwn:hover .dropdwn__categories {
+.navigation__dropdwn:hover .dropdwn__menu {
     display: block;
 }
 
@@ -820,48 +756,34 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 78px;
+    height: 116px;
 }
 
 .dispDesc__nombre{
-    font-size: 14px;
+    font-size: 16px;
     color: var(--gris-claro);
-    margin: 15px auto 5px auto;
-    padding: 0 8px;
+    margin: 15px auto;
+    padding: 0 16px;
     text-align: center;
+    height: 48px;
+    line-height: 24px;
+    overflow-y: hidden;
 }
 
 .dispDesc__precio{
     color: var(--magenta);
-    font-size: 22px;
+    font-size: 24px;
     font-weight: 600;
     margin: 0 auto 0 auto;
-    text-align: center;
-}
-
-.dispDesc__btn{
-    background-color: var(--turq);
-    border: none;
-    border-radius: 6px;
-    bottom: 8px;
-    cursor: pointer;
     height: 36px;
-    left: 20px;
-    position: absolute;
     text-align: center;
-    width: 218px;
-}
-
-.dispDesc__btn:hover{
-    background-color: var(--celeste-logo);
 }
 
 
 /* -------- ADMIN PANEL - LIST  -------- */
 
 .adminProductCont{
-    background-color: var(--gris-medio);
-    border-radius: 8px;
+    background-color: var(--gris-int);
     margin: 40px auto;
     max-width: 370px;
     padding: 8px;
@@ -870,7 +792,7 @@
 
 .adminProductCont__img{
     background-color: var(--blanco);
-    border: 2px solid var(--gris-osc);
+    border: 2px solid var(--magenta);
     margin: 10px auto;
     width: 90%;
 }
@@ -883,14 +805,21 @@
 }
 
 .adminProductCont__name{
-    color: var(--fondo-main);
+    align-self: center;
+    color: var(--yellow);
     font-size: 16px;
     font-weight: 600;
     margin: 16px auto;
+    height: 56px;
+    letter-spacing: 2px;
+    overflow-y: hidden;
     text-align: center;
+    text-transform: uppercase;
     width: 90%;
 }
-
+.user-id{
+    height: 16px;
+}
 .name__div{
     border: none;
     border-bottom: 1px solid var(--magenta);
@@ -900,42 +829,57 @@
 
 
 .adminProductCont__data{
-    color: var(--fondo-main);
+    color: var(--gris-claro);
     font-size: 16px;
     font-weight: 500;
     height: 40%;
     margin: 0 auto;
     padding: 5px;
+    text-transform: capitalize;
+    width: 90%;
 
+}
+
+.data-email{
+    text-transform: none;
 }
 
 .adminProductCont__btns{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: 16px auto;
+    margin: 24px auto 8px auto;
 }
 
 .delete__btn{
     background-color: transparent;
     border: none;
+    color: var(--gris-claro);
     cursor: pointer;
-    font-weight: 600;
+    font-weight: 500;
+    margin-bottom: 8px;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
     text-rendering: auto;
 }
 
 .delete__btn > i{
-    color: red;
+    color: var(--gris-claro);
 }
 
 .delete__btn:hover{
     color: red;
 }
+.delete__btn:hover > i{
+    color: red;
+}
 
 .adminProductCont__btns > button > a{
-    color: var(--negro);
+    color: var(--gris-claro);
     cursor: pointer;
-    font-weight: 600;
+    font-weight: 500;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
     text-decoration: none;
 }
 
@@ -971,13 +915,10 @@
         width: 348px;
     }
 
-
     /*PRODUCTO*/
-
-    .iconos_prod {
+    .desc_prod{
         justify-content: space-between;
     }
-
 
 }
 
@@ -1022,30 +963,32 @@
         display: flex;
         flex-wrap: wrap;
         margin: 0 auto;
-        padding: 24px 0 0 0;
+        padding: 40px 0 0 0;
         justify-content: space-around;
         width: 90%;
     }
     
-    .prodList__dropdwn{
+    .navigation__dropdwn{
         display: none;
     }
 
-    .nav-prodList{
+    .navigation__menu{
+        background-color: var(--gris-int);
         height: 100%;
-        padding-top: 14px;
+        padding: 2px 0;
         width: 218px;
     }
     
-    .prodList__menu{
+    .menu__options{
         align-content: center;
         background-color: var(--gris-int);
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        padding: 5px 0px;
-        width: 100%;
+        padding: 0;
+        width: 216px;
     }
+    
 
     .menu__items{
         padding: 14px 0 0 14px;
@@ -1059,7 +1002,7 @@
     }
 
     .prodDisplay__cont {
-        margin: 16px 12px 10px 0px;
+        margin: 0px 12px 26px 0px;
     }
     
     /* ADMIN ADD*/
@@ -1072,20 +1015,12 @@
         width: 85%;
     }
 
-    .admin__nav{
-        background-color: var(--gris-int);
-        margin-top: 0px;
-        padding: 2px 0;
-        width: 280px;
-    }
-
-    .admin-forms{
-        margin: 0px;
-        width: 60%;
-    }
-
     .form-title{
         text-align: left;
+    }
+
+    .forms__div{
+        max-width: 100%;
     }
 
     /*CARRITO*/
@@ -1157,6 +1092,10 @@
 
     /*PRODUCTO*/
 
+    .cont-det {
+        max-width: 1200px;
+    }
+
     .cont-det-producto-top{
         flex-direction: row;
     }
@@ -1194,9 +1133,13 @@
         font-size: 20px;
     }
 
+
     /* ADMIN PANEL */
+
     .admin-forms{
         border: solid 1px var(--gris);
+        margin: 0px;
+        width: 70%;
     }
 
     .adminPanelCont{
@@ -1239,7 +1182,7 @@
     }
     
     .adminProductCont__data {
-        width: 76px;
+        width: 18%;
     }
 
     .adminProductCont__btns{
@@ -1270,14 +1213,11 @@
     }
 
     .adminProductCont__name{
-        width: 212px
+        height: 62px;
+        width: 146px;
     }
 
     /* ADMIN ADD */
-
-    .admin-forms{
-        width: 65%;
-    }
 
     .campos__column{
         flex-direction: row;
@@ -1311,13 +1251,14 @@
     .rightArticle-button{
         margin: 15px 0 10px 0;
     }
+
 }
 
 @media (min-width:1400px){
 
     /* PRODUCT LIST*/
 
-    .nav-prodList {
+    .navigation__menu {
         margin-right: 20px;
     }
 
@@ -1332,7 +1273,7 @@
     }
 
     .prodDisplay__cont {
-        margin: 16px 6px 0px 6px;
+        margin: 0px 6px 12px 6px;
     }
 
     /* ADMIN ADD */
@@ -1343,13 +1284,13 @@
 
     .admin-forms {
         padding: 0 32px;
-        width: 72%;
+        width: 75%;
     }
 
     /* ADMIN PROD LIST */
 
     .adminProductCont__name{
-        width: 268px
+        width: 184px
     }
 
     /*CARRITO*/
