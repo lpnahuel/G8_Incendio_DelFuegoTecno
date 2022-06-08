@@ -161,19 +161,50 @@ A continuacion detallaremos los temas que se trataron cada día:
 - Modificamos las tarjetas de trello para agregar detalle y objetivos que no habíamos entendido que eran para está entrega.
 
 **Informe 27/05/2022**
-- Realizamos el meet semanal.
-- Vimos el sprint y separamos las tareas.
-- Arreglamos el trello.
+- Realizamos el meet semanal. (Pali, Pabli, Salva y Nicky)
+- Vimos el sprint y separamos las tareas. (Pali, Pabli, Salva y Nicky)
+- Arreglamos el trello. (Pali, Salva y Nicky)
 
 **Informe 29/05/2022**
-- comenzamos con las cookies y login.
-- modificamos los archivos: app.js, daily.ms, weekly.md, login.ejs, UsersController.js.
-- Se creo la carpeta models con el archivo User.js.
-- Se creo el archivo recordameMiddleware.js.
+- comenzamos con las cookies y login.  (Pali y Nicky)
+- Agregamos Checkbox al login (Nicky)
+- modificamos los archivos: app.js, daily.ms, weekly.md, login.ejs, UsersController.js. (Pali y Nicky)
+- Se creo la carpeta models con el archivo User.js. (Pali y Nicky)
+- Se creo el archivo recordameMiddleware.js. (Pali y Nicky)
 - en app.js.
-- Se agrego express-session.
-- Se agrego cookie-parse.
-- en mainRoutes.js agregamos un contador de visitas.
-- comenzamos el método processLogin
-- Logramos que funcione el encrypt
-- No logramos que funcionen cookies y "recordame"
+- Se agrego express-session. (Pali y Nicky)
+- Se agrego cookie-parse. (Pali y Nicky)
+- en mainRoutes.js agregamos un contador de visitas. (Pali)
+- comenzamos el método processLogin (Pali y Nicky)
+- Logramos que funcione el encrypt (Pali)
+- No logramos que funcionen cookies y "recordame" (Nicky y pali)
+
+**Informe 01/06/2022**
+
+- Ya colocamos el encriptado en el registor de usuario.
+- Del login redireccion al perfil en caso de exito y en caso de error de nuevo al login mostrando los errores.
+- Funcion de recordar el usuario con el checkbox. Guarda en session y en cookies. (Pali)
+- Hicimos un middleware si existe la cookie logee al usuario y middlewares que si el usuario esta logeado en el header no muestra login ni registro, y si el usuario no esta logeado no se puede acceder al perfil.(Pali)
+
+**Informe 03/06/2022**
+- Faltan las rutas de huespedes y usuarios.
+- Nos abandono Salva.
+- Realizamos el meet semanal (Pali, Nicky y Pablo).
+- falta agregar a la base de datos y a la pagina de edicion lo de los roles.
+- falta la validación de la imagen , queremos que la imagen de perfil sea opción y el validator no nos permite.
+- Que funcione el formulario de contacto.
+
+
+**Informe 06/06/2022**
+- Se modifico el CSS. (Pali)
+- Nicky no asistió a clase debido a un examen en la facultad.
+- Se creo usuario de Pali
+- Se creo página de error (Pali)
+
+**Informe 07/06/2022**
+- Pospusimos el meet para el día viernes (Pali, Pabli y Nicky)
+- Se agrego el rol a cada usuario (nicky)
+- Se creo usuario de Nicky
+- Verificar que queda en página de error cuando se crea un usuario.
+
+

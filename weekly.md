@@ -65,3 +65,18 @@ En la reunion se trataron los siguientes puntos:
 - Arreglamos la imagen de registro.
 - Agregamos la validación.
 - Retocamos el CSS de algunas vistas.
+
+**Informe comienzo de semana 30/05/2022**
+- Ya colocamos el encriptado en el registor de usuario.
+- Del login redireccion al perfil en caso de exito y en caso de error de nuevo al login mostrando los errores.
+- Funcion de recordar el usuario con el checkbox. Guarda en session y en cookies.
+- Hicimos un middleware si existe la cookie logee al usuario y middlewares que si el usuario esta logeado en el header no muestra login ni registro, y si el usuario no esta logeado no se puede acceder al perfil.
+- Nos abandono Salva.
+- Realizamos el meet semanal. 
+- Se modifico el CSS. 
+
+**Informe Comienzo de semana 06/06/2022**
+- Nicky no asistió a la clase del lunes debido a un examen en la facultad.
+- Se creo usuario de Pali, y Nicky como Admin
+- Se creo página de error 
+- Se agrego el rol a cada usuario 

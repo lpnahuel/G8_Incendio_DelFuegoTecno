@@ -10,7 +10,8 @@
 		"cp": "11111",
 		"city": "Twin Peaks",
 		"email": "daniel@dh.com.ar",
-		"password": "$2a$10$KkF1SeOF8hFK3nO8UKspSOsewwCzJ9C8W/QZ.BQE2OsL9OPvC8vnK"
+		"password": "$2a$10$KkF1SeOF8hFK3nO8UKspSOsewwCzJ9C8W/QZ.BQE2OsL9OPvC8vnK",
+		"rol": "client"
 	},
 	{
 		"id": 2,
@@ -23,7 +24,8 @@
 		"cp": "12134",
 		"city": "Cordoba",
 		"email": "gian@dh.com.ar",
-		"password": "$2a$10$6mS9jhe7vsYfYUSYuLCkt.4zc9TjBfVN4MounmENhMwKBoccAfWi."
+		"password": "$2a$10$6mS9jhe7vsYfYUSYuLCkt.4zc9TjBfVN4MounmENhMwKBoccAfWi.",
+		"rol": "client"
 	},
 	{
 		"id": 3,
@@ -36,7 +38,8 @@
 		"cp": "4322",
 		"city": "Neuquen",
 		"email": "maria@dh.com.ar",
-		"password": "$2a$10$GLFV9umFyIFECidVLJGdpOeh504LeKCFyGKlnTyqJo7dvECs98wZC"
+		"password": "$2a$10$GLFV9umFyIFECidVLJGdpOeh504LeKCFyGKlnTyqJo7dvECs98wZC",
+		"rol": "client"
 	},
 	{
 		"id": 4,
@@ -49,7 +52,8 @@
 		"cp": "3214",
 		"city": "caba",
 		"email": "joe@dh.com.ar",
-		"password": "$2a$10$f33LSozEF9t5Ql6pmfTll.XtpIFyTsi5cN8zUQUNpVli58i/KoyTC"
+		"password": "$2a$10$f33LSozEF9t5Ql6pmfTll.XtpIFyTsi5cN8zUQUNpVli58i/KoyTC",
+		"rol": "client"
 	},
 	{
 		"id": 5,
@@ -62,7 +66,8 @@
 		"cp": "3252",
 		"city": "salta",
 		"email": "daniel1@dh.com.ar",
-		"password": "$2a$10$TeiSDoopVNccH8Z.EdBtEO70mdoPnDhwWZmMQadLXYKRjvvAX2d0i"
+		"password": "$2a$10$TeiSDoopVNccH8Z.EdBtEO70mdoPnDhwWZmMQadLXYKRjvvAX2d0i",
+		"rol": "client"
 	},
 	{
 		"id": 6,
@@ -75,7 +80,8 @@
 		"cp": "5433",
 		"city": "Santa fe",
 		"email": "fernando@dh.com.ar",
-		"password": "$2a$10$H0nMjv8hZl/DcJ5XPI/dDunsMXXQDRlT/hzlnjsjAWwInyDAFzLLa"
+		"password": "$2a$10$H0nMjv8hZl/DcJ5XPI/dDunsMXXQDRlT/hzlnjsjAWwInyDAFzLLa",
+		"rol": "client"
 	},
 	{
 		"id": 7,
@@ -88,7 +94,8 @@
 		"cp": "54390",
 		"city": "Berazategui",
 		"email": "bautista@dh.com.ar",
-		"password": "$2a$10$MsBqXnMctKZ5VJRUUUYAuuid/4cbtQOlqD2ZiauKoyd3FzCXEBnHi"
+		"password": "$2a$10$MsBqXnMctKZ5VJRUUUYAuuid/4cbtQOlqD2ZiauKoyd3FzCXEBnHi",
+		"rol": "client"
 	},
 	{
 		"id": 8,
@@ -101,7 +108,8 @@
 		"cp": "11111",
 		"city": "Bariloche",
 		"email": "lucas@dh.com.ar",
-		"password": "$2a$10$z065bPT1Qups1xuTj.sUseqM2m3WWbqetjVrl9kBqfoicQTPAxX.a"
+		"password": "$2a$10$z065bPT1Qups1xuTj.sUseqM2m3WWbqetjVrl9kBqfoicQTPAxX.a",
+		"rol": "client"
 	},
 	{
 		"id": 9,
@@ -114,7 +122,8 @@
 		"cp": "3453",
 		"city": "San Luis",
 		"email": "juan@dh.com.ar",
-		"password": "$2a$10$pwBoEjErjwyBAuzbPPoWcOSGIawj6kFmq4ZQkDrJ/7rK27HwCCwaW"
+		"password": "$2a$10$pwBoEjErjwyBAuzbPPoWcOSGIawj6kFmq4ZQkDrJ/7rK27HwCCwaW",
+		"rol": "client"
 	},
 	{
 		"id": 10,
@@ -127,6 +136,21 @@
 		"cp": "7600",
 		"city": "Mar del Plata",
 		"email": "palita65@gmail.com",
-		"password": "$2a$10$fDizIddeK3b8pNmfIb.jjeXvuIiDidKWet9yWQ9yBAXaRc0bgqlgS"
+		"password": "$2a$10$fDizIddeK3b8pNmfIb.jjeXvuIiDidKWet9yWQ9yBAXaRc0bgqlgS",
+		"rol": "admin"
+	},
+	{
+		"id": 11,
+		"firstName": "Nicky",
+		"lastName": "Fel",
+		"birth": "1991-01-04",
+		"image": "user-image1654650056311.png",
+		"phone": "44448888",
+		"address": "Del fuego 4444",
+		"cp": "1234",
+		"city": "CABA",
+		"email": "nicky@dh.com.ar",
+		"password": "$2a$10$z19jNrznceBa4DbaJbe3R..yJTxZaw9R0dZcTP.PIKCy1REuu7nga",
+		"rol": "admin"
 	}
 ]
