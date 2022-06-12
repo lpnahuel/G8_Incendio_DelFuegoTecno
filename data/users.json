@@ -152,5 +152,19 @@
 		"email": "nicky@dh.com.ar",
 		"password": "$2a$10$z19jNrznceBa4DbaJbe3R..yJTxZaw9R0dZcTP.PIKCy1REuu7nga",
 		"rol": "admin"
+	},
+	{
+		"id": 12,
+		"firstName": "Pablo",
+		"lastName": "Larrea",
+		"birth": "1991-03-07",
+		"image": "",
+		"phone": "1144445555",
+		"address": "Calle falsa 123",
+		"cp": "1234",
+		"city": "CABA",
+		"email": "nahuel.larrea@dh.com.ar",
+		"password": "$2a$10$nBj8eLrtgFcxK1qpe77TaeWCIH2GN0S9rvTodxucX1MAFDYDGQurK",
+		"rol": "admin"
 	}
 ]
