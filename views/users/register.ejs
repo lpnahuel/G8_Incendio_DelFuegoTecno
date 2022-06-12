@@ -116,6 +116,9 @@
                     <div class="registro__cont">
                         <label for="passwordRepeat">
                             <p class="lg__descrip">Confirmar contraseña*</p>
+                            <% if (locals.errors && errors.passwordRepeat) {%> 
+                                <p class="errorMsg"><%= errors.passwordRepeat.msg %></p>
+                            <%}  %> 
                             <input type="password" id="passwordRepeat" name="passwordRepeat" placeholder="******"  class="form__fields">
                             <span class="feedback"></span>
                         </label>

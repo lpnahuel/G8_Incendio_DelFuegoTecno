@@ -104,7 +104,7 @@ const UsersController = {
 
             fs.writeFileSync(usersFilePath, JSON.stringify(newUserList, null, '\t'));
 
-            res.redirect('/users/profile/' + newUser.id);
+            res.redirect('/users/profile');
 
         }else{
 

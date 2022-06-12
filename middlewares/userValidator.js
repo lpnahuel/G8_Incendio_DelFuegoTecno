@@ -14,23 +14,26 @@ const userValidator = [
         .isEmail().withMessage('Debes escribir un e-mail válido').normalizeEmail(),
     check('password', '*Este campo es obligatorio').notEmpty().bail()
         .isLength({min : 8}).withMessage('La contraseña debe tener más de 8 caracteres'),
-    // check('image').custom((value, {req}) => {
-        // let file = req.file;
-        // let acceptedExtensions = ['.png', '.jpg', '.webp'];
-        // if(file){
-        //     let fileExtension = path.extname(file.originalname);
-        //     if(!acceptedExtensions.includes(fileExtension)){
-        //         throw new Error (`El archivo ${file.originalname} no es una imagen válida,
-        //         los archivos aceptados son ${acceptedExtensions.join(', ')}`);
-        //     };
-        // }else{
-        //     file = 'user-default.png';
-        // }
-
-        // console.log(file);
-        //por qué me dice invalid value? :'(
-
-    // }),
+    check('passwordRepeat').custom((value, { req })=>{
+            if (value !== req.body.password) {
+                throw new Error('Las contraseñas ingresadas no coinciden');
+              }
+            return true;
+        }),
+    check('image').custom((value, {req}) => {
+        let file = req.file;
+        let acceptedExtensions = ['.png', '.jpg', '.webp'];
+        if(file){
+            let fileExtension = path.extname(file.originalname);
+            if(!acceptedExtensions.includes(fileExtension)){
+                throw new Error (`El archivo ${file.originalname} no es una imagen válida,
+                los archivos aceptados son ${acceptedExtensions.join(', ')}`);
+            };
+        }else{
+            file = 'user-default.png';
+            return true;
+        }
+    })
 ];
 
 module.exports = userValidator;

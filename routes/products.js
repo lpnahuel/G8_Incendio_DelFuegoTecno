@@ -28,7 +28,7 @@ router.post('/admin', multipleUpload, productValidator, ProductsController.store
 
 /*** EDIT ONE PRODUCT */ 
 router.get('/admin/edit/:id', ProductsController.edit); 
-router.put('/admin/edit/:id', multipleUpload, ProductsController.update); 
+router.put('/admin/edit/:id', multipleUpload, productValidator, ProductsController.update); 
 
 /*** DELETE ONE PRODUCT */ 
 router.delete('/admin/edit/:id', ProductsController.destroy); 
