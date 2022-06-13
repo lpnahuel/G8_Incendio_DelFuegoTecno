@@ -41,6 +41,8 @@ const UsersController = {
                     //guarda el usuario en la sesión
                     req.session.userLogged = userToLogin;
 
+                    //Reconocimiento de Admin
+                    req.session.isAdmin = userToLogin.rol == "admin";                        
                     //seteo la cookie de recordarme
                     if (req.body.recordame) {
                          res.cookie('userEmail', req.body.email, { maxAge: 60000 })

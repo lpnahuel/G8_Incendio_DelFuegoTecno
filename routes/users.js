@@ -6,7 +6,7 @@
  const userValidator = require('../middlewares/userValidator');
  const upload = require('../middlewares/multerUsers');
  const guestMiddleware = require('../middlewares/guestMiddleware');
- const authMiddleware = require('../middlewares/authMiddleware');
+ const authMiddleware = require('../middlewares/authMiddleware'); 
  
  /**** GET LOGIN */
  router.get('/login', guestMiddleware, UsersController.login); 

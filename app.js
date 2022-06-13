@@ -6,6 +6,7 @@ const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
 const session = require('express-session');
 const userLoggedMiddleware = require('./middlewares/userLoggedMiddleware');
+const adminLoggedMiddleware = require('./middlewares/adminLoggedMiddleware');
 
 
 /*** Main Router (require) */
@@ -25,6 +26,7 @@ app.use(express.static(path.join(__dirname, "/public")));
 app.use(express.json());
 app.use(cookieParser());
 app.use(userLoggedMiddleware);
+app.use(adminLoggedMiddleware);
 app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride('_method'));
 
