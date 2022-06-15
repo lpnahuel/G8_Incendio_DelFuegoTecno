@@ -27,7 +27,6 @@
                 <li><a href="/contacto">CONTACTO</a></li> 
                 <% if (locals.isAdmin) { %>
                 <li><a href="/products/admin">ADMIN</a></li>
-                <li><a href="/products/admin">ADMIN</a></li>
                 <% } %>
             </ul>
         </nav>
@@ -52,7 +51,9 @@
                         <li><a href="/ofertas">OFERTAS</a></li>
                         <li><a href="/nosotros">NOSOTROS</a></li>
                         <li><a href="/contacto">CONTACTO</a></li>
-                        <li><a href="/products/admin">ADMIN</a></li>
+                        <% if (locals.isAdmin) { %>
+                            <li><a href="/products/admin">ADMIN</a></li>
+                        <% } %>
                     </ul>
                 </nav>
             </section>

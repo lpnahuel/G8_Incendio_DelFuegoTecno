@@ -3,15 +3,15 @@
 		"id": 1,
 		"firstName": "dani",
 		"lastName": "duque",
-		"birth": "",
+		"birth": "4568-12-18",
 		"image": "user-image1653362865166.jpg",
 		"phone": "11111111",
 		"address": "Calle Colombia 1234",
-		"cp": "11111",
+		"cp": "1111",
 		"city": "Twin Peaks",
 		"email": "daniel@dh.com.ar",
-		"password": "$2a$10$KkF1SeOF8hFK3nO8UKspSOsewwCzJ9C8W/QZ.BQE2OsL9OPvC8vnK",
-		"rol": "client"
+		"password": "$2a$10$ztYQx9sTkChENpdRHYOwx.AB0kQ.bv5ebFzt8XgWU7Y9g/ZYVEUOG",
+		"rol": "admin"
 	},
 	{
 		"id": 2,
