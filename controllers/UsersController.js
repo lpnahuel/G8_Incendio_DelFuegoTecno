@@ -3,6 +3,7 @@ const fs = require('fs');
 const path = require('path');
 const { validationResult } = require('express-validator')
 const bcrypt = require('bcryptjs');
+const { CLIENT_RENEG_LIMIT } = require('tls');
 
 // ************ Path's ************
 const usersFilePath = path.join(__dirname, '../data/users.json');
@@ -15,42 +16,31 @@ const UsersController = {
 
     processLogin: (req, res) => {
         let errors = validationResult(req);
-        //1. buscar al usuario por mail
-        //2. chequear que la contraseña coincida con la que está guardada
-        //3. primero leemos la base de datos
-        //4. buscamos el mail que coincida con el ingresado en el body
-        //5. una vez que encontramos el usuario, comparamos que la contraseña esté OK
     
         if (errors.isEmpty()){
-            //lee todos los usuarios
             let usersDB = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
 
-            //acá encuentra el perfil que coincida con el mail ingresado por body
             let userToLogin = usersDB.find(user => user.email === req.body.email);
 
-            // si encuentra un usuario, verifica la contraseña
             if (userToLogin){
 
-                // acá compara la contraseña ingresada con la contraseña de la DB
                 let check = bcrypt.compareSync(req.body.password, userToLogin.password);
 
-                //si check es true, se loguea
                 if(check){
-                    //borra la contraseña por seguridad
                     delete userToLogin.password;
-                    //guarda el usuario en la sesión
+
                     req.session.userLogged = userToLogin;
 
-                    //Reconocimiento de Admin
-                    req.session.isAdmin = userToLogin.rol == "admin";                        
-                    //seteo la cookie de recordarme
+
+                    req.session.isAdmin = userToLogin.role == "admin";                        
+
                     if (req.body.recordame) {
                          res.cookie('userEmail', req.body.email, { maxAge: 60000 })
                     }
 
                     res.redirect('/users/profile')
                 }else{
-                //si no encuentra al usuario tira un error, o no coinciden
+
                     res.render('users/login', { errors: {msg: 'Credenciales Invalidas'}});
                 };
 
@@ -76,16 +66,15 @@ const UsersController = {
         let errors = validationResults.mapped();
 
         if(validationResults.errors.length === 0){
-            let lastUser = usersDB.length -1;
-            let NewUserId = usersDB[lastUser].id +1;
-            
+            let newUserId = usersDB.length + 1;
+          
             let image;
             (req.file) ? image = (req.file.filename) : image = '';
 
             let password = bcrypt.hashSync(req.body.password, 10);
             
             let newUser = {
-                id: NewUserId,
+                id: newUserId,
                 firstName : req.body.firstName,
                 lastName : req.body.lastName,
                 birth : req.body.birth,
@@ -96,6 +85,7 @@ const UsersController = {
                 city :  req.body.city,
                 email :  req.body.email,
                 password : password,
+                role : "client"
             }
 
             let newUserList;
@@ -106,7 +96,7 @@ const UsersController = {
 
             fs.writeFileSync(usersFilePath, JSON.stringify(newUserList, null, '\t'));
 
-            res.redirect('/users/profile');
+            res.redirect('/users/login');
 
         }else{
 
@@ -156,6 +146,7 @@ const UsersController = {
                 city :  req.body.city,
                 email :  req.body.email,
                 password : password,
+                role: req.body.role
             }
 
             let userIndex = usersDB.indexOf(userToEdit);

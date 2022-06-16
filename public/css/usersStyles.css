@@ -183,6 +183,10 @@ textarea[id=description], textarea[id=specs], textarea[id=message]{
     width: 100%;
 }
 
+.form__fields > option{
+    text-transform: capitalize;
+}
+
 .form__fields:focus{
     background-color: var(--gris);
     outline: none;

@@ -32,10 +32,10 @@
                                     <p class="errorMsg"><%= errors.category.msg %></p>
                                 <%}  %>                        
                                 <select class="form__fields <%= locals.errors && errors.category ? 'invalid' : '' %>" id="category" name="category">
-                                    <option value="" selected>Seleccioná</option>
+                                    <option value="" selected disabled>Seleccioná</option>
                                     <% let categorias = ['notebooks', 'periféricos', 'almacenamiento', 'componentes', 'accesorios', 'consolas', 'sillas',] %> 
                                     <% categorias.forEach(category => { %> 
-                                    <option value="<%= category %>" <%= locals.oldData && (category === oldData.category) ? 'selected' : '' %>  ><%= category %> </option>
+                                    <option value="<%= category %>" <%= locals.oldData && (category === oldData.category) ? 'selected' : '' %>><%= category %> </option>
                                     <% }) %> 
                                     
                             </select>

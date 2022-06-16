@@ -8,10 +8,6 @@ const productsFilePath = path.join(__dirname, '../data/products.json');
 const usersFilePath = path.join(__dirname, '../data/users.json');
 const contactMessagesPath = path.join(__dirname, '../data/contactMessages.json');
 
-let users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
-
-
-
 const mainController = {
     
     index: (req,res)=>{

@@ -3,15 +3,15 @@
 		"id": 1,
 		"firstName": "dani",
 		"lastName": "duque",
-		"birth": "4568-12-18",
+		"birth": "3332-03-22",
 		"image": "user-image1653362865166.jpg",
 		"phone": "11111111",
 		"address": "Calle Colombia 1234",
 		"cp": "1111",
 		"city": "Twin Peaks",
 		"email": "daniel@dh.com.ar",
-		"password": "$2a$10$ztYQx9sTkChENpdRHYOwx.AB0kQ.bv5ebFzt8XgWU7Y9g/ZYVEUOG",
-		"rol": "admin"
+		"password": "$2a$10$EKqIBk4D.Fu8jVVj6kujn.vQOg0R8sjiN7dbbvNmoZInaKnAYNiZm",
+		"role": "admin"
 	},
 	{
 		"id": 2,
@@ -25,7 +25,7 @@
 		"city": "Cordoba",
 		"email": "gian@dh.com.ar",
 		"password": "$2a$10$6mS9jhe7vsYfYUSYuLCkt.4zc9TjBfVN4MounmENhMwKBoccAfWi.",
-		"rol": "client"
+		"role": "client"
 	},
 	{
 		"id": 3,
@@ -39,7 +39,7 @@
 		"city": "Neuquen",
 		"email": "maria@dh.com.ar",
 		"password": "$2a$10$GLFV9umFyIFECidVLJGdpOeh504LeKCFyGKlnTyqJo7dvECs98wZC",
-		"rol": "client"
+		"role": "client"
 	},
 	{
 		"id": 4,
@@ -53,7 +53,7 @@
 		"city": "caba",
 		"email": "joe@dh.com.ar",
 		"password": "$2a$10$f33LSozEF9t5Ql6pmfTll.XtpIFyTsi5cN8zUQUNpVli58i/KoyTC",
-		"rol": "client"
+		"role": "client"
 	},
 	{
 		"id": 5,
@@ -67,7 +67,7 @@
 		"city": "salta",
 		"email": "daniel1@dh.com.ar",
 		"password": "$2a$10$TeiSDoopVNccH8Z.EdBtEO70mdoPnDhwWZmMQadLXYKRjvvAX2d0i",
-		"rol": "client"
+		"role": "client"
 	},
 	{
 		"id": 6,
@@ -81,7 +81,7 @@
 		"city": "Santa fe",
 		"email": "fernando@dh.com.ar",
 		"password": "$2a$10$H0nMjv8hZl/DcJ5XPI/dDunsMXXQDRlT/hzlnjsjAWwInyDAFzLLa",
-		"rol": "client"
+		"role": "client"
 	},
 	{
 		"id": 7,
@@ -95,7 +95,7 @@
 		"city": "Berazategui",
 		"email": "bautista@dh.com.ar",
 		"password": "$2a$10$MsBqXnMctKZ5VJRUUUYAuuid/4cbtQOlqD2ZiauKoyd3FzCXEBnHi",
-		"rol": "client"
+		"role": "client"
 	},
 	{
 		"id": 8,
@@ -109,7 +109,7 @@
 		"city": "Bariloche",
 		"email": "lucas@dh.com.ar",
 		"password": "$2a$10$z065bPT1Qups1xuTj.sUseqM2m3WWbqetjVrl9kBqfoicQTPAxX.a",
-		"rol": "client"
+		"role": "client"
 	},
 	{
 		"id": 9,
@@ -123,7 +123,7 @@
 		"city": "San Luis",
 		"email": "juan@dh.com.ar",
 		"password": "$2a$10$pwBoEjErjwyBAuzbPPoWcOSGIawj6kFmq4ZQkDrJ/7rK27HwCCwaW",
-		"rol": "client"
+		"role": "client"
 	},
 	{
 		"id": 10,
@@ -137,7 +137,7 @@
 		"city": "Mar del Plata",
 		"email": "palita65@gmail.com",
 		"password": "$2a$10$fDizIddeK3b8pNmfIb.jjeXvuIiDidKWet9yWQ9yBAXaRc0bgqlgS",
-		"rol": "admin"
+		"role": "admin"
 	},
 	{
 		"id": 11,
@@ -151,7 +151,7 @@
 		"city": "CABA",
 		"email": "nicky@dh.com.ar",
 		"password": "$2a$10$z19jNrznceBa4DbaJbe3R..yJTxZaw9R0dZcTP.PIKCy1REuu7nga",
-		"rol": "admin"
+		"role": "admin"
 	},
 	{
 		"id": 12,
@@ -165,6 +165,6 @@
 		"city": "CABA",
 		"email": "nahuel.larrea@dh.com.ar",
 		"password": "$2a$10$nBj8eLrtgFcxK1qpe77TaeWCIH2GN0S9rvTodxucX1MAFDYDGQurK",
-		"rol": "admin"
+		"role": "admin"
 	}
 ]

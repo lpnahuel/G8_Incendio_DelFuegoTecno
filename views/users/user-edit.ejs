@@ -25,7 +25,6 @@
                                 <p class="errorMsg"><%= errors.firstName.msg %></p>
                             <%}  %>                       
                             <input class="form__fields" type="text" id="firstName" name="firstName" value="<%= userProfile.firstName %>" >
-                            <span class="feedback"></span>
                         </label>
                     
                         <label for="lastName">
@@ -34,7 +33,6 @@
                                 <p class="errorMsg"><%= errors.lastName.msg %></p>
                             <%}  %> 
                             <input class="form__fields" type="text" id="lastName" name="lastName" value="<%= userProfile.lastName %>" >
-                            <span class="feedback"></span>
                         </label>
 
                         <label for="birth">
@@ -42,14 +40,12 @@
                             <% if (locals.errors && errors.birth) {%> 
                                 <p class="errorMsg"><%= errors.birth.msg %></p>
                             <%}  %> 
-                            <input class="form__fields" type="date" id="birth" name="birth" >
-                            <span class="feedback"></span>
+                            <input class="form__fields" type="date" id="birth" name="birth" value="<%= userProfile.birth %>">
                         </label>
                         
                         <label for="image">
                             <p class="lg__descrip">Foto de perfil</p>
                             <input class="form__fields" type="file" name="image" id="image" accept=".jpg, .png, .webp">
-                            <span class="feedback"></span>
                         </label>
                         
                         <label for="phone">
@@ -58,7 +54,6 @@
                                 <p class="errorMsg"><%= errors.phone.msg %></p>
                             <%}  %> 
                             <input class="form__fields" type="phone" name="phone" id="phone" value="<%= userProfile.phone %>" >
-                            <span class="feedback"></span>
                         </label>
 
                     </div>
@@ -71,7 +66,6 @@
                                 <p class="errorMsg"><%= errors.address.msg %></p>
                             <%}  %> 
                             <input class="form__fields" type="text" id="address" name="address" value="<%= userProfile.address %>" >
-                            <span class="feedback"></span>
                         </label>
                     </div>
                     <div class="registro__cont">
@@ -81,7 +75,6 @@
                                 <p class="errorMsg"><%= errors.cp.msg %></p>
                             <%}  %> 
                             <input class="form__fields" type="number" id="cp" name="cp" value="<%= userProfile.cp %>" >
-                            <span class="feedback"></span>
                         </label>
                     </div>
                     <div class="registro__cont">
@@ -91,12 +84,9 @@
                                 <p class="errorMsg"><%= errors.city.msg %></p>
                             <%}  %> 
                             <input class="form__fields" type="text" id="city" name="city" value="<%= userProfile.city %>" >
-                            <span class="feedback"></span>
                         </label>
                     </div>
                     
-
-
                     <h3 class="rg__subtitulo">Datos de la cuenta</h3>
                     <div class="registro__cont">
                         <label for="email">
@@ -105,7 +95,7 @@
                                 <p class="errorMsg"><%= errors.email.msg %></p>
                             <%}  %> 
                             <input class="form__fields" type="email" id="email" name="email" value="<%= userProfile.email %>" >
-                            <span class="feedback"></span>
+
                         </label>
                     </div>
                     
@@ -116,16 +106,32 @@
                                 <p class="errorMsg"><%= errors.password.msg %></p>
                             <%}  %> 
                             <input class="form__fields" type="password" id="password" name="password" placeholder="Nueva Contraseña" >
-                            <span class="feedback"></span>
+
                         </label>
 
                     <div class="registro__cont">
                         <label for="passwordRepeat">
                             <p class="lg__descrip">Confirmar contraseña*</p>
+                            <% if (locals.errors && errors.passwordRepeat) {%> 
+                                <p class="errorMsg"><%= errors.passwordRepeat.msg %></p>
+                            <%}  %> 
                             <input type="password" id="passwordRepeat" name="passwordRepeat" placeholder="Nueva Contraseña"  class="form__fields" >
-                            <span class="feedback"></span>
+
                         </label>
                     </div>
+
+                    <% if (locals.isAdmin) { %>
+                    <div class="registro__cont">
+                        <label for="role">
+                            <p class="lg__descrip">Rol de usuario</p>
+                            <select name="role" id="role" class="form__fields">
+                                <option value=" " disabled>Elegí un rol</option>
+                                <option value="client" <%= userProfile.role==='client'? 'selected' : ''%>>Client</option>
+                                <option value="admin" <%= userProfile.role==='admin'? 'selected' : ''%>>Admin</option>
+                            </select>
+                        </label>
+                    </div>
+                    <% } %>
                     
                 </article>
 

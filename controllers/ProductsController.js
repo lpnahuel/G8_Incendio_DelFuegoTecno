@@ -6,9 +6,6 @@ const { validationResult } = require('express-validator');
 // *** Path's */
 const productsFilePath = path.join(__dirname, '../data/products.json');
 
-
-//*** Products Controller */
-
 const ProductsController = {
     index : (req,res)=>{
         let productsDB = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
@@ -30,9 +27,7 @@ const ProductsController = {
         });
 
         res.render('products/productList', {productsDB : searchResults});
-
     },
-
 
     category : (req,res)=>{
         let productsDB = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
@@ -58,8 +53,6 @@ const ProductsController = {
 
     create : (req, res)=>{
         res.render('products/admin-create');
-        
-
     },
     
     store : (req, res)=>{
@@ -70,8 +63,7 @@ const ProductsController = {
         
         if(validationResults.errors.length === 0){
             
-            let lastItem = productsDB.length -1;
-            let NewItemId = productsDB[lastItem].id +1;
+            let newProductId = productsDB.length +1;
             
             let image;
             (req.files.image) ? image = (req.files.image.map(item => item.originalname)) : image = [];
@@ -80,7 +72,7 @@ const ProductsController = {
             (req.files.thumb)? thumb = (req.files.thumb[0].originalname) : thumb = '';
             
             let newProduct = {
-                id : NewItemId,
+                id : newProductId,
                 name:  req.body.name,
                 category : req.body.category,
                 price : parseInt(req.body.price),
@@ -106,8 +98,6 @@ const ProductsController = {
 
             res.render('products/admin-create', {errors : errors, oldData : req.body});
         }
-
-
     },
     
     edit : (req, res)=>{
@@ -115,7 +105,6 @@ const ProductsController = {
         let productRequested = productsDB.find(producto => producto.id === parseInt(req.params.id));
 
         res.render('products/admin-edit', {productRequested : productRequested, productsDB : productsDB});
-
     },
     
     update : (req, res)=>{
@@ -150,8 +139,6 @@ const ProductsController = {
         fs.writeFileSync(productsFilePath, JSON.stringify(productsDB,null,"\t"));
 
         res.redirect('/products/admin')
-
-
     },
     
     destroy : (req, res)=>{
@@ -162,8 +149,6 @@ const ProductsController = {
         fs.writeFileSync(productsFilePath, JSON.stringify(newProductsDatabase,null,"\t"));
 
         res.redirect('/products')
-
-
     },
 
 }

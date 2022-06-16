@@ -5,12 +5,10 @@ const mainController = require("../controllers/MainController");
 const productsRoutes = require("./products")
 const usersRoutes = require("./users")
 const newsletterMiddleware = require('../middlewares/newsletterMiddleware');
-const newsletterValidator = require('../middlewares/newsletterValidator');
-
 
 /*** Home */
 router.get("/", mainController.index);
-router.post("/", newsletterValidator, newsletterMiddleware, mainController.index);
+router.post("/", newsletterMiddleware, mainController.index);
 
 /*** Cart */
 router.get("/cart", mainController.productCart);
