@@ -31,7 +31,6 @@ const UsersController = {
 
                     req.session.userLogged = userToLogin;
 
-
                     req.session.isAdmin = userToLogin.role == "admin";                        
 
                     if (req.body.recordame) {
