@@ -31,8 +31,8 @@ const userValidator = [
             };
         }else{
             file = 'user-default.png';
-            return true;
         }
+        return true;
     })
 ];
 

@@ -9,9 +9,6 @@ const productValidator = [
          .isLength({max : 60}).withMessage('La descripción debe tener menos de 60 caracteres'),
     check('image').custom((value, {req}) => {
         let files = req.files.image;
-        console.log('req.files.image');
-        console.log('===============');
-        console.log(req.files.image);
         if(!files){
             throw new Error ('Tienes que subir al menos una imagen')
         }
@@ -19,9 +16,6 @@ const productValidator = [
     }),
     check('thumb').custom((value, {req}) => {
         let file = req.files.thumb;
-        console.log('req.files.thumb');
-        console.log('===============');
-        console.log(req.files.thumb);
         if(!file){
             throw new Error ('Tienes que subir una imagen')
         }
