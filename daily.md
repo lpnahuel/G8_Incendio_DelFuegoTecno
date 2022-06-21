@@ -207,4 +207,20 @@ A continuacion detallaremos los temas que se trataron cada día:
 - Se creo usuario de Nicky
 - Verificar que queda en página de error cuando se crea un usuario.
 
+**Informe 09/06/2022**
+- Se terminaron las rutas de admin y user (pabli)
+- Se creo la vista de error (Pali)
+
+**Informe 11/06/2022**
+- Una vez que te registrar aparece un cartel con usuario creado y te redirigue a la pagina de login
+
+**Informe 13/06/2022**
+- Funcional el newsletter
+- Arreglamos validacion de la imagen de los usuarios.
+- Terminamos con el sprint 5
+
+**Informe 20/06/2022**
+- Creamos la retrospectiva del sprint 5.
+
+
 
