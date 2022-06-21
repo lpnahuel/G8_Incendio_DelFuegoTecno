@@ -80,3 +80,20 @@ En la reunion se trataron los siguientes puntos:
 - Se creo usuario de Pali, y Nicky como Admin
 - Se creo página de error 
 - Se agrego el rol a cada usuario 
+
+**Informe Comienzo de semana 11/06/2022**
+- Pospusimos el meet para el día viernes (Pali, Pabli y Nicky)
+- Se agrego el rol a cada usuario (nicky)
+- Se creo usuario de Nicky
+- Verificar que queda en página de error cuando se crea un usuario.
+- Se terminaron las rutas de admin y user (pabli)
+- Se creo la vista de error (Pali)
+
+**Informe Comienzo de semana 18/06/2022**
+- Una vez que te registrar aparece un cartel con usuario creado y te redirigue a la pagina de login
+- Funcional el newsletter
+- Arreglamos validacion de la imagen de los usuarios.
+- Terminamos con el sprint 5
+
+**Informe Comienzo de semana 20/06/2022**
+- Creamos la retrospectiva del sprint 5.
