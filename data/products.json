@@ -11,6 +11,7 @@
 			"",
 			""
 		],
+		"brand": "Asus",
 		"thumb": "thumb-asus-zephyrus-duo_15-GX550LXS-001.webp",
 		"description": "Asus Rog Zephyrus Duo 15 SE (Gx551Qm-Es96)",
 		"specs": "Amd Ryzen 9 5980Hx Processor (3.3Ghz - 4.8Ghz) Processor, 15.6\" 300Hz (3Ms) Ips-Level Full Hd (1920 X 1080) 100% Srgb Display, 16Gb (2X 8Gb) Ddr4 3200Mhz Memory, 1Tb Pcie Nvme Ssd, Nvidia Geforce Rtx 3060 Max Performance (6Gb) Gddr6 Graphics Card W/ Rog Boost, Microsoft Windows 10 Home, Intel Wi-Fi 6 (802.11Ax), Bluetooth 5.1, Hdmi 2.0B, Usb 3.2 Type C (Gen 2), 3X Usb 3.2 Type A (Gen 2), Backlit Chiclet Per-Key Rgb Keyboard"
@@ -24,6 +25,7 @@
 			"hp-omen-1020-003.webp",
 			""
 		],
+		"brand": "HP",
 		"thumb": "thumb-hp-omen-1020-001.webp",
 		"price": 335000,
 		"category": "notebooks",
@@ -40,6 +42,7 @@
 			"",
 			""
 		],
+		"brand": "Asus",
 		"thumb": "thumb-acer-nitro-i5-001.webp",
 		"price": 144000,
 		"category": "notebooks",
@@ -56,6 +59,7 @@
 			"",
 			""
 		],
+		"brand": "Dell",
 		"thumb": "thumb-alienware-17-r5-001.webp",
 		"price": 508890,
 		"category": "notebooks",
@@ -72,6 +76,7 @@
 			"",
 			""
 		],
+		"brand": "Kairos",
 		"thumb": "thumb-NOTEBOOK-NSX-KAIROS-I5-16G-SSD250-W10PO-001.webp",
 		"price": 159533,
 		"category": "notebooks",
@@ -88,6 +93,7 @@
 			"",
 			""
 		],
+		"brand": "Gigabyte",
 		"thumb": "thumb-Notebook-Gigabyte-AORUS-RTX-3080Q-001.webp",
 		"price": 483340,
 		"category": "notebooks",
@@ -104,6 +110,7 @@
 			"",
 			""
 		],
+		"brand": "MSI",
 		"thumb": "thumb-MSI-NOTEBOOK-GAMER-GL66-PULSE-11UEK801AR-001.webp",
 		"price": 483340,
 		"category": "notebooks",
@@ -120,6 +127,7 @@
 			"steelseries-rival650-003.webp",
 			"steelseries-rival650-004.webp"
 		],
+		"brand": "Steelseries",
 		"thumb": "thumb-steelseries-rival650-001.webp",
 		"price": 25000,
 		"category": "perifericos",
@@ -136,6 +144,7 @@
 			"kolink-inspire-k20-003.webp",
 			"kolink-inspire-k20-004.webp"
 		],
+		"brand": "Kolink",
 		"thumb": "thumb-kolink-inspire-k20-001.webp",
 		"price": 8499,
 		"category": "componentes",
@@ -152,6 +161,7 @@
 			"",
 			""
 		],
+		"brand": "Gigabyte",
 		"thumb": "thumb-PLACA-DE-VIDEO-GIGABYTE-RADEON-RX-5700-XT-8G-DDR6-GAMING-OC-001.webp",
 		"price": 1050252,
 		"category": "componentes",
@@ -168,6 +178,7 @@
 			"",
 			""
 		],
+		"brand": "Razer",
 		"thumb": "thumb-razer-blackwidow-mini-v3-001.webp",
 		"price": 18120,
 		"category": "perifericos",
@@ -184,6 +195,7 @@
 			"",
 			""
 		],
+		"brand": "Sentey",
 		"thumb": "thumb-gabinete-sentey-p20-001.webp",
 		"price": 9260,
 		"category": "componentes",
@@ -200,6 +212,7 @@
 			"",
 			""
 		],
+		"brand": "Halo",
 		"thumb": "thumb-Cooler-MF120-HALO-001.webp",
 		"price": 4370,
 		"category": "componentes",
@@ -216,6 +229,7 @@
 			"",
 			""
 		],
+		"brand": "Amd",
 		"thumb": "thumb-PLACA-DE-VIDEO-AMD-RX-580-8GB-POWERCOLOR-RED-DEVIL-001.webp",
 		"price": 119340,
 		"category": "componentes",
@@ -232,6 +246,7 @@
 			"",
 			""
 		],
+		"brand": "Aerocool",
 		"thumb": "thumb-SILLA-GAMER-THUNDERX3-TC3-JET-BLACK-BY-AEROCOOL-001.webp",
 		"price": 62730,
 		"category": "sillas",
@@ -248,6 +263,7 @@
 			"",
 			""
 		],
+		"brand": "Aerocool",
 		"thumb": "thumb-SILLA-GAMER-THUNDERX3-TC3-EMBER-RED-BY-AEROCOOL-001.webp",
 		"price": 76010,
 		"category": "sillas",
@@ -264,6 +280,7 @@
 			"",
 			""
 		],
+		"brand": "Benq",
 		"thumb": "thumb-MONITOR-BENQ-LED-24-GW2480-24W-BLACK-001.webp",
 		"price": 51320,
 		"category": "perifericos",
@@ -280,6 +297,7 @@
 			"",
 			""
 		],
+		"brand": "Gigabyte",
 		"thumb": "thumb-MONITOR-GAMER-GIGABYTE-24-G24FSA-165HZ-IPS-GAMING-FULL-HD-001.webp",
 		"price": 74080,
 		"category": "perifericos",
@@ -296,6 +314,7 @@
 			"",
 			""
 		],
+		"brand": "Sony",
 		"thumb": "thumb-JOYSTICK-PLAYSTATION-PS4-DUALSHOCK-GOLD-001.webp",
 		"price": 17580,
 		"category": "consolas",
@@ -312,6 +331,7 @@
 			"",
 			""
 		],
+		"brand": "Seagate",
 		"thumb": "thumb-Disco-Externo-2-tb-Seagate-Game-Drive-para-PS4-Usb-30-001.webp",
 		"price": 19510,
 		"category": "almacenamiento",
@@ -328,6 +348,7 @@
 			"",
 			""
 		],
+		"brand": "Spectrix",
 		"thumb": "thumb-DISCO-SSD-ADATA-1TB-SPECTRIX-XPG-S40G-GEN-3X4-M2-2280-001.webp",
 		"price": 26320,
 		"category": "almacenamiento",
@@ -344,6 +365,7 @@
 			"",
 			""
 		],
+		"brand": "Kingston",
 		"thumb": "thumb-headset-kingston-hyperx-cloudx-hhsc2-001.webp",
 		"price": 11400,
 		"category": "accesorios",
@@ -360,6 +382,7 @@
 			"",
 			""
 		],
+		"brand": "HP",
 		"thumb": "thumb-headsetHP-h500gs-001.webp",
 		"price": 6999,
 		"category": "accesorios",
@@ -378,6 +401,7 @@
 			"ps5-bluray-002.webp",
 			"ps5-bluray-003.webp"
 		],
+		"brand": "Sony",
 		"thumb": "thumb-ps5-bluray-001.webp",
 		"description": "La PS5, la consola de videojuegos más esperada de los últimos años, está de regreso en Hiraoka.com.pe. Por ello, preparamos esta nota para explicarte todo sobre sus especificaciones técnicas, características, accesorios y más sobre la PlayStation5. La nueva consola de Sony se encuentra disponible en dos versiones: la PS5 (con lectora de discos) y la PS5 Digital Edition. Además, de una serie de accesorios que harán tu experiencia de juego fantástica. Definitivamente, estamos hablando de una máquina fuera de serie y si quieres saber más sobre ella, sigue leyendo este artículo donde te contaremos todas sus características. ",
 		"specs": "Procesador AMD Ryzen Zen 2 con 8 núcleos, 16 subprocesos.. Frecuencia variable de procesador hasta 3.5 GHz.. GPU AMD Radeon RDNA 2 con aceleración de trazado de rayos.. Frecuencia variable de GPU hasta 2.23 GHz (10.3 TFLOPS).. . Memoria GDDR6 16 GB con ancho de banda de 448 GB/s.. . Unidad de almacenamiento SSD 825 GB.. . Ancho de banda de lectura 5.5 GB/s (datos puros) y 9 GB/s (datos comprimidos).. . Sonido Tempest 3D AudioTech.. . Conectividad inalámbrica WiFi 6 y Bluetooth 5.1.. . Puertos: 1 HDMI 2.1, 2 USB 3.1, 1 USB 2.0, 1 USB 3.1 de tipo C, 1 Gigabit Ethernet y 1 ranura PCIe 4.0 M.2.. Lector óptico Blu-Ray 4K (no viene incluido en PS5 Digital Edition). Dimensiones 39 cm alto x 10.4 cm ancho x 26.0 cm profundidad."

@@ -153,3 +153,32 @@ En primer lugar creemos que es necesario empezar a pedir ayuda con las cosas que
 - No apoyarse en una sóla persona del equipo, no comprometerme a hacer cosas que uno sabe que no va a llegar a hacer.
 - No cancelar meets.
 - No aplazar entregas.
+
+# **Retrospectiva Quinto Sprint**
+
+### **Comenzar a hacer:**
+
+- Llegar a horario a las clases.
+- Adelantar tareas opcionales y del sprint siguientes, si es que nos da el tiempo.
+
+### **Hacer más de:** 
+
+- Investigación de campo.
+- Dividir adecuadamente las tareas.
+- Terminar las tareas en tiempo y forma para no depender de otros miembros del equipo.
+
+### **Seguir haciendo:**
+
+- Seguir trabajando en equipo.
+- Mantener una buena comunicación.
+- Seguir poniendole buena onda a los meet y encuentros del grupo.
+
+### **Hacer menos de:** 
+
+- Soñar con funciones opcionales que nunca vamos a poder lograr.
+- Querer agregar categorias.
+- Seguir por caminos que no nos llevan a ningun lado.
+
+### **Dejar de hacer:**
+
+- La verdad en este sprint no encontramos cosas que dejar de hacer ya que tuvimos una buena comunicacion y resolucion de tareas.

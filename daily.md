@@ -220,7 +220,7 @@ A continuacion detallaremos los temas que se trataron cada día:
 - Terminamos con el sprint 5
 
 **Informe 20/06/2022**
-- Creamos la retrospectiva del sprint 5.
-
-
+- Creamos la retrospectiva del sprint 5. (nicky y pali)
+- Creamos el trello de este sprint y dividimos tareas (nicky y pali)
+- agregamos brands a products.json
 
