@@ -17,8 +17,11 @@
                 <article class="campos__column">
               
                     <div class="column__forms">
- 
-                        <form action="/products/admin" method="POST" enctype="multipart/form-data"class="forms__campos">
+                        <% if (locals.message) { %>
+                            <p><%= message %> </p>
+                                                                
+                        <% }else{ %>
+                        <form action="/products/admin/create" method="POST" enctype="multipart/form-data"class="forms__campos">
                             <label for="name">
                                 <p class="lg__descrip">Nombre del producto*</p>                        
                                 <% if (locals.errors && errors.name) {%> 
@@ -31,14 +34,14 @@
                                 <% if (locals.errors && errors.category) {%> 
                                     <p class="errorMsg"><%= errors.category.msg %></p>
                                 <%}  %>                        
+
                                 <select class="form__fields <%= locals.errors && errors.category ? 'invalid' : '' %>" id="category" name="category">
                                     <option value="" selected disabled>Seleccioná</option>
-                                    <% let categorias = ['notebooks', 'periféricos', 'almacenamiento', 'componentes', 'accesorios', 'consolas', 'sillas',] %> 
-                                    <% categorias.forEach(category => { %> 
-                                    <option value="<%= category %>" <%= locals.oldData && (category === oldData.category) ? 'selected' : '' %>><%= category %> </option>
+                                    <% categories.forEach(category => { %> 
+                                        <option value="<%= category.id %>" <%= locals.oldData && (category.id === oldData.category.id) ? 'selected' : '' %>><%= category.name %> </option>
                                     <% }) %> 
-                                    
-                            </select>
+                                </select>
+
                         </label>
                             <label for="price">
                                 <p class="lg__descrip">Precio*</p>
@@ -87,6 +90,7 @@
                             <button aria-label="Agregar producto" class="main-btns" type="submit">Agregar</button>
                         
                         </form>
+                        <% } %> 
                     </div>
                 </article>
             </section>

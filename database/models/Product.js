@@ -23,7 +23,7 @@ module.exports = (sequelize, DataTypes) =>{
             type: DataTypes.INTEGER,
             allowNull: false
         },
-        product_name : {
+        name : {
             type: DataTypes.STRING(100),
             allowNull: false
         },
@@ -71,8 +71,9 @@ module.exports = (sequelize, DataTypes) =>{
 
     Product.associate = (models) =>{
         Product.belongsTo(models.Category, {
-            as: "category",
-            foreignKey: "category_id"
+            as: "categories",
+            foreignKey: "category_id",
+            targetKey: "id"
         })
     }
 

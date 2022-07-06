@@ -8,9 +8,13 @@ module.exports = (sequelize, DataTypes) =>{
             autoIncrement: true,
             allowNull: false
         },
-        category_name : {
+        name : {
             type: DataTypes.STRING(100),
             allowNull: false,
+        },
+        description : {
+            type: DataTypes.STRING(200),
+            allowNull: false
         },
         created_at : {
             type: DataTypes.DATE,
@@ -30,7 +34,8 @@ module.exports = (sequelize, DataTypes) =>{
 
         Category.hasMany(models.Product, {
             as: "products",
-            foreignKey: "category_id"
+            foreignKey: "category_id",
+            targetKey: "id"
         })
     };
 

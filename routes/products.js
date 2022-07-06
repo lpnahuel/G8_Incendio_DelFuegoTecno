@@ -24,7 +24,7 @@ router.get('/admin', ProductsController.admin);
 
 /*** CREATE ONE PRODUCT */ 
 router.get('/admin/create', ProductsController.create); 
-router.post('/admin', multipleUpload, productValidator, ProductsController.store); 
+router.post('/admin/create', multipleUpload, productValidator, ProductsController.store); 
 
 /*** EDIT ONE PRODUCT */ 
 router.get('/admin/edit/:id', ProductsController.edit); 

@@ -13,12 +13,16 @@
                 <h2 class="form-title">Panel de administrador</h2>
                 <hr class="forms__div">
                 <div class="adminPanelCont">
+                    <% if (locals.message) { %>
+                     <p><%= message %> </p>
+                    <% }else{ %>
 
-                    <% productsDB.forEach(product => { %>
+                        <% productsDB.forEach(product => { %>
                         
-                        <%- include('../components/adminPanelItem', {product : product}) %> 
+                            <%- include('../components/adminPanelItem', {product : product}) %> 
                         
                         <% }) %>
+                    <% } %>
                 </div>
             </section>
         </section>

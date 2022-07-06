@@ -6,7 +6,7 @@
     <hr class="name__div">
     <p class="adminProductCont__data">Precio: $<%= product.price.toLocaleString('es-ES') %></p>
     <p class="adminProductCont__data">Stock: <%= product.stock %></p>
-    <p class="adminProductCont__data">Categoría: <%= product.category %></p>
+    <p class="adminProductCont__data">Categoría: <%= product.category.name %></p>
     <hr class="name__div">
     <div class="adminProductCont__btns">
         <form action="/products/admin/edit/<%= product.id %>?_method=DELETE" method="POST" onsubmit="return confirm('Estás a punto de eliminar el producto. ¿Querés continuar?')">

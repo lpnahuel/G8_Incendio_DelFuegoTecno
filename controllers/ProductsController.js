@@ -5,10 +5,12 @@ const { validationResult } = require('express-validator');
 
 // *** Path's */
 const productsFilePath = path.join(__dirname, '../data/products.json');
+const db = require('../database/models/index.js');
 
 const ProductsController = {
     index : (req,res)=>{
         let productsDB = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+
 
         res.render('products/productList', {productsDB : productsDB});
     },
@@ -46,35 +48,52 @@ const ProductsController = {
     },
 
     admin : (req, res)=>{
-        let productsDB = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
-        res.render('products/admin-product-list', {productsDB : productsDB});
+        db.Product.findAll({
+            include : { model: db.Category, as: 'categories' }
+        })
+        .then((productsDB)=>{
+            console.log(JSON.stringify(productsDB, null, 2));
+            res.render('products/admin-product-list', {productsDB : productsDB});
+        })
+        .catch(err =>{
+            res.render('products/admin-product-list', {message : err});
+
+        })
+
     },
 
     create : (req, res)=>{
-        res.render('products/admin-create');
+
+        db.Category.findAll()
+        .then((categories)=>{
+
+            res.render('products/admin-create', {categories : categories});
+        })
+        .catch(err =>{
+
+            res.render('products/admin-create', {message : err});
+
+        })
     },
     
     store : (req, res)=>{
-        let productsDB = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
         
         let validationResults = validationResult(req);
         let errors = validationResults.mapped();
         
         if(validationResults.errors.length === 0){
             
-            let newProductId = productsDB.length +1;
-            
+         
             let image;
             (req.files.image) ? image = (req.files.image.map(item => item.originalname)) : image = [];
             
             let thumb;
             (req.files.thumb)? thumb = (req.files.thumb[0].originalname) : thumb = '';
             
-            let newProduct = {
-                id : newProductId,
+            db.Product.create({
                 name:  req.body.name,
-                category : req.body.category,
+                category_id : req.body.category,
                 price : parseInt(req.body.price),
                 stock : parseInt(req.body.stock),
                 image_01: image[0],
@@ -85,21 +104,22 @@ const ProductsController = {
                 description : req.body.description,
                 specs :  req.body.specs
                      
-                }
-            
-            let newProductList;
-            
-            productsDB == '' ? newProductList = [] : newProductList = productsDB;
-            
-            newProductList.push(newProduct);
-            
-            fs.writeFileSync(productsFilePath, JSON.stringify(newProductList, null, "\t"));
-            
-            res.redirect('/products');
+            })
+            .then(()=>{
+                res.redirect('/products/admin');
+            })
+            .catch(err =>{
+                 console.log(err)
+            })
 
         }else{
 
-            res.render('products/admin-create', {errors : errors, oldData : req.body});
+            db.Category.findAll()
+            .then((categories)=>{
+    
+                res.render('products/admin-create', {errors : errors, oldData : req.body, categories : categories});
+            });
+
         }
     },
     

@@ -55,15 +55,15 @@ module.exports = (sequelize, DataTypes) =>{
 
     User.associate = (models) =>{
         User.belongsTo(models.Role, {
-            as: "role",
+            as: "roles",
             foreignKey: "role_id"
-        }),
+        })
 
         //esto no se si está bien :( - o sería belongsTo?
-        User.hasMany(models.Cart, {
-            as: "carts",
-            foreignKey: "user_id"
-        })
+        // User.hasMany(models.Cart, {
+        //     as: "carts",
+        //     foreignKey: "user_id"
+        // })
     }
 
     return User;
