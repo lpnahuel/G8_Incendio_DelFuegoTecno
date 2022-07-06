@@ -77,7 +77,10 @@ const ProductsController = {
                 category : req.body.category,
                 price : parseInt(req.body.price),
                 stock : parseInt(req.body.stock),
-                image: image,
+                image_01: image[0],
+                image_02: image[1],
+                image_03: image[2],
+                image_04: image[3],
                 thumb : thumb,
                 description : req.body.description,
                 specs :  req.body.specs

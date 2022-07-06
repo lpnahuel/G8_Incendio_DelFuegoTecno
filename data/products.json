@@ -405,5 +405,32 @@
 		"thumb": "thumb-ps5-bluray-001.webp",
 		"description": "La PS5, la consola de videojuegos más esperada de los últimos años, está de regreso en Hiraoka.com.pe. Por ello, preparamos esta nota para explicarte todo sobre sus especificaciones técnicas, características, accesorios y más sobre la PlayStation5. La nueva consola de Sony se encuentra disponible en dos versiones: la PS5 (con lectora de discos) y la PS5 Digital Edition. Además, de una serie de accesorios que harán tu experiencia de juego fantástica. Definitivamente, estamos hablando de una máquina fuera de serie y si quieres saber más sobre ella, sigue leyendo este artículo donde te contaremos todas sus características. ",
 		"specs": "Procesador AMD Ryzen Zen 2 con 8 núcleos, 16 subprocesos.. Frecuencia variable de procesador hasta 3.5 GHz.. GPU AMD Radeon RDNA 2 con aceleración de trazado de rayos.. Frecuencia variable de GPU hasta 2.23 GHz (10.3 TFLOPS).. . Memoria GDDR6 16 GB con ancho de banda de 448 GB/s.. . Unidad de almacenamiento SSD 825 GB.. . Ancho de banda de lectura 5.5 GB/s (datos puros) y 9 GB/s (datos comprimidos).. . Sonido Tempest 3D AudioTech.. . Conectividad inalámbrica WiFi 6 y Bluetooth 5.1.. . Puertos: 1 HDMI 2.1, 2 USB 3.1, 1 USB 2.0, 1 USB 3.1 de tipo C, 1 Gigabit Ethernet y 1 ranura PCIe 4.0 M.2.. Lector óptico Blu-Ray 4K (no viene incluido en PS5 Digital Edition). Dimensiones 39 cm alto x 10.4 cm ancho x 26.0 cm profundidad."
+	},
+	{
+		"id": 25,
+		"name": "Pali",
+		"category": "notebooks",
+		"price": 3342,
+		"stock": 3,
+		"image_01": "7c92bb4f0900431cff89f36d5033ceda.jpg",
+		"image_02": "2101dcf02f6dd5a44bc1540643382e7c.jpg",
+		"image_03": "20180601_131139_HDR.jpg",
+		"thumb": "alien.png",
+		"description": "desfsdf",
+		"specs": ""
+	},
+	{
+		"id": 26,
+		"name": "Pali",
+		"category": "periféricos",
+		"price": 353453,
+		"stock": 432,
+		"image_01": "7c92bb4f0900431cff89f36d5033ceda.jpg",
+		"image_02": "2101dcf02f6dd5a44bc1540643382e7c.jpg",
+		"image_03": "20180601_131139_HDR.jpg",
+		"image_04": "20180805_013830_HDR.jpg",
+		"thumb": "C3ZINWTJJXXB3IEQC45PKIP54Y.webp",
+		"description": "adada",
+		"specs": "das"
 	}
 ]

@@ -11,6 +11,8 @@ const productValidator = [
         let files = req.files.image;
         if(!files){
             throw new Error ('Tienes que subir al menos una imagen')
+        }else if(files.length > 4){
+            throw new Error ('Puedes subir sólo 4 imágenes')
         }
         return true
     }),
@@ -18,7 +20,10 @@ const productValidator = [
         let file = req.files.thumb;
         if(!file){
             throw new Error ('Tienes que subir una imagen')
+        }else if(file.length > 1){
+            throw new Error ('Puedes subir sólo 1 imagen')
         }
+        
         return true
     })
 ];

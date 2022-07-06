@@ -62,7 +62,7 @@
                                 <input class="form__fields <%= locals.errors && errors.image ? 'invalid' : '' %>" type="file" name="image" id="image" accept=".jpg, .png, .webp" multiple>
                             </label>
                             <label for="thumb">
-                                <p class="lg__descrip">Thumbnail*</p>
+                                <p class="lg__descrip">Miniatura*</p>
                                 <% if (locals.errors && errors.thumb) {%> 
                                     <p class="errorMsg"><%= errors.thumb.msg %></p>
                                 <%}  %> 
