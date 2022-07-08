@@ -18,11 +18,19 @@ module.exports = (sequelize, DataTypes) =>{
             type: DataTypes.STRING(100),
             allowNull: false,
         },
-        address : {
-            type: DataTypes.STRING(100),
+        birth : {
+            type: DataTypes.DATE,
             allowNull: false
         },
-        email : {
+        image:{
+            type: DataTypes.STRING(50),
+            allowNull: true
+        },
+        phone : {
+            type: DataTypes.STRING(50),
+            allowNull: false
+        },      
+        address : {
             type: DataTypes.STRING(100),
             allowNull: false
         },
@@ -30,15 +38,18 @@ module.exports = (sequelize, DataTypes) =>{
             type: DataTypes.STRING(30),
             allowNull: false
         },
-        birth : {
-            type: DataTypes.DATE,
+        city : {
+            type: DataTypes.STRING(100),
             allowNull: false
         },
-        phone : {
-            type: DataTypes.STRING(50),
+        email : {
+            type: DataTypes.STRING(100),
             allowNull: false
-        },      
-
+        },
+        password : {
+            type: DataTypes.STRING(100),
+            allowNull: false
+        },
         created_at : {
             type: DataTypes.DATE,
             allowNull: true,

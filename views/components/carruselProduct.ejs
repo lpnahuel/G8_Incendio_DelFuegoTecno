@@ -1,12 +1,12 @@
 <article class="cont-dest">
     <a class="cont-dest__link" href="/products/detail/<%= product.id %>">
         <article class="cont-dest__img">
-            <img src="/img/products/<%= product.image[0] %>" class="img__producto" alt="<%= productsDB.name %>">
+            <img src="/img/products/<%= product.thumb %>" class="img__producto" alt="<%= product.name %>">
             <hr class = "descripcion__divis">
         </article>
         <article class="cont-dest__descripcion">
             <h3 class="descripcion__nombre-prod"><%= product.name %></h3>
-            <h4 class="descripcion__precio">$<%= product.price.toLocaleString('es-ES') %></h4>
+            <h4 class="descripcion__precio">$<%= product.price %></h4>
         </article>
         <a href="/cart" class="cont-dest__carrito"><i class="material-icons">add_shopping_cart</i></a>
         <button aria-label= "fav" class="cont-dest__fav" type="submit"><i class="far fa-heart"></i></button>                    

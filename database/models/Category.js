@@ -1,5 +1,3 @@
-// const models = require('/database/models');
-
 module.exports = (sequelize, DataTypes) =>{
     const Category = sequelize.define('Category', {
         id : {
@@ -14,7 +12,7 @@ module.exports = (sequelize, DataTypes) =>{
         },
         description : {
             type: DataTypes.STRING(200),
-            allowNull: false
+            allowNull: true
         },
         created_at : {
             type: DataTypes.DATE,

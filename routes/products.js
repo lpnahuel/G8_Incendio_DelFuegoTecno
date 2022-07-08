@@ -14,7 +14,7 @@ router.get('/', ProductsController.index);
 router.get('/search', ProductsController.search);
 
 /*** GET ONE CATEGORY */ 
-router.get('/category/:category', ProductsController.category); 
+router.get('/category/:id', ProductsController.category); 
 
 /*** GET ONE PRODUCT */ 
 router.get('/detail/:id', ProductsController.detail); 

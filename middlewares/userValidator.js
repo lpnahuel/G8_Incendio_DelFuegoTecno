@@ -5,6 +5,7 @@ const userValidator = [
     check('firstName', '*Este campo es obligatorio').notEmpty(),
     check('lastName', '*Este campo es obligatorio').notEmpty(),
     check('birth', '*Este campo es obligatorio').notEmpty(),
+    check('address', '*Este campo es obligatorio').notEmpty(),
     check('phone', '*Este campo es obligatorio').notEmpty(),
     check('cp', '*Este campo es obligatorio').notEmpty()
         .isInt().withMessage('El código postal debe ser un número entero').bail()

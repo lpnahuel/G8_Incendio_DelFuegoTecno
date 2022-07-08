@@ -18,7 +18,7 @@
               
                     <div class="column__forms">
                         <% if (locals.message) { %>
-                            <p><%= message %> </p>
+                            <p class="errorMsg"><%= message %> </p>
                                                                 
                         <% }else{ %>
                         <form action="/products/admin/create" method="POST" enctype="multipart/form-data"class="forms__campos">

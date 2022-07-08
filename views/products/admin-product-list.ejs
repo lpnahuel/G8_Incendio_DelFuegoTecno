@@ -14,7 +14,7 @@
                 <hr class="forms__div">
                 <div class="adminPanelCont">
                     <% if (locals.message) { %>
-                     <p><%= message %> </p>
+                     <p class="errorMsg"><%= message %> </p>
                     <% }else{ %>
 
                         <% productsDB.forEach(product => { %>

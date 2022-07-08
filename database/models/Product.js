@@ -15,29 +15,25 @@ module.exports = (sequelize, DataTypes) =>{
             allowNull: false
         },
 
-        description : {
-            type: DataTypes.STRING(1000),
+        name : {
+            type: DataTypes.STRING(100),
             allowNull: false
         },
         price : {
             type: DataTypes.INTEGER,
             allowNull: false
         },
-        name : {
-            type: DataTypes.STRING(100),
+        stock : {
+            type: DataTypes.INTEGER,
+            allowNull: false
+        },
+        description : {
+            type: DataTypes.STRING(1000),
             allowNull: false
         },
         specs : {
             type: DataTypes.STRING(500),
             allowNull: true
-        },
-        stock : {
-            type: DataTypes.INTEGER,
-            allowNull: false
-        },
-        thumb : {
-            type: DataTypes.STRING(100),
-            allowNull: false
         },
         image_01 : {
             type: DataTypes.STRING(100),
@@ -54,6 +50,10 @@ module.exports = (sequelize, DataTypes) =>{
         image_04 : {
             type: DataTypes.STRING(100),
             allowNull: true,
+        },
+        thumb : {
+            type: DataTypes.STRING(100),
+            allowNull: false
         },
         created_at : {
             type: DataTypes.DATE,

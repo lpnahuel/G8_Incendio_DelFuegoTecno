@@ -6,51 +6,76 @@ const { validationResult } = require('express-validator');
 // *** Path's */
 const productsFilePath = path.join(__dirname, '../data/products.json');
 const db = require('../database/models/index.js');
+const Op = db.Sequelize.Op;
 
 const ProductsController = {
+    //listo
     index : (req,res)=>{
-        let productsDB = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+        db.Product.findAll()
+        .then(productsDB =>{
+            res.render('products/productList', {productsDB : productsDB});
+        })
+        .catch(err =>{
+            console.log('Ha ocurrido un error: ' + err);
+        })
 
-
-        res.render('products/productList', {productsDB : productsDB});
     },
     
     search : (req,res)=>{
-        let productsDB = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
-        let userSearch = req.query.search.toLowerCase();
+       // que busque también el nombre de la categoria?
+        let userSearch = req.query.search
 
-        let searchResults = [];
+        db.Product.findAll({
+            where : {
+                name : {[Op.like] : "%" + userSearch + "%"},
 
-        productsDB.forEach(foundProduct => {
-            if (foundProduct.name.toLowerCase().includes(userSearch) || foundProduct.category.toLowerCase().includes(userSearch)) {
-            searchResults.push(foundProduct);
             }
-        });
+        })
+        .then(foundProduct=>{
+            res.render('products/productList', {productsDB : foundProduct});
+        })
+        .catch(err =>{
+            console.log('Ha ocurrido un error: ' + err);
+        })
 
-        res.render('products/productList', {productsDB : searchResults});
+
     },
-
+    //listo
     category : (req,res)=>{
-        let productsDB = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
-
-        let selectedCategory = productsDB.filter(producto => producto.category == req.params.category);
-
-
-        res.render('products/productCategory', {selectedCategory : selectedCategory});
+        db.Product.findAll(
+            {where : {category_id : req.params.id}}
+        )
+        .then(selectedCategory=>{
+            res.render('products/productCategory', {selectedCategory : selectedCategory});
+        })
+        .catch(err =>{
+            console.log('Ha ocurrido un error: ' + err);
+        })
     },
-
+    //listo
     detail : (req, res)=>{
-        let productsDB = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+        db.Product.findByPk(req.params.id)
+        .then(productRequested=>{
+            db.Product.findAll()
+            .then(productsDB=>{
+                res.render('products/productDetail', {productRequested : productRequested, productsDB : productsDB});
+            })
+        })
+        .catch(err =>{
+            console.log('Ha ocurrido un error: ' + err);
+        })
          
-        let productRequested = productsDB.find(producto => producto.id === parseInt(req.params.id));
-        res.render('products/productDetail', {productRequested : productRequested, productsDB : productsDB});
     },
 
+    //listo
     admin : (req, res)=>{
 
         db.Product.findAll({
-            include : { model: db.Category, as: 'categories' }
+            include : {
+                model: db.Category,
+                as: 'categories' 
+            }
         })
         .then((productsDB)=>{
             console.log(JSON.stringify(productsDB, null, 2));
@@ -63,20 +88,17 @@ const ProductsController = {
 
     },
 
+    //listo
     create : (req, res)=>{
-
         db.Category.findAll()
         .then((categories)=>{
-
             res.render('products/admin-create', {categories : categories});
         })
         .catch(err =>{
-
             res.render('products/admin-create', {message : err});
-
         })
     },
-    
+    //listo
     store : (req, res)=>{
         
         let validationResults = validationResult(req);
@@ -109,71 +131,82 @@ const ProductsController = {
                 res.redirect('/products/admin');
             })
             .catch(err =>{
-                 console.log(err)
+                console.log('Ha ocurrido un error: ' + err);
             })
 
         }else{
-
+            
             db.Category.findAll()
             .then((categories)=>{
-    
                 res.render('products/admin-create', {errors : errors, oldData : req.body, categories : categories});
-            });
-
+            })
+            .catch(err =>{
+                console.log('Ha ocurrido un error: ' + err);
+            })
         }
     },
-    
+    //listo
     edit : (req, res)=>{
-        let productsDB = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
-        let productRequested = productsDB.find(producto => producto.id === parseInt(req.params.id));
-
-        res.render('products/admin-edit', {productRequested : productRequested, productsDB : productsDB});
+        db.Product.findByPk(req.params.id)
+        .then(productRequested=>{
+            db.Category.findAll()
+            .then(categories =>{
+                res.render('products/admin-edit', {productRequested : productRequested, categories : categories});
+            })
+        })
+        .catch(err =>{
+            console.log('Ha ocurrido un error: ' + err);
+        })
     },
-    
+
+    //listo    
     update : (req, res)=>{
-        let productsDB = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
-
-        let productToEdit = productsDB.find(item => item.id === parseInt(req.params.id));
         
-
-        let image;
-        (req.files.image) ? image = (req.files.image.map(item => item.originalname)) : image = productToEdit.image;
-
-        let thumb;
-        (req.files.thumb)? thumb = (req.files.thumb[0].originalname) : thumb = productToEdit.thumb;
- 
-        let newEdition = {
-            id : parseInt(req.params.id),
-            name : req.body.name,
-            category : req.body.category,
-            price : parseInt(req.body.price),
-            stock : parseInt(req.body.stock),
-            image : image,
-            thumb : thumb,
-            description : req.body.description,
-            specs : req.body.specs
-
-        };
-
-        let productIndex = productsDB.indexOf(productToEdit);
-
-        productsDB[productIndex] = newEdition;
-
-        fs.writeFileSync(productsFilePath, JSON.stringify(productsDB,null,"\t"));
-
-        res.redirect('/products/admin')
-    },
+        db.Product.findByPk(req.params.id)
+        .then(productToEdit =>{
+            let image = [];
+            (req.files.image) ? image = (req.files.image.map(item => item.originalname)) : image.push(productToEdit.image_01, productToEdit.image_02, productToEdit.image_03, productToEdit.image_04);
     
-    destroy : (req, res)=>{
-		let productsDB = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+            let thumb;
+            (req.files.thumb)? thumb = (req.files.thumb[0].originalname) : thumb = productToEdit.thumb;
 
-        const newProductsDatabase = productsDB.filter(item => item.id !== parseInt(req.params.id));
-
-        fs.writeFileSync(productsFilePath, JSON.stringify(newProductsDatabase,null,"\t"));
-
-        res.redirect('/products')
+            db.Product.update({
+                name : req.body.name,
+                category : req.body.category,
+                price : parseInt(req.body.price),
+                stock : parseInt(req.body.stock),
+                image_01: image[0],
+                image_02: image[1],
+                image_03: image[2],
+                image_04: image[3],
+                thumb : req.files.thumb,
+                description : req.body.description,
+                specs : req.body.specs
+            },
+            {
+                where : {id : req.params.id}
+            })
+            .then(()=>{
+                res.redirect('/products/admin')
+            })
+        })
+        .catch(err =>{
+            console.log('Ha ocurrido un error: ' + err);
+        })
     },
-
+    //listo
+    destroy : (req, res)=>{
+		
+        db.Product.destroy({
+            where : {id : req.params.id}
+        })
+        .then(()=>{
+            res.redirect('/products')
+        })
+        .catch(err =>{
+            console.log('Ha ocurrido un error: ' + err);
+        })
+    },
 }
 
 module.exports = ProductsController;

@@ -27,12 +27,10 @@
                             <label for="category">
                                 <p class="lg__descrip">Categoría*</p>                        
                             <select class="form__fields" id="category" name="category" required>
-                                <option value="Notebooks" <%= productRequested.category==='notebooks'? 'selected' : '' %>>notebooks</option>
-                                <option value="Periféricos" <%= productRequested.category==='perifericos'? 'selected' : '' %>>periféricos</option>
-                                <option value="Almacenamiento" <%= productRequested.category==='almacenamiento'? 'selected' : '' %>>almacenamiento</option>
-                                <option value="Componentes" <%= productRequested.category==='componentes'? 'selected' : '' %>>componentes</option>
-                                <option value="Consolas" <%= productRequested.category==='consolas'? 'selected' : '' %>>consolas</option>
-                                <option value="Sillas" <%= productRequested.category==='sillas'? 'selected' : '' %>>sillas</option>
+                                <% categories.forEach(category => { %> 
+                                    <option value="<%= category.id %>" <%= productRequested.category_id === category.id ? 'selected' : ''%>><%= category.name %> </option>
+                                <% }) %> 
+
                             </select>
                             <span class="feedback"></span>
                             </label>
@@ -52,7 +50,7 @@
                                 <span class="feedback"></span>
                             </label>
                             <label for="thumb">
-                                <p class="lg__descrip">Thumbnail*</p>
+                                <p class="lg__descrip">Miniatura*</p>
                                 <input class="form__fields" type="file" name="thumb" id="thumb" accept=".jpg, .png, .webp">
                                 <span class="feedback"></span>
                             </label>

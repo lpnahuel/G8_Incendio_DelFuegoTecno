@@ -19,19 +19,19 @@
                 <section class="cont-img-prod">
                     
                     <div class="prod__img">
-                        <img class="img__ppal" src="/img/products/<%= productRequested.image[0] %>" alt="Imagen <%= productRequested.name %> ">
+                        <img class="img__ppal" src="/img/products/<%= productRequested.image_01 %>" alt="Imagen <%= productRequested.name %> ">
                     </div>
                     
                     <!-- Imagenes alternativas -->
                     <div class="prod__alt">
                         <div class="alt__img">
-                            <img class="img__fotito" src="/img/products/<%= productRequested.image[0] %>" alt="Imagen alternativa 1">
+                            <img class="img__fotito" src="/img/products/<%= productRequested.image_02 !== null ? productRequested.image_02 : "default.webp" %> " alt="Imagen alternativa 1">
                         </div>
                         <div class="alt__img">
-                            <img class="img__fotito" src="/img/products/<%= productRequested.image[1] !== "" ? productRequested.image[1] : "default.webp" %>" alt="Imagen alternativa 2">
+                            <img class="img__fotito" src="/img/products/<%= productRequested.image_03 !== null ? productRequested.image_03 : "default.webp" %>" alt="Imagen alternativa 2">
                         </div>
                             <div class="alt__img">
-                            <img class="img__fotito" src="/img/products/<%= productRequested.image[2]  !== "" ? productRequested.image[2] : "default.webp" %>" alt="Imagen alternativa 3">
+                            <img class="img__fotito" src="/img/products/<%= productRequested.image_04  !== null ? productRequested.image_04 : "default.webp" %>" alt="Imagen alternativa 3">
                         </div>
                     </div>
                 </section>

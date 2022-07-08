@@ -7,6 +7,7 @@ const { CLIENT_RENEG_LIMIT } = require('tls');
 
 // ************ Path's ************
 const usersFilePath = path.join(__dirname, '../data/users.json');
+const db = require('../database/models/index.js');
 
 const UsersController = {
     
@@ -59,23 +60,19 @@ const UsersController = {
 
     processRegister:(req,res)=>{
 
-        let usersDB = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
-
         let validationResults = validationResult(req);
         let errors = validationResults.mapped();
 
         if(validationResults.errors.length === 0){
-            let newUserId = usersDB.length + 1;
           
             let image;
             (req.file) ? image = (req.file.filename) : image = '';
 
             let password = bcrypt.hashSync(req.body.password, 10);
             
-            let newUser = {
-                id: newUserId,
-                firstName : req.body.firstName,
-                lastName : req.body.lastName,
+            db.User.create({
+                first_name : req.body.firstName,
+                last_name : req.body.lastName,
                 birth : req.body.birth,
                 image : image,
                 phone :  req.body.phone,
@@ -84,18 +81,11 @@ const UsersController = {
                 city :  req.body.city,
                 email :  req.body.email,
                 password : password,
-                role : "client"
-            }
-
-            let newUserList;
-
-            usersDB == '' ? newUserList = [] : newUserList = usersDB;
-
-            newUserList.push(newUser);
-
-            fs.writeFileSync(usersFilePath, JSON.stringify(newUserList, null, '\t'));
-
-            res.redirect('/users/login');
+                role_id  : 2
+            })
+            .then(()=>{
+                res.redirect('/users/login');
+            })
 
         }else{
 
