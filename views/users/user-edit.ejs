@@ -19,20 +19,20 @@
                     
                     <div class="registro__cont">
 
-                        <label for="firstName">
+                        <label for="first_name">
                             <p class="lg__descrip">Nombre*</p>  
-                            <% if (locals.errors && errors.firstName) {%> 
-                                <p class="errorMsg"><%= errors.firstName.msg %></p>
+                            <% if (locals.errors && errors.first_name) {%> 
+                                <p class="errorMsg"><%= errors.first_name.msg %></p>
                             <%}  %>                       
-                            <input class="form__fields" type="text" id="firstName" name="firstName" value="<%= userProfile.firstName %>" >
+                            <input class="form__fields" type="text" id="first_name" name="first_name" value="<%= userProfile.first_name %>" >
                         </label>
                     
-                        <label for="lastName">
+                        <label for="last_name">
                             <p class="lg__descrip">Apellido*</p>
-                            <% if (locals.errors && errors.lastName) {%> 
-                                <p class="errorMsg"><%= errors.lastName.msg %></p>
+                            <% if (locals.errors && errors.last_name) {%> 
+                                <p class="errorMsg"><%= errors.last_name.msg %></p>
                             <%}  %> 
-                            <input class="form__fields" type="text" id="lastName" name="lastName" value="<%= userProfile.lastName %>" >
+                            <input class="form__fields" type="text" id="last_name" name="last_name" value="<%= userProfile.last_name %>" >
                         </label>
 
                         <label for="birth">

@@ -14,11 +14,11 @@
                     
                     <img src="/img/users/<%= userProfile.image != null ? userProfile.image : "user-default.png" %>" alt="Imagen de perfil de <%= userProfile.firstName %>">
                 </div>
-                <h2 class="profileGreeting">Hola <%= userProfile.firstName %>!</h2>
+                <h2 class="profileGreeting">Hola <%= userProfile.first_name %>!</h2>
             </div>
             <div class="profileInfo">
                 <p class="infoTitles">Nombre Completo</p>
-                <p class="infoData"><%= userProfile.firstName + ' ' + userProfile.lastName  %></p>
+                <p class="infoData"><%= userProfile.first_name + ' ' + userProfile.last_name  %></p>
                 <br>
                 <p class="infoTitles">Dirección</p>
                 <p class="infoData"><%= userProfile.address %></p>

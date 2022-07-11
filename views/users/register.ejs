@@ -19,20 +19,20 @@
                     
                     <div class="registro__cont">
 
-                        <label for="firstName">
+                        <label for="first_name">
                             <p class="lg__descrip ">Nombre*</p>                        
-                            <% if (locals.errors && errors.firstName) {%> 
-                                <p class="errorMsg"><%= errors.firstName.msg %></p>
+                            <% if (locals.errors && errors.first_name) {%> 
+                                <p class="errorMsg"><%= errors.first_name.msg %></p>
                             <%}  %> 
-                            <input type="text" id="firstName" name="firstName" class="form__fields <%= locals.errors && errors.firstName ? 'invalid' : '' %>" value="<%= locals.oldData ? oldData.firstName : null %>" placeholder="Juan">
+                            <input type="text" id="first_name" name="first_name" class="form__fields <%= locals.errors && errors.first_name ? 'invalid' : '' %>" value="<%= locals.oldData ? oldData.first_name : null %>" placeholder="Juan">
                         </label>
                     
-                        <label for="lastName">
+                        <label for="last_name">
                             <p class="lg__descrip">Apellido*</p>
-                            <% if (locals.errors && errors.lastName) {%> 
-                                <p class="errorMsg"><%= errors.lastName.msg %></p>
+                            <% if (locals.errors && errors.last_name) {%> 
+                                <p class="errorMsg"><%= errors.last_name.msg %></p>
                             <%}  %> 
-                            <input type="text" id="lastName" name="lastName" class="form__fields <%= locals.errors && errors.lastName? 'invalid' : '' %>" value="<%= locals.oldData ? oldData.lastName : null %>" placeholder="Perez">
+                            <input type="text" id="last_name" name="last_name" class="form__fields <%= locals.errors && errors.last_name? 'invalid' : '' %>" value="<%= locals.oldData ? oldData.last_name : null %>" placeholder="Perez">
                         </label>
 
                         <label for="birth">

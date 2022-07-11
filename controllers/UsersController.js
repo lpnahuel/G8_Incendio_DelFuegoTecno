@@ -3,11 +3,15 @@ const fs = require('fs');
 const path = require('path');
 const { validationResult } = require('express-validator')
 const bcrypt = require('bcryptjs');
-const { CLIENT_RENEG_LIMIT } = require('tls');
+const { CLIENT_RENEG_LIMIT } = require('tls'); //y esto??
 
 // ************ Path's ************
 const usersFilePath = path.join(__dirname, '../data/users.json');
 const db = require('../database/models/index.js');
+
+
+//REHACER MIDDLEWARES
+
 
 const UsersController = {
     
@@ -19,35 +23,35 @@ const UsersController = {
         let errors = validationResult(req);
     
         if (errors.isEmpty()){
-            let usersDB = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
 
-            let userToLogin = usersDB.find(user => user.email === req.body.email);
-
-            if (userToLogin){
-
+            db.User.findOne({
+                where :{
+                    email : req.body.email
+                }
+            })
+            .then(userToLogin =>{
                 let check = bcrypt.compareSync(req.body.password, userToLogin.password);
-
                 if(check){
                     delete userToLogin.password;
 
                     req.session.userLogged = userToLogin;
+                    req.session.userLoggedEmail = userToLogin.email;
 
-                    req.session.isAdmin = userToLogin.role == "admin";                        
+                    req.session.isAdmin = userToLogin.role_id === 1;                        
 
                     if (req.body.recordame) {
                          res.cookie('userEmail', req.body.email, { maxAge: 60000 })
                     }
-
                     res.redirect('/users/profile')
                 }else{
 
                     res.render('users/login', { errors: {msg: 'Credenciales Invalidas'}});
                 };
 
-            } else {
-                res.render('users/login', {errors : {msg: 'Credenciales Invalidas'}});
-            };
-
+            })
+            .catch(()=>{
+                res.render('users/login', {errors : {msg: 'error en el catch'}});
+            })
         
         } else {
             res.render('users/login', {errors : errors.errors});
@@ -71,8 +75,8 @@ const UsersController = {
             let password = bcrypt.hashSync(req.body.password, 10);
             
             db.User.create({
-                first_name : req.body.firstName,
-                last_name : req.body.lastName,
+                first_name : req.body.first_name,
+                last_name : req.body.last_name,
                 birth : req.body.birth,
                 image : image,
                 phone :  req.body.phone,
@@ -98,57 +102,55 @@ const UsersController = {
         res.render('users/profile', {userProfile : req.session.userLogged})
 
     },
-
+//listo
     edit : (req, res) =>{
-        let usersDB = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
+        db.User.findByPk(req.params.id)
+        .then(userProfile =>{
+            res.render('users/user-edit', {userProfile : userProfile})
+        })
+        .catch(err =>{
+            console.log('Ha ocurrido un error: ' + err);
+        })
 
-        let userProfile = usersDB.find(user => user.id === parseInt(req.params.id));
-
-        res.render('users/user-edit', {userProfile : userProfile})
 
     },
-
+//listo
     update:(req,res)=>{
-        let usersDB = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
 
-        let userToEdit = usersDB.find(user => user.id === parseInt(req.params.id));
-
-        let validationResults = validationResult(req);
-        let errors = validationResults.mapped();
-
-        if(validationResults.errors.length === 0){
-
+        db.User.findByPk(req.params.id)
+        .then(userToEdit=>{
             let image;
             req.file == undefined ? image = userToEdit.image : image = req.file.filename;
-
+            
             let password = bcrypt.hashSync(req.body.password, 10);
-
-            let editedUser = {
-                id: parseInt(req.params.id),
-                firstName : req.body.firstName,
-                lastName : req.body.lastName,
-                birth : req.body.birth,
-                image : image,
-                phone :  req.body.phone,
-                address :  req.body.address,
-                cp :  req.body.cp,
-                city :  req.body.city,
-                email :  req.body.email,
-                password : password,
-                role: req.body.role
+            let validationResults = validationResult(req);
+            let errors = validationResults.mapped();
+    
+            if(validationResults.errors.length === 0){
+        
+                db.User.update({
+                    first_name : req.body.first_name,
+                    last_name : req.body.last_name,
+                    birth : req.body.birth,
+                    image : image,
+                    phone :  req.body.phone,
+                    address :  req.body.address,
+                    cp :  req.body.cp,
+                    city :  req.body.city,
+                    email :  req.body.email,
+                    password : password,
+                    role: userToEdit.role
+                },
+                {   
+                    where : {id : req.params.id}
+                })
+                .then(()=>{
+                    res.redirect('/users/list');
+                })
+            }else{
+                res.render('users/user-edit', {userProfile : userToEdit, errors : errors, oldData : req.body});
             }
-
-            let userIndex = usersDB.indexOf(userToEdit);
-
-            usersDB[userIndex] = editedUser;
-
-            fs.writeFileSync(usersFilePath, JSON.stringify(usersDB, null, '\t'));
-
-            res.redirect('/users/list');
-        }else{
-
-            res.render('users/user-edit', {userProfile : userToEdit, errors : errors, oldData : req.body})
-        }
+        });
     },
 
     list : (req, res)=>{
