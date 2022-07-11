@@ -18,7 +18,7 @@ const UsersController = {
     login:(req,res)=>{
         res.render('users/login');
     },
-
+//listo
     processLogin: (req, res) => {
         let errors = validationResult(req);
     
@@ -61,7 +61,7 @@ const UsersController = {
     register:(req,res)=>{
         res.render('users/register');
     },
-
+//listo
     processRegister:(req,res)=>{
 
         let validationResults = validationResult(req);
@@ -147,6 +147,9 @@ const UsersController = {
                 .then(()=>{
                     res.redirect('/users/list');
                 })
+                .catch(err =>{
+                    console.log('Ha ocurrido un error: ' + err);
+                })
             }else{
                 res.render('users/user-edit', {userProfile : userToEdit, errors : errors, oldData : req.body});
             }
@@ -154,20 +157,27 @@ const UsersController = {
     },
 
     list : (req, res)=>{
-        let usersDB = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
-        res.render('users/users-list', {usersDB : usersDB});
+        db.User.findAll()
+        .then(usersDB=>{
+            res.render('users/users-list', {usersDB : usersDB});
+        })
+        .catch(err =>{
+            console.log('Ha ocurrido un error: ' + err);
+        })
 
     },
 
     delete : (req, res)=>{
-        let usersDB = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
-         
-        let newUserDataBase = usersDB.filter(item => item.id !== parseInt(req.params.id));
+        db.User.destroy({
+            where : {id : req.params.id}
+        })
+        .then(()=>{
+            res.redirect('/users/list');
 
-        fs.writeFileSync(usersFilePath, JSON.stringify(newUserDataBase,null,"\t"));
-
-        res.redirect('/users/list');
-
+        })
+        .catch(err =>{
+            console.log('Ha ocurrido un error: ' + err);
+        })
     },
 
     logout : (req, res)=>{
