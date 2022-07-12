@@ -8,20 +8,34 @@ const productsFilePath = path.join(__dirname, '../data/products.json');
 const usersFilePath = path.join(__dirname, '../data/users.json');
 const contactMessagesPath = path.join(__dirname, '../data/contactMessages.json');
 
+// ************ Path's ************
+const db = require('../database/models/index.js');
+
 const mainController = {
     
     index: (req,res)=>{
-      let productsDB = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
-      res.render('index', {productsDB : productsDB});
+      db.Product.findAll()
+      .then(productsDB =>{
+          return res.render('index', {productsDB : productsDB});
+      })
+      .catch(err =>{
+          console.log('Ha ocurrido un error: ' + err);
+      })
     },
   
     productCart: (req,res)=>{
-        let productsDB = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
-        res.render('productCart', {productsDB : productsDB});
+        db.Product.findAll()
+        .then(productsDB =>{
+            return res.render('productCart', {productsDB : productsDB});;
+        })
+        .catch(err =>{
+            console.log('Ha ocurrido un error: ' + err);
+        })
+
     },
 
     contact: (req, res)=>{
-      res.render('contact')
+      return res.render('contact')
     },
 
     saveContact: (req, res)=>{

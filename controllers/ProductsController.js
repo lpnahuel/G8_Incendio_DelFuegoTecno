@@ -9,21 +9,19 @@ const db = require('../database/models/index.js');
 const Op = db.Sequelize.Op;
 
 const ProductsController = {
-    //listo
+
     index : (req,res)=>{
         db.Product.findAll()
         .then(productsDB =>{
-            res.render('products/productList', {productsDB : productsDB});
+            return res.render('products/productList', {productsDB : productsDB});
         })
         .catch(err =>{
-            console.log('Ha ocurrido un error: ' + err);
+            return console.log('Ha ocurrido un error: ' + err);
         })
-
     },
     
     search : (req,res)=>{
 
-       // que busque también el nombre de la categoria?
         let userSearch = req.query.search
 
         db.Product.findAll({
@@ -33,42 +31,38 @@ const ProductsController = {
             }
         })
         .then(foundProduct=>{
-            res.render('products/productList', {productsDB : foundProduct});
+            return res.render('products/productList', {productsDB : foundProduct});
         })
         .catch(err =>{
             console.log('Ha ocurrido un error: ' + err);
         })
-
-
     },
-    //listo
+
     category : (req,res)=>{
         db.Product.findAll(
             {where : {category_id : req.params.id}}
         )
         .then(selectedCategory=>{
-            res.render('products/productCategory', {selectedCategory : selectedCategory});
+            return res.render('products/productCategory', {selectedCategory : selectedCategory});
         })
         .catch(err =>{
             console.log('Ha ocurrido un error: ' + err);
         })
     },
-    //listo
+
     detail : (req, res)=>{
         db.Product.findByPk(req.params.id)
         .then(productRequested=>{
             db.Product.findAll()
             .then(productsDB=>{
-                res.render('products/productDetail', {productRequested : productRequested, productsDB : productsDB});
+                return res.render('products/productDetail', {productRequested : productRequested, productsDB : productsDB});
             })
         })
         .catch(err =>{
             console.log('Ha ocurrido un error: ' + err);
         })
-         
     },
 
-    //listo
     admin : (req, res)=>{
 
         db.Product.findAll({
@@ -79,33 +73,30 @@ const ProductsController = {
         })
         .then((productsDB)=>{
             console.log(JSON.stringify(productsDB, null, 2));
-            res.render('products/admin-product-list', {productsDB : productsDB});
+            return res.render('products/admin-product-list', {productsDB : productsDB});
         })
         .catch(err =>{
             res.render('products/admin-product-list', {message : err});
 
         })
-
     },
 
-    //listo
     create : (req, res)=>{
         db.Category.findAll()
         .then((categories)=>{
-            res.render('products/admin-create', {categories : categories});
+            return res.render('products/admin-create', {categories : categories});
         })
         .catch(err =>{
             res.render('products/admin-create', {message : err});
         })
     },
-    //listo
+
     store : (req, res)=>{
         
         let validationResults = validationResult(req);
         let errors = validationResults.mapped();
         
         if(validationResults.errors.length === 0){
-            
          
             let image;
             (req.files.image) ? image = (req.files.image.map(item => item.originalname)) : image = [];
@@ -125,10 +116,9 @@ const ProductsController = {
                 thumb : thumb,
                 description : req.body.description,
                 specs :  req.body.specs
-                     
             })
             .then(()=>{
-                res.redirect('/products/admin');
+                return res.redirect('/products/admin');
             })
             .catch(err =>{
                 console.log('Ha ocurrido un error: ' + err);
@@ -138,20 +128,20 @@ const ProductsController = {
             
             db.Category.findAll()
             .then((categories)=>{
-                res.render('products/admin-create', {errors : errors, oldData : req.body, categories : categories});
+                return res.render('products/admin-create', {errors : errors, oldData : req.body, categories : categories});
             })
             .catch(err =>{
                 console.log('Ha ocurrido un error: ' + err);
             })
         }
     },
-    //listo
+
     edit : (req, res)=>{
         db.Product.findByPk(req.params.id)
         .then(productRequested=>{
             db.Category.findAll()
             .then(categories =>{
-                res.render('products/admin-edit', {productRequested : productRequested, categories : categories});
+                return res.render('products/admin-edit', {productRequested : productRequested, categories : categories});
             })
         })
         .catch(err =>{
@@ -159,7 +149,6 @@ const ProductsController = {
         })
     },
 
-    //listo    
     update : (req, res)=>{
         
         db.Product.findByPk(req.params.id)
@@ -187,21 +176,21 @@ const ProductsController = {
                 where : {id : req.params.id}
             })
             .then(()=>{
-                res.redirect('/products/admin')
+                return res.redirect('/products/admin')
             })
         })
         .catch(err =>{
             console.log('Ha ocurrido un error: ' + err);
         })
     },
-    //listo
+
     destroy : (req, res)=>{
 		
         db.Product.destroy({
             where : {id : req.params.id}
         })
         .then(()=>{
-            res.redirect('/products')
+            return res.redirect('/products')
         })
         .catch(err =>{
             console.log('Ha ocurrido un error: ' + err);
