@@ -222,5 +222,60 @@ A continuacion detallaremos los temas que se trataron cada día:
 **Informe 20/06/2022**
 - Creamos la retrospectiva del sprint 5. (nicky y pali)
 - Creamos el trello de este sprint y dividimos tareas (nicky y pali)
-- agregamos brands a products.json
+- Agregamos brands a products.json
+
+**Informe 21/06/2022**
+- Realizamos el meet semanal (nicky, pali y pabli)
+- Realizamos las tablas de las base de datos
+
+**Informe 22/06/2022**
+- Buscamos diferentes proyectos para guiarnos en el nuestro.
+
+**Informe 24/06/2022**
+- Modificamos las tablas de la base de datos
+
+**Informe 26/06/2022**
+- Armamos el Diagrama de Entidades y Relaciones (DER)
+- Creamos la carpeta para Sequelize
+
+**Informe 28/06/2022**
+- Realizamos el meet semanal (nicky, pali y pabli)
+- Volvimos a modificar tablas.
+- agregamos archivos de configuración para que Sequelize se conecte a la base de datos
+
+**Informe 29/06/2022**
+- El grupo se encontro con muchas incognitas que no podíamos encontrar un camino adecuado para continuar realizando el sprint sin ayuda.
+- Volvimos al material de playgroung pero no fue suficiente. 
+
+**Informe 30/06/2022**
+- Pospusimos el meet semanal (nicky, pali y pabli)
+
+**Informe 03/07/2022**
+- Armamos un esqueleto.
+- incluimos los tipos de datos de los campos y sus restricciones.
+
+
+**Informe 05/07/2022**
+- Arrancamos a armar la base de datos en MySQL
+- Creamos la database
+- Nos reunimos con Dani y nos ayudo a poder avanzar con el proyecto y a sacarnos muchas dudas.
+
+**Informe 06/07/2022**
+- Cambiamos las tablas a todas minusculas y plural a lo que iba en plural.
+- Agregamos los archivos de configuración para que Sequelize se conecte a la base de datos
+- Agregamos los archivos de modelos para representar las tablas de users y products.
+
+**Informe 07/07/2022**
+- Logramos que se vea un producto desde la DB de MySQL.
+- Nos quedamo con dos branches.
+
+**Informe 07/07/2022**
+- Relizamos el CRUD de usuarios.
+- Falta terminar agregar paginado a los listados y buscadores
+
+**Informe 12/07/2022**
+- Realizamos scrypt de datos e incluimos las relaciones entre las diferentes tablas
+- Nos quedan pendientes las opcionales del carrito de compra.
+- Realizamos tabla secundaria de categorias
+
 
