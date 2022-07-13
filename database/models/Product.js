@@ -32,7 +32,7 @@ module.exports = (sequelize, DataTypes) =>{
             allowNull: false
         },
         specs : {
-            type: DataTypes.STRING(500),
+            type: DataTypes.STRING(1000),
             allowNull: true
         },
         image_01 : {
@@ -57,11 +57,11 @@ module.exports = (sequelize, DataTypes) =>{
         },
         created_at : {
             type: DataTypes.DATE,
-            allowNull: true,
+            allowNull: false,
         },
         updated_at : {
             type: DataTypes.DATE,
-            allowNull: true,
+            allowNull: false,
         },
     },
     {

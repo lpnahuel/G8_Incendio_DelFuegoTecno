@@ -1,10 +1,10 @@
 <div class="adminProductCont">
     <div class="adminProductCont__img">
-        <img src="/img/users/<%= user.image != null ? user.image : "user-default.png" %>" alt="Imagen de <%= user.firstName %>">
+        <img src="/img/users/<%= user.image != "" ? user.image : "user-default.png" %>" alt="Imagen de <%= user.first_name %>">
     </div>
     <p class="adminProductCont__name user-id">User ID: <%= user.id %></p>
     <hr class="name__div">
-    <p class="adminProductCont__data">Nombre completo: <%= user.firstName + ' ' + user.lastName%></p>
+    <p class="adminProductCont__data">Nombre completo: <%= user.first_name + ' ' + user.last_name%></p>
     <p class="adminProductCont__data data-email">Email: <%= user.email %></p>
     <hr class="name__div">
     <div class="adminProductCont__btns">
