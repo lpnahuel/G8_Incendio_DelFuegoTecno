@@ -99,27 +99,26 @@ En la reunion se trataron los siguientes puntos:
 - Creamos la retrospectiva del sprint 5.
 **----- Sprint 6 -----**
 - Realizamos el meet semanal (nicky, pali y pabli).
-- Realizamos las tablas de las base de datos.
+- Realizamos las tablas de las base de datos y las rearmamos varias veces.
 - Buscamos diferentes proyectos para guiarnos en el nuestro.
-- Modificamos las tablas de la base de datos.
 - Armamos el Diagrama de Entidades y Relaciones (DER).
 - Creamos la carpeta para Sequelize.
 
 **Informe Comienzo de semana 27/06/2022**
 - Realizamos el meet semanal (nicky, pali y pabli).
 - Volvimos a modificar tablas.
-- agregamos archivos de configuración para que Sequelize se conecte a la base de datos.
+- Agregamos archivos de configuración para que Sequelize se conecte a la base de datos.
 - El grupo se encontro con muchas incognitas que no podíamos encontrar un camino adecuado para continuar realizando el sprint sin ayuda.
 - Volvimos al material de playgroung pero no fue suficiente. 
-- Pospusimos el segundo meet semanal (nicky, pali y pabli).
+- Pospusimos el segundo meet semanal hasta poder entender mejor (nicky, pali y pabli).
 
 **Informe Comienzo de semana 4/06/2022**
+- Nos reunimos con Dani y nos ayudo a poder avanzar con el proyecto y a sacarnos muchas dudas.
 - Armamos un esqueleto.
-- incluimos los tipos de datos de los campos y sus restricciones.
+- Incluimos los tipos de datos de los campos y sus restricciones.
 - Arrancamos a armar la base de datos en MySQL.
 - Creamos la database.
-- Nos reunimos con Dani y nos ayudo a poder avanzar con el proyecto y a sacarnos muchas dudas.
-- Cambiamos las tablas a todas minusculas y plural a lo que iba en plural.
+- Cambiamos las tablas a todas en minusculas, plural (lo que iba en plural) e ingles.
 - Agregamos los archivos de configuración para que Sequelize se conecte a la base de datos.
 - Agregamos los archivos de modelos para representar las tablas de users y products.
 - Logramos que se vea un producto desde la DB de MySQL.
@@ -128,16 +127,17 @@ En la reunion se trataron los siguientes puntos:
 - Relizamos el CRUD de usuarios.
 
 **Informe Comienzo de semana 11/06/2022**
+- Realizamos el CRUD de productos.
 - Se ajusta el CRUD de usuarios y productos con la nueva configuracion de base de datos
-- Falta terminar agregar paginado a los listados y buscadores.
+- Falta terminar agregar paginado a los listados y buscadores (quedo pendiente para próxima entrega).
 - Realizamos scrypt de datos e incluimos las relaciones entre las diferentes tablas.
-- Nos quedan pendientes las opcionales del carrito de compra.
+- Nos quedan pendientes las opcionales del carrito de compra (quedo pendiente para próximo sprint).
 - Realizamos tabla secundaria de categorias.
-- Realizamos el meet semanal.
-- Recibimos ayuda de Dani y Joe para poder exportar la base de datos ya que teníamos un inconveniente en MySQL.
-- Pasamos la base a Heidi ya que no podiamos subirla desde MySQL.
-- Creamos el archivo de entrega en PDF.
-- Creamos el Heroku.
+- Realizamos el meet semanal y luego recibimos ayuda de Dani y Joe para poder exportar la base de datos ya que teníamos un inconveniente en MySQL.
+- La base en MySQL Workbench no nos fue posible importala.
+- Volvimos a crear la base de datos en Heidi, ya que nos recomendaron (Joe) que podíamos conectarla directamente con Heroku.
+- Subimos el archivo a Heroku.
+- Creamos el archivo de entrega en PDF y lo compartimos por Slack.
 
 
 
