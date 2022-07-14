@@ -182,3 +182,31 @@ En primer lugar creemos que es necesario empezar a pedir ayuda con las cosas que
 ### **Dejar de hacer:**
 
 - La verdad en este sprint no encontramos cosas que dejar de hacer ya que tuvimos una buena comunicacion y resolucion de tareas.
+
+# **Retrospectiva Sexto Sprint**
+
+### **Comenzar a hacer:**
+- No perderse más meets.
+- Ser mas honestos con la disponibilidad real que uno tiene.
+- Realizar tareas en orden para llegar en tiempos a la entrega
+
+### **Hacer más: ** 
+- Buscar tutoriales para resolver los conflictos y errores del proyecto
+- Googlear en general herramientas de apoyo
+- Gestionar mejor el tiempo de cada uno.
+
+### **Seguir haciendo:**
+- Seguir manteniendo buena comunicación y conectarnos a meets para algunas actividades.
+- Seguir con los daily por whatsapp. 
+- Seguir con los meets dos veces por semana.
+- Seguir repartiendo las tareas y apoyando el trabajo en equipo.
+- Interactuando con integrantes de otros equipos
+
+### **Hacer menos de:** 
+- Dejar de cancelar los meet.
+- Dejar de esperar hasta último momento para decir que no puedo hacer algo.
+- No responder los mensajes de los miembros del equipo
+
+### **Dejar de hacer:**
+- Comprometerse con tareas que después no pueden realizar
+- Dejar de apoyarse en el material incompleto de PG y buscar otros recursos
