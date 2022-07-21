@@ -287,6 +287,8 @@ A continuacion detallaremos los temas que se trataron cada día:
 - Creamos el Heroku.
 
 **Informe 20/07/2022**
+- Hicimos reunion con Dani para ver la entrega del Script 6 (pali, pabli y nicky)
+- Nos llevamos para modificar: Category id y producto, Pantalla de error, Error en el catch, Creación nuevos usuariosPermisos para ver y editar y Sacar alert de borrar productos. (pali, pabli y nicky)
 - Modificamos los middleware de products y users. (pali y nicky)
 - Agregamos un middleware "adminmiddleware" para bloquear a los usuarios comunes que no tengan premisos. (pali y nicky)
 - Modificamos las rutas para que aparezcan con id de categoria y no con el nombre de la categoria de los productos.(pali y nicky)
