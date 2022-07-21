@@ -4,7 +4,7 @@
     </div>
     <p class="adminProductCont__name user-id">User ID: <%= user.id %></p>
     <hr class="name__div">
-    <p class="adminProductCont__data">Nombre completo: <%= user.first_name + ' ' + user.last_name%></p>
+    <p class="adminProductCont__data">Nombre completo: <%= user.first_name + ' ' + user.last_name + ' -' + user.roles.name + '-' %></p>
     <p class="adminProductCont__data data-email">Email: <%= user.email %></p>
     <hr class="name__div">
     <div class="adminProductCont__btns">

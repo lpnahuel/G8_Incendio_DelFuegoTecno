@@ -15,7 +15,7 @@ const UsersController = {
     login: (req, res) => {
         return res.render('users/login');
     },
-    
+
     processLogin: (req, res) => {
         let errors = validationResult(req);
 
@@ -36,6 +36,7 @@ const UsersController = {
                         req.session.userLoggedEmail = userToLogin.email;
 
                         req.session.isAdmin = userToLogin.role_id === 1;
+                        console.log(req.session.isAdmin);
 
                         if (req.body.recordame) {
                             res.cookie('userEmail', req.body.email, { maxAge: 60000 * 2 })
@@ -59,11 +60,12 @@ const UsersController = {
     register: (req, res) => {
         res.render('users/register');
     },
-    
+
     processRegister: (req, res) => {
 
         let validationResults = validationResult(req);
         let errors = validationResults.mapped();
+        console.log(errors);
 
         if (validationResults.errors.length === 0) {
 
@@ -86,7 +88,10 @@ const UsersController = {
                 role_id: 2
             })
                 .then(() => {
-                    res.redirect('/users/login');
+                    return res.redirect('/users/login');
+                })
+                .catch((error)=>{
+                    console.log(error)
                 })
 
         } else {
@@ -100,7 +105,7 @@ const UsersController = {
         res.render('users/profile', { userProfile: req.session.userLogged })
 
     },
-    
+
     edit: (req, res) => {
         db.User.findByPk(req.params.id)
             .then(userProfile => {
@@ -112,7 +117,7 @@ const UsersController = {
 
 
     },
-    
+
     update: (req, res) => {
 
         db.User.findByPk(req.params.id)
@@ -139,15 +144,15 @@ const UsersController = {
                         password: password,
                         role: userToEdit.role
                     },
-                    {
-                        where: { id: req.params.id }
-                    })
-                    .then(() => {
-                        res.redirect('/users/list');
-                    })
-                    .catch(err => {
-                        console.log('Ha ocurrido un error: ' + err);
-                    })
+                        {
+                            where: { id: req.params.id }
+                        })
+                        .then(() => {
+                            res.redirect('/users/list');
+                        })
+                        .catch(err => {
+                            console.log('Ha ocurrido un error: ' + err);
+                        })
                 } else {
                     res.render('users/user-edit', { userProfile: userToEdit, errors: errors, oldData: req.body });
                 }
@@ -155,7 +160,12 @@ const UsersController = {
     },
 
     list: (req, res) => {
-        db.User.findAll()
+        db.User.findAll({
+            include : {
+                model: db.Role,
+                as: 'roles' 
+            }
+        })
             .then(usersDB => {
                 res.render('users/users-list', { usersDB: usersDB });
             })

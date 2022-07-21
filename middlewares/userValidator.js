@@ -2,8 +2,8 @@ const {check} = require('express-validator');
 const path = require('path');
 
 const userValidator = [
-    check('firstName', '*Este campo es obligatorio').notEmpty(),
-    check('lastName', '*Este campo es obligatorio').notEmpty(),
+    check('first_name', '*Este campo es obligatorio').notEmpty(),
+    check('last_name', '*Este campo es obligatorio').notEmpty(),
     check('birth', '*Este campo es obligatorio').notEmpty(),
     check('address', '*Este campo es obligatorio').notEmpty(),
     check('phone', '*Este campo es obligatorio').notEmpty(),

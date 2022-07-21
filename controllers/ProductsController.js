@@ -53,7 +53,12 @@ const ProductsController = {
     },
 
     detail : (req, res)=>{
-        db.Product.findByPk(req.params.id)
+        db.Product.findByPk(req.params.id, {
+            include : {
+                model: db.Category,
+                as: 'categories' 
+            }
+        })
         .then(productRequested=>{
             db.Product.findAll()
             .then(productsDB=>{

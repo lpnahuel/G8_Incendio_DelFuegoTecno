@@ -7,6 +7,7 @@
  const upload = require('../middlewares/multerUsers');
  const guestMiddleware = require('../middlewares/guestMiddleware');
  const authMiddleware = require('../middlewares/authMiddleware'); 
+ const adminMiddleware = require('../middlewares/adminMiddleware')
  
  /**** GET LOGIN */
  router.get('/login', guestMiddleware, UsersController.login); 
@@ -33,7 +34,7 @@ router.get('/edit/:id', UsersController.edit);
 router.put('/edit/:id', upload.single('image'), userValidator, UsersController.update);
 
 /**** GET ALL USERS */
-router.get('/list', UsersController.list); 
+router.get('/list', adminMiddleware, UsersController.list); 
 
 /**** DELETE ONE USER*/
 router.delete('/edit/:id', UsersController.delete); 

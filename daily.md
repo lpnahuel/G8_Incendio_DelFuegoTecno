@@ -286,4 +286,13 @@ A continuacion detallaremos los temas que se trataron cada día:
 - Creamos el archivo de entrega en PDF.
 - Creamos el Heroku.
 
-
+**Informe 20/07/2022**
+- Modificamos los middleware de products y users. (pali y nicky)
+- Agregamos un middleware "adminmiddleware" para bloquear a los usuarios comunes que no tengan premisos. (pali y nicky)
+- Modificamos las rutas para que aparezcan con id de categoria y no con el nombre de la categoria de los productos.(pali y nicky)
+- Modificamos el register que tenía los nombres viejos en el validator.(pali y nicky)
+- Agregamos en product.js y user.js "defaultValue: Date.now" en created_at y updated_at.(pali y nicky)
+- Ya podemos crear nuevos usuarios.(pali y nicky)
+- Modificamos las migas de pan de los producto para que se vean las categorias.(pali y nicky)
+- Modificamos en el listado de usuario que aparezca el rol: "admin" o "client".(pali y nicky)
+- Modificamos los Scripts y los subimos al drive. (pali)

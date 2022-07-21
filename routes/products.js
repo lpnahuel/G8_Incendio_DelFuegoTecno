@@ -5,6 +5,7 @@ const router = express.Router();
 const ProductsController = require("../controllers/ProductsController");
 const productValidator = require('../middlewares/productValidator');
 const multipleUpload = require('../middlewares/multerProducts');
+const adminMiddleware = require('../middlewares/adminMiddleware')
 
 
 /*** GET ALL PRODUCTS */ 
@@ -20,18 +21,18 @@ router.get('/category/:id', ProductsController.category);
 router.get('/detail/:id', ProductsController.detail); 
 
 /*** ADMIN PANNEL */ 
-router.get('/admin', ProductsController.admin); 
+router.get('/admin', adminMiddleware, ProductsController.admin); 
 
 /*** CREATE ONE PRODUCT */ 
-router.get('/admin/create', ProductsController.create); 
-router.post('/admin/create', multipleUpload, productValidator, ProductsController.store); 
+router.get('/admin/create', adminMiddleware, ProductsController.create); 
+router.post('/admin/create', adminMiddleware, multipleUpload, productValidator, ProductsController.store); 
 
 /*** EDIT ONE PRODUCT */ 
-router.get('/admin/edit/:id', ProductsController.edit); 
-router.put('/admin/edit/:id', multipleUpload, productValidator, ProductsController.update); 
+router.get('/admin/edit/:id', adminMiddleware, ProductsController.edit); 
+router.put('/admin/edit/:id', adminMiddleware, multipleUpload, productValidator, ProductsController.update); 
 
 /*** DELETE ONE PRODUCT */ 
-router.delete('/admin/edit/:id', ProductsController.destroy); 
+router.delete('/admin/edit/:id', adminMiddleware, ProductsController.destroy); 
 
 
 module.exports = router;
