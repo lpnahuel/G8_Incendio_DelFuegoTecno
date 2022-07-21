@@ -15,7 +15,7 @@ const UsersController = {
     login: (req, res) => {
         return res.render('users/login');
     },
-    //listo
+    
     processLogin: (req, res) => {
         let errors = validationResult(req);
 
@@ -59,7 +59,7 @@ const UsersController = {
     register: (req, res) => {
         res.render('users/register');
     },
-    //listo
+    
     processRegister: (req, res) => {
 
         let validationResults = validationResult(req);
@@ -100,7 +100,7 @@ const UsersController = {
         res.render('users/profile', { userProfile: req.session.userLogged })
 
     },
-    //listo
+    
     edit: (req, res) => {
         db.User.findByPk(req.params.id)
             .then(userProfile => {
@@ -112,7 +112,7 @@ const UsersController = {
 
 
     },
-    //listo
+    
     update: (req, res) => {
 
         db.User.findByPk(req.params.id)
@@ -186,10 +186,5 @@ const UsersController = {
 
 
 }
-
-
-
-
-
 
 module.exports = UsersController;

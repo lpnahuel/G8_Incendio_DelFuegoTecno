@@ -5,6 +5,8 @@ const { validationResult } = require('express-validator');
 
 // *** Path's */
 const productsFilePath = path.join(__dirname, '../data/products.json');
+
+// *** Modelo */
 const db = require('../database/models/index.js');
 const Op = db.Sequelize.Op;
 

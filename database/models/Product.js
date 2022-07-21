@@ -1,5 +1,3 @@
-// const models = require('/database/models');
-
 module.exports = (sequelize, DataTypes) =>{
 
     const Product = sequelize.define('Product', {
