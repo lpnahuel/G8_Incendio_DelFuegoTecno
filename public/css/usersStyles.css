@@ -199,10 +199,10 @@ textarea[id=description], textarea[id=specs], textarea[id=message]{
 
 
 .main-btns{
-    background-color: var(--gris-osc);
+    background-color: var(--celeste-logo);
     border: none;
     border-radius: 6px;
-    color: var(--blanco);
+    color: var(--fondo-main);
     cursor: pointer;
     font-weight: 500;
     width: 180px;
@@ -210,8 +210,8 @@ textarea[id=description], textarea[id=specs], textarea[id=message]{
 }
 
 .main-btns:hover{
-    animation: box-highlight 2s linear infinite;
-    transition: all 400ms linear;
+    background-color: var(--magenta);
+    transition: all 250ms linear;
 
 }
 
