@@ -196,86 +196,94 @@ A continuacion detallaremos los temas que se trataron cada día:
 
 
 **Informe 06/06/2022**
-- Se modifico el CSS. (Pali)
+- Se modifico el CSS. (Pali).
 - Nicky no asistió a clase debido a un examen en la facultad.
-- Se creo usuario de Pali
-- Se creo página de error (Pali)
+- Se creo usuario de Pali.
+- Se creo página de error (Pali).
 
 **Informe 07/06/2022**
-- Pospusimos el meet para el día viernes (Pali, Pabli y Nicky)
-- Se agrego el rol a cada usuario (nicky)
-- Se creo usuario de Nicky
+- Pospusimos el meet para el día viernes (Pali, Pabli y Nicky).
+- Se agrego el rol a cada usuario (nicky).
+- Se creo usuario de Nicky.
 - Verificar que queda en página de error cuando se crea un usuario.
 
 **Informe 09/06/2022**
-- Se terminaron las rutas de admin y user (pabli)
-- Se creo la vista de error (Pali)
+- Se terminaron las rutas de admin y user (pabli).
+- Se creo la vista de error (Pali).
 
 **Informe 11/06/2022**
-- Una vez que te registrar aparece un cartel con usuario creado y te redirigue a la pagina de login
+- Una vez que te registrar aparece un cartel con usuario creado y te redirigue a la pagina de login.
 
 **Informe 13/06/2022**
-- Funcional el newsletter
+- Funcional el newsletter.
 - Arreglamos validacion de la imagen de los usuarios.
-- Terminamos con el sprint 5
+- Terminamos con el sprint 5.
 
 **Informe 20/06/2022**
-- Creamos la retrospectiva del sprint 5. (nicky y pali)
-- Creamos el trello de este sprint y dividimos tareas (nicky y pali)
-- Agregamos brands a products.json
+- Creamos la retrospectiva del sprint 5. (nicky y pali).
+- Creamos el trello de este sprint y dividimos tareas (nicky y pali).
+- Agregamos brands a products.json.
 
 **Informe 21/06/2022**
-- Realizamos el meet semanal (nicky, pali y pabli)
-- Realizamos las tablas de las base de datos
+- Realizamos el meet semanal (nicky, pali y pabli).
+- Realizamos las tablas de las base de datos.
 
 **Informe 22/06/2022**
 - Buscamos diferentes proyectos para guiarnos en el nuestro.
 
 **Informe 24/06/2022**
-- Modificamos las tablas de la base de datos
+- Modificamos las tablas de la base de datos.
 
 **Informe 26/06/2022**
-- Armamos el Diagrama de Entidades y Relaciones (DER)
-- Creamos la carpeta para Sequelize
+- Armamos el Diagrama de Entidades y Relaciones (DER).
+- Creamos la carpeta para Sequelize.
 
 **Informe 28/06/2022**
-- Realizamos el meet semanal (nicky, pali y pabli)
+- Realizamos el meet semanal (nicky, pali y pabli).
 - Volvimos a modificar tablas.
-- agregamos archivos de configuración para que Sequelize se conecte a la base de datos
+- agregamos archivos de configuración para que Sequelize se conecte a la base de datos.
 
 **Informe 29/06/2022**
 - El grupo se encontro con muchas incognitas que no podíamos encontrar un camino adecuado para continuar realizando el sprint sin ayuda.
 - Volvimos al material de playgroung pero no fue suficiente. 
 
 **Informe 30/06/2022**
-- Pospusimos el meet semanal (nicky, pali y pabli)
+- Pospusimos el meet semanal (nicky, pali y pabli).
 
 **Informe 03/07/2022**
 - Armamos un esqueleto.
 - incluimos los tipos de datos de los campos y sus restricciones.
 
-
 **Informe 05/07/2022**
-- Arrancamos a armar la base de datos en MySQL
-- Creamos la database
+- Arrancamos a armar la base de datos en MySQL.
+- Creamos la database.
 - Nos reunimos con Dani y nos ayudo a poder avanzar con el proyecto y a sacarnos muchas dudas.
 
 **Informe 06/07/2022**
 - Cambiamos las tablas a todas minusculas y plural a lo que iba en plural.
-- Agregamos los archivos de configuración para que Sequelize se conecte a la base de datos
+- Agregamos los archivos de configuración para que Sequelize se conecte a la base de datos.
 - Agregamos los archivos de modelos para representar las tablas de users y products.
 
 **Informe 07/07/2022**
 - Logramos que se vea un producto desde la DB de MySQL.
-- Nos quedamo con dos branches.
-
-**Informe 07/07/2022**
+- Nos quedamos con dos branches.
+- Modificamos los controladores para obtener datos de los modelos.
 - Relizamos el CRUD de usuarios.
-- Falta terminar agregar paginado a los listados y buscadores
+
+**Informe 11/07/2022**
+- Se ajusta el CRUD de usuarios y productos con la nueva configuracion de base de datos
+- Falta terminar agregar paginado a los listados y buscadores.
 
 **Informe 12/07/2022**
-- Realizamos scrypt de datos e incluimos las relaciones entre las diferentes tablas
+- Realizamos scrypt de datos e incluimos las relaciones entre las diferentes tablas.
 - Nos quedan pendientes las opcionales del carrito de compra.
-- Realizamos tabla secundaria de categorias
+- Realizamos tabla secundaria de categorias.
+- Realizamos el meet semanal.
+- Recibimos ayuda de Dani y Joe para poder exportar la base de datos ya que teníamos un inconveniente en MySQL.
+
+**Informe 13/07/2022**
+- Pasamos la base a Heidi ya que no podiamos subirla desde MySQL.
+- Creamos el archivo de entrega en PDF.
+- Creamos el Heroku.
 
 
