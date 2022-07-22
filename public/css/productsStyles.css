@@ -21,7 +21,8 @@
     text-decoration: underline;
 
 }
-.cont-det{
+
+.cont-det {
     border: 1px solid var(--gris-claro);
     border-radius: 16px;
     display: flex;
@@ -40,14 +41,14 @@
     padding: 6px 0;
 }
 
-.prod__img{
+.prod__img {
     background-color: var(--blanco);
     height: 75%;
     text-align: center;
     width: 100%;
 }
 
-.img__ppal{
+.img__ppal {
     cursor: pointer;
     margin: auto;
     max-width: 100%;
@@ -55,7 +56,7 @@
     padding: 16px;
 }
 
-.prod__alt{
+.prod__alt {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -63,17 +64,17 @@
 
 }
 
-.alt__img{
+.alt__img {
     background-color: var(--blanco);
     cursor: pointer;
     width: 30%;
 }
 
-.alt__img:hover{
+.alt__img:hover {
     animation: box-highlight 2s linear infinite;
 }
 
-.img__fotito{
+.img__fotito {
     object-fit: contain;
     width: 100%;
     height: 100%;
@@ -81,14 +82,14 @@
     cursor: pointer;
 }
 
-.cont_des_prod{
+.cont_des_prod {
     margin: 0 auto 0 auto;
     max-width: 88%;
     padding: 16px 0;
 }
 
 
-.cont-det-producto-bot{
+.cont-det-producto-bot {
     flex-direction: column;
     width: 90%;
     margin: 0 auto 0 auto;
@@ -96,7 +97,7 @@
 }
 
 
-.titulo__prod{
+.titulo__prod {
     color: var(--turq);
     font-family: "Roboto";
     font-size: 26px;
@@ -107,20 +108,20 @@
 
 }
 
-.titulo__divis{
+.titulo__divis {
     border: none;
     border-bottom: 3px var(--magenta) solid;
     width: 100%;
 }
 
-.subtitulo_prod{
+.subtitulo_prod {
     color: var(--turq);
     font-family: "Roboto";
     font-size: 20px;
     font-weight: 500;
 }
 
-.desc_prod{
+.desc_prod {
     font-family: "Roboto";
     display: flex;
     flex-wrap: wrap;
@@ -130,7 +131,7 @@
     align-items: flex-end;
 }
 
-.precio_prod{
+.precio_prod {
     color: var(--celeste-logo);
     font-family: "Roboto";
     font-size: 28px;
@@ -138,18 +139,18 @@
     padding: 16px 0 12px 0;
 }
 
-.precio_prod > p{
+.precio_prod>p {
     margin: 0;
 }
 
-.buy-btn{
+.buy-btn {
     cursor: pointer;
     padding-top: 16px;
     text-align: center;
     text-decoration: none;
 }
 
-.iconos_prod{
+.iconos_prod {
     align-items: center;
     display: flex;
     flex-direction: row;
@@ -158,19 +159,20 @@
     margin: 15px 0;
 }
 
-.rate-icons{
+.rate-icons {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 
-.rate-opinions{
+.rate-opinions {
     margin: 0 0 0 5px;
     color: var(--gris);
 }
 
-.far.fa-star, .fas.fa-star{
+.far.fa-star,
+.fas.fa-star {
     margin: 0 2px 0 0;
     color: var(--yellow);
 }
@@ -183,10 +185,10 @@
     width: 152px;
 }
 
-.action-btns{
-    background-color:transparent;
+.action-btns {
+    background-color: transparent;
     border: none;
-    color:var(--gris);
+    color: var(--gris);
     cursor: pointer;
     font-size: 20px;
     text-rendering: auto;
@@ -194,48 +196,50 @@
     padding: 0 25px 0 0;
 }
 
-.bookmark:hover{
+.bookmark:hover {
     color: var(--magenta);
 }
-.share-cart:hover{
-    color:var(--celeste-logo);
+
+.share-cart:hover {
+    color: var(--celeste-logo);
 
 }
 
-.info_venta_prod{
+.info_venta_prod {
     align-items: center;
     color: var(--gris-claro);
     display: flex;
     flex-direction: row;
 }
 
-.info_venta_prod-text{
+.info_venta_prod-text {
     margin-left: 15px;
 }
 
-.divisor_info_ventas{
+.divisor_info_ventas {
     border: none;
     border-bottom: 1px solid #666;
 }
 
-.desc_prod_btns{
+.desc_prod_btns {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin-bottom: 30px;
 }
 
-.prod-btn{
+.prod-btn {
     background-color: transparent;
     border-bottom: none;
     color: var(--turq);
     cursor: pointer;
-    border: none;        
+    border: none;
     border-radius: 5px;
     height: 30px;
 }
 
-.prod-btn:focus, .prod-btn:hover{
+.prod-btn:focus,
+.prod-btn:hover {
     border-bottom: 1px solid var(--turq);
     border-radius: 0;
     font-weight: 600;
@@ -244,7 +248,7 @@
 }
 
 
-.product-info{
+.product-info {
     color: var(--gris);
     display: flex;
     flex-direction: column;
@@ -275,7 +279,7 @@ TRATANDO DE HACER FUNCIONAR ESOS BOTONES :)
 
 /* ------------------ MAIN CARRITO ------------------ */
 
-.cont-top-section{
+.cont-top-section {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -283,16 +287,17 @@ TRATANDO DE HACER FUNCIONAR ESOS BOTONES :)
 }
 
 
-.carrito-title{
+.carrito-title {
     color: var(--turq);
     font-family: "Roboto";
     font-size: 24px;
-    margin: 3px 0 15px 0;;
+    margin: 3px 0 15px 0;
+    ;
 }
 
 /*top section carrito*/
 
-.top-section{
+.top-section {
     align-items: center;
     background-color: var(--fondo-main);
     display: flex;
@@ -306,26 +311,26 @@ TRATANDO DE HACER FUNCIONAR ESOS BOTONES :)
 
 /*leftArticle*/
 
-.leftArticle{
+.leftArticle {
     padding-top: 50px;
     width: 90%;
 }
 
 
-.leftArticle-breadCrum{
+.leftArticle-breadCrum {
     font-size: 12px;
     margin: 0 auto;
     padding-left: 12px;
-    width: 75%;    
+    width: 75%;
 }
 
-.leftArticle-breadCrum > a{
+.leftArticle-breadCrum>a {
     color: var(--gris);
     text-decoration: none;
 
 }
 
-.leftArticle-breadCrum > a:hover{
+.leftArticle-breadCrum>a:hover {
     color: var(--turq);
     text-decoration: underline;
     transition: all 250ms ease;
@@ -334,13 +339,13 @@ TRATANDO DE HACER FUNCIONAR ESOS BOTONES :)
 
 /*caja del carrito*/
 
-.caja{
+.caja {
     display: flex;
     flex-direction: column;
     max-width: 266px;
 }
 
-.caja-producto{
+.caja-producto {
     background-color: var(--gris-claro);
     border: none;
     border-radius: 16px;
@@ -353,7 +358,7 @@ TRATANDO DE HACER FUNCIONAR ESOS BOTONES :)
     width: 100%;
 }
 
-.caja-producto-izquierda{
+.caja-producto-izquierda {
     background-color: var(--blanco);
     border-radius: 8px;
     margin: 0 auto 0 auto;
@@ -361,14 +366,14 @@ TRATANDO DE HACER FUNCIONAR ESOS BOTONES :)
     width: 80%;
 }
 
-.img-producto{
+.img-producto {
     height: 100%;
     object-fit: contain;
     padding: 16px;
     width: 100%;
 }
 
-.caja-producto-derecha{
+.caja-producto-derecha {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -376,14 +381,14 @@ TRATANDO DE HACER FUNCIONAR ESOS BOTONES :)
     width: 100%;
 }
 
-.caja-producto-derecha-top{
+.caja-producto-derecha-top {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin: 0 5px 22px 5px;
 }
 
-.caja-producto-derecha-bottom{
+.caja-producto-derecha-bottom {
     display: flex;
     flex-direction: row;
     margin-left: 5px;
@@ -391,36 +396,36 @@ TRATANDO DE HACER FUNCIONAR ESOS BOTONES :)
     justify-content: space-between;
 }
 
-.counter{
+.counter {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 
-.counter__btn{
+.counter__btn {
     background-color: transparent;
     border: none;
     cursor: pointer;
     text-rendering: auto;
 }
 
-.counter__btn > i{
+.counter__btn>i {
     color: var(--gris-medio);
     border-radius: 50%;
     font-size: 18px;
 }
 
-.counter__btn > i:hover{
-    color:var(--violet);
+.counter__btn>i:hover {
+    color: var(--violet);
 }
 
-.caja-price{
+.caja-price {
     font-weight: bold;
     color: var(--fondo-main);
 }
 
-.trashCan__btn{
+.trashCan__btn {
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -428,15 +433,16 @@ TRATANDO DE HACER FUNCIONAR ESOS BOTONES :)
     text-rendering: auto;
 }
 
-.trashCan__btn > i{
+.trashCan__btn>i {
     font-size: 18px;
     color: var(--gris);
 }
-.trashCan__btn > i:hover{
+
+.trashCan__btn>i:hover {
     color: var(--magenta);
 }
 
-.count-form{
+.count-form {
     background-color: transparent;
     border: none;
     border-radius: 2px;
@@ -447,11 +453,11 @@ TRATANDO DE HACER FUNCIONAR ESOS BOTONES :)
     width: 43px;
 }
 
-.caja-descripcion-producto{
+.caja-descripcion-producto {
     padding: 0 0 15px 0;
 }
 
-.linkToProduct{
+.linkToProduct {
     color: var(--fondo-main);
     font-size: 15px;
     font-weight: 600;
@@ -459,17 +465,17 @@ TRATANDO DE HACER FUNCIONAR ESOS BOTONES :)
     text-decoration: none;
 }
 
-.linkToProduct:hover{
+.linkToProduct:hover {
     text-decoration: underline;
 }
 
-.leftArticle-btns{
+.leftArticle-btns {
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
 
-.leftArticle-btn{
+.leftArticle-btn {
     background-color: var(--gris-medio);
     border: none;
     border-radius: 6px;
@@ -480,12 +486,12 @@ TRATANDO DE HACER FUNCIONAR ESOS BOTONES :)
     width: 45%;
 }
 
-.leftArticle-btn:hover{
+.leftArticle-btn:hover {
     background-color: var(--gris-osc);
     transition: all 350ms ease;
 }
 
-.seguirComprando{
+.seguirComprando {
     background-color: var(--turq);
     border: none;
     border-radius: 6px;
@@ -496,8 +502,8 @@ TRATANDO DE HACER FUNCIONAR ESOS BOTONES :)
     width: 45%;
 }
 
-.seguirComprando:hover{
-    background-color:  var(--celeste-logo);
+.seguirComprando:hover {
+    background-color: var(--celeste-logo);
     transition: all 250ms;
 }
 
@@ -510,35 +516,35 @@ TRATANDO DE HACER FUNCIONAR ESOS BOTONES :)
     width: 282px;
 }
 
-.rightArticle-div{
+.rightArticle-div {
     display: flex;
     justify-content: space-between;
     margin: 24px 0 24px 0;
 }
 
-.rightArticle-resumenDeOrden{
+.rightArticle-resumenDeOrden {
     color: var(--turq);
     font-size: 24px;
     font-weight: bold;
     text-align: center;
 }
 
-.hr__divis{
+.hr__divis {
     border: none;
     border-bottom: 2px var(--magenta) solid;
     width: 100%;
 }
 
-.rightArticle-div-total{
+.rightArticle-div-total {
     display: flex;
     justify-content: space-between;
 }
 
-.rightArticle-div-cupon{
+.rightArticle-div-cupon {
     margin: 30px 0 30px 0;
 }
 
-.rightArticle-div > input{
+.rightArticle-div>input {
     border: none;
     border-radius: 6px;
     font-size: 14px;
@@ -547,31 +553,32 @@ TRATANDO DE HACER FUNCIONAR ESOS BOTONES :)
     width: 70%;
 }
 
-.rightArticle-div-finalizar{
+.rightArticle-div-finalizar {
     display: flex;
     justify-content: center;
 }
 
-.rightArticle-div > p{
+.rightArticle-div>p {
     color: var(--gris-claro);
     font-weight: bold;
 }
 
 
-.totalP, .totalPrice{
+.totalP,
+.totalPrice {
     font-size: 24px;
     font-weight: bold;
 }
 
-.totalP{
+.totalP {
     color: var(--gris-claro);
 }
 
-.totalPrice{
+.totalPrice {
     color: var(--turq);
 }
 
-.rightArticle-button{
+.rightArticle-button {
     color: var(--blanco);
     cursor: pointer;
     background-color: var(--gris-osc);
@@ -582,44 +589,45 @@ TRATANDO DE HACER FUNCIONAR ESOS BOTONES :)
     width: 60%;
 }
 
-.rightArticle-button:hover{
+.rightArticle-button:hover {
     animation: box-highlight 2s linear infinite;
     transition: all 400ms linear;
 }
 
 /*Main Carrito Bottom Section*/
 
-.bottom-section{
+.bottom-section {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
     width: 80%;
 }
-.bottom-section-bottom{
+
+.bottom-section-bottom {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-.bottom-section-top{
+.bottom-section-top {
     margin-top: 30px;
     margin-bottom: 20px;
 }
 
 
-.bottom-section-title{
+.bottom-section-title {
     color: var(--gris-claro);
 }
 
 /* -------- ADMIN ADD  -------- */
 
-.cont-admin{
+.cont-admin {
     display: block;
     margin: 0 auto 0 auto;
     width: 75%;
 }
 
-.menu__items{
+.menu__items {
     background: var(--negro);
     border-left: 4px solid var(--negro);
     cursor: pointer;
@@ -634,65 +642,66 @@ TRATANDO DE HACER FUNCIONAR ESOS BOTONES :)
     width: 98%;
 }
 
-.menu__items:hover{
+.menu__items:hover {
     border-left: 4px solid var(--magenta);
     color: var(--magenta);
 }
 
 
-.admin-forms{
+.admin-forms {
     border-radius: 16px;
     padding: 0 16px;
     margin: 40px auto 0 auto;
     width: 100%;
 }
 
-.campos__column{
+.campos__column {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     margin: 22px 0;
-    
+
 }
-.form-title{
+
+.form-title {
     color: var(--turq);
     font-size: 24px;
     margin-bottom: 16px;
     text-align: center;
 }
 
-.forms__div{
+.forms__div {
     border: solid var(--magenta) 1px;
     max-width: 408px;
 }
 
-.campos__textarea{
+.campos__textarea {
     height: 136px;
     padding: 8px;
 }
 
-.add__btn{
+.add__btn {
     margin: 10px 0;
     width: 100%;
 }
 
 /* -------- PRODUCT LIST  -------- */
 
-.menu__options{
+.menu__options {
     display: none;
 }
 
-.navigation__dropdwn{
+.navigation__dropdwn {
     background-color: var(--negro);
     height: 48px;
     list-style: none;
     margin: 36px auto;
-    padding: 14px 0 0 0; 
+    padding: 14px 0 0 0;
     text-align: center;
     width: 248px;
 }
 
-.navigation__dropdwn > a{
+.navigation__dropdwn>a {
     color: var(--gris);
     font-weight: 500;
     text-decoration: none;
@@ -700,7 +709,7 @@ TRATANDO DE HACER FUNCIONAR ESOS BOTONES :)
 }
 
 .dropdwn__menu {
-    background: rgba(0,0,0,0.85);
+    background: rgba(0, 0, 0, 0.85);
     border-top: 1px solid var(--gris-medio);
     display: none;
     padding: 0;
@@ -709,12 +718,12 @@ TRATANDO DE HACER FUNCIONAR ESOS BOTONES :)
     z-index: 999;
 }
 
-.dropdwn__menu > li {
+.dropdwn__menu>li {
     list-style: none;
     margin: 24px 0;
 }
 
-.dropdwn__menu > li > a{
+.dropdwn__menu>li>a {
     border: none;
     color: var(--gris-medio);
     font-weight: 500;
@@ -722,7 +731,7 @@ TRATANDO DE HACER FUNCIONAR ESOS BOTONES :)
 
 }
 
-.dropdwn__menu > li > a:hover{
+.dropdwn__menu>li>a:hover {
     color: var(--magenta);
     font-weight: 600;
 }
@@ -731,35 +740,35 @@ TRATANDO DE HACER FUNCIONAR ESOS BOTONES :)
     display: block;
 }
 
-.cont-dest__link{
+.cont-dest__link {
     scroll-snap-type: start;
     text-decoration: none;
 }
 
-.prodDisplay__cont{
+.prodDisplay__cont {
     background-color: var(--fondo-main);
     border: var(--gris-medio) 1px solid;
     border-radius: 12px;
     height: 388px;
-    margin: 15px auto;
+    margin: 1rem auto;
     position: relative;
     width: 260px;
 }
 
-.prodDisplay__cont:hover{
+.prodDisplay__cont:hover {
     box-shadow: 3px 3px 5px var(--negro);
     transition: all 250ms ease-in;
     transform: scale(102%, 102%);
 }
 
-.cont__dispDesc{
+.cont__dispDesc {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 116px;
 }
 
-.dispDesc__nombre{
+.dispDesc__nombre {
     font-size: 16px;
     color: var(--gris-claro);
     margin: 15px auto;
@@ -770,7 +779,7 @@ TRATANDO DE HACER FUNCIONAR ESOS BOTONES :)
     overflow-y: hidden;
 }
 
-.dispDesc__precio{
+.dispDesc__precio {
     color: var(--magenta);
     font-size: 24px;
     font-weight: 600;
@@ -782,7 +791,7 @@ TRATANDO DE HACER FUNCIONAR ESOS BOTONES :)
 
 /* -------- ADMIN PANEL - LIST  -------- */
 
-.adminProductCont{
+.adminProductCont {
     background-color: var(--gris-int);
     margin: 40px auto;
     max-width: 370px;
@@ -790,21 +799,21 @@ TRATANDO DE HACER FUNCIONAR ESOS BOTONES :)
     width: 100%;
 }
 
-.adminProductCont__img{
+.adminProductCont__img {
     background-color: var(--blanco);
     border: 2px solid var(--magenta);
     margin: 10px auto;
     width: 90%;
 }
 
-.adminProductCont__img > img{
+.adminProductCont__img>img {
     object-fit: contain;
     text-align: center;
     padding: 8px;
     width: 100%;
 }
 
-.adminProductCont__name{
+.adminProductCont__name {
     align-self: center;
     color: var(--yellow);
     font-size: 16px;
@@ -817,10 +826,12 @@ TRATANDO DE HACER FUNCIONAR ESOS BOTONES :)
     text-transform: uppercase;
     width: 90%;
 }
-.user-id{
+
+.user-id {
     height: 16px;
 }
-.name__div{
+
+.name__div {
     border: none;
     border-bottom: 1px solid var(--magenta);
     margin: 12px auto;
@@ -828,7 +839,7 @@ TRATANDO DE HACER FUNCIONAR ESOS BOTONES :)
 }
 
 
-.adminProductCont__data{
+.adminProductCont__data {
     color: var(--gris-claro);
     font-size: 16px;
     font-weight: 500;
@@ -840,18 +851,18 @@ TRATANDO DE HACER FUNCIONAR ESOS BOTONES :)
 
 }
 
-.data-email{
+.data-email {
     text-transform: none;
 }
 
-.adminProductCont__btns{
+.adminProductCont__btns {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     margin: 24px auto 8px auto;
 }
 
-.delete__btn{
+.delete__btn {
     background-color: transparent;
     border: none;
     color: var(--gris-claro);
@@ -863,18 +874,19 @@ TRATANDO DE HACER FUNCIONAR ESOS BOTONES :)
     text-rendering: auto;
 }
 
-.delete__btn > i{
+.delete__btn>i {
     color: var(--gris-claro);
 }
 
-.delete__btn:hover{
-    color: red;
-}
-.delete__btn:hover > i{
+.delete__btn:hover {
     color: red;
 }
 
-.adminProductCont__btns > button > a{
+.delete__btn:hover>i {
+    color: red;
+}
+
+.adminProductCont__btns>button>a {
     color: var(--gris-claro);
     cursor: pointer;
     font-weight: 500;
@@ -883,16 +895,17 @@ TRATANDO DE HACER FUNCIONAR ESOS BOTONES :)
     text-decoration: none;
 }
 
-.adminProductCont__btns > button > a:hover{
+.adminProductCont__btns>button>a:hover {
     color: var(--magenta);
 }
-.adminProductCont__btns > button > a > i{
+
+.adminProductCont__btns>button>a>i {
     color: var(--magenta);
 }
 
 /**** MEDIA QUERIES */
 
-@media (min-width:578px){
+@media (min-width:578px) {
 
     /*CARRITO*/
     .leftArticle-breadCrum {
@@ -916,22 +929,21 @@ TRATANDO DE HACER FUNCIONAR ESOS BOTONES :)
     }
 
     /*PRODUCTO*/
-    .desc_prod{
+    .desc_prod {
         justify-content: space-between;
     }
 
 }
 
-@media (min-width:769px){
+@media (min-width:769px) {
 
     /* PRODUCT LIST */
 
 
-    .prodDisplay{
-        align-items: center;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+    .prodDisplay {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
     }
 
 
@@ -946,20 +958,20 @@ TRATANDO DE HACER FUNCIONAR ESOS BOTONES :)
 
     .leftArticle-btns {
         width: 60%;
-    }       
+    }
 
-    /*ADMIN LIST*/ 
+    /*ADMIN LIST*/
 
-    .adminProductCont__name{
+    .adminProductCont__name {
         font-size: 18px;
     }
 }
 
-@media (min-width:993px){
+@media (min-width:993px) {
 
     /* PRODUCT LIST */
 
-    .prodListing{
+    .prodListing {
         display: flex;
         flex-wrap: wrap;
         margin: 0 auto;
@@ -967,19 +979,19 @@ TRATANDO DE HACER FUNCIONAR ESOS BOTONES :)
         justify-content: space-around;
         width: 90%;
     }
-    
-    .navigation__dropdwn{
+
+    .navigation__dropdwn {
         display: none;
     }
 
-    .navigation__menu{
+    .navigation__menu {
         background-color: var(--gris-int);
-        height: 100%;
+        height: 420px;
         padding: 2px 0;
         width: 218px;
     }
-    
-    .menu__options{
+
+    .menu__options {
         align-content: center;
         background-color: var(--gris-int);
         display: flex;
@@ -988,25 +1000,20 @@ TRATANDO DE HACER FUNCIONAR ESOS BOTONES :)
         padding: 0;
         width: 216px;
     }
-    
 
-    .menu__items{
+
+    .menu__items {
         padding: 14px 0 0 14px;
         text-align: left;
     }
-    
-    .prodDisplay{
-        align-items: flex-start;
-        justify-content: space-evenly;
+
+    .prodDisplay {
         width: 75%;
     }
 
-    .prodDisplay__cont {
-        margin: 0px 12px 26px 0px;
-    }
-    
+
     /* ADMIN ADD*/
-    .cont-admin{
+    .cont-admin {
         display: flex;
         align-items: flex-start;
         padding: 48px 0;
@@ -1015,11 +1022,11 @@ TRATANDO DE HACER FUNCIONAR ESOS BOTONES :)
         width: 85%;
     }
 
-    .form-title{
+    .form-title {
         text-align: left;
     }
 
-    .forms__div{
+    .forms__div {
         max-width: 100%;
     }
 
@@ -1035,7 +1042,7 @@ TRATANDO DE HACER FUNCIONAR ESOS BOTONES :)
         width: 85%;
     }
 
-    .top-section{
+    .top-section {
         align-items: flex-start;
         flex-direction: row;
         flex-wrap: wrap;
@@ -1078,15 +1085,16 @@ TRATANDO DE HACER FUNCIONAR ESOS BOTONES :)
     .leftArticle-btn {
         width: 132px;
     }
-    .seguirComprando{
+
+    .seguirComprando {
         width: 132px;
     }
-    
-    .rightArticle{
+
+    .rightArticle {
         width: 35%;
     }
 
-    .rightArticle-button{
+    .rightArticle-button {
         margin: 15px 0 10px 0;
     }
 
@@ -1096,11 +1104,11 @@ TRATANDO DE HACER FUNCIONAR ESOS BOTONES :)
         max-width: 1200px;
     }
 
-    .cont-det-producto-top{
+    .cont-det-producto-top {
         flex-direction: row;
     }
 
-    .cont-img-prod{
+    .cont-img-prod {
         width: 50%;
     }
 
@@ -1119,8 +1127,8 @@ TRATANDO DE HACER FUNCIONAR ESOS BOTONES :)
 
     .iconos_prod {
         margin: 19px 0;
-    } 
-    
+    }
+
     .cont-det-producto-bot {
         margin: 32px auto 0 auto;
     }
@@ -1128,7 +1136,7 @@ TRATANDO DE HACER FUNCIONAR ESOS BOTONES :)
     .desc_prod_btns {
         margin-bottom: 15px;
     }
-    
+
     .desc_prod-btn {
         font-size: 20px;
     }
@@ -1136,19 +1144,19 @@ TRATANDO DE HACER FUNCIONAR ESOS BOTONES :)
 
     /* ADMIN PANEL */
 
-    .admin-forms{
+    .admin-forms {
         border: solid 1px var(--gris);
         margin: 0px;
         width: 70%;
     }
 
-    .adminPanelCont{
+    .adminPanelCont {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
     }
 
-    .adminProductCont{
+    .adminProductCont {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -1161,31 +1169,33 @@ TRATANDO DE HACER FUNCIONAR ESOS BOTONES :)
         width: 100%;
     }
 
-    .adminProductCont__img{
+    .adminProductCont__img {
         margin: 5px;
         width: 88px;
         max-height: 88px;
     }
-  
-    .name__div{
+
+    .name__div {
         display: none;
     }
 
-    .adminProductCont__name{
+    .adminProductCont__name {
         margin: 4px 0 0 0;
         width: 88px;
     }
-    .adminProductCont__name, .adminProductCont__data {
+
+    .adminProductCont__name,
+    .adminProductCont__data {
         font-size: 12px;
         margin-left: 8px;
         text-align: left;
     }
-    
+
     .adminProductCont__data {
         width: 18%;
     }
 
-    .adminProductCont__btns{
+    .adminProductCont__btns {
         font-size: 14px;
         bottom: 8px;
         margin: 0;
@@ -1195,36 +1205,38 @@ TRATANDO DE HACER FUNCIONAR ESOS BOTONES :)
 
 }
 
-@media (min-width:1200px){
+@media (min-width:1200px) {
 
     /* PRODUCT LIST*/
 
-    .prodListing{
+    .prodDisplay {
+        gap: 1rem;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .prodListing {
         width: 85%;
     }
 
-    .prodDisplay{
-        justify-content: flex-start;
-    }
-
     /*ADMIN PROD LIST*/
-    .adminProductCont__name, .adminProductCont__data {
+    .adminProductCont__name,
+    .adminProductCont__data {
         font-size: 14px;
     }
 
-    .adminProductCont__name{
+    .adminProductCont__name {
         height: 62px;
         width: 146px;
     }
 
     /* ADMIN ADD */
 
-    .campos__column{
+    .campos__column {
         flex-direction: row;
         justify-content: space-between;
     }
 
-    .column__forms{
+    .column__forms {
         width: 45%;
     }
 
@@ -1247,14 +1259,14 @@ TRATANDO DE HACER FUNCIONAR ESOS BOTONES :)
     .leftArticle-btns {
         max-width: 530px;
     }
-   
-    .rightArticle-button{
+
+    .rightArticle-button {
         margin: 15px 0 10px 0;
     }
 
 }
 
-@media (min-width:1400px){
+@media (min-width:1400px) {
 
     /* PRODUCT LIST*/
 
@@ -1262,23 +1274,15 @@ TRATANDO DE HACER FUNCIONAR ESOS BOTONES :)
         margin-right: 20px;
     }
 
-    .prodListing{
+    .prodListing {
         width: 78%;
         justify-content: space-around;
-    
-    }
 
-    .prodDisplay {
-        width: 75%;
-    }
-
-    .prodDisplay__cont {
-        margin: 0px 6px 12px 6px;
     }
 
     /* ADMIN ADD */
 
-    .cont-admin{
+    .cont-admin {
         width: 75%;
     }
 
@@ -1289,7 +1293,7 @@ TRATANDO DE HACER FUNCIONAR ESOS BOTONES :)
 
     /* ADMIN PROD LIST */
 
-    .adminProductCont__name{
+    .adminProductCont__name {
         width: 184px
     }
 
@@ -1308,7 +1312,7 @@ TRATANDO DE HACER FUNCIONAR ESOS BOTONES :)
     }
 
     .caja-price {
-    font-size: 18px;
+        font-size: 18px;
     }
 
     .caja-producto {
@@ -1327,8 +1331,8 @@ TRATANDO DE HACER FUNCIONAR ESOS BOTONES :)
         max-width: 400px;
         width: 40%;
     }
-   
-    .rightArticle-button{
+
+    .rightArticle-button {
         margin: 15px 0 10px 0;
     }
 
@@ -1344,11 +1348,11 @@ TRATANDO DE HACER FUNCIONAR ESOS BOTONES :)
         width: 60%;
     }
 
-    .cont-det-producto-top{
+    .cont-det-producto-top {
         justify-content: space-around;
     }
 
-    .cont-img-prod{
+    .cont-img-prod {
         min-width: 480px;
         width: 40%;
     }
@@ -1368,8 +1372,8 @@ TRATANDO DE HACER FUNCIONAR ESOS BOTONES :)
 
     .iconos_prod {
         margin: 19px 0;
-    } 
-    
+    }
+
     .cont-det-producto-bot {
         margin: 32px auto 0 auto;
     }
@@ -1377,7 +1381,7 @@ TRATANDO DE HACER FUNCIONAR ESOS BOTONES :)
     .desc_prod_btns {
         margin-bottom: 15px;
     }
-    
+
     .desc_prod-btn {
         font-size: 20px;
     }
@@ -1388,7 +1392,7 @@ TRATANDO DE HACER FUNCIONAR ESOS BOTONES :)
 
     /*ADMIN PANEL*/
 
-    .adminProductCont{
+    .adminProductCont {
         height: 120px;
 
     }
