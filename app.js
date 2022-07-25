@@ -5,12 +5,12 @@ const methodOverride = require('method-override');
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
 const session = require('express-session');
-const userLoggedMiddleware = require('./middlewares/userLoggedMiddleware');
-const adminLoggedMiddleware = require('./middlewares/adminLoggedMiddleware');
+const userLoggedMiddleware = require('./src/middlewares/userLoggedMiddleware');
+const adminLoggedMiddleware = require('./src/middlewares/adminLoggedMiddleware');
 
 
 /*** Main Router (require) */
-const mainRoutes = require("./routes/mainRoutes")
+const mainRoutes = require("./src/routes/mainRoutes")
 
 // ************ Express() ************/
 const app = express();
@@ -33,7 +33,7 @@ app.use(methodOverride('_method'));
 
 // ************ EJS *************/
 app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, '/views'));
+app.set('views', path.join(__dirname, '/src/views'));
 
 
 /*** Main Router (use) */

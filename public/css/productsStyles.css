@@ -986,7 +986,8 @@ TRATANDO DE HACER FUNCIONAR ESOS BOTONES :)
 
     .navigation__menu {
         background-color: var(--gris-int);
-        height: 420px;
+        height: 100%;
+        max-height: 420px;
         padding: 2px 0;
         width: 218px;
     }
