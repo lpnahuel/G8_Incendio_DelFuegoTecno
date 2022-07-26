@@ -2,7 +2,7 @@ module.exports = {
   "development": {
     "username": "root",
     "password": "sqlpassword123",
-    "database": "mwizm4g504p3z8j4",
+    "database": "dftechno-db",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },

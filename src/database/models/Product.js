@@ -40,6 +40,7 @@ module.exports = (sequelize, DataTypes) =>{
         image_02 : {
             type: DataTypes.STRING(100),
             allowNull: true,
+            defaultValue : 'default.webp'
         },
         image_03 : {
             type: DataTypes.STRING(100),
@@ -48,6 +49,7 @@ module.exports = (sequelize, DataTypes) =>{
         image_04 : {
             type: DataTypes.STRING(100),
             allowNull: true,
+            defaultValue : 'default.webp'
         },
         thumb : {
             type: DataTypes.STRING(100),
@@ -55,12 +57,12 @@ module.exports = (sequelize, DataTypes) =>{
         },
         created_at : {
             type: DataTypes.DATE,
-            allowNull: false,
+            allowNull: true,
             defaultValue : Date.now
         },
         updated_at : {
             type: DataTypes.DATE,
-            allowNull: false,
+            allowNull: true,
             defaultValue : Date.now
         },
     },

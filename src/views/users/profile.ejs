@@ -12,7 +12,7 @@
                     <% if (userProfile) { %>
                      
                     
-                    <img src="/img/users/<%= userProfile.image != null ? userProfile.image : "user-default.png" %>" alt="Imagen de perfil de <%= userProfile.firstName %>">
+                    <img src="/img/users/<%= userProfile.image %>" alt="Imagen de perfil de <%= userProfile.firstName %>">
                 </div>
                 <h2 class="profileGreeting">Hola <%= userProfile.first_name %>!</h2>
             </div>
@@ -30,6 +30,7 @@
         </div>
         <div class="profileEditCont">
            <a href="/users/edit/<%= userProfile.id %>" class="profileEdit">EDITAR</a>
+           <!-- <a href="/users/editpassword/" class="profileEdit">CAMBIAR CONTRASEÑA</a> -->
            <a href="/users/logout" class="profileEdit">CERRAR SESIÓN</a>
        </div>
        <% } %>

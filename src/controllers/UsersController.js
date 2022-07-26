@@ -25,8 +25,8 @@ const UsersController = {
             db.User.findOne({
                 where: {
                     email: req.body.email
-                }
-            })
+                    }
+                })
                 .then(userToLogin => {
                     let check = bcrypt.compareSync(req.body.password, userToLogin.password);
                     if (check) {
@@ -36,7 +36,6 @@ const UsersController = {
                         req.session.userLoggedEmail = userToLogin.email;
 
                         req.session.isAdmin = userToLogin.role_id === 1;
-                        console.log(req.session.isAdmin);
 
                         if (req.body.recordame) {
                             res.cookie('userEmail', req.body.email, { maxAge: 60000 * 2 })
@@ -48,8 +47,8 @@ const UsersController = {
                     };
 
                 })
-                .catch(() => {
-                    res.render('users/login', { errors: { msg: 'error en el catch' } });
+                .catch((err) => {
+                    res.render('users/login', { errors: { msg: 'Usuario no encontrado' } });
                 })
 
         } else {
@@ -65,12 +64,11 @@ const UsersController = {
 
         let validationResults = validationResult(req);
         let errors = validationResults.mapped();
-        console.log(errors);
+
+        let image;
+        (req.file) ? image = req.file.filename : image;
 
         if (validationResults.errors.length === 0) {
-
-            let image;
-            (req.file) ? image = (req.file.filename) : image = '';
 
             let password = bcrypt.hashSync(req.body.password, 10);
 
@@ -109,7 +107,10 @@ const UsersController = {
     edit: (req, res) => {
         db.User.findByPk(req.params.id)
             .then(userProfile => {
-                res.render('users/user-edit', { userProfile: userProfile })
+                db.Role.findAll()
+                .then(roles =>
+                    res.render('users/user-edit', { userProfile: userProfile, roles : roles })
+                )
             })
             .catch(err => {
                 console.log('Ha ocurrido un error: ' + err);
@@ -123,9 +124,13 @@ const UsersController = {
         db.User.findByPk(req.params.id)
             .then(userToEdit => {
                 let image;
-                req.file == undefined ? image = userToEdit.image : image = req.file.filename;
+                (req.file) ? image = req.file.filename : image = userToEdit.image;
 
-                let password = bcrypt.hashSync(req.body.password, 10);
+                let password;
+
+                (req.body.password)? password = bcrypt.hashSync(req.body.password, 10) : password = userToEdit.password;
+    
+
                 let validationResults = validationResult(req);
                 let errors = validationResults.mapped();
 
@@ -142,7 +147,7 @@ const UsersController = {
                         city: req.body.city,
                         email: req.body.email,
                         password: password,
-                        role: userToEdit.role
+                        role_id: req.body.role
                     },
                         {
                             where: { id: req.params.id }
@@ -154,6 +159,7 @@ const UsersController = {
                             console.log('Ha ocurrido un error: ' + err);
                         })
                 } else {
+                    console.log('Error en el else', errors);
                     res.render('users/user-edit', { userProfile: userToEdit, errors: errors, oldData: req.body });
                 }
             });

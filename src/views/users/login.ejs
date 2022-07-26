@@ -5,6 +5,7 @@
 
     <%- include('../partials/header') %> 
 
+    <script src="/js/userFormsValidation.js"></script>
 
 
     <main class="main-general">
@@ -12,7 +13,7 @@
         <section class="cont-form-login">
 
             
-            <form class="login__form" action="/users/login" method="POST">
+            <form class="login__form" action="/users/login" method="POST" id="userForms">
                 
                 <h2 class="titulo-login">Login</h2>
                 
@@ -24,7 +25,8 @@
                         <div class="form-lg__campos">
                             <label for="email">
                                 <p class="lg__descrip">Correo Electrónico</p>
-                                  <input class="form__fields" type="email" name="email" id="email" placeholder="usuario@mail.com" required>
+                                <p class="jsError" id="emailError"></p>  
+                                  <input class="form__fields" type="email" name="email" id="email" placeholder="usuario@mail.com">
                                   <span class="feedback"></span>
                             </label>
                         </div>
@@ -32,7 +34,8 @@
                         <div class="form-lg__campos">
                             <label for="password">
                                 <p class="lg__descrip">Contraseña</p>  
-                                <input class="form__fields" type="password" name="password" id="password" placeholder="******" required>
+                                <p class="jsError" id="passwordError"></p>  
+                                <input class="form__fields" type="password" name="password" id="password" placeholder="******">
                                 <span class="feedback"></span>
                             </label>
                         </div>

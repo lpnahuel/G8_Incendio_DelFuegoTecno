@@ -24,7 +24,8 @@ module.exports = (sequelize, DataTypes) =>{
         },
         image:{
             type: DataTypes.STRING(50),
-            allowNull: true
+            allowNull: true,
+            defaultValue : 'user-default.png'
         },
         phone : {
             type: DataTypes.STRING(50),
@@ -52,12 +53,12 @@ module.exports = (sequelize, DataTypes) =>{
         },
         created_at : {
             type: DataTypes.DATE,
-            allowNull: false,
+            allowNull: true,
             defaultValue : Date.now
         },
         updated_at : {
             type: DataTypes.DATE,
-            allowNull: false,
+            allowNull: true,
             defaultValue : Date.now
         },
     },

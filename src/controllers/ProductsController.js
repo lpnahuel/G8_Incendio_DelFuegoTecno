@@ -107,9 +107,7 @@ const ProductsController = {
          
             let image;
             (req.files.image) ? image = (req.files.image.map(item => item.originalname)) : image = [];
-            
-            let thumb;
-            (req.files.thumb)? thumb = (req.files.thumb[0].originalname) : thumb = '';
+
             
             db.Product.create({
                 name:  req.body.name,
@@ -120,7 +118,7 @@ const ProductsController = {
                 image_02: image[1],
                 image_03: image[2],
                 image_04: image[3],
-                thumb : thumb,
+                thumb : req.files.thumb[0].originalname,
                 description : req.body.description,
                 specs :  req.body.specs
             })

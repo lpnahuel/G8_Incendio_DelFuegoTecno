@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include('../partials/head', {title : 'DFT - Registrate'}) %> 
+    <%- include('../partials/head', {title : 'DFT - Edición de usuario'}) %> 
 <body>
-
+    <script src="/js/userFormsValidation.js"></script>
     <%- include('../partials/header') %> 
         
 
     <main class="main-general">
-
         <section class="cont-form-rg">
 
-            <form class="form-registro" action="/users/edit/<%= userProfile.id %>?_method=PUT" method="POST" enctype="multipart/form-data">
+            <form class="form-registro" action="/users/edit/<%= userProfile.id %>?_method=PUT" method="POST" enctype="multipart/form-data" id="userForms">
             
                 <h2 class="titulo-login">Editando usuario <%= userProfile.firstName %></h2>
 
@@ -21,6 +20,7 @@
 
                         <label for="first_name">
                             <p class="lg__descrip">Nombre*</p>  
+                            <p class="jsError"></p>  
                             <% if (locals.errors && errors.first_name) {%> 
                                 <p class="errorMsg"><%= errors.first_name.msg %></p>
                             <%}  %>                       
@@ -28,6 +28,7 @@
                         </label>
                     
                         <label for="last_name">
+                            <p class="jsError"></p>  
                             <p class="lg__descrip">Apellido*</p>
                             <% if (locals.errors && errors.last_name) {%> 
                                 <p class="errorMsg"><%= errors.last_name.msg %></p>
@@ -37,6 +38,7 @@
 
                         <label for="birth">
                             <p class="lg__descrip">Fecha de nacimiento*</p>
+                            <p class="jsError"></p>  
                             <% if (locals.errors && errors.birth) {%> 
                                 <p class="errorMsg"><%= errors.birth.msg %></p>
                             <%}  %> 
@@ -45,11 +47,13 @@
                         
                         <label for="image">
                             <p class="lg__descrip">Foto de perfil</p>
+                            <p class="jsError" id="imageRegister"></p>  
                             <input class="form__fields" type="file" name="image" id="image" accept=".jpg, .png, .webp">
                         </label>
                         
                         <label for="phone">
                             <p class="lg__descrip">Teléfono*</p>
+                            <p class="jsError"></p>  
                             <% if (locals.errors && errors.phone) {%> 
                                 <p class="errorMsg"><%= errors.phone.msg %></p>
                             <%}  %> 
@@ -62,6 +66,7 @@
                     <div class="registro__cont">
                         <label for="address">
                             <p class="lg__descrip">Calle y altura*</p>
+                            <p class="jsError"></p>  
                             <% if (locals.errors && errors.address) {%> 
                                 <p class="errorMsg"><%= errors.address.msg %></p>
                             <%}  %> 
@@ -71,6 +76,7 @@
                     <div class="registro__cont">
                         <label for="cp">
                             <p class="lg__descrip">Codigo postal*</p>
+                            <p class="jsError" id="cp"></p>  
                             <% if (locals.errors && errors.cp) {%> 
                                 <p class="errorMsg"><%= errors.cp.msg %></p>
                             <%}  %> 
@@ -80,6 +86,7 @@
                     <div class="registro__cont">
                         <label for="city">
                             <p class="lg__descrip">Localidad*</p>
+                            <p class="jsError"></p>  
                             <% if (locals.errors && errors.city) {%> 
                                 <p class="errorMsg"><%= errors.city.msg %></p>
                             <%}  %> 
@@ -91,31 +98,11 @@
                     <div class="registro__cont">
                         <label for="email">
                             <p class="lg__descrip">E-mail*</p>
+                            <p class="jsError" id="emailError"></p>  
                             <% if (locals.errors && errors.email) {%> 
                                 <p class="errorMsg"><%= errors.email.msg %></p>
                             <%}  %> 
                             <input class="form__fields" type="email" id="email" name="email" value="<%= userProfile.email %>" >
-
-                        </label>
-                    </div>
-                    
-                    <div class="registro__cont">
-                        <label for="password">
-                            <p class="lg__descrip">Contraseña*</p>
-                            <% if (locals.errors && errors.password) {%> 
-                                <p class="errorMsg"><%= errors.password.msg %></p>
-                            <%}  %> 
-                            <input class="form__fields" type="password" id="password" name="password" placeholder="Nueva Contraseña" >
-
-                        </label>
-
-                    <div class="registro__cont">
-                        <label for="passwordRepeat">
-                            <p class="lg__descrip">Confirmar contraseña*</p>
-                            <% if (locals.errors && errors.passwordRepeat) {%> 
-                                <p class="errorMsg"><%= errors.passwordRepeat.msg %></p>
-                            <%}  %> 
-                            <input type="password" id="passwordRepeat" name="passwordRepeat" placeholder="Nueva Contraseña"  class="form__fields" >
 
                         </label>
                     </div>
@@ -126,15 +113,40 @@
                             <p class="lg__descrip">Rol de usuario</p>
                             <select name="role" id="role" class="form__fields">
                                 <option value=" " disabled>Elegí un rol</option>
-                                <option value="client" <%= userProfile.role==='client'? 'selected' : ''%>>Client</option>
-                                <option value="admin" <%= userProfile.role==='admin'? 'selected' : ''%>>Admin</option>
+                                <% roles.forEach(role => { %>
+                                    <option value= "<%= role.id %> " <%= userProfile.role_id === role.id ? 'selected' : ''%>><%= role.name %> </option>
+                                <% }) %>
+
                             </select>
                         </label>
                     </div>
                     <% } %>
+
+                    <div class="registro__cont">
+                        <label for="password">
+                            <p class="lg__descrip">Contraseña*</p>
+                            <p class="jsError" id="passwordError"></p> 
+                            <% if (locals.errors && errors.password) {%> 
+                                <p class="errorMsg"><%= errors.password.msg %></p>
+                            <%}  %> 
+                            <input class="form__fields" type="password" id="password" name="password" placeholder="Nueva Contraseña" >
+
+                        </label>
+
+                    <div class="registro__cont">
+                        <label for="passwordRepeat">
+                            <p class="lg__descrip">Confirmar contraseña*</p>
+                            <p class="jsError" id="passwordRepeatError"></p>  
+                            <% if (locals.errors && errors.passwordRepeat) {%> 
+                                <p class="errorMsg"><%= errors.passwordRepeat.msg %></p>
+                            <%}  %> 
+                            <input type="password" id="passwordRepeat" name="passwordRepeat" placeholder="Nueva Contraseña"  class="form__fields" >
+
+                        </label>
+                    </div>
+                    <p class="lg-msg back"><a href="/users/profile">🡄 Volver</a></p>
                     
                 </article>
-
                 <button class="main-btns" type="submit">Editar</button>
                 
             </form>

@@ -28,15 +28,15 @@
  router.get('/logout', UsersController.logout); 
  
 /**** GET USER EDIT FORM */
-router.get('/edit/:id', UsersController.edit); 
+router.get('/edit/:id', authMiddleware, UsersController.edit); 
 
 /**** EDIT USER */
-router.put('/edit/:id', upload.single('image'), userValidator, UsersController.update);
+router.put('/edit/:id', authMiddleware, upload.single('image'), userValidator, UsersController.update);
 
 /**** GET ALL USERS */
 router.get('/list', adminMiddleware, UsersController.list); 
 
 /**** DELETE ONE USER*/
-router.delete('/edit/:id', UsersController.delete); 
+router.delete('/edit/:id', authMiddleware, UsersController.delete); 
  
 module.exports = router;

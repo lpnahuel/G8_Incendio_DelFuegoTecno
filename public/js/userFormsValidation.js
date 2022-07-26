@@ -1,10 +1,9 @@
 window.addEventListener('load', () => {
 
 
-    let form = document.querySelector('#registerForm');
-    let inputs = document.forms['registerForm'].elements;
+    let userForms = document.querySelector('#userForms');
+    let inputs = document.forms['userForms'].elements;
     let errorMessages = document.querySelectorAll('.jsError');
-    console.log(errorMessages);
 
 
     for(let i = 0; i < inputs.length; i++){
@@ -40,26 +39,25 @@ window.addEventListener('load', () => {
             if(inputs[i].name === 'password'){
                 if(inputs[i].value === '' || inputs[i].value.length < 8){
                     inputs[i].classList.add('invalid');
-                    document.getElementById('password').innerHTML = 'La contraseña debe tener más de 8 caracteres';
+                    document.getElementById('passwordError').innerHTML = 'La contraseña debe tener más de 8 caracteres';
                 }else{
                     inputs[i].classList.remove('invalid');
                     inputs[i].classList.add('valid');
-                    document.getElementById('password').innerHTML = '';
+                    document.getElementById('passwordError').innerHTML = '';
                 }
             }
             
-            
+            let password = document.getElementById('password').value;
             //acá validamos que los campos de contraseña coincidan
             //PROBLEMA: lo valida bien pero si cambio la contraseña y no cambio el campo de confirmación, no las vuelve a comparar :(
-            let password = document.querySelector('#password');
             if(inputs[i].name === 'passwordRepeat'){
-                if(inputs[i].value !== password.value){
+                if(inputs[i].value !== password || inputs[i].value === ''){
                     inputs[i].classList.add('invalid');
-                    document.getElementById('passwordRepeat').innerHTML = 'Las contraseñas deben coincidir';
+                    document.getElementById('passwordRepeatError').innerHTML = 'Las contraseñas deben coincidir';
                 }else{
                     inputs[i].classList.remove('invalid');
                     inputs[i].classList.add('valid');
-                    document.getElementById('passwordRepeat').innerHTML = '';
+                    document.getElementById('passwordRepeatError').innerHTML = '';
                 }
 
             }
@@ -69,9 +67,10 @@ window.addEventListener('load', () => {
                 if(inputs[i].value !== '' && inputs[i].value.includes('@') && inputs[i].value.includes('.')){
                     inputs[i].classList.remove('invalid');
                     inputs[i].classList.add('valid');
+                    document.getElementById('emailError').innerHTML = '';
                 }else{
                     inputs[i].classList.add('invalid');
-                    document.getElementById('email').innerHTML = 'Debes ingresar un email válido';
+                    document.getElementById('emailError').innerHTML = 'Debes ingresar un email válido';
                 }
             }
 
@@ -105,17 +104,19 @@ window.addEventListener('load', () => {
 
     }
 
-    form.addEventListener('submit', (event) => {
+    userForms.addEventListener('submit', (event) => {
         let errors = [];
 
         for(let i = 0; i < inputs.length; i++){
-            if(inputs[i].value == ''){
+            if(inputs[i].value === '' && inputs[i].name !== 'image'){
                 event.preventDefault();
                 inputs[i].classList.add('invalid');
                 errors.push(`El campo ${inputs[i]} no puede estar vacío`);
                 
             }else{
                 inputs[i].classList.remove('invalid');
+                inputs[i].classList.add('valid');
+                form.submit();
             }
         }
     });
