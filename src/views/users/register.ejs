@@ -19,7 +19,8 @@
                     <div class="registro__cont">
 
                         <label for="first_name">
-                            <p class="lg__descrip ">Nombre*</p>                        
+                            <p class="lg__descrip ">Nombre*</p>
+                            <p class="jsError"></p>                        
                             <% if (locals.errors && errors.first_name) {%> 
                                 <p class="errorMsg"><%= errors.first_name.msg %></p>
                             <%}  %> 
@@ -28,6 +29,7 @@
                     
                         <label for="last_name">
                             <p class="lg__descrip">Apellido*</p>
+                            <p class="jsError"></p>  
                             <% if (locals.errors && errors.last_name) {%> 
                                 <p class="errorMsg"><%= errors.last_name.msg %></p>
                             <%}  %> 
@@ -36,6 +38,7 @@
 
                         <label for="birth">
                             <p class="lg__descrip">Fecha de nacimiento*</p>
+                            <p class="jsError"></p>  
                             <% if (locals.errors && errors.birth) {%> 
                                 <p class="errorMsg"><%= errors.birth.msg %></p>
                             <%}  %> 
@@ -44,6 +47,7 @@
                         
                         <label for="image">
                             <p class="lg__descrip">Foto de perfil</p>
+                            <p class="jsError" id="imageRegister"></p>  
                             <% if (locals.errors && errors.image) {%> 
                                 <p class="errorMsg"><%= errors.image.msg %></p>
                             <%}  %> 
@@ -53,6 +57,7 @@
                         
                         <label for="phone">
                             <p class="lg__descrip">Teléfono*</p>
+                            <p class="jsError"></p>  
                             <% if (locals.errors && errors.phone) {%> 
                                 <p class="errorMsg"><%= errors.phone.msg %></p>
                             <%}  %> 
@@ -65,6 +70,7 @@
                     <div class="registro__cont">
                         <label for="address">
                             <p class="lg__descrip">Calle y altura*</p>
+                            <p class="jsError"></p>  
                             <% if (locals.errors && errors.address) {%> 
                                 <p class="errorMsg"><%= errors.address.msg %></p>
                             <%}  %> 
@@ -74,6 +80,7 @@
                     <div class="registro__cont">
                         <label for="cp">
                             <p class="lg__descrip">Codigo postal*</p>
+                            <p class="jsError" id="cp"></p>  
                             <% if (locals.errors && errors.cp) {%> 
                                 <p class="errorMsg"><%= errors.cp.msg %></p>
                             <%}  %> 
@@ -83,6 +90,7 @@
                     <div class="registro__cont">
                         <label for="city">
                             <p class="lg__descrip">Localidad*</p>
+                            <p class="jsError"></p>  
                             <% if (locals.errors && errors.city) {%> 
                                 <p class="errorMsg"><%= errors.city.msg %></p>
                             <%}  %> 
@@ -96,6 +104,7 @@
                     <div class="registro__cont">
                         <label for="email">
                             <p class="lg__descrip">E-mail*</p>
+                            <p class="jsError" id="email"></p>  
                             <% if (locals.errors && errors.email) {%> 
                                 <p class="errorMsg"><%= errors.email.msg %></p>
                             <%}  %> 
@@ -106,6 +115,7 @@
                     <div class="registro__cont">
                         <label for="password">
                             <p class="lg__descrip">Contraseña*</p>
+                            <p class="jsError" id="password"></p>  
                             <% if (locals.errors && errors.password) {%> 
                                 <p class="errorMsg"><%= errors.password.msg %></p>
                             <%}  %> 
@@ -115,6 +125,7 @@
                     <div class="registro__cont">
                         <label for="passwordRepeat">
                             <p class="lg__descrip">Confirmar contraseña*</p>
+                            <p class="jsError" id="passwordRepeat"></p>  
                             <% if (locals.errors && errors.passwordRepeat) {%> 
                                 <p class="errorMsg"><%= errors.passwordRepeat.msg %></p>
                             <%}  %> 

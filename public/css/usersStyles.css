@@ -180,7 +180,7 @@ textarea[id=description], textarea[id=specs], textarea[id=message]{
     outline: none;
 }
 
-.errorMsg{
+.errorMsg, .jsError{
     color: var(--magenta);
     margin: 0;
     padding: 4px 0 0 0 ;

@@ -3,19 +3,36 @@ window.addEventListener('load', () => {
 
     let form = document.querySelector('#registerForm');
     let inputs = document.forms['registerForm'].elements;
+    let errorMessages = document.querySelectorAll('.jsError');
+    console.log(errorMessages);
 
 
     for(let i = 0; i < inputs.length; i++){
 
         inputs[i].addEventListener('blur', (event) =>{
 
-            //acá validamos que los campos no estén vacíos
-            if(inputs[i].name === 'first_name' || inputs[i].name === 'last_name' || inputs[i].name === 'birth' || inputs[i].name === 'address' || inputs[i].name === 'phone' || inputs[i].name === 'city'){
+            //acá validamos que los campos no estén vacíos y tengan más
+            //de 3 caracteres
+            if(inputs[i].name === 'first_name' || inputs[i].name === 'last_name' || inputs[i].name === 'address' || inputs[i].name === 'phone' || inputs[i].name === 'city'){
                 if(inputs[i].value === '' || inputs[i].value.length < 3){
                     inputs[i].classList.add('invalid');
+                    errorMessages[i].innerHTML = '*Este campo es obligatorio y debe tener más de 3 caracteres';
                 }else{
                     inputs[i].classList.remove('invalid');
                     inputs[i].classList.add('valid');
+                    errorMessages[i].innerHTML = '';
+                }
+            }
+
+            //acá validamos la fecha de nacimiento
+            if(inputs[i].name === 'birth'){
+                if(inputs[i].value === ''){
+                    inputs[i].classList.add('invalid');
+                    errorMessages[i].innerHTML = '*Este campo es obligatorio';
+                }else{
+                    inputs[i].classList.remove('invalid');
+                    inputs[i].classList.add('valid');
+                    errorMessages[i].innerHTML = '';
                 }
             }
 
@@ -23,22 +40,26 @@ window.addEventListener('load', () => {
             if(inputs[i].name === 'password'){
                 if(inputs[i].value === '' || inputs[i].value.length < 8){
                     inputs[i].classList.add('invalid');
+                    document.getElementById('password').innerHTML = 'La contraseña debe tener más de 8 caracteres';
                 }else{
                     inputs[i].classList.remove('invalid');
                     inputs[i].classList.add('valid');
+                    document.getElementById('password').innerHTML = '';
                 }
             }
             
             
             //acá validamos que los campos de contraseña coincidan
-            //PROBLEMA: lo valida bien pero si cambio la contraseña y no cambio el campo de confirmación, no se vuelve a validar :(
+            //PROBLEMA: lo valida bien pero si cambio la contraseña y no cambio el campo de confirmación, no las vuelve a comparar :(
             let password = document.querySelector('#password');
             if(inputs[i].name === 'passwordRepeat'){
                 if(inputs[i].value !== password.value){
                     inputs[i].classList.add('invalid');
+                    document.getElementById('passwordRepeat').innerHTML = 'Las contraseñas deben coincidir';
                 }else{
                     inputs[i].classList.remove('invalid');
                     inputs[i].classList.add('valid');
+                    document.getElementById('passwordRepeat').innerHTML = '';
                 }
 
             }
@@ -50,16 +71,7 @@ window.addEventListener('load', () => {
                     inputs[i].classList.add('valid');
                 }else{
                     inputs[i].classList.add('invalid');
-                }
-            }
-
-            //acá validamos que el archivo sea una imagen válida
-            if(inputs[i].name === 'image'){
-                if(inputs[i].value.includes('.png') || inputs[i].value.includes('.jpg')|| inputs[i].value.includes('.webp')){
-                    inputs[i].classList.remove('invalid');
-                    inputs[i].classList.add('valid');
-                }else{
-                    inputs[i].classList.add('invalid');
+                    document.getElementById('email').innerHTML = 'Debes ingresar un email válido';
                 }
             }
 
@@ -73,6 +85,21 @@ window.addEventListener('load', () => {
                 }
             }
             
+        })
+
+        inputs[i].addEventListener('change', (event)=>{
+            
+            //acá validamos que el archivo sea una imagen válida
+            if(inputs[i].name === 'image'){
+                if(inputs[i].value.includes('.png') || inputs[i].value.includes('.jpg')|| inputs[i].value.includes('.webp')){
+                    inputs[i].classList.remove('invalid');
+                    inputs[i].classList.add('valid');
+                    document.getElementById('imageRegister').innerHTML = '';
+                }else{
+                    inputs[i].classList.add('invalid');
+                    document.getElementById('imageRegister').innerHTML = 'Formato inválido! Los formatos de imagen permitidos son: .jpg, .png y .webp';
+                }
+            }
         })
 
 
