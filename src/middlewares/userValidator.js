@@ -9,7 +9,7 @@ const userValidator = [
     check('phone', '*Este campo es obligatorio').notEmpty(),
     check('cp', '*Este campo es obligatorio').notEmpty()
         .isInt().withMessage('El código postal debe ser un número entero').bail()
-        .isLength({min : 4, max : 4}).withMessage('El código postal debe tener 4 dígitos'),
+        .isLength({min : 4, max : 7}).withMessage('El código postal debe tener entre 4 y 7 dígitos'),
     check('city', '*Este campo es obligatorio').notEmpty(),
     check('email', '*Este campo es obligatorio').notEmpty().bail()
         .isEmail().withMessage('Debes escribir un e-mail válido').normalizeEmail(),

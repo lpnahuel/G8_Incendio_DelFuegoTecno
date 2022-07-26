@@ -67,18 +67,6 @@ body{
     width: 85%;
 }
 
-.errorMsg{
-    color: var(--magenta);
-    margin: 0;
-    padding: 4px 0 0 0 ;
-    font-weight: 600;
-    font-size: 14px;
-}
-
-.invalid{
-    background-color:  #FFA8B5;
-    border: 1px solid #400000;
-}
 
 .rg__campos{
     padding-left: 15px;
@@ -190,6 +178,24 @@ textarea[id=description], textarea[id=specs], textarea[id=message]{
 .form__fields:focus{
     background-color: var(--gris);
     outline: none;
+}
+
+.errorMsg{
+    color: var(--magenta);
+    margin: 0;
+    padding: 4px 0 0 0 ;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.invalid{
+    background-color:  #FFA8B5;
+    border: 1px solid #400000;
+}
+
+.valid{
+    background-color:  #99edc3;
+    border: 1px solid #03ac13;
 }
 
 .lg__descrip{
