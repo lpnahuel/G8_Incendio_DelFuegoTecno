@@ -134,9 +134,6 @@ const ProductsController = {
             
             db.Category.findAll()
             .then((categories)=>{
-                console.log('ERRORS');
-                console.log('===========');
-                console.log(errors);
                 
                 return res.render('products/admin-create', {errors : errors, oldData : req.body, categories : categories});
             })
@@ -163,35 +160,56 @@ const ProductsController = {
         
         db.Product.findByPk(req.params.id)
         .then(productToEdit =>{
-            let image = [];
-            (req.files.image) ? image = (req.files.image.map(item => item.originalname)) : image.push(productToEdit.image_01, productToEdit.image_02, productToEdit.image_03, productToEdit.image_04);
-    
-            let thumb;
-            (req.files.thumb)? thumb = (req.files.thumb[0].originalname) : thumb = productToEdit.thumb;
 
-            db.Product.update({
-                name : req.body.name,
-                category : req.body.category,
-                price : parseInt(req.body.price),
-                stock : parseInt(req.body.stock),
-                image_01: image[0],
-                image_02: image[1],
-                image_03: image[2],
-                image_04: image[3],
-                thumb : req.files.thumb,
-                description : req.body.description,
-                specs : req.body.specs
-            },
-            {
-                where : {id : req.params.id}
-            })
-            .then(()=>{
-                return res.redirect('/products/admin')
-            })
+            let validationResults = validationResult(req);
+
+            let errors = validationResults.mapped();
+
+            if(validationResults.errors.length === 0){
+            
+                let image = [];
+                (req.files.image) ? image = (req.files.image.map(item => item.originalname)) : image.push(productToEdit.image_01, productToEdit.image_02, productToEdit.image_03, productToEdit.image_04);
+        
+                let thumb;
+                (req.files.thumb)? thumb = (req.files.thumb[0].originalname) : thumb = productToEdit.thumb;
+
+                db.Product.update({
+                    name : req.body.name,
+                    category : req.body.category,
+                    price : parseInt(req.body.price),
+                    stock : parseInt(req.body.stock),
+                    image_01: image[0],
+                    image_02: image[1],
+                    image_03: image[2],
+                    image_04: image[3],
+                    thumb : thumb,
+                    description : req.body.description,
+                    specs : req.body.specs
+                },
+                {
+                    where : {id : req.params.id}
+                })
+                .then(()=>{
+                    return res.redirect('/products/admin')
+                })
+                .catch(err =>{
+                    console.log('Ha ocurrido un error: ' + err);
+                })
+                
+            } else {
+                db.Product.findByPk(req.params.id)
+                .then(productRequested=>{
+                    db.Category.findAll()
+                    .then(categories =>{
+                        return res.render('products/admin-edit', {errors : errors, oldData : req.body, productRequested : productRequested, categories: categories});
+                    })
+                })
+                .catch(err =>{
+                    console.log('Ha ocurrido un error: ' + err);
+                })
+            }
         })
-        .catch(err =>{
-            console.log('Ha ocurrido un error: ' + err);
-        })
+
     },
 
     destroy : (req, res)=>{

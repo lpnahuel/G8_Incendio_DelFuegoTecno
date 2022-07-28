@@ -61,30 +61,32 @@ window.addEventListener('load', () => {
 
         });
 
-        // inputs[i].addEventListener('change', (event) =>{
+        inputs[i].addEventListener('change', (event) =>{
+
+            let thumb = document.querySelector('#thumb');
             
             //validación array de imagenes principales: Por lo menos una imagen, hasta 4, y formatos válidos
-            // if(inputs[i].name === 'image'){
-            //     console.log('IMAGE?',inputs[i].value)
-            // }
+            if(inputs[i].name === 'image'){
+                console.log('IMAGE?',inputs[i].value)
+            }
 
 
             //validamos la miniatura: sólo se permite una imagen, es obligatoria, y formatos válidos
-        //     if(inputs[i].name === 'thumb'){
-        //         console.log('THUMB?',inputs[i].value)
-        //         if(inputs[i].value.includes('.png') || inputs[i].value.includes('.jpg') || inputs[i].value.includes('.webp')){
-        //             inputs[i].classList.remove('invalid');
-        //             inputs[i].classList.add('valid');
-        //             document.getElementById('prod-thumb').innerHTML = '';
-        //         }else{
-        //             inputs[i].classList.remove('valid');
-        //             inputs[i].classList.add('invalid');
-        //             document.getElementById('prod-thumb').innerHTML = '*Formato inválido! Los formatos de imagen permitidos son: .jpg, .png y .webp';
-        //         };
+            if(inputs[i].name === 'thumb'){
+                console.log('THUMB?',inputs[i].value)
+                if(inputs[i].value.includes('.png') || inputs[i].value.includes('.jpg') || inputs[i].value.includes('.webp')){
+                    inputs[i].classList.remove('invalid');
+                    inputs[i].classList.add('valid');
+                    document.getElementById('prod-thumb').innerHTML = '';
+                }else{
+                    inputs[i].classList.remove('valid');
+                    inputs[i].classList.add('invalid');
+                    document.getElementById('prod-thumb').innerHTML = '*Formato inválido! Los formatos de imagen permitidos son: .jpg, .png y .webp';
+                };
 
                 
-        //     };
-        // });
+            };
+        });
     };
 
 });
