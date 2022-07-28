@@ -4,6 +4,7 @@ const path = require('path');
 const router = express.Router();
 const ProductsController = require("../controllers/ProductsController");
 const productValidator = require('../middlewares/productValidator');
+const productCreateValidator = require('../middlewares/productCreateValidator');
 const multipleUpload = require('../middlewares/multerProducts');
 const adminMiddleware = require('../middlewares/adminMiddleware')
 
@@ -25,7 +26,7 @@ router.get('/admin', adminMiddleware, ProductsController.admin);
 
 /*** CREATE ONE PRODUCT */ 
 router.get('/admin/create', adminMiddleware, ProductsController.create); 
-router.post('/admin/create', adminMiddleware, multipleUpload, productValidator, ProductsController.store); 
+router.post('/admin/create', adminMiddleware, multipleUpload, productValidator, productCreateValidator, ProductsController.store); 
 
 /*** EDIT ONE PRODUCT */ 
 router.get('/admin/edit/:id', adminMiddleware, ProductsController.edit); 

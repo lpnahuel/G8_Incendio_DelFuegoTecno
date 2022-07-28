@@ -1,30 +1,17 @@
 const {check} = require('express-validator');
 
 const productValidator = [
-    check('name', '*Este campo es obligatorio').notEmpty(),
+    check('name', '*Este campo es obligatorio').notEmpty()
+    .isLength({min : 5, max : 100}).withMessage('El nombre debe tener entre 5 y 100 caracteres'),
     check('category', '*No se seleccionó una categoría').notEmpty(),
-    check('price', '*Este campo es obligatorio').notEmpty(),
-    check('stock', '*Este campo es obligatorio').notEmpty(),
+    check('price', '*Este campo es obligatorio').notEmpty()
+        .isInt().withMessage('El precio debe ser un número').bail()
+        .isLength({min : 1}).withMessage('El precio debe tener mínimo 1 dígito'),
+    check('stock', '*Este campo es obligatorio').notEmpty().bail()
+        .isInt().withMessage('El stock debe ser un número entero')
+        .isLength({min : 1}).withMessage('El stock debe tener mínimo 1 dígito, así sea 0'),
     check('description', '*Este campo es obligatorio').notEmpty()
-         .isLength({max : 60}).withMessage('La descripción debe tener menos de 60 caracteres'),
-    check('image').custom((value, {req}) => {
-        let files = req.files.image;
-        if(!files){
-            throw new Error ('Tienes que subir al menos una imagen')
-        }else if(files.length > 4){
-            throw new Error ('Puedes subir sólo 4 imágenes')
-        }
-        return true
-    }),
-    check('thumb').custom((value, {req}) => {
-        let file = req.files.thumb;
-        if(!file){
-            throw new Error ('Tienes que subir una imagen')
-        }else if(file.length > 1){
-            throw new Error ('Puedes subir sólo 1 imagen')
-        }
-        
-        return true
-    })
+         .isLength({min: 20, max : 1000}).withMessage('La descripción puede tener hasta 1000 caracteres'),
+    check('specs').isLength({max : 1000}).withMessage('Las especificaciones pueden tener hasta 1000 caracteres'),
 ];
 module.exports = productValidator;

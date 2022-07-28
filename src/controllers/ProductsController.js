@@ -102,12 +102,13 @@ const ProductsController = {
         
         let validationResults = validationResult(req);
         let errors = validationResults.mapped();
-        
         if(validationResults.errors.length === 0){
          
             let image;
             (req.files.image) ? image = (req.files.image.map(item => item.originalname)) : image = [];
 
+            let thumb;
+            (req.files.thumb)? thumb = (req.files.thumb[0].originalname) : thumb = '';
             
             db.Product.create({
                 name:  req.body.name,
@@ -118,7 +119,7 @@ const ProductsController = {
                 image_02: image[1],
                 image_03: image[2],
                 image_04: image[3],
-                thumb : req.files.thumb[0].originalname,
+                thumb : thumb,
                 description : req.body.description,
                 specs :  req.body.specs
             })
@@ -133,6 +134,10 @@ const ProductsController = {
             
             db.Category.findAll()
             .then((categories)=>{
+                console.log('ERRORS');
+                console.log('===========');
+                console.log(errors);
+                
                 return res.render('products/admin-create', {errors : errors, oldData : req.body, categories : categories});
             })
             .catch(err =>{
@@ -195,7 +200,7 @@ const ProductsController = {
             where : {id : req.params.id}
         })
         .then(()=>{
-            return res.redirect('/products')
+            return res.redirect('/products/admin')
         })
         .catch(err =>{
             console.log('Ha ocurrido un error: ' + err);
