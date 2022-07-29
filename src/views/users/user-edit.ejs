@@ -122,28 +122,6 @@
                     </div>
                     <% } %>
 
-                    <div class="registro__cont">
-                        <label for="password">
-                            <p class="lg__descrip">Contraseña*</p>
-                            <p class="jsError" id="passwordError"></p> 
-                            <% if (locals.errors && errors.password) {%> 
-                                <p class="errorMsg"><%= errors.password.msg %></p>
-                            <%}  %> 
-                            <input class="form__fields" type="password" id="password" name="password" placeholder="Nueva Contraseña" >
-
-                        </label>
-
-                    <div class="registro__cont">
-                        <label for="passwordRepeat">
-                            <p class="lg__descrip">Confirmar contraseña*</p>
-                            <p class="jsError" id="passwordRepeatError"></p>  
-                            <% if (locals.errors && errors.passwordRepeat) {%> 
-                                <p class="errorMsg"><%= errors.passwordRepeat.msg %></p>
-                            <%}  %> 
-                            <input type="password" id="passwordRepeat" name="passwordRepeat" placeholder="Nueva Contraseña"  class="form__fields" >
-
-                        </label>
-                    </div>
                     <p class="lg-msg back"><a href="/users/profile">🡄 Volver</a></p>
                     
                 </article>

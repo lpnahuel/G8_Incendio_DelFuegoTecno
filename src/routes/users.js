@@ -31,8 +31,17 @@ router.get('/logout', UsersController.logout);
 /**** GET USER EDIT FORM */
 router.get('/edit/:id', authMiddleware, UsersController.edit); 
 
+/**** GET USER EDIT FORM */
+router.get('/edit/:id', authMiddleware, UsersController.edit); 
+
 /**** EDIT USER */
 router.put('/edit/:id', authMiddleware, upload.single('image'), userValidator, UsersController.update);
+
+/**** GET USER PASSWORD EDIT FORM */
+router.get('/edit/:id/password', authMiddleware, UsersController.password); 
+
+/**** EDIT USER PASSWORD */
+router.put('/edit/:id/password', authMiddleware, userCreateValidator, UsersController.passwordUpdate);
 
 /**** GET ALL USERS */
 router.get('/list', adminMiddleware, UsersController.list); 

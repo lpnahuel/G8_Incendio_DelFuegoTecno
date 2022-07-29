@@ -126,9 +126,9 @@ const UsersController = {
                 let image;
                 (req.file) ? image = req.file.filename : image = userToEdit.image;
 
-                let password;
+                // let password;
 
-                (req.body.password)? password = bcrypt.hashSync(req.body.password, 10) : password = userToEdit.password;
+                // (req.body.password)? password = bcrypt.hashSync(req.body.password, 10) : password = userToEdit.password;
     
 
                 let validationResults = validationResult(req);
@@ -146,7 +146,7 @@ const UsersController = {
                         cp: req.body.cp,
                         city: req.body.city,
                         email: req.body.email,
-                        password: password,
+                        password: userToEdit.password,
                         role_id: req.body.role
                     },
                         {
@@ -161,6 +161,60 @@ const UsersController = {
                 } else {
                     console.log('Error en el else', errors);
                     res.render('users/user-edit', { userProfile: userToEdit, errors: errors, oldData: req.body });
+                }
+            });
+    },
+
+    password: (req, res) => {
+        db.User.findByPk(req.params.id)
+            .then(userProfile => {
+                res.render('users/user-edit-password', { userProfile: userProfile})
+            })
+            .catch(err => {
+                console.log('Ha ocurrido un error: ' + err);
+            })
+
+
+    },
+
+    passwordUpdate: (req, res) => {
+
+        db.User.findByPk(req.params.id)
+            .then(userToEdit => {
+             
+                console.log(userToEdit.first_name);
+                let validationResults = validationResult(req);
+                let errors = validationResults.mapped();
+
+                let password = bcrypt.hashSync(req.body.password, 10);
+
+                if (validationResults.errors.length === 0) {
+
+                    db.User.update({
+                        first_name: userToEdit.first_name,
+                        last_name: userToEdit.last_name,
+                        birth: userToEdit.birth,
+                        image: userToEdit.image,
+                        phone: userToEdit.phone,
+                        address: userToEdit.address,
+                        cp: userToEdit.cp,
+                        city: userToEdit.city,
+                        email: userToEdit.email,
+                        password: password,
+                        role_id: userToEdit.role
+                    },
+                        {
+                            where: { id: req.params.id }
+                        })
+                        .then(() => {
+                            res.redirect('/users/profile');
+                        })
+                        .catch(err => {
+                            console.log('Ha ocurrido un error: ' + err);
+                        })
+                } else {
+                    console.log('Error en el else', errors);
+                    res.render('users/user-edit-password', { userProfile: userToEdit, errors: errors, oldData: req.body });
                 }
             });
     },
