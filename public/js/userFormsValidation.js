@@ -47,6 +47,7 @@ window.addEventListener('load', () => {
                     inputs[i].classList.remove('invalid');
                     inputs[i].classList.add('valid');
                     document.getElementById('passwordError').innerHTML = '';
+
                 }
             }
             

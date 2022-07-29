@@ -3,6 +3,7 @@
 
     <%- include('../partials/head', {title : 'Mi perfil: ' + userProfile.first_name}) %>
 <body>
+    <script src="/js/userFormsValidation.js"></script>
     <%- include('../partials/header') %> 
     <main class="main-general">
 
@@ -10,11 +11,12 @@
             <div class="profileWelcome">
                 <div class="profileImg">
                     <% if (userProfile) { %>
-                     
-                    
-                    <img src="/img/users/<%= userProfile.image %>" alt="Imagen de perfil de <%= userProfile.firstName %>">
-                </div>
-                <h2 class="profileGreeting">Hola <%= userProfile.first_name %>!</h2>
+                        
+                        
+                        <img src="/img/users/<%= userProfile.image %>" alt="Imagen de perfil de <%= userProfile.firstName %>">
+                    </div>
+                    <h2 class="profileGreeting">Hola <%= userProfile.first_name %>!</h2>
+                    <p class="success-msg"></p>
             </div>
             <div class="profileInfo">
                 <p class="infoTitles">Nombre Completo</p>

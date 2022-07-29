@@ -126,10 +126,6 @@ const UsersController = {
                 let image;
                 (req.file) ? image = req.file.filename : image = userToEdit.image;
 
-                // let password;
-
-                // (req.body.password)? password = bcrypt.hashSync(req.body.password, 10) : password = userToEdit.password;
-    
 
                 let validationResults = validationResult(req);
                 let errors = validationResults.mapped();
@@ -182,7 +178,6 @@ const UsersController = {
         db.User.findByPk(req.params.id)
             .then(userToEdit => {
              
-                console.log(userToEdit.first_name);
                 let validationResults = validationResult(req);
                 let errors = validationResults.mapped();
 

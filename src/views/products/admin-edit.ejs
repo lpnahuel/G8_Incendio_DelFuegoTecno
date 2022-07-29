@@ -23,7 +23,7 @@
                                                                 
                         <% }else{ %>
 
-                        <form action="/products/admin/edit/<%= productRequested.id %>?_method=PUT" method="POST" enctype="multipart/form-data" class="forms__campos">
+                        <form action="/products/admin/edit/<%= productRequested.id %>?_method=PUT" method="POST" enctype="multipart/form-data" class="forms__campos" id="productForms">
                             <label for="name">
                                 <p class="lg__descrip">Nombre del producto*</p>
                                 <p class="jsError" id="prod-name"></p>                       
@@ -103,6 +103,7 @@
                                 <textarea class="form__fields" id="specs" name="specs"  ><%= productRequested.specs %></textarea>
                                 <span class="feedback"></span>
                             </label>
+                            <p class="lg-msg back"><a href="/products/admin">🡄 Volver</a></p>
 
                             <button class="main-btns" type="submit">Editar</button>
                         
