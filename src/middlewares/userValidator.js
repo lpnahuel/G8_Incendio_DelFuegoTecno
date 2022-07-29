@@ -13,14 +13,6 @@ const userValidator = [
     check('city', '*Este campo es obligatorio').notEmpty(),
     check('email', '*Este campo es obligatorio').notEmpty().bail()
         .isEmail().withMessage('Debes escribir un e-mail válido').normalizeEmail(),
-    check('password', '*Este campo es obligatorio').notEmpty().bail()
-        .isLength({min : 8}).withMessage('La contraseña debe tener más de 8 caracteres'),
-    check('passwordRepeat').custom((value, { req })=>{
-            if (value !== req.body.password) {
-                throw new Error('Las contraseñas ingresadas no coinciden');
-              }
-            return true;
-        }),
     check('image').custom((value, {req}) => {
         let file = req.file;
         let acceptedExtensions = ['.png', '.jpg', '.webp'];

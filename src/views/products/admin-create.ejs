@@ -40,7 +40,7 @@
                                 <select class="form__fields <%= locals.errors && errors.category ? 'invalid' : '' %>" id="category" name="category">
                                     <option value="" selected disabled>Seleccioná</option>
                                     <% categories.forEach(category => { %> 
-                                        <option value="<%= category.id %>" <%= locals.oldData && (category.id === oldData.category.id) ? 'selected' : '' %>><%= category.name %> </option>
+                                        <option value="<%= category.id %>" <%= locals.oldData === category.id ? 'selected' : '' %>><%= category.name %> </option>
                                     <% }) %> 
                                 </select>
                             </label>
