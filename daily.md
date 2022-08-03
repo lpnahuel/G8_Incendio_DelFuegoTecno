@@ -301,17 +301,17 @@ A continuacion detallaremos los temas que se trataron cada día:
 
 **Informe 25/07/2022**
 - cambiamos la estructura de las carpetas
-
-**Informe 25/07/2022**
 - Validaciones con js
 
 **Informe 26/07/2022**
 - Validaciones JS con mensaje
 - Validacion de los formularios de usuario (creacion, edicion y login)
+- Cancelamos meet
 
 **Informe 28/07/2022**
 - Validacion de backend de edicion de producto
 - validacion de productCreate
+- Cancelamos meet
 
 **Informe 29/07/2022**
 - Ajustes varios
@@ -320,3 +320,4 @@ A continuacion detallaremos los temas que se trataron cada día:
 
 **Informe 2/08/2022**
 - Retro
+- Cancelamos meet
