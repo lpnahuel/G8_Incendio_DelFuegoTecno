@@ -298,3 +298,25 @@ A continuacion detallaremos los temas que se trataron cada día:
 - Modificamos las migas de pan de los producto para que se vean las categorias.(pali y nicky)
 - Modificamos en el listado de usuario que aparezca el rol: "admin" o "client".(pali y nicky)
 - Modificamos los Scripts y los subimos al drive. (pali)
+
+**Informe 25/07/2022**
+- cambiamos la estructura de las carpetas
+
+**Informe 25/07/2022**
+- Validaciones con js
+
+**Informe 26/07/2022**
+- Validaciones JS con mensaje
+- Validacion de los formularios de usuario (creacion, edicion y login)
+
+**Informe 28/07/2022**
+- Validacion de backend de edicion de producto
+- validacion de productCreate
+
+**Informe 29/07/2022**
+- Ajustes varios
+- Validacion de la configuracion de la contraseña
+
+
+**Informe 2/08/2022**
+- Retro
