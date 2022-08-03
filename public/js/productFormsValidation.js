@@ -7,7 +7,6 @@ window.addEventListener('load', () => {
     for(let i = 0; i < inputs.length; i++){
         inputs[i].addEventListener('blur', (event) =>{
 
-            //validamos que el campo nombre no esté vacío y tenga mínimo  5 caracteres y máximo 100
             if(inputs[i].name === 'name'){
                 if(inputs[i].value === '' || inputs[i].value.length < 5 || inputs[i].value.length > 100){
                     inputs[i].classList.add('invalid');
@@ -19,8 +18,7 @@ window.addEventListener('load', () => {
                 };
             };
 
-            //campos obligatorios: precio, stock y categoría
-            //STOCK y PRECIO que sean un número que no sé como se hace :D
+          
             if(inputs[i].name === 'stock' || inputs[i].name === 'price' || inputs[i].name === 'category_id'){
                 if(!inputs[i].value){                    
                     inputs[i].classList.remove('valid');
@@ -33,7 +31,6 @@ window.addEventListener('load', () => {
                 };
             };
 
-            //validamos la descripción obligatoria y que tenga mínimo 20 caracteres y max 1000
             if(inputs[i].name === 'description'){
                 if(inputs[i].value === '' || inputs[i].value.length < 20 || inputs[i].value.length > 1000){                    
                     inputs[i].classList.remove('valid');
@@ -46,7 +43,6 @@ window.addEventListener('load', () => {
                 };
             };
             
-            //validamos las especificaciones hasta 1000 caracteres
             if(inputs[i].name === 'specs'){
                 if(inputs[i].value.length > 1000){
                     inputs[i].classList.remove('valid');
@@ -65,13 +61,11 @@ window.addEventListener('load', () => {
 
             let thumb = document.querySelector('#thumb');
             
-            //validación array de imagenes principales: Por lo menos una imagen, hasta 4, y formatos válidos
             if(inputs[i].name === 'image'){
                 console.log('IMAGE?',inputs[i].value)
             }
 
 
-            //validamos la miniatura: sólo se permite una imagen, es obligatoria, y formatos válidos
             if(inputs[i].name === 'thumb'){
                 console.log('THUMB?',inputs[i].value)
                 if(inputs[i].value.includes('.png') || inputs[i].value.includes('.jpg') || inputs[i].value.includes('.webp')){

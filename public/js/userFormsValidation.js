@@ -10,8 +10,6 @@ window.addEventListener('load', () => {
 
         inputs[i].addEventListener('blur', (event) =>{
 
-            //acá validamos que los campos no estén vacíos y tengan más
-            //de 3 caracteres
             if(inputs[i].name === 'first_name' || inputs[i].name === 'last_name' || inputs[i].name === 'address' || inputs[i].name === 'phone' || inputs[i].name === 'city'){
                 if(inputs[i].value === '' || inputs[i].value.length < 3){
                     inputs[i].classList.remove('valid');
@@ -24,7 +22,7 @@ window.addEventListener('load', () => {
                 }
             }
 
-            //acá validamos la fecha de nacimiento
+
             if(inputs[i].name === 'birth'){
                 if(inputs[i].value === ''){
                     inputs[i].classList.remove('valid');
@@ -37,7 +35,6 @@ window.addEventListener('load', () => {
                 }
             }
 
-            //acá validamos que la contraseña tenga más de 8 caracteres
             if(inputs[i].name === 'password'){
                 if(inputs[i].value === '' || inputs[i].value.length < 8){
                     inputs[i].classList.remove('valid');
@@ -52,8 +49,7 @@ window.addEventListener('load', () => {
             }
             
             let password = document.getElementById('password').value;
-            //acá validamos que los campos de contraseña coincidan
-            //PROBLEMA: lo valida bien pero si cambio la contraseña y no cambio el campo de confirmación, no las vuelve a comparar :(
+ 
             if(inputs[i].name === 'passwordRepeat'){
                 if(inputs[i].value !== password || inputs[i].value === ''){
                     inputs[i].classList.remove('valid');
@@ -67,7 +63,6 @@ window.addEventListener('load', () => {
 
             }
 
-            //acá validamos que el mail sea un e-mail válido
             if(inputs[i].name === 'email'){
                 if(inputs[i].value !== '' && inputs[i].value.includes('@') && inputs[i].value.includes('.')){
                     inputs[i].classList.remove('invalid');
@@ -80,7 +75,7 @@ window.addEventListener('load', () => {
                 }
             }
 
-            //acá validamos el código postal
+
             if(inputs[i].name === 'cp'){
                 if(inputs[i].value === '' || inputs[i].value.length < 4 || inputs[i].value.length > 7){
                     inputs[i].classList.remove('valid');
@@ -94,8 +89,7 @@ window.addEventListener('load', () => {
         })
 
         inputs[i].addEventListener('change', (event)=>{
-            
-            //acá validamos que el archivo sea una imagen válida
+
             if(inputs[i].name === 'image'){
                 if(inputs[i].value.includes('.png') || inputs[i].value.includes('.jpg')|| inputs[i].value.includes('.webp')){
                     inputs[i].classList.remove('invalid');
