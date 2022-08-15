@@ -321,3 +321,14 @@ A continuacion detallaremos los temas que se trataron cada día:
 **Informe 2/08/2022**
 - Retro
 - Cancelamos meet
+
+**Informe 11/08/2022**
+- Tuvimos meet con Dani
+
+**Informe 14/08/2022**
+- Tuvimos meet (Nicky y Pali) para ver que nos faltaba del proyecto
+
+**Informe 15/08/2022**
+- Generamos carpeta de apiControllers con los archivos js para productos y usuarios.
+- Generamos carperas ApiRoutes con archivos js: main, productos y usuarios.
+- agregamos el app.use de mainroutes al app.js

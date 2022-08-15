@@ -38,6 +38,7 @@ app.set('views', path.join(__dirname, '/src/views'));
 
 /*** Main Router (use) */
 app.use("/", mainRoutes);
+//app.use('/api', ApiMainRoutes); //RUTA API
 
 /*** Error (404) */
 app.use((req, res, next)=>{

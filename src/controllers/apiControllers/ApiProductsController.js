@@ -1,7 +1,14 @@
+// ************ Require's ************/
+const fs = require('fs');
 const path = require('path');
-const db = require('../../database/models');
+
+// *** Path's */
+const productsFilePath = path.join(__dirname, '../data/products.json');
+
+// *** Modelo */
+const db = require('../database/models/index.js');
+const Op = db.Sequelize.Op;
 const sequelize = db.sequelize;
-const { Op } = require("sequelize");
 
 
 const ApiProductsController = {
@@ -31,8 +38,8 @@ const ApiProductsController = {
 
                 let objectCategory = {}
 
-                countByCategory.forEach(categoria => {
-                    Object.assign(objectCategory, categoria)
+                countByCategory.forEach(categories => {
+                    Object.assign(objectCategory, categories)
 
                 });
 
@@ -40,85 +47,20 @@ const ApiProductsController = {
                 let productResponse = products.map(element => {
                     let obj = {
                         id: element.id,
-                        name: element.name,
-                        description: element.description,
-                        categorias: element.categorias,
-                        detail: `/api/products/detail/${element.id}`,
-                        img: element.image,
-                        category: element.categorias.name
- id : {
-            type: DataTypes.INTEGER,
-            primaryKey: true,
-            autoIncrement: true,
-            allowNull: false
-        },
-
-        category_id : {
-            type : DataTypes.INTEGER.UNSIGNED,
-            allowNull: false
-        },
-
-        name : {
-            type: DataTypes.STRING(100),
-            allowNull: false
-        },
-        price : {
-            type: DataTypes.INTEGER,
-            allowNull: false
-        },
-        stock : {
-            type: DataTypes.INTEGER,
-            allowNull: false
-        },
-        description : {
-            type: DataTypes.STRING(1000),
-            allowNull: false
-        },
-        specs : {
-            type: DataTypes.STRING(1000),
-            allowNull: true
-        },
-        image_01 : {
-            type: DataTypes.STRING(100),
-            allowNull: false,
-        },
-        image_02 : {
-            type: DataTypes.STRING(100),
-            allowNull: true,
-            defaultValue : 'default.webp'
-        },
-        image_03 : {
-            type: DataTypes.STRING(100),
-            allowNull: true,
-        },
-        image_04 : {
-            type: DataTypes.STRING(100),
-            allowNull: true,
-            defaultValue : 'default.webp'
-        },
-        thumb : {
-            type: DataTypes.STRING(100),
-            allowNull: false
-        },
-        created_at : {
-            type: DataTypes.DATE,
-            allowNull: true,
-            defaultValue : Date.now
-        },
-        updated_at : {
-            type: DataTypes.DATE,
-            allowNull: true,
-            defaultValue : Date.now
-        },
-
-
-
-
+                        name:  element.name,
+                        category_id : element.category,
+                        price : parseInt(element.price),
+                        stock : parseInt(element.stock),
+                        image_01: element.image[0],
+                        image_02: element.image[1],
+                        image_03: element.image[2],
+                        image_04: element.image[3],
+                        thumb : element.thumb,
+                        description : element.description,
+                        specs :  element.specs
                     }
                     return obj
                 });
-
-
 
                 let response = {
                     countProduts: products.length,
@@ -133,7 +75,7 @@ const ApiProductsController = {
         productsDB.findByPk(req.params.id,
             {
                 include: [
-                    { association: "categorias" },
+                    { association: "categories" },
 
                 ], where: {
                     status: "Enabled"
@@ -144,7 +86,7 @@ const ApiProductsController = {
                     id: product.id,
                     name: product.name,
                     description: product.description,
-                    img: `http://localhost:4000/img/products/${product.image}`,
+                    img: `http://localhost:3030/img/products/${product.image}`,
                     category: product.categorias.name
                 }
                 let respuesta = {
