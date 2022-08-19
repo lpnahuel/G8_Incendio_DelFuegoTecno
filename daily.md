@@ -282,7 +282,7 @@ A continuacion detallaremos los temas que se trataron cada día:
 - Recibimos ayuda de Dani y Joe para poder exportar la base de datos ya que teníamos un inconveniente en MySQL.
 
 **Informe 13/07/2022**
-- Pasamos la base a Heidi ya que no podiamos subirla desde MySQL.
+- Pasamos la base a Heidi ya que no podiamos subirla desde MySQL. (pali y nicky)
 - Creamos el archivo de entrega en PDF.
 - Creamos el Heroku.
 
@@ -315,20 +315,28 @@ A continuacion detallaremos los temas que se trataron cada día:
 
 **Informe 29/07/2022**
 - Ajustes varios
-- Validacion de la configuracion de la contraseña
+- Validacion de la configuracion de la contraseña (pali)
 
 
 **Informe 2/08/2022**
-- Retro
+- Retro (pali y nicky)
 - Cancelamos meet
 
 **Informe 11/08/2022**
-- Tuvimos meet con Dani
+- Tuvimos meet con Dani (nicky y pali)
 
 **Informe 14/08/2022**
 - Tuvimos meet (Nicky y Pali) para ver que nos faltaba del proyecto
 
 **Informe 15/08/2022**
-- Generamos carpeta de apiControllers con los archivos js para productos y usuarios.
-- Generamos carperas ApiRoutes con archivos js: main, productos y usuarios.
-- agregamos el app.use de mainroutes al app.js
+- Genere carpeta de apiControllers con los archivos js para productos y usuarios. (nicky)
+- Genere carperas ApiRoutes con archivos js: ApiMainRoutes, ApiProductsRoutes y ApiUsersRoutes. (nicky)
+- agregue el app.use de mainroutes al app.js nicky)
+
+**Informe 18/08/2022**
+- Mejoramos el código de ApiProductsController (nicky)
+- Agregue https para las imagenes y url de cada producto (api producto) (nicky)
+- Agregue rutas a app.js (nicky)
+
+**Informe 19/08/2022**
+- Me falta terminar de mejorar el código de ApiUsersControllers.js (nicky)

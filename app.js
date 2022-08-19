@@ -7,6 +7,7 @@ const cookieParser = require('cookie-parser');
 const session = require('express-session');
 const userLoggedMiddleware = require('./src/middlewares/userLoggedMiddleware');
 const adminLoggedMiddleware = require('./src/middlewares/adminLoggedMiddleware');
+const ApiMainRoutes = require('./src/routes/ApiRoutes/ApiMainRoutes')
 
 
 /*** Main Router (require) */
@@ -38,7 +39,12 @@ app.set('views', path.join(__dirname, '/src/views'));
 
 /*** Main Router (use) */
 app.use("/", mainRoutes);
-//app.use('/api', ApiMainRoutes); //RUTA API
+app.use('/api', ApiMainRoutes); //RUTA API
+// URL PARA ACCEDER A LAS IMAGENES DEL PRODUCTO http://localhost:3030/products/img/<nombre-del-archivo>
+app.use('/products/img/',express.static(path.join(__dirname, './public/img/products')));
+// URL PARA ACCEDER A LAS IMAGENES DEL USUARIO http://localhost:3030/users/img/<nombre-del-archivo>
+app.use('/users/img/',express.static(path.join(__dirname, './public/img/users')));
+
 
 /*** Error (404) */
 app.use((req, res, next)=>{

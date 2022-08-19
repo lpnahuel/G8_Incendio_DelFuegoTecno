@@ -10,95 +10,63 @@ const db = require('../database/models/index.js');
 const Op = db.Sequelize.Op;
 const sequelize = db.sequelize;
 
-
+//LISTAR PRODUCTOS PARA LA API
 const ApiProductsController = {
-    list: function (req, res) {
-        let Allproducts = productsDB.findAll({
-            include: [
-                { association: "Category" },
+    list: async (req, res) => {
+        try {
+            let response = await db.Product.findAndCountAll();
+            let data = response.rows.map(product => {
+                return product.toJSON();
+            });
 
-            ], where: {
-                status: "Enabled"
-            }
-        })
-        let categoriesInDb = db.Category.findAll({
-            include: [
-                { association: "Product" },
-            ]
-        })
-        Promise.all([categoriesInDb, Allproducts])
-            .then(function ([category, products]) {
-
-                let countByCategory = category.map(element => {
-                    return ({
-                        [element.name]: element.productos.length
-                    })
-                });
-
-
-                let objectCategory = {}
-
-                countByCategory.forEach(categories => {
-                    Object.assign(objectCategory, categories)
-
-                });
-
-
-                let productResponse = products.map(element => {
-                    let obj = {
-                        id: element.id,
-                        name:  element.name,
-                        category_id : element.category,
-                        price : parseInt(element.price),
-                        stock : parseInt(element.stock),
-                        image_01: element.image[0],
-                        image_02: element.image[1],
-                        image_03: element.image[2],
-                        image_04: element.image[3],
-                        thumb : element.thumb,
-                        description : element.description,
-                        specs :  element.specs
-                    }
-                    return obj
-                });
-
-                let response = {
-                    countProduts: products.length,
-                    countByCategory: objectCategory,
-                    products: productResponse,
+            let infoConUrl = data.map(product => {
+                return {
+                    ...product,
+                    image_01: `https://g8incendio-dft.herokuapp.com/products/img/${product.image_01}`,
+                    image_02: `https://g8incendio-dft.herokuapp.com/products/img/${product.image_02}`,
+                    image_03: `https://g8incendio-dft.herokuapp.com/products/img/${product.image_03}`,
+                    image_04: `https://g8incendio-dft.herokuapp.com/products/img/${product.image_04}`,
+                    url: `https://g8incendio-dft.herokuapp.com/api/products/detail/${product.id}`
                 }
-                res.json(response)
+
             })
-            .catch(error => res.send(error))
+
+            return res.status(200).json({
+                count: response.count,
+                products: infoConUrl,
+            });
+
+        } catch (error) {
+            console.log(error)
+            return res.status(500).json({
+                msg: 'Ooops algo salio mal!',
+                error:JSON.stringify(error),
+                status: 500
+            })
+        }
     },
-    detail: (req, res) => {
-        productsDB.findByPk(req.params.id,
-            {
-                include: [
-                    { association: "categories" },
 
-                ], where: {
-                    status: "Enabled"
-                }
-            })
-            .then(product => {
-                let productResponse = {
-                    id: product.id,
-                    name: product.name,
-                    description: product.description,
-                    img: `http://localhost:3030/img/products/${product.image}`,
-                    category: product.categorias.name
-                }
-                let respuesta = {
-                    product: productResponse,
-                   
-
-                }
-                res.json(respuesta);
-            })
-            .catch(error => res.send(error));
-
-
+    //DETALLE DE PRODUCTO PARA LA API
+    detail: async (req, res) => {
+        try {
+          let {id} = req.params
+          let response = await db.Product.findOne({where:{id:id}})
+          let data = {
+              ...response.toJSON(),
+              image_01: `https://g8incendio-dft.herokuapp.com/products/img/${response.image_01}`,
+              image_02: `https://g8incendio-dft.herokuapp.com/products/img/${response.image_02}`,
+              image_03: `https://g8incendio-dft.herokuapp.com/products/img/${response.image_03}`,
+              image_04: `https://g8incendio-dft.herokuapp.com/products/img/${response.image_04}`,
+          }
+          res.status(200).json({
+              data,
+          })
+        } catch (error) {
+          console.log(error)
+        }
+      },
+//verificar de acá a abajo//
+/*
     },
     create: (req, res) => {
         db.Record.
@@ -147,7 +115,7 @@ const ApiProductsController = {
             })
             .catch(error => res.send(error))
 
-    }
+    }*/
 
 
 }
