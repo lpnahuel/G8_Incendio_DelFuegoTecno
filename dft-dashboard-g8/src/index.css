@@ -1,0 +1,136 @@
+*{
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+}
+
+
+
+/* Sidebar */
+.sidebar{
+  flex: 1;
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+/* NavBar */
+.navBarContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Home */
+.mainHome{
+  display: flex;
+}
+
+.homeContainer{
+  flex: 10;
+}
+.homeSection{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Widget */
+.infoWidget{
+  background-color: #f5f5f5;
+  padding: 20px;
+  width: 20rem;
+}
+
+/* Product List */
+.productList{
+  margin: 2em;
+}
+
+.productsListContainer{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 1rem;
+}
+
+/* Product Detail */
+.productDetailContainer{
+  margin: 2em;
+}
+
+.detailCard{
+  background-color: #f5f5f5;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-around;
+  padding: 20px;
+  width: 72em;
+}
+
+.detailCard__img{
+  height: auto;
+  width: calc(50% - 1em);
+}
+
+.detailCard__body{
+  width: calc(50% - 1em);
+}
+
+/* Category */
+
+.categoryContainer{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+.categoryCard{
+  margin: 0 auto;
+  max-width: 15em;
+}
+
+.categoryCard__img{
+  background-color: #000;
+  height: 10em;
+
+}
+
+/* User List */
+
+.userList{
+  margin: 2em;
+}
+
+.usersListContainer{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 1rem;
+}
+
+.userCard{
+  margin: 0 auto;
+  max-width: 15em;
+}
+
+/* User Detail */
+
+.userDetailContainer{
+  margin: 2em;
+}
+
+.userDetail{
+  background-color: #f5f5f5;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-around;
+  padding: 20px;
+  width: 72em;
+}
+
+.userDetail__img{
+  height: auto;
+  width: calc(50% - 1em);
+}
+
+.userDetail__body{
+  width: calc(50% - 1em);
+}

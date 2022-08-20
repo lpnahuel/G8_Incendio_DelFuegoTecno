@@ -1,6 +1,5 @@
 window.addEventListener('load', () => {
 
-    let productForms = document.querySelector('#productForms');
     let inputs = document.forms['productForms'].elements;
     let errorMessages = document.querySelectorAll('.jsError');
 
@@ -9,6 +8,7 @@ window.addEventListener('load', () => {
 
             if(inputs[i].name === 'name'){
                 if(inputs[i].value === '' || inputs[i].value.length < 5 || inputs[i].value.length > 100){
+                    inputs[i].classList.remove('valid');
                     inputs[i].classList.add('invalid');
                     document.getElementById('prod-name').innerHTML = '*Este campo es obligatorio y debe tener entre 5 y 100 caracteres';
                 }else{
