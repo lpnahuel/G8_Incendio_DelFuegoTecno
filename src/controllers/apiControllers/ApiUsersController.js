@@ -22,7 +22,7 @@ const ApiUsersControllers = {
             let infoConUrl = data.map(user => {
                 return {
                     ...user,
-                    image_01: `https://g8incendio-dft.herokuapp.com/users/img/${user.image_01}`,
+                    image_01: `https://g8incendio-dft.herokuapp.com/users/img/${user.image}`,
                     url: `https://g8incendio-dft.herokuapp.com/api/users/detail/${user.id}`, 
                    // delete user.dataValues.password,
                     //delete user.dataValues.rol_id,
