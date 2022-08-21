@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <%- include('../partials/head', {title : 'DFT - Admin Edit'}) %> 
+    <script src="https://cdn.ckeditor.com/ckeditor5/35.0.1/classic/ckeditor.js"></script>
 <body>
     <script src="/js/productFormsValidation.js"></script>
     <%- include('../partials/header') %> 
@@ -92,7 +93,7 @@
                                 <% if (locals.errors && errors.description) {%> 
                                     <p class="errorMsg"><%= errors.description.msg %></p>
                                 <%}  %>                        
-                                <textarea class="form__fields" id="description" name="description" ><%= productRequested.description %></textarea>
+                                <textarea id="editor" class="form__fields" id="description" name="description" ><%= productRequested.description %></textarea>
                                 <span class="feedback"></span>
                             </label>
                             <label for="specs">
@@ -100,7 +101,7 @@
                                 <% if (locals.errors && errors.specs) {%> 
                                     <p class="errorMsg"><%= errors.specs.msg %></p>
                                 <%}  %>                             
-                                <textarea class="form__fields" id="specs" name="specs"  ><%= productRequested.specs %></textarea>
+                                <textarea id="editor" class="form__fields" id="specs" name="specs"  ><%= productRequested.specs %></textarea>
                                 <span class="feedback"></span>
                             </label>
                             <p class="lg-msg back"><a href="/products/admin">🡄 Volver</a></p>
@@ -119,6 +120,21 @@
 
 
     </main>
+    <script>
+      window.addEventListener('DOMContentLoaded', () => {
+        ClassicEditor
+        .create( document.querySelector( '#editor' ) )
+        .catch( error => {
+            console.error( error );
+        } );
+        ClassicEditor
+        .create( document.querySelector( '#specs' ) )
+        .catch( error => {
+            console.error( error );
+        } );
+    });
+       
+    </script>
     
     <%- include('../partials/footer') %> 
 </body>

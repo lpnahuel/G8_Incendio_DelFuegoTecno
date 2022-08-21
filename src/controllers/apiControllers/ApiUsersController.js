@@ -22,10 +22,12 @@ const ApiUsersControllers = {
             let infoConUrl = data.map(user => {
                 return {
                     ...user,
-                    image_01: `https://g8incendio-dft.herokuapp.com/products/img/${user.image_01}`,
-                    url: `https://g8incendio-dft.herokuapp.com/api/products/detail/${user.id}`,
-                    delete element.dataValues.password,
-                    delete element.dataValues.rol_id
+                    image_01: `https://g8incendio-dft.herokuapp.com/users/img/${user.image_01}`,
+                    url: `https://g8incendio-dft.herokuapp.com/api/users/detail/${user.id}`, 
+                   // delete user.dataValues.password,
+                    //delete user.dataValues.rol_id,
+                     
+                
                 }
 
             })
@@ -51,7 +53,7 @@ const ApiUsersControllers = {
           let response = await db.User.findOne({where:{id:id}})
           let data = {
               ...response.toJSON(),
-              image_01: `https://g8incendio-dft.herokuapp.com/products/img/${response.image_01}`,
+              image_01: `https://g8incendio-dft.herokuapp.com/users/img/${response.image_01}`,
           }
           res.status(200).json({
               data,

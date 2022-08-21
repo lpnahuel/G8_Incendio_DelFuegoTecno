@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
     <%- include('../partials/head', {title : 'DFT - Admin Add Product'}) %> 
+    <script src="https://cdn.ckeditor.com/ckeditor5/35.0.1/classic/ckeditor.js"></script>
 <body>
+
     <script src="/js/productFormsValidation.js"></script>
     <%- include('../partials/header') %> 
 
@@ -86,7 +88,7 @@
                                 <% if (locals.errors && errors.description) {%> 
                                     <p class="errorMsg"><%= errors.description.msg %></p>
                                 <%}  %>                            
-                                <textarea class="form__fields  <%= locals.errors && errors.description ? 'invalid' : '' %>" id="description" name="description" ><%= locals.oldData ? oldData.description : null %></textarea>
+                                <textarea id="editor" class="form__fields  <%= locals.errors && errors.description ? 'invalid' : '' %>" id="description" name="description" ><%= locals.oldData ? oldData.description : null %></textarea>
                             </label>
                             <label for="specs">
                                 <p class="lg__descrip">Especificaciones</p>
@@ -97,7 +99,7 @@
                                 <textarea class="form__fields" id="specs" name="specs"><%= locals.oldData ? oldData.specs : null %></textarea>
                             </label>
 
-                            <button aria-label="Agregar producto" class="main-btns" type="submit">Agregar</button>
+                            <button id="editor" aria-label="Agregar producto" class="main-btns" type="submit">Agregar</button>
                         
                         </form>
                         <% } %> 
@@ -112,5 +114,29 @@
     </main>
     
     <%- include('../partials/footer') %> 
+
+    /* función escuchadora para que no se borre en caso de error */
+    <script>
+        window.addEventListener('DOMContentLoaded', (e) => {
+            e.preventDefault();
+        })
+    </script>
+/* editor de texto en creación de producto */
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        ClassicEditor
+        .create( document.querySelector( '#editor' ) )
+        .catch( error => {
+            console.error( error );
+        } );
+        ClassicEditor
+        .create( document.querySelector( '#specs' ) )
+        .catch( error => {
+            console.error( error );
+        } );
+    });
+   
+</script>
+
 </body>
 </html>

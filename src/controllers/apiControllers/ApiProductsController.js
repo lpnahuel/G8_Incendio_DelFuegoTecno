@@ -6,7 +6,7 @@ const path = require('path');
 const productsFilePath = path.join(__dirname, '../data/products.json');
 
 // *** Modelo */
-const db = require('../database/models/index.js');
+const db = require('../database/models/index');
 const Op = db.Sequelize.Op;
 const sequelize = db.sequelize;
 
