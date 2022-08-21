@@ -1,12 +1,5 @@
-// ************ Require's ************/
-const fs = require('fs');
-const path = require('path');
-
-// *** Path's */
-const productsFilePath = path.join(__dirname, '../data/products.json');
-
 // *** Modelo */
-const db = require('../database/models/index');
+const db = require('../../database/models/index');
 const Op = db.Sequelize.Op;
 const sequelize = db.sequelize;
 
@@ -65,56 +58,56 @@ const ApiProductsController = {
           console.log(error)
         }
       },
-//verificar de acá a abajo//
+// //verificar de acá a abajo//
 
-    create: (req, res) => {
-        db.Record.
-            create(
-                {
-                    concept: req.body.concept,
-                    tipe: req.body.tipe,
-                    created_at: Date.now(),
-                    amount: req.body.amount,
-                    category_id: req.body.category_id,
+//     create: (req, res) => {
+//         db.Record.
+//             create(
+//                 {
+//                     concept: req.body.concept,
+//                     tipe: req.body.tipe,
+//                     created_at: Date.now(),
+//                     amount: req.body.amount,
+//                     category_id: req.body.category_id,
 
-                }
-            )
-            .then(confirm => {
-                let response;
-                if (confirm) {
-                    response = {
-                        data: confirm
-                    }
-                }
-                res.json(respuesta)
-            })
-            .catch(error => res.send(error))
-    },
-    update: (req, res) => {
-        let recordId = req.params.id;
-        db.Record.update(
-            {
-                concept: req.body.concept,
-                tipe: req.body.tipe,
-                updated_at: Date.now(),
-                amount: req.body.amount,
-                category_id: req.body.category_id,
-            },
-            {
-                where: { id: recordId }
-            })
-            .then(confirm => {
-                let response;
-                if (confirm) {
-                    response = {
-                        data: confirm
-                    }
-                }
-                res.json(respuesta);
-            })
-            .catch(error => res.send(error))
+//                 }
+//             )
+//             .then(confirm => {
+//                 let response;
+//                 if (confirm) {
+//                     response = {
+//                         data: confirm
+//                     }
+//                 }
+//                 res.json(respuesta)
+//             })
+//             .catch(error => res.send(error))
+//     },
+//     update: (req, res) => {
+//         let recordId = req.params.id;
+//         db.Record.update(
+//             {
+//                 concept: req.body.concept,
+//                 tipe: req.body.tipe,
+//                 updated_at: Date.now(),
+//                 amount: req.body.amount,
+//                 category_id: req.body.category_id,
+//             },
+//             {
+//                 where: { id: recordId }
+//             })
+//             .then(confirm => {
+//                 let response;
+//                 if (confirm) {
+//                     response = {
+//                         data: confirm
+//                     }
+//                 }
+//                 res.json(respuesta);
+//             })
+//             .catch(error => res.send(error))
 
-    }
+//     }
 
 
 }
