@@ -7,6 +7,6 @@ const ApiUsersController = require("../../controllers/apiControllers/ApiUsersCon
 router.get('/list',ApiUsersController.list)
 
 //DETALLE USUARIO//
-router.get('/profile',ApiUsersController.detail)
+router.get('/profile/:id',ApiUsersController.detail)
 
 module.exports = router
