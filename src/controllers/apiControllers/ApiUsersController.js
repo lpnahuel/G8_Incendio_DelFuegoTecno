@@ -10,7 +10,59 @@ const db = require('../database/models/index.js');
 const Op = db.Sequelize.Op;
 const sequelize = db.sequelize;
 
-let userApiController = {
+//LISTAR USUARIOS PARA LA API
+const ApiUsersControllers = {
+    list: async (req, res) => {
+        try {
+            let response = await db.User.findAndCountAll();
+            let data = response.rows.map(user => {
+                return user.toJSON();
+            });
+
+            let infoConUrl = data.map(user => {
+                return {
+                    ...user,
+                    image_01: `https://g8incendio-dft.herokuapp.com/products/img/${user.image_01}`,
+                    url: `https://g8incendio-dft.herokuapp.com/api/products/detail/${user.id}`,
+                    delete element.dataValues.password,
+                    delete element.dataValues.rol_id
+                }
+
+            })
+
+            return res.status(200).json({
+                count: response.count,
+                user: infoConUrl,
+            });
+
+        } catch (error) {
+            console.log(error)
+            return res.status(500).json({
+                msg: 'Ooops algo salio mal!',
+                error:JSON.stringify(error),
+                status: 500
+            })
+        }
+    },
+    //DETALLE DE USUARIO PARA LA API
+    detail: async (req, res) => {
+        try {
+          let {id} = req.params
+          let response = await db.User.findOne({where:{id:id}})
+          let data = {
+              ...response.toJSON(),
+              image_01: `https://g8incendio-dft.herokuapp.com/products/img/${response.image_01}`,
+          }
+          res.status(200).json({
+              data,
+          })
+        } catch (error) {
+          console.log(error)
+        }
+      },
+
+/*
+let  = {
 
     list: function (req, res) {
 
@@ -78,9 +130,9 @@ let userApiController = {
                 res.json(response)
             }).catch(error => res.send(error));
 
-    }//detail
+    }//detail */
 
 
 }//userApiController
 
-module.exports = userApiController;
+module.exports = ApiUsersControllers;

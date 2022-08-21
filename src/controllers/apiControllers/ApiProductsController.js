@@ -66,8 +66,7 @@ const ApiProductsController = {
         }
       },
 //verificar de acá a abajo//
-/*
-    },
+
     create: (req, res) => {
         db.Record.
             create(
@@ -115,7 +114,7 @@ const ApiProductsController = {
             })
             .catch(error => res.send(error))
 
-    }*/
+    }
 
 
 }
