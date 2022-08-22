@@ -33,7 +33,7 @@ const ApiUsersControllers = {
             })
 
             return res.status(200).json({
-                count: response.count,
+                countUsers: response.count,
                 user: infoConUrl,
             });
 

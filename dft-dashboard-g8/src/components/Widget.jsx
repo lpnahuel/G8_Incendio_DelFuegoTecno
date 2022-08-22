@@ -1,10 +1,10 @@
 import '../index.css';
 import { Link } from "react-router-dom"
 
-const Widget = ({title, quantity, isLoading}) => {
+const Widget = ({title, quantity, isLoading, link}) => {
   return (
     <>
-    <Link to='/products'>
+    <Link to={link}>
 
       <div className='infoWidget'>
         <div className='infoWidget__item'>
