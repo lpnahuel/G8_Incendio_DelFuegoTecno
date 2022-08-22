@@ -7,7 +7,22 @@ const sequelize = db.sequelize;
 const ApiProductsController = {
     list: async (req, res) => {
         try {
-            let response = await db.Product.findAndCountAll();
+            let categories = await db.Category.findAll(
+                {include : {
+                    model: db.Product,
+                    as: 'products' 
+                    }});
+            let catRes = categories.map(category => (
+                {
+                    ...category.toJSON(),
+                }
+            ))
+
+            let response = await db.Product.findAndCountAll(
+                {include : {
+                model: db.Category,
+                as: 'categories' 
+                }});
             let data = response.rows.map(product => {
                 return product.toJSON();
             });
@@ -27,6 +42,7 @@ const ApiProductsController = {
             return res.status(200).json({
                 count: response.count,
                 products: infoConUrl,
+                categories: catRes
             });
 
         } catch (error) {
