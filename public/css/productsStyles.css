@@ -655,6 +655,19 @@ TRATANDO DE HACER FUNCIONAR ESOS BOTONES :)
     width: 100%;
 }
 
+.ck.ck-editor__main>.ck-editor__editable:not(.ck-focused) {
+    border-color: var(--ck-color-base-border);
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.ck.ck-editor__editable_inline>:last-child {
+    margin-bottom: var(--ck-spacing-large);
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+
 .campos__column {
     display: flex;
     flex-direction: column;
