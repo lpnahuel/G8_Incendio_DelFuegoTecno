@@ -1,20 +1,21 @@
 import '../index.css';
 import { Link } from 'react-router-dom';
 
-const LastUserCard = () => {
+const LastUserCard = ({id, first_name, last_name, role, image}) => {
   return (
     <div className='userCard'>
     <div className='userCard__image'>
-      <img src='https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=200' alt='user' />
+      <img src={`${image}`} alt='user' />
     </div>
     <div className='userCard__top'>
-      <h4 className='userCard__info--title'>User Name</h4>
+      <h3 className='userCard__info--title'>Último usuario registrado</h3>
       <hr />
-      <p className='info__text'>ID</p>
-      <p className='info__text'>Role</p>
+      <h4 className='info__text'>{first_name + ' ' + last_name}</h4>
+      <p className='info__text'>ID: {id}</p>
+      <p className='info__text'>Role: {role}</p>
     </div>
     <div className='productCard__bottom'>
-      <Link to='...'>Ver detalles</Link>
+      <Link to={`users/${id}`}>Ver detalles</Link>
     </div>
   </div>
   )

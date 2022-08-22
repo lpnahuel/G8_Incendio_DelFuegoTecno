@@ -14,18 +14,17 @@ export const useAllProducts = (url) => {
         });
         fetch(url)
         .then(response => response.json())
-        .then(data => {
+        .then(data => 
             setState({
-                ...state,
                 dataProducts : data,
                 isLoadingProducts : false
-            });
-        }).catch(error => {
+            }))
+            .catch(error => 
             setState({
                 dataProducts : (error, 'error en el catch del fetch'),
                 isLoadingProducts : false,
             })
-        })
+        )
     } , [url]);
 
     return {

@@ -1,7 +1,7 @@
 import Widget from '../components/Widget';
 import '../index.css';
 import LastProductCard from '../components/LastProductCard';
-import UserCard from '../components/UserCard';
+import LastUserCard from '../components/LastUserCard';
 import { useAllProducts } from '../hooks/useAllProducts';
 import { useAllUsers } from '../hooks/useAllUsers';
 import { useState, useEffect } from 'react';
@@ -10,28 +10,32 @@ const Home = () => {
 
     const { dataProducts, isLoadingProducts } = useAllProducts(`https://g8incendio-dft.herokuapp.com/api/products`);
     const { count, products, categories } = !!dataProducts && dataProducts;
-    const [lastProduct, setlastProduct] = useState("")
+    const [lastProduct, setLastProduct] = useState([]);
 
     const { dataUsers, isLoadingUsers } = useAllUsers(`https://g8incendio-dft.herokuapp.com/api/users/list`);
-    const { countUsers, users, roles } = !!dataUsers && dataUsers;
-    const [lastUser, setLastUser] = useState("")
+    const { countUsers, user} = !!dataUsers && dataUsers;
+    const [lastUser, setLastUser] = useState([]);
 
 
     useEffect(() => {
         if (dataProducts) {
-            setlastProduct(products[products.length - 1])
+            setLastProduct(products[products.length - 1])
         }
-    }, [products, dataProducts, lastProduct])
+    }, [dataProducts, products, lastProduct]);
 
 
     useEffect(() => {
-
-        if (lastUser) {
-            setLastUser(users[users.length - 1])
-
+        if (dataUsers) {
+            setLastUser(user[user.length - 1])
         }
+    }, [dataUsers, lastUser, user]);
 
-    }, [lastUser])
+
+    console.log('dataProducts',dataProducts)
+    console.log('products',products)
+    console.log('dataUsers',dataUsers)
+    console.log('user',user)
+    console.log('lastUser',lastUser)
 
     return (
         <>
@@ -47,7 +51,7 @@ const Home = () => {
                 <Widget
                     title='Usuarios'
                     quantity={countUsers}
-                    isLoading={isLoadingProducts}
+                    isLoading={isLoadingUsers}
                     link='/users'
                 />
                 <div className='infoWidget'>
@@ -68,9 +72,6 @@ const Home = () => {
 
                     </div>
                 </div>
-
-                {/* Pondría una card con los datos del último producto creado y lo mismo con User */}
-                {/* Y que vaya al detalle para no poner el link al p... */}
                 <LastProductCard
                     name={lastProduct.name}
                     price={lastProduct.price}
@@ -78,7 +79,14 @@ const Home = () => {
                     category={lastProduct.category}
                     id={lastProduct.id}
                 />
-                <UserCard />
+                <LastUserCard
+                id = {lastUser.id}
+                image = {lastUser.image}
+                first_name = {lastUser.first_name}
+                last_name = {lastUser.last_name}
+                role = {lastUser.roles.name}
+                    
+                />
 
             </section>
         </>

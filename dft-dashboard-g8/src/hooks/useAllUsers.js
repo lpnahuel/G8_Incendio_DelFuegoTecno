@@ -14,20 +14,18 @@ export const useAllUsers = (url) => {
         });
         fetch(url)
         .then(response => response.json())
-        .then(data => {
+        .then(data => 
             setState({
-                ...state,
                 dataUsers : data,
                 isLoadingUsers : false
-            });
-        }).catch(error => {
+            }))
+            .catch(error => 
             setState({
-                dataUsers : (error, 'error en el catch del fetch'),
+                dataUsers : (error, 'error en el catch del users fetch'),
                 isLoadingUsers : false,
             })
-        })
+        )
     }, [url]);
-
     return {
         dataUsers : state.dataUsers,
         isLoadingUsers : state.isLoadingUsers
