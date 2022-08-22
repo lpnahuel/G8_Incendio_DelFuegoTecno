@@ -14,9 +14,6 @@ const SideBar = () => {
                     <NavLink to="/products/:id">Product Detail</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/products/lastProduct">Last Product</NavLink>
-                </li>
-                <li>
                     <NavLink to="/categories">Categories</NavLink>
                 </li>
             </ul>
@@ -28,10 +25,6 @@ const SideBar = () => {
                 <li>
                     <NavLink to="/users/:id">User Detail</NavLink>
                 </li>
-                <li>
-                    <NavLink to="/users/lastUser">Last User</NavLink>
-                </li>
-
             </ul>
             <hr />
         </div>
