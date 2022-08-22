@@ -6,6 +6,7 @@ const SideBar = () => {
         <div className="sidebar">
 
             <h3> Control Productos </h3>              
+            <hr />
             <ul>
                 <li>
                     <NavLink to="/products">Products</NavLink>
@@ -18,6 +19,7 @@ const SideBar = () => {
                 </li>
             </ul>
             <h3> Control Usuarios </h3>    
+            <hr />
             <ul>
                 <li>
                     <NavLink to="/users">Users</NavLink>

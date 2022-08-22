@@ -25,7 +25,7 @@ export const useAllProducts = (url) => {
                 isLoadingProducts : false,
             })
         )
-    } , [url]);
+    } , []);
 
     return {
         dataProducts : state.dataProducts,

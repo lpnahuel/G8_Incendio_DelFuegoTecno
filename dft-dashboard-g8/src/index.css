@@ -1,63 +1,146 @@
-*{
+* {
   font-family: 'Raleway', sans-serif;
   font-size: 16px;
 }
 
+:root {
 
+  /*Colors*/
+  --black: #000;
+  --fondo-main: #1E1F24;
+  --gris-int: #444444;
+  --gris-osc: #7E7E83;
+  --gris: #B3B3B3;
+  --gris-medio: #ababab;
+  --gris-claro: #e3e3e3;
+  --blanco: #fff;
+  --turq: #4FD0D9;
+  --celeste-logo: #3CB9FC;
+  --cyan: #07F7FE;
+  --aqua: #08FBD2;
+  --yellow: #F4D30F;
+  --magenta: #EE2B79;
+  --violet: #B537F2;
+  --rb-gradient: linear-gradient(to right, var(--celeste-logo), var(--violet), var(--magenta), var(--yellow), var(--aqua), var(--cyan));
+  --gradient: linear-gradient(to bottom, var(--magenta), var(--violet))
+}
+
+h1 {
+  color: var(--magenta);
+}
+
+body {
+  background-color: var(--fondo-main);
+  margin: 2em 0 0 0;
+}
+
+
+h2 {
+  color: var(--magenta);
+  margin: 2em 0 0 2em;
+}
+
+a {
+  text-decoration: none;
+}
 
 /* Sidebar */
-.sidebar{
+.sidebar {
   flex: 1;
-  background-color: #f5f5f5;
+  background-color: var(--black);
+  margin-top: 2em;
   padding: 20px;
+  color: var(--magenta);
+}
+
+.sidebar ul {
+  margin: 2em auto;
+  padding: 0;
+}
+
+.sidebar li {
+  list-style: none;
+  font-size: 16px;
+  font-weight: 500;
+  height: 46px;
+  list-style: none;
+  margin: 3px 6px;
+  padding: 14px 0 0 0;
+  width: 98%;
+}
+
+.sidebar li a {
+  background: var(--negro);
+  border-left: 4px solid var(--negro);
+  cursor: pointer;
+  color: var(--gris-medio);
+  text-decoration: none;
+
 }
 
 /* NavBar */
-.navBarContainer{
+.navBarContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding: 0 2em;
 }
+
 
 /* Home */
-.mainHome{
+.mainHome {
   display: flex;
 }
 
-.homeContainer{
+.homeContainer {
   flex: 10;
 }
-.homeSection{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
+
+.homeSection {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2em;
+  margin: 2em;
 }
 
 /* Widget */
-.infoWidget{
-  background-color: #f5f5f5;
+
+.homeSection a {
+  color: var(--celeste-logo)
+}
+
+.infoWidget {
+  background-color: var(--gris-claro);
+  border-radius: 6px;
   padding: 20px;
   width: 20rem;
 }
 
+.item__text {
+  color: var(--fondo-main);
+}
+
 /* Product List */
-.productList{
+.productList {
   margin: 2em;
 }
 
-.productsListContainer{
+.productList h3 {
+  color: var(--magenta);
+}
+
+.productsListContainer {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 1rem;
 }
 
 /* Product Detail */
-.productDetailContainer{
+.productDetailContainer {
   margin: 2em;
 }
 
-.detailCard{
+.detailCard {
   background-color: #f5f5f5;
   display: flex;
   margin: 0 auto;
@@ -66,58 +149,70 @@
   width: 72em;
 }
 
-.detailCard__img{
+.detailCard__img {
   height: auto;
   width: calc(50% - 1em);
 }
 
-.detailCard__body{
+.detailCard__body {
   width: calc(50% - 1em);
 }
 
-/* Category */
+.item__title {
+  color: var(--celeste-logo);
+}
 
-.categoryContainer{
+/* Category */
+.categoryMain h3 {
+  margin: 2em 0 0 2em;
+  color: var(--magenta);
+}
+
+.categoryContainer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;
 }
 
-.categoryCard{
+.categoryCard {
   margin: 0 auto;
-  max-width: 15em;
+  width: 20em;
+  height: 100%;
+  background-color: var(--gris-claro);
+  padding: 1em;
+  text-align: center;
+  border-radius: 6px;
 }
 
-.categoryCard__img{
-  background-color: #000;
-  height: 10em;
-
-}
 
 /* User List */
 
-.userList{
+.userList {
   margin: 2em;
 }
 
-.usersListContainer{
+.userList h3 {
+  color: var(--magenta);
+}
+
+.usersListContainer {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 1rem;
 }
 
-.userCard{
+.userCard {
   margin: 0 auto;
   max-width: 15em;
 }
 
 /* User Detail */
 
-.userDetailContainer{
+.userDetailContainer {
   margin: 2em;
 }
 
-.userDetail{
+.userDetail {
   background-color: #f5f5f5;
   display: flex;
   margin: 0 auto;
@@ -126,11 +221,50 @@
   width: 72em;
 }
 
-.userDetail__img{
+.userDetail__img {
   height: auto;
   width: calc(50% - 1em);
 }
 
-.userDetail__body{
+.userDetail__body {
   width: calc(50% - 1em);
+}
+
+/*** USER*/
+.userCard,
+.productCard {
+  background-color: var(--gris-claro);
+  border-radius: 6px;
+  text-align: center;
+  padding: 1em 0;
+}
+
+.userCard hr {
+  width: 80%;
+  margin: 1em auto;
+}
+.userCard h3 {
+  color: var(--celeste-logo);
+
+}
+
+.userCard__image img {
+  margin: 1em auto;
+  max-width: 12em;
+}
+
+/** PRODUCT */
+.productCard__top img {
+  margin: 1em auto;
+  border: 1px solid var(--fondo-main);
+  max-width: 15em;
+}
+
+.productCard hr {
+  width: 80%;
+  margin: 1em auto;
+}
+
+.productCard h3 {
+  color: var(--celeste-logo);
 }

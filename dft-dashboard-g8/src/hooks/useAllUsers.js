@@ -25,7 +25,8 @@ export const useAllUsers = (url) => {
                 isLoadingUsers : false,
             })
         )
-    }, [url]);
+    }, []);
+
     return {
         dataUsers : state.dataUsers,
         isLoadingUsers : state.isLoadingUsers

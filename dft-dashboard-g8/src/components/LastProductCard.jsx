@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom"
 
-const LastProductCard = ({name, price, stock, category, id}) => {
+const LastProductCard = ({name, price, stock, category, id, image}) => {
   return (
     <>
       <div className='productCard'>
         <div className='productCard__top'>
-          <img src="" alt="" />
+          <img src={image} alt={name} />
         </div>
         <div className="productCard__center">
           <div>
@@ -18,7 +18,7 @@ const LastProductCard = ({name, price, stock, category, id}) => {
           <p>Stock: {stock}</p>
         </div>
         <div className='productCard__bottom'>
-          <Link to={`products/${id}`}>Ver detalles</Link>
+          <Link to={`/products/${id}`}>Ver detalles</Link>
 
         </div>
       </div>

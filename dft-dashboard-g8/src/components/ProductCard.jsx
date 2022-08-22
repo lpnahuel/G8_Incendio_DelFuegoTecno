@@ -1,24 +1,24 @@
 import '../index.css';
 import { Link } from 'react-router-dom';
 
-const ProductCard = () => {
+const ProductCard = ({product}) => {
     return (
         <>
             <div className='productCard'>
                 <div className='productCard__top'>
-                    <img src="" alt="" />
+                    <img src={product.image_01} alt={product.name} />
                 </div>
                 <div className="productCard__center">
                     <div>
-                        <h4>Product Name</h4>
+                        <h4>{product.name}</h4>
                         <hr />
                     </div>
-                    <p>Product Price</p>
-                    <p>Product Category</p>
-                    <p>Stock</p>
+                    <p>Precio: ${product.price}</p>
+                    <p>Categoría {product.categories.name}</p>
+                    <p>Stock: {product.stock}</p>
                 </div>
                 <div className='productCard__bottom'>
-                    <Link to='...'>Ver detalles</Link>
+                    <Link to={`/products/${product.id}`}>Ver detalles</Link>
 
                 </div>
             </div>

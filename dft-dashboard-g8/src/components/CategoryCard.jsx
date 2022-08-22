@@ -1,14 +1,11 @@
 import '../index.css';
 
-const CategoryCard = () => {
+const CategoryCard = ({category}) => {
   return (
     <div className='categoryCard'>
-    <div className='categoryCard__img'>
-      <img src="" alt="" />
-    </div>
     <div className='categoryCard__body'>
-      <h4>Category Name</h4>
-      <p>Cantidad de productos</p>
+      <h4>{category.name}</h4>
+      <p>Cantidad de productos: {category.products.length}</p>
     </div>
   </div>
   )
