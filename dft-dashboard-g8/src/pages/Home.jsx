@@ -2,27 +2,12 @@ import Widget from '../components/Widget';
 import '../index.css';
 import ProductCard from '../components/ProductCard';
 import UserCard from '../components/UserCard';
-import { useApiFetchProduct } from '../hooks/useApiFetchProduct';
+import { useAllProducts } from '../hooks/useApiFetchProduct';
 import { useState, useEffect } from 'react';
 
 const Home = () => {
+    const { dataProducts, isLoadingProducts } = useAllProducts(`https://localhost:3030/api/products`);
 
-    const [lastProduct, setLastProduct] = useState([]);
-
-    const { dataProduct } = useApiFetchProduct(`http://localhost:3030/api/products`);
-
-
-    const { count, products, categories } = !!dataProduct && dataProduct;
-    console.log(dataProduct)
-
-    useEffect(() => {
-
-        if (dataProduct) {
-          setLastProduct(products[products.length - 1])
-
-    
-        }})
-        console.log(lastProduct)
     
     return (
         <>

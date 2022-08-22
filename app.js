@@ -8,7 +8,14 @@ const session = require('express-session');
 const userLoggedMiddleware = require('./src/middlewares/userLoggedMiddleware');
 const adminLoggedMiddleware = require('./src/middlewares/adminLoggedMiddleware');
 const ApiMainRoutes = require('./src/routes/ApiRoutes/ApiMainRoutes')
+const cors = require('cors');
 
+/*** CORS */
+const corsOptions ={
+    origin:'*', 
+    credentials:true,            //access-control-allow-credentials:true
+    optionSuccessStatus:200,
+ }
 
 /*** Main Router (require) */
 const mainRoutes = require("./src/routes/mainRoutes")
@@ -30,6 +37,7 @@ app.use(userLoggedMiddleware);
 app.use(adminLoggedMiddleware);
 app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride('_method'));
+app.use(cors(corsOptions)) // Use this after the variable declaration
 
 
 // ************ EJS *************/
