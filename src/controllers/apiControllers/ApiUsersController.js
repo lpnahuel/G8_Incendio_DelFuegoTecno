@@ -14,7 +14,10 @@ const sequelize = db.sequelize;
 const ApiUsersControllers = {
     list: async (req, res) => {
         try {
-            let response = await db.User.findAndCountAll();
+            let response = await db.User.findAndCountAll({include : {
+                model: db.Role,
+                as: 'roles' 
+                }});
             let data = response.rows.map(user => {
                 return user.toJSON();
             });
@@ -24,9 +27,6 @@ const ApiUsersControllers = {
                     ...user,
                     image: `https://g8incendio-dft.herokuapp.com/users/img/${user.image}`,
                     url: `https://g8incendio-dft.herokuapp.com/api/users/profile/${user.id}`, 
-                   // delete user.dataValues.password,
-                    //delete user.dataValues.rol_id,
-                     
                 
                 }
 

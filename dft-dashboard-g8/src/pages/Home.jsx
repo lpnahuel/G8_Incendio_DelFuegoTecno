@@ -3,6 +3,7 @@ import '../index.css';
 import LastProductCard from '../components/LastProductCard';
 import UserCard from '../components/UserCard';
 import { useAllProducts } from '../hooks/useAllProducts';
+import { useAllUsers } from '../hooks/useAllUsers';
 import { useState, useEffect } from 'react';
 
 const Home = () => {
@@ -10,7 +11,7 @@ const Home = () => {
     const { dataProducts, isLoadingProducts } = useAllProducts(`https://g8incendio-dft.herokuapp.com/api/products`);
     const { count, products, categories } = !!dataProducts && dataProducts;
     const [lastProduct, setlastProduct] = useState("")
-    const [categoryProd, setCategoryProd] = useState("")
+
 
     useEffect(() => {
         if (dataProducts) {
@@ -18,8 +19,7 @@ const Home = () => {
         }
     }, [products, dataProducts, lastProduct])
 
-    console.log('PRODUCTS',products)
-    console.log('CATEGORIES',categories)
+
     // useEffect(() => {
 
     //     if (lastUser) {

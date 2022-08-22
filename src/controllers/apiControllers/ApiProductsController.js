@@ -73,58 +73,7 @@ const ApiProductsController = {
         } catch (error) {
           console.log(error)
         }
-      },
-// //verificar de acá a abajo//
-
-//     create: (req, res) => {
-//         db.Record.
-//             create(
-//                 {
-//                     concept: req.body.concept,
-//                     tipe: req.body.tipe,
-//                     created_at: Date.now(),
-//                     amount: req.body.amount,
-//                     category_id: req.body.category_id,
-
-//                 }
-//             )
-//             .then(confirm => {
-//                 let response;
-//                 if (confirm) {
-//                     response = {
-//                         data: confirm
-//                     }
-//                 }
-//                 res.json(respuesta)
-//             })
-//             .catch(error => res.send(error))
-//     },
-//     update: (req, res) => {
-//         let recordId = req.params.id;
-//         db.Record.update(
-//             {
-//                 concept: req.body.concept,
-//                 tipe: req.body.tipe,
-//                 updated_at: Date.now(),
-//                 amount: req.body.amount,
-//                 category_id: req.body.category_id,
-//             },
-//             {
-//                 where: { id: recordId }
-//             })
-//             .then(confirm => {
-//                 let response;
-//                 if (confirm) {
-//                     response = {
-//                         data: confirm
-//                     }
-//                 }
-//                 res.json(respuesta);
-//             })
-//             .catch(error => res.send(error))
-
-//     }
-
+      }
 
 }
 
