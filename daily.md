@@ -340,3 +340,10 @@ A continuacion detallaremos los temas que se trataron cada día:
 
 **Informe 19/08/2022**
 - Me falta terminar de mejorar el código de ApiUsersControllers.js (nicky)
+- se creo el esqueleto del dashboard (pali)
+
+**Informe 20/08/2022**
+- Agregamos a creacion y edición de producto el editor de texto en descripción
+
+**Informe 21/08/2022**
+- Realizamos Meet y validamos apis y empezamos a conectar con el dashboard. (pali y nicky)
